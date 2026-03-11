@@ -3,10 +3,15 @@ import type { Video } from "@/lib/types";
 import VideoCard from "@/components/VideoCard";
 import Sidebar from "@/components/Sidebar";
 
-export default function Home() {
-  const videos = videosData as Video[];
+interface VideoWithCollection extends Video {
+  collection?: string;
+}
 
-  // Group by date, most recent first
+export default function Home() {
+  const allVideos = videosData as VideoWithCollection[];
+  // Exclude foundation from date grouping
+  const videos = allVideos.filter((v) => v.collection !== "foundation");
+
   const grouped = new Map<string, Video[]>();
   for (const v of videos) {
     const date = v.date_added || "unknown";
@@ -22,7 +27,6 @@ export default function Home() {
     <div className="flex gap-8">
       {/* Main feed */}
       <div className="min-w-0 flex-1">
-        {/* Header */}
         <div className="mb-8">
           <h1 className="text-2xl font-bold tracking-tight" style={{ color: 'var(--text)' }}>
             📺 Today&apos;s Inspiration
@@ -32,7 +36,6 @@ export default function Home() {
           </p>
         </div>
 
-        {/* Today's videos */}
         {latestVideos.length > 0 ? (
           <div className="grid gap-4 sm:grid-cols-2">
             {latestVideos.map((v) => (
@@ -45,13 +48,26 @@ export default function Home() {
           </div>
         )}
 
-        {/* Older dates summary */}
         {olderDates.length > 0 && (
           <div className="mt-12">
             <h2 className="mb-4 text-lg font-semibold" style={{ color: 'var(--text)' }}>
               📁 Archive
             </h2>
             <div className="grid gap-3 sm:grid-cols-3">
+              {/* Foundation pinned */}
+              <a
+                href="/archive/foundation"
+                className="rounded-lg border p-4 transition-colors hover:shadow-sm"
+                style={{
+                  borderColor: 'var(--accent)',
+                  background: 'color-mix(in srgb, var(--accent) 5%, var(--card))',
+                }}
+              >
+                <span className="text-sm font-semibold" style={{ color: 'var(--accent)' }}>📐 Foundation</span>
+                <span className="ml-2 text-xs" style={{ color: 'var(--text-muted)' }}>
+                  {allVideos.filter(v => v.collection === 'foundation').length} videos
+                </span>
+              </a>
               {olderDates.map((date) => {
                 const count = grouped.get(date)?.length || 0;
                 return (
@@ -71,7 +87,6 @@ export default function Home() {
         )}
       </div>
 
-      {/* Right sidebar — hidden on mobile, visible on lg+ */}
       <div className="hidden w-64 shrink-0 lg:block">
         <div className="sticky top-20">
           <Sidebar />

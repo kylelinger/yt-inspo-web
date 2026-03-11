@@ -10,6 +10,7 @@ export interface Video {
   source: string;
   why?: string;
   vo_excerpt?: string;
+  collection?: string;
 }
 
 export interface FeedbackEntry {
