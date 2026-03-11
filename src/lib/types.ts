@@ -1,3 +1,12 @@
+export interface VideoBreakdown {
+  summary: string;
+  structure: { time: string; desc: string }[];
+  vo_quotes: string[];
+  strengths: string[];
+  risks: string[];
+  transferable: string[];
+}
+
 export interface Video {
   id: string;
   url: string;
@@ -11,6 +20,8 @@ export interface Video {
   why?: string;
   vo_excerpt?: string;
   collection?: string;
+  duration?: string;
+  breakdown?: VideoBreakdown;
 }
 
 export interface FeedbackEntry {

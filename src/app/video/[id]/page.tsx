@@ -161,6 +161,114 @@ export default function VideoDetailPage() {
         </div>
       )}
 
+      {/* FULL Breakdown */}
+      {video.breakdown && (
+        <div className="mb-8 space-y-4">
+          <h2 className="text-lg font-bold" style={{ color: "var(--text)" }}>
+            📐 结构拆解
+          </h2>
+
+          {/* Summary */}
+          <div className="rounded-lg border p-4" style={{ borderColor: "var(--border)", background: "var(--card)" }}>
+            <p className="text-sm font-medium leading-relaxed" style={{ color: "var(--text)" }}>
+              {video.breakdown.summary}
+            </p>
+          </div>
+
+          {/* Structure timeline */}
+          {video.breakdown.structure.length > 0 && (
+            <div className="rounded-lg border p-4" style={{ borderColor: "var(--border)", background: "var(--card)" }}>
+              <h3 className="mb-3 text-xs font-semibold uppercase tracking-wide" style={{ color: "var(--text-muted)" }}>
+                叙事结构
+              </h3>
+              <div className="space-y-2">
+                {video.breakdown.structure.map((s, i) => (
+                  <div key={i} className="flex gap-3 text-sm">
+                    <span
+                      className="shrink-0 rounded px-2 py-0.5 text-xs font-semibold"
+                      style={{
+                        background: "color-mix(in srgb, var(--accent) 10%, transparent)",
+                        color: "var(--accent)",
+                      }}
+                    >
+                      {s.time}
+                    </span>
+                    <span style={{ color: "var(--text)" }}>{s.desc}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
+
+          {/* VO quotes */}
+          {video.breakdown.vo_quotes.length > 0 && (
+            <div className="rounded-lg border p-4" style={{ borderColor: "var(--border)", background: "var(--card)" }}>
+              <h3 className="mb-3 text-xs font-semibold uppercase tracking-wide" style={{ color: "var(--text-muted)" }}>
+                VO / 台词金句
+              </h3>
+              <div className="space-y-2">
+                {video.breakdown.vo_quotes.map((q, i) => (
+                  <p key={i} className="border-l-2 pl-3 text-sm italic" style={{ borderColor: "var(--accent)", color: "var(--text)" }}>
+                    &ldquo;{q}&rdquo;
+                  </p>
+                ))}
+              </div>
+            </div>
+          )}
+
+          {/* Strengths & Risks side by side */}
+          <div className="grid gap-4 sm:grid-cols-2">
+            {video.breakdown.strengths.length > 0 && (
+              <div className="rounded-lg border p-4" style={{ borderColor: "var(--border)", background: "var(--card)" }}>
+                <h3 className="mb-3 text-xs font-semibold uppercase tracking-wide" style={{ color: "var(--green, #22c55e)" }}>
+                  ✓ 好点
+                </h3>
+                <ul className="space-y-2 text-sm" style={{ color: "var(--text)" }}>
+                  {video.breakdown.strengths.map((s, i) => (
+                    <li key={i} className="flex gap-2">
+                      <span className="mt-0.5 shrink-0 text-xs" style={{ color: "var(--green, #22c55e)" }}>●</span>
+                      {s}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
+            {video.breakdown.risks.length > 0 && (
+              <div className="rounded-lg border p-4" style={{ borderColor: "var(--border)", background: "var(--card)" }}>
+                <h3 className="mb-3 text-xs font-semibold uppercase tracking-wide" style={{ color: "var(--red, #ef4444)" }}>
+                  ✗ 风险 / 不适配
+                </h3>
+                <ul className="space-y-2 text-sm" style={{ color: "var(--text)" }}>
+                  {video.breakdown.risks.map((r, i) => (
+                    <li key={i} className="flex gap-2">
+                      <span className="mt-0.5 shrink-0 text-xs" style={{ color: "var(--red, #ef4444)" }}>●</span>
+                      {r}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
+          </div>
+
+          {/* Transferable */}
+          {video.breakdown.transferable.length > 0 && (
+            <div className="rounded-lg border p-4" style={{ borderColor: "var(--accent)", background: "color-mix(in srgb, var(--accent) 5%, var(--card))" }}>
+              <h3 className="mb-3 text-xs font-semibold uppercase tracking-wide" style={{ color: "var(--accent)" }}>
+                🔄 可迁移方法论
+              </h3>
+              <ul className="space-y-2 text-sm" style={{ color: "var(--text)" }}>
+                {video.breakdown.transferable.map((t, i) => (
+                  <li key={i} className="flex gap-2">
+                    <span className="mt-0.5 shrink-0">→</span>
+                    {t}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
+        </div>
+      )}
+
       {/* External link */}
       <a
         href={video.url}

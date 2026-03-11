@@ -5,11 +5,55 @@
     "platform": "youtube",
     "date_added": "foundation",
     "status": "sent_backfilled_from_discord",
-    "title": "",
-    "brand": "",
+    "title": "Trade All in One Place",
+    "brand": "Robinhood",
     "feedback": null,
     "source": "discord_export_attachment",
-    "collection": "foundation"
+    "collection": "foundation",
+    "breakdown": {
+      "summary": "Brutalism 巨型空间里的一个人 + 「一句话钉死主张」。用建筑规模感表达市场之大，主角很小但不慌 = Robinhood 给你掌控感。",
+      "structure": [
+        {
+          "time": "开场",
+          "desc": "黑底 logo → 两枚图标（股票/crypto）先立题"
+        },
+        {
+          "time": "核心段",
+          "desc": "主角在巨大混凝土 Brutalism 空间里行走，UI 以「环境化浮层」方式展示"
+        },
+        {
+          "time": "产品信息",
+          "desc": "股票详情页 / options chain / crypto ticker / portfolio dashboard"
+        },
+        {
+          "time": "价值钉子",
+          "desc": "\"One of the lowest costs on average.\""
+        },
+        {
+          "time": "收束",
+          "desc": "手机在手 + tagline endcard + 法务字幕"
+        }
+      ],
+      "vo_quotes": [
+        "One of the lowest costs on average."
+      ],
+      "strengths": [
+        "建筑规模感 = 市场之大，主角很小但不慌 = 掌控感隐喻",
+        "UI 露出方式高级：不是硬贴屏录，而是「环境化浮层」",
+        "价值点一句话钉死：先让你沉浸氛围，再给一句能记住、能复述、能打竞品的 claim"
+      ],
+      "risks": [
+        "近乎单色（黑/灰），小屏场景辨识度可能不足",
+        "信息密度偏低：大量留白和氛围镜头，功能展示偏后",
+        "法务字幕堆叠较重"
+      ],
+      "transferable": [
+        "建筑/空间隐喻：用物理规模感翻译抽象的市场概念",
+        "先沉浸再钉子：让观众先进入世界观，再给一句可记住的 claim",
+        "近乎单色 + 单一强调色：极简配色策略"
+      ]
+    },
+    "duration": "60s"
   },
   {
     "id": "CkSPid66eWg",
@@ -77,11 +121,53 @@
     "platform": "youtube",
     "date_added": "foundation",
     "status": "sent_backfilled_from_discord",
-    "title": "",
-    "brand": "",
+    "title": "Built for the Future",
+    "brand": "Robinhood",
     "feedback": null,
     "source": "discord_export_attachment",
-    "collection": "foundation"
+    "collection": "foundation",
+    "breakdown": {
+      "summary": "把金融科技从「屏幕」拍成「世界观」。主角站在荒原/水面/草地中，交易界面以悬浮/融入地平线的方式出现。涡轮=Powerful，机械表=Precise。",
+      "structure": [
+        {
+          "time": "开场",
+          "desc": "品牌重置：黑底 Robinhood logo + 字样拆解/重组（= 重新定义品牌）"
+        },
+        {
+          "time": "核心段",
+          "desc": "主角站在自然场景中，交易 UI 与 K 线以「悬浮/覆盖/融入地平线」的方式出现"
+        },
+        {
+          "time": "隐喻组",
+          "desc": "涡轮/发动机 + \"Powerful\"；机械表机芯 + \"Precise\"（高端消费品语言借用）"
+        },
+        {
+          "time": "产品力证据",
+          "desc": "Level II/深度订单簿、ETH 价格浮层、多屏交易桌（真产品力的证据链）"
+        },
+        {
+          "time": "收束",
+          "desc": "Built for the Future 片尾卡 + 法务字幕"
+        }
+      ],
+      "vo_quotes": [],
+      "strengths": [
+        "把 fintech 拍成「高级消费品/艺术片」而不是「应用介绍」",
+        "敢慢、敢留白，建立自信的品牌气质",
+        "产品力不虚：Level II、订单簿、Limit order 动作都拍进去了，是真产品力证据链"
+      ],
+      "risks": [
+        "氛围主导，信息密度偏低：首次接触的用户可能不清楚这是什么产品",
+        "强名人/制作成本依赖：自然场景 + 电影级 CG 叠加的预算门槛很高",
+        "慢节奏在短视频信息流里的完播率挑战"
+      ],
+      "transferable": [
+        "UI 环境化：不硬贴屏录，把产品界面融入叙事空间",
+        "高端消费品语言借用：用涡轮/机芯等隐喻提升产品感知层级",
+        "黑+深蓝+单一强调色：极简色彩策略建立高级感"
+      ]
+    },
+    "duration": "60-90s"
   },
   {
     "id": "rdhQ4Erm3c8",
@@ -362,7 +448,50 @@
     "feedback": null,
     "source": "",
     "why": "用“想象/你掌控”的口吻，把产品功能抽象成一种可携带的掌控感与生活扩展。",
-    "vo_excerpt": "“Now, imagine a place for your money where you're in control.” “Want to take it overseas? Go ahead.” “Imagine all that money possibility in your pocket.”"
+    "vo_excerpt": "“Now, imagine a place for your money where you're in control.” “Want to take it overseas? Go ahead.” “Imagine all that money possibility in your pocket.”",
+    "breakdown": {
+      "summary": "从「口袋里的卡」跌入「口袋宇宙」，把产品动作变成叙事发动机。电影级微距 + CG 融合，锁定城市年轻专业人群。",
+      "structure": [
+        {
+          "time": "日常锚点",
+          "desc": "咖啡馆/掏卡（生活方式）"
+        },
+        {
+          "time": "跌入奇幻",
+          "desc": "镜头从口袋/针织纹理「坠入」到微缩世界（卡=入口）"
+        },
+        {
+          "time": "奇幻旅程",
+          "desc": "织物地貌 + 体积光 + 微缩城市/漂浮生活物（把「功能」翻译成「可能性宇宙」）"
+        },
+        {
+          "time": "回归现实",
+          "desc": "醒来微笑→tap支付→Revolut 落版"
+        }
+      ],
+      "vo_quotes": [
+        "Now, imagine a place for your money where you're in control.",
+        "Want to take it overseas? Go ahead.",
+        "Down here, you can see the bigger picture.",
+        "Imagine all that money possibility in your pocket."
+      ],
+      "strengths": [
+        "概念自洽：从「口袋里的卡」跌入「口袋宇宙」，产品动作=叙事发动机",
+        "电影级 craft：微距实拍织物纹理 + CG 城市/漂浮物的光影融合，奢华但不浮夸",
+        "受众画像准：精品咖啡馆/暗铜金调色/物件选择（相机、运动、数码）锁定城市年轻专业人群"
+      ],
+      "risks": [
+        "功能几乎不讲：没UI没功能点，更多是 brand elevation；拓新市场可能效率偏低",
+        "品牌露出偏晚：前几秒没明显品牌锚点（信息流可能滑走）",
+        "画面偏暗：小屏低亮环境细节易丢"
+      ],
+      "transferable": [
+        "日常→奇幻→回归：用产品动作（刷卡/支付）作为叙事跳板",
+        "微距/微缩世界：低成本高概念的视觉策略",
+        "口袋宇宙隐喻：把抽象功能翻译成可感知的空间"
+      ]
+    },
+    "duration": "30s"
   },
   {
     "id": "wv1XpQctN1w",
@@ -375,7 +504,58 @@
     "feedback": null,
     "source": "",
     "why": "先用新闻式负面情绪拉满，再用一句“忽略噪音/继续建设”完成价值观转折，最后极简信任背书。",
-    "vo_excerpt": "“For the last week cryptocurrencies have been in a free fall… investors, is crypto going to zero degrees?”（随后进入音乐段）"
+    "vo_excerpt": "“For the last week cryptocurrencies have been in a free fall… investors, is crypto going to zero degrees?”（随后进入音乐段）",
+    "breakdown": {
+      "summary": "零人物零产品界面的「反加密审美」公开信。用黑屏留白 + 可审计事实链完成信任论证，首尾扣回。",
+      "structure": [
+        {
+          "time": "Hook",
+          "desc": "黑屏留白（反信息流轰炸）"
+        },
+        {
+          "time": "Setup",
+          "desc": "There's a lot of noise right now."
+        },
+        {
+          "time": "Pivot",
+          "desc": "It's not what you say. / It's what you do."
+        },
+        {
+          "time": "Proof",
+          "desc": "逐条可审计事实：built in the United States / never trade against our customers / public company → regular audits → transparent accounting"
+        },
+        {
+          "time": "收束",
+          "desc": "Ignore the noise and keep building."
+        },
+        {
+          "time": "Packshot",
+          "desc": "coinbase + \"The Most Trusted Crypto Exchange\""
+        }
+      ],
+      "vo_quotes": [
+        "There's a lot of noise right now.",
+        "It's not what you say. It's what you do.",
+        "Built in the United States.",
+        "Ignore the noise and keep building."
+      ],
+      "strengths": [
+        "「反加密审美」的极简策略：零人物零产品界面，像公开信/声明，差异化极强",
+        "逻辑闭环：noise→signal（证据）→ignore noise（宣言），首尾扣回，信息链很硬",
+        "论据选得很准：每条都在影射 FTX/离岸/对赌/不透明，但不点名，合规又有攻击性"
+      ],
+      "risks": [
+        "情感连接弱：全理性，没有人/生活场景，对泛用户可能滑走率高",
+        "自我声明体反噬风险：以后但凡出负面，这些句子会被截图打脸",
+        "黑屏开场在电视/信息流都可能被误判为故障；全靠观众愿意读"
+      ],
+      "transferable": [
+        "公开信/声明体：用极简格式建立差异化",
+        "可审计事实链：每句话都指向可验证的事实",
+        "首尾扣回结构：宣言→证据→回到宣言"
+      ]
+    },
+    "duration": "60s"
   },
   {
     "id": "NMicBnXPHqE",
@@ -429,10 +609,52 @@
     "platform": "youtube",
     "date_added": "2026-03-10",
     "status": "sent_backfilled_from_discord",
-    "title": "",
-    "brand": "",
+    "title": "Cashphrase",
+    "brand": "Chime",
     "feedback": null,
-    "source": "discord_export_attachment:1481119383823716402"
+    "source": "discord_export_attachment:1481119383823716402",
+    "breakdown": {
+      "summary": "灰西装「ATM布道者」在大卖场强行搭话，dry humor 不伤可信。payoff 给了硬数字：credit score +75 points in 6 months。",
+      "structure": [
+        {
+          "time": "冷启动",
+          "desc": "logo→大卖场自助结账"
+        },
+        {
+          "time": "主体",
+          "desc": "灰西装「ATM大佬」强行搭话（重复gag）"
+        },
+        {
+          "time": "Payoff",
+          "desc": "功能收束：credit score +75 points in 6 months"
+        },
+        {
+          "time": "CTA",
+          "desc": "落版 + disclaimer"
+        }
+      ],
+      "vo_quotes": [
+        "A fee free withdrawal? Spectacular.",
+        "No cashphrase? You got to bank through Chime to get a cashphrase.",
+        "Not now my man is building his credit score with everyday purchases. 75 points up in 6 months."
+      ],
+      "strengths": [
+        "场景很 TA：大卖场 + ATM + 自助结账 = Chime 真实生活语境",
+        "角色错位自带笑点：西装男在折扣店当「ATM布道者」，dry humor 不伤可信",
+        "payoff 给了硬数字：credit score \"+75 points in 6 months\" 记忆点强"
+      ],
+      "risks": [
+        "功能仍偏糊：观众可能不清楚 Chime 到底是 ATM网络/借记卡/credit builder 哪一个核心",
+        "单场景对切偏单调：静音信息流里像「两个人聊天」，不够抓",
+        "disclaimer 堆叠太重：最后一屏小字多，且「平均30分」与画面「+75分」可能引发信任质疑"
+      ],
+      "transferable": [
+        "角色错位 gag：让一个不合时宜的人反复执行同一动作，越认真越好笑",
+        "硬数字 payoff：在最后 3 秒给一个可记住、可复述的数字",
+        "大卖场/日常场景：让 fintech 走下「精英」，进入真实生活"
+      ]
+    },
+    "duration": "30s"
   },
   {
     "id": "c84RHTQ7JyI",
@@ -445,7 +667,54 @@
     "feedback": null,
     "source": "",
     "why": "用“街头故事+旁白解释+名人金句”三段结构，把抽象的理财观念变成可转述的句式。",
-    "vo_excerpt": "“Spread your money out, let it build for yourself and work gradually, slowly.” “Invest in yourself… you don't need to invest in the dice.”"
+    "vo_excerpt": "“Spread your money out, let it build for yourself and work gradually, slowly.” “Invest in yourself… you don't need to invest in the dice.”",
+    "breakdown": {
+      "summary": "极简阳台 + 长镜头 + 三人对话。把投资从「买什么」拉回「投资自己/复利认知」，文化×金融权威碰撞自带传播势能。",
+      "structure": [
+        {
+          "time": "设定",
+          "desc": "单一场景：超极简「阳台」悬在巨大白墙上（强负空间）"
+        },
+        {
+          "time": "第一层",
+          "desc": "两人先聊「高波动/赌局式金钱观」"
+        },
+        {
+          "time": "转折",
+          "desc": "第三人（Ray Dalio）登场给出「复利/投资自己」的框架"
+        },
+        {
+          "time": "收束",
+          "desc": "镜头持续拉远把三人吞进巨大的空白"
+        },
+        {
+          "time": "End card",
+          "desc": "\"Investing in yourself.\" → \"pgLang for $ Cash App\""
+        }
+      ],
+      "vo_quotes": [
+        "You don't understand how to compound… if you just take big bets like that you'll blow it all.",
+        "Invest in yourself… and it compounds.",
+        "Slow money wins the race… big upside even if you don't throw all your chips in.",
+        "Spread your money out, let it build for yourself and work gradually, slowly."
+      ],
+      "strengths": [
+        "极简 + 长镜头在信息流里反常规，辨识度很高",
+        "「文化×金融权威」碰撞自带传播势能（跨圈层）",
+        "把投资从「买什么」拉回「投资自己/复利认知」，价值观层级高"
+      ],
+      "risks": [
+        "113s 的魅力来自从容节奏与拉远的渐进感，压到 30s 会断裂",
+        "强名人依赖（Kendrick/Dalio 势能）。无名人复刻会空",
+        "零产品信息/零操作瞬间：更像 awareness 奢侈品，不适合需要品效合一的 30s"
+      ],
+      "transferable": [
+        "空间即叙事：用一个受限空间承载全部对话，低成本高质感",
+        "对话驱动：让价值从角色嘴里自然说出，降低广告防御",
+        "层层揭示：局部→完整→结尾一击（tagline/产品moment）"
+      ]
+    },
+    "duration": "113s"
   },
   {
     "id": "BLvZYIiCAak",
