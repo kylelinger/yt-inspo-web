@@ -1,0 +1,132 @@
+"use client";
+
+import { useState, useEffect } from "react";
+import type { Video } from "@/lib/types";
+import { getFeedback, setFeedback, getShortlist, toggleShortlist } from "@/lib/feedback";
+
+function YouTubeThumbnail({ videoId }: { videoId: string }) {
+  return (
+    <div className="relative aspect-video w-full overflow-hidden rounded-lg" style={{ background: 'var(--border)' }}>
+      <img
+        src={`https://img.youtube.com/vi/${videoId}/mqdefault.jpg`}
+        alt=""
+        className="h-full w-full object-cover"
+        loading="lazy"
+      />
+      <div className="absolute inset-0 flex items-center justify-center">
+        <div className="flex h-12 w-12 items-center justify-center rounded-full bg-black/60 text-white">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default function VideoCard({ video, compact = false }: { video: Video; compact?: boolean }) {
+  const [fb, setFb] = useState<Record<string, 'thumbsup' | 'thumbsdown'>>({});
+  const [sl, setSl] = useState<Set<string>>(new Set());
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setFb(getFeedback());
+    setSl(getShortlist());
+    setMounted(true);
+  }, []);
+
+  const handleFeedback = (action: 'thumbsup' | 'thumbsdown') => {
+    const newFb = setFeedback(video.id, action);
+    setFb({ ...newFb });
+  };
+
+  const handleShortlist = () => {
+    const newSl = toggleShortlist(video.id);
+    setSl(new Set(newSl));
+  };
+
+  const currentFb = fb[video.id];
+  const isShortlisted = sl.has(video.id);
+  const displayTitle = video.title || video.brand || video.id;
+
+  return (
+    <div
+      className="group rounded-xl border transition-shadow hover:shadow-md"
+      style={{ background: 'var(--card)', borderColor: 'var(--border)' }}
+    >
+      <a href={`/video/${video.id}`} className="block">
+        <YouTubeThumbnail videoId={video.id} />
+      </a>
+      <div className="p-4">
+        <div className="mb-2 flex items-start justify-between gap-2">
+          <a href={`/video/${video.id}`} className="block flex-1">
+            <h3 className="font-semibold leading-snug line-clamp-2" style={{ color: 'var(--text)' }}>
+              {displayTitle}
+            </h3>
+          </a>
+          {video.brand && (
+            <span
+              className="mt-0.5 shrink-0 rounded-full px-2 py-0.5 text-xs font-medium"
+              style={{ background: 'color-mix(in srgb, var(--accent) 15%, transparent)', color: 'var(--accent)' }}
+            >
+              {video.brand}
+            </span>
+          )}
+        </div>
+
+        {!compact && video.why && (
+          <p className="mb-3 text-sm leading-relaxed line-clamp-3" style={{ color: 'var(--text-muted)' }}>
+            {video.why}
+          </p>
+        )}
+
+        <div className="flex items-center justify-between">
+          <span className="text-xs" style={{ color: 'var(--text-muted)' }}>
+            {video.date_added}
+          </span>
+          {mounted && (
+            <div className="flex gap-1">
+              <button
+                onClick={(e) => { e.preventDefault(); handleFeedback('thumbsup'); }}
+                className="rounded-lg px-2.5 py-1.5 text-sm transition-all hover:scale-105"
+                style={{
+                  background: currentFb === 'thumbsup'
+                    ? 'color-mix(in srgb, var(--green) 20%, transparent)'
+                    : 'transparent',
+                  color: currentFb === 'thumbsup' ? 'var(--green)' : 'var(--text-muted)',
+                }}
+                title="👍"
+              >
+                👍
+              </button>
+              <button
+                onClick={(e) => { e.preventDefault(); handleFeedback('thumbsdown'); }}
+                className="rounded-lg px-2.5 py-1.5 text-sm transition-all hover:scale-105"
+                style={{
+                  background: currentFb === 'thumbsdown'
+                    ? 'color-mix(in srgb, var(--red) 20%, transparent)'
+                    : 'transparent',
+                  color: currentFb === 'thumbsdown' ? 'var(--red)' : 'var(--text-muted)',
+                }}
+                title="👎"
+              >
+                👎
+              </button>
+              <button
+                onClick={(e) => { e.preventDefault(); handleShortlist(); }}
+                className="rounded-lg px-2.5 py-1.5 text-sm transition-all hover:scale-105"
+                style={{
+                  background: isShortlisted
+                    ? 'color-mix(in srgb, var(--yellow) 20%, transparent)'
+                    : 'transparent',
+                  color: isShortlisted ? 'var(--yellow)' : 'var(--text-muted)',
+                }}
+                title="收藏"
+              >
+                ⭐
+              </button>
+            </div>
+          )}
+        </div>
+      </div>
+    </div>
+  );
+}
