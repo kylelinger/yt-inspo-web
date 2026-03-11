@@ -1183,7 +1183,42 @@
     "brand": "Wise",
     "feedback": null,
     "source": "discord_export_attachment:1481119383823716402",
-    "duration_s": 55
+    "duration_s": 55,
+    "breakdown": {
+      "summary": "Wise 'Whoa, New Look'——动态排版+拼贴艺术宣布品牌视觉升级，'Room to Grow'作为扩张宣言。55 秒纯品牌片，信息密度低但美感密度高。",
+      "structure": [
+        {
+          "time": "0:00–0:20",
+          "desc": "[Typography Burst] Wise 绿底+白色大字快速切换——'We look / around the world'极简叙事。"
+        },
+        {
+          "time": "0:20–0:45",
+          "desc": "[Collage World] 水彩风全球地景蒙太奇——稻田/船只/鲜花/货币图案——视觉博物馆感。"
+        },
+        {
+          "time": "0:45–0:55",
+          "desc": "[New Logo Reveal + End card] 粉底花卉插画卡+更新后 Wise logo，'ROOM TO GROW'。"
+        }
+      ],
+      "vo_quotes": [
+        "We look around the world",
+        "Room to Grow"
+      ],
+      "strengths": [
+        "品牌色=叙事色：Wise 的石灰绿在所有竞品中唯一，整片就是品牌色的展示台",
+        "拼贴艺术把'国际汇款'变成'世界探索'——高审美重新编码金融服务的情感价值",
+        "新旧品牌对比叙事：明确宣布'新面貌'=给老用户惊喜+给新用户入场理由"
+      ],
+      "risks": [
+        "纯视觉/品牌片，零功能信息——首次接触用户完全不知道 Wise 是什么",
+        "对 M公司：品牌升级/视觉rebrand时可参考，但非日常广告模板"
+      ],
+      "transferable": [
+        "品牌色即世界观：选定一种极具辨识度的颜色，然后把整个广告的背景/服装/道具都用那个颜色——品牌词和颜色的神经绑定",
+        "拼贴/艺术化 collage 作为'全球化'的视觉速记：比地图/地球仪更有温度，比真实地景更灵活"
+      ],
+      "brand_platform": "△ 部分对齐——'看见全球'与 intelligence 维度有呼应；'Room to grow'与 confidence 路径一致；但缺乏具体的 trust 建立动作。对 M公司：品牌视觉升级发布时参考价值最高。"
+    }
   },
   {
     "id": "TdzcsHW6uBI",
@@ -1366,7 +1401,42 @@
     "brand": "Coinbase",
     "feedback": null,
     "source": "discord_export_attachment:1481119383823716402",
-    "duration_s": 60
+    "duration_s": 60,
+    "breakdown": {
+      "summary": "Coinbase 'This Commercial Isn't About Pizza'——用披萨外卖作 Trojan horse，暗指 2010 年 Bitcoin Pizza 历史，最后一句 'crypto moves money forward' 把品牌从工具升华为运动。60 秒长版。",
+      "structure": [
+        {
+          "time": "0:00–0:15",
+          "desc": "[Hook/Misdirect] 普通披萨订餐场景——但环境逐渐变奇怪（工业门/像实验室的地方），观众开始困惑。"
+        },
+        {
+          "time": "0:15–0:45",
+          "desc": "[Build] 女孩接电话+科学家在服务器机架旁——两条叙事线并行，'这不是普通披萨'的感觉持续累积。"
+        },
+        {
+          "time": "0:45–1:00",
+          "desc": "[Reveal + End card] 'crypto moves money forward' 白字浮现，Coinbase 品牌收尾。Pizza = 起点，forward = 现在。"
+        }
+      ],
+      "vo_quotes": [
+        "crypto moves money forward"
+      ],
+      "strengths": [
+        "利用 Bitcoin Pizza 历史（2010 年 Laszlo 用 10,000 BTC 买披萨）作为 shibboleth——crypto 社区秒懂，普通人看到神秘感",
+        "'This commercial isn't about X'结构=悬念驱动观看到底",
+        "零产品 UI，全场景叙事——更像电影预告片，记忆力强"
+      ],
+      "risks": [
+        "60 秒版投放成本高；核心信息到第 45 秒才出现",
+        "Pizza 典故依赖 crypto 文化认知，非 crypto 用户叙事弱",
+        "对 M公司：直接套用需换掉 crypto 概念，但'历史性时刻+现在'的时间轴叙事结构可迁移"
+      ],
+      "transferable": [
+        "品牌名即动词：'crypto moves money forward'——动词化品牌价值主张，比形容词更有力",
+        "历史典故暗语：在广告里嵌入行业/文化内部故事（只有目标用户认识），做社群认同的同时吸引外圈好奇"
+      ],
+      "brand_platform": "✓ 强对齐（intelligence + trust 双维度）——用历史向前看=智识叙事；anti-炒作 ✓（全片无价格/无暴富，only '前进'）；'crypto moves forward'与 M公司'smarter money'方向一致。"
+    }
   },
   {
     "id": "VEi7rub0jcs",
@@ -1378,7 +1448,42 @@
     "brand": "Coinbase",
     "feedback": null,
     "source": "discord_export_attachment:1481119383823716402",
-    "duration_s": 60
+    "duration_s": 60,
+    "breakdown": {
+      "summary": "Coinbase 'It's Time to Update the System'——用真实美国劳动者场景描绘旧金融系统的破旧与摩擦，一句 'time to update' 把 Coinbase 定位为系统升级，而非金融产品。60 秒品牌宣言。",
+      "structure": [
+        {
+          "time": "0:00–0:25",
+          "desc": "[Problem Framing] 女性熬夜对账、便利店监控画面、老旧办公室地球仪——视觉目录：旧系统=落伍+疲惫+不安全。"
+        },
+        {
+          "time": "0:25–0:50",
+          "desc": "[Human Cost] 蓝领工人在废料场接电话遭遇官僚周转——系统的摩擦由普通人承受。"
+        },
+        {
+          "time": "0:50–1:00",
+          "desc": "[Resolution + End card] Coinbase logo 出现——不需要解释，对比已经说清一切。"
+        }
+      ],
+      "vo_quotes": [
+        "It's time to update the system"
+      ],
+      "strengths": [
+        "问题可见化：用视觉目录替代口头抱怨——每个场景都是一个具体的系统失灵",
+        "蓝领视角：不是从精英/科技角度讲金融革新，而是从被系统伤害最深的普通人角度——情感代入极强",
+        "极简 end card：brand logo=答案，让前 50 秒的问题积累自然指向 Coinbase"
+      ],
+      "risks": [
+        "60 秒宣言片对社交投放效率低",
+        "批判旧系统路线若执行不当易显说教",
+        "对 M公司：'更新系统'叙事在全球新兴市场（旧系统更明显）可能比美国更有共鸣"
+      ],
+      "transferable": [
+        "问题目录式开篇：不解释产品，先用 3-5 个视觉场景描绘'没有我们之前的世界'——为产品出现铺满理由",
+        "普通人主角 vs 机构叙事：选择最能代表'被旧系统伤害的人'作为视角——而非创始人或精英用户"
+      ],
+      "brand_platform": "✓ 强对齐（trust 维度）——anti-黑箱 ✓（把不可见的系统摩擦变得可见）；旧系统问题+Coinbase 出现=trust 建立的经典路径；对 M公司：'旧金融=繁琐/不透明，我们=更新版本'的叙事框架高度可迁移。"
+    }
   },
   {
     "id": "YPYvZEgRagc",
@@ -1390,7 +1495,40 @@
     "brand": "Revolut",
     "feedback": null,
     "source": "discord_export_attachment:1481119383823716402",
-    "duration_s": 20
+    "duration_s": 20,
+    "breakdown": {
+      "summary": "Revolut 'Your Way In (Transfers)'——豪华顶楼单车房 vs 简陋砖墙公寓，£2.75 咖啡转账把两个不同经济层级的女人连接起来，'Your way in'把 Revolut 定位为平等入口。20 秒极简。",
+      "structure": [
+        {
+          "time": "0:00–0:07",
+          "desc": "[Contrast Setup] 豪宅骑车女（金色黄昏）vs 简陋公寓休闲女——视觉落差即立，无需解释。"
+        },
+        {
+          "time": "0:07–0:15",
+          "desc": "[Product Beat] 手机屏：'Anna S, +£2.75, For the latte ☕, Sent'——最小的交易，最大的连接感。"
+        },
+        {
+          "time": "0:15–0:20",
+          "desc": "[End card] 'Revolut Your way in' + App Store/Google Play。"
+        }
+      ],
+      "vo_quotes": [],
+      "strengths": [
+        "对比即叙事：两个镜头+一笔转账=完整的'跨越阶层的连接'故事，零旁白",
+        "£2.75 咖啡转账：极小金额=最通用场景，任何人都经历过帮朋友垫咖啡钱",
+        "'Your way in' tagline：'入口'定位比'工具'定位高一个层级——是阶层流动的起点，不只是 app"
+      ],
+      "risks": [
+        "20 秒极短，细节感知有限",
+        "SEPA/UK 监管 disclaimer 限制了非欧地区的直接可迁移性",
+        "对 M公司：两个世界的连接叙事对全球化投资/跨境汇款场景可以直接复用"
+      ],
+      "transferable": [
+        "视觉落差即叙事：在单个镜头切换中建立对比，不需要 VO——观众自己完成意义建构",
+        "'For the X'的转账备注可读性：把产品 UI 的一行文字（备注栏）变成广告里最有温度的内容"
+      ],
+      "brand_platform": "✓ 强对齐（intelligence + confidence 双维度）——平等入口叙事=intelligence→让所有人都能像富人一样转账；'Your way in'=confidence 赋能；anti-阶层凝固 ✓（正面演示金融普惠，不羞辱任何一方）。"
+    }
   },
   {
     "id": "hklYCRDOkEg",
@@ -1402,7 +1540,42 @@
     "brand": "Starling",
     "feedback": null,
     "source": "discord_export_attachment:1481119383823716402",
-    "duration_s": 60
+    "duration_s": 60,
+    "breakdown": {
+      "summary": "Starling Bank 'Set Yourself Free'——传统银行排队队伍里，一个人开始悬浮、飞出玻璃天窗、翱翔城市上空。把'数字银行'抽象利益用最字面的方式实体化：自由就是飞离。60 秒。",
+      "structure": [
+        {
+          "time": "0:00–0:20",
+          "desc": "[Problem] 维多利亚式大银行内，迷宫式隔离栏+等待取号牌——压抑到极致；雾气/灰尘加强幽闭感。"
+        },
+        {
+          "time": "0:20–0:45",
+          "desc": "[Turn] 人群向上看，一人开始悬浮——其他人惊讶观看。奇幻时刻：逃离成为可见动作。"
+        },
+        {
+          "time": "0:45–1:00",
+          "desc": "[Resolution] 俯瞰城市，开阔天空；'Here to change' + Starling 品牌。"
+        }
+      ],
+      "vo_quotes": [
+        "Here to change"
+      ],
+      "strengths": [
+        "自由的字面化：不说'更便捷'，直接拍一个人飞出银行——视觉论证比 copy 更暴力",
+        "监管场景作为 villain：排队/取号牌/迷宫栏=所有人都经历过的银行愤怒，共情瞬间触发",
+        "Challenger brand 定位教科书：先让对手（传统银行）看起来像监狱，再 reveal 自己是出口"
+      ],
+      "risks": [
+        "强烈的英国银行 UI（Mortgage/Insurance 指示牌）——非英国用户代入感降低",
+        "60 秒版在社交媒体效果打折，30 秒剪辑版会更有力",
+        "对 M公司：如果没有'传统银行'对比物（如纯线上创业公司），叙事需要重新找 villain"
+      ],
+      "transferable": [
+        "利益字面化：把抽象品牌承诺（自由/速度/控制感）用一个物理动作演出来——飞翔/挣脱/破墙——让观众感受而非理解",
+        "Villain 建立法：在展示自己之前，先花 30-50% 时间让'敌对状态'（旧系统/旧习惯/旧工具）尽可能令人窒息——对比越大，解放感越强"
+      ],
+      "brand_platform": "✓ 强对齐（confidence 维度）——飞翔=confidence 的极致视觉表达；anti-训话 ✓（不说用户'你应该换银行'，而是让用户自己看到那个人飞出去然后想'我也想'）；对 M公司：可迁移到'脱离糟糕理财习惯/脱离不透明平台'的叙事。"
+    }
   },
   {
     "id": "m_AO-rGmnnA",
@@ -1414,7 +1587,43 @@
     "brand": "Cash App",
     "feedback": null,
     "source": "discord_export_attachment:1481119383823716402",
-    "duration_s": 120
+    "duration_s": 120,
+    "breakdown": {
+      "summary": "Cash App × Timothée Chalamet——明星以普通人身份在异国集市购物，A24 级电影美学，2 分钟里 Cash App 从未被提及一次，但品牌 = 酷感 = Chalamet 已经完成。",
+      "structure": [
+        {
+          "time": "0:00–0:40",
+          "desc": "[Establishing] Chalamet 在异国市集漫步浏览热带食材——安静、好奇、无目的；A24 色调。"
+        },
+        {
+          "time": "0:40–1:30",
+          "desc": "[Human Moment] 与年轻摊主平等交流，低调支付；没有'明星使用产品'的刻意感。"
+        },
+        {
+          "time": "1:30–2:00",
+          "desc": "[End] 黄昏俯视：小小路边店在空旷景观里——Chalamet 名字作为霓虹招牌出现在店顶，credits。"
+        }
+      ],
+      "vo_quotes": [
+        "(全片无 VO)"
+      ],
+      "strengths": [
+        "反广告叙事：2 分钟里不提品牌名、不展示 App UI、不说任何功能——只建立情感关联",
+        "Chalamet 的 Gen Z 文化资本是 Cash App 的免费借贷——他的存在即品牌信用证书",
+        "A24 美学植入：黄昏光+沙漠孤立地景=电影感>广告感，会被当'内容'而非'广告'传播",
+        "名字作为霓虹招牌：创意收尾不落俗套"
+      ],
+      "risks": [
+        "120 秒版本对数字广告完全不实用——需要 30 秒剪辑",
+        "Chalamet 在亚洲/新兴市场知名度低于美国",
+        "对 M公司：明星路线成本高，但'明星不提品牌只活在品牌美学世界里'的策略可低成本复刻（用 KOL/内容创作者）"
+      ],
+      "transferable": [
+        "明星不说话法：让代言人只存在于品牌美学世界里，不做任何产品说明——品牌 = 他的生活方式，不需要 endorsement 声明",
+        "电影美学≠高预算：A24 感主要来自调色+镜头选择+节奏——不是来自特效预算"
+      ],
+      "brand_platform": "△ 部分对齐——Cash App 的 confidence 路径是通过文化资本建立的；M公司的 intelligence→confidence 路径更理性，但'用年轻人仰望的文化人物'背书可以迁移（前提：不能变成纯明星广告，要保持内容感）。"
+    }
   },
   {
     "id": "md1DUNLRzAM",
@@ -1426,7 +1635,39 @@
     "brand": "Cash App",
     "feedback": null,
     "source": "discord_export_attachment:1481119383823716402",
-    "duration_s": 60
+    "duration_s": 60,
+    "breakdown": {
+      "summary": "Cash App 'The Vega Family, Galveston TX'——真实拉丁裔家庭从家到海滨游乐园的一天，用纪录片镜头语言记录'金融工具如何悄悄在真实生活里'，不演示任何功能。60 秒品牌故事。",
+      "structure": [
+        {
+          "time": "0:00–0:20",
+          "desc": "[Home] 女儿卧室+妈妈厨房——日常温馨；手持拍摄，自然光，家的气味。"
+        },
+        {
+          "time": "0:20–0:50",
+          "desc": "[Outing] Galveston Pleasure Pier——霓虹灯、游乐设施、毛绒玩具奖品；全家一起的纪录片时刻。"
+        },
+        {
+          "time": "0:50–1:00",
+          "desc": "[End card] 'A Cash App Community / Galveston, Texas' + COMMUNITIES logo。"
+        }
+      ],
+      "vo_quotes": [],
+      "strengths": [
+        "真实用户≠演员：disclosure 说明'真实 Cash App 用户'——Earned credibility 比 staged 广告高一个量级",
+        "族裔锚定叙事：拉丁裔家庭+德克萨斯=精准的文化归属感营造，不是泛化的'多元'",
+        "纪录片质感：手持镜头+自然光=广告感最低化——观众降低防御，情感代入最大化"
+      ],
+      "risks": [
+        "高度族裔/文化锚定，其他市场代入感有限",
+        "没有功能点——已知 Cash App 的人感动，不知道的人仍然不知道它是什么"
+      ],
+      "transferable": [
+        "真实用户故事>精心演出：disclosure 本身就是信任加分项；拍真实用户的一天比请演员演用户的一天更有说服力",
+        "地理锚定系列（Communities）：选择真实城市/社区作为系列标识——每个城市的用户都觉得自己被看见了"
+      ],
+      "brand_platform": "✓ 强对齐（trust 维度）——真实用户=最强 trust 证明；anti-黑箱 ✓（打开真实家庭生活，不演精心设计的快乐）；对 M公司：中国/东南亚可以做'真实用户的理财一天'系列。"
+    }
   },
   {
     "id": "o-Ikkh5oxuo",
@@ -1438,7 +1679,41 @@
     "brand": "Starbucks UK",
     "feedback": null,
     "source": "discord_export_attachment:1481119383823716402",
-    "duration_s": 60
+    "duration_s": 60,
+    "breakdown": {
+      "summary": "Starbucks UK 'Every Table Has A Story'——年轻创作者在咖啡馆画素描，咖啡杯只是道具，桌子是舞台。60 秒内用'第三空间'品牌战略精确执行，不卖咖啡，卖的是那个坐下来的权利。",
+      "structure": [
+        {
+          "time": "0:00–0:20",
+          "desc": "[Arrival + Setup] 有 locs 的年轻人走进 Starbucks，找桌、摆开素描本、打开彩笔——仪式感建立。"
+        },
+        {
+          "time": "0:20–0:50",
+          "desc": "[Creative Flow] 素描本特写（耳机/樱桃/音符/爱心）——创作的安静时间在 Starbucks 里展开。背景有绿色围裙咖啡师经过，世界在继续。"
+        },
+        {
+          "time": "0:50–1:00",
+          "desc": "[Departure + End card] 他整理离开，桌子空了但'故事'留了下来；'Every Table Has A Story' + Starbucks 绿圆 logo。"
+        }
+      ],
+      "vo_quotes": [
+        "Every Table Has A Story"
+      ],
+      "strengths": [
+        "'第三空间'品牌战略的最精准视觉表达：不是家，不是办公室——是一个你可以成为你自己的地方",
+        "产品极度退后：咖啡杯在画面里，但从来不是重点——克制使品牌显得更自信",
+        "素描本内容作为'灵魂时刻'：观众看到耳机/樱桃/爱心=被邀请想象自己的桌子故事"
+      ],
+      "risks": [
+        "对 M公司：Starbucks 是消费品牌，金融产品难以直接套用'第三空间'概念",
+        "60 秒节奏偏慢，静帧偏多——社交媒体单独投放需剪辑"
+      ],
+      "transferable": [
+        "产品退后法：让产品出现在画面里但不作为焦点——比硬塞 App UI 更高级；观众反而记住品牌",
+        "'你在这里做的事就是我们的广告'：找到目标用户在使用产品时最美的状态，拍那个状态——而非拍产品本身"
+      ],
+      "brand_platform": "△ 弱对齐（品类差距大）——Starbucks 的'第三空间'战略对 M公司有间接参考价值：如果 M公司 App 能成为用户'想理财的第三时刻'的心理场所，这个逻辑就通了；但需要大量品牌积累才能到达这个位置。"
+    }
   },
   {
     "id": "waZe5mICotY",
