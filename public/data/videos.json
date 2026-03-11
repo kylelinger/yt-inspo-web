@@ -61,11 +61,12 @@
     "platform": "youtube",
     "date_added": "foundation",
     "status": "sent_backfilled_from_discord",
-    "title": "",
-    "brand": "",
+    "title": "Sweater Sweater | Wealthsimple",
+    "brand": "Wealthsimple",
     "feedback": null,
     "source": "discord_export_attachment",
-    "collection": "foundation"
+    "collection": "foundation",
+    "duration_s": 17
   },
   {
     "id": "EQvXI_CuvXE",
@@ -73,11 +74,12 @@
     "platform": "youtube",
     "date_added": "foundation",
     "status": "sent_backfilled_from_discord",
-    "title": "",
-    "brand": "",
+    "title": "Coffee Coffee | Wealthsimple",
+    "brand": "Wealthsimple",
     "feedback": null,
     "source": "discord_export_attachment",
-    "collection": "foundation"
+    "collection": "foundation",
+    "duration_s": 20
   },
   {
     "id": "NYukyZmdNrA",
@@ -85,11 +87,12 @@
     "platform": "youtube",
     "date_added": "foundation",
     "status": "sent_backfilled_from_discord",
-    "title": "",
-    "brand": "",
+    "title": "Coinbase One Card",
+    "brand": "Coinbase",
     "feedback": null,
     "source": "discord_export_attachment",
-    "collection": "foundation"
+    "collection": "foundation",
+    "duration_s": 34
   },
   {
     "id": "YjUwajAc1oE",
@@ -97,11 +100,12 @@
     "platform": "youtube",
     "date_added": "foundation",
     "status": "sent_backfilled_from_discord",
-    "title": "",
-    "brand": "",
+    "title": "If Pizza Worked Like Money | Crypto Moves Money Forward",
+    "brand": "Coinbase",
     "feedback": null,
     "source": "discord_export_attachment",
-    "collection": "foundation"
+    "collection": "foundation",
+    "duration_s": 30
   },
   {
     "id": "fjf7c-O5GyQ",
@@ -109,11 +113,12 @@
     "platform": "youtube",
     "date_added": "foundation",
     "status": "sent_backfilled_from_discord",
-    "title": "",
-    "brand": "",
+    "title": "Privacy on iPhone | Tracked | Apple",
+    "brand": "Apple",
     "feedback": null,
     "source": "discord_export_attachment",
-    "collection": "foundation"
+    "collection": "foundation",
+    "duration_s": 68
   },
   {
     "id": "ivvw5uBvTh4",
@@ -175,11 +180,12 @@
     "platform": "youtube",
     "date_added": "foundation",
     "status": "sent_backfilled_from_discord",
-    "title": "",
-    "brand": "",
+    "title": "Privacy. That's iPhone | Apple Ad",
+    "brand": "Apple",
     "feedback": null,
     "source": "discord_export_attachment",
-    "collection": "foundation"
+    "collection": "foundation",
+    "duration_s": 30
   },
   {
     "id": "uJ-PDXHUl5E",
@@ -187,11 +193,12 @@
     "platform": "youtube",
     "date_added": "foundation",
     "status": "sent_backfilled_from_discord",
-    "title": "",
-    "brand": "",
+    "title": "The Waiting Room - Privacy on iPhone - Apple Commercial with Jane Lynch",
+    "brand": "Apple",
     "feedback": null,
     "source": "discord_export_attachment",
-    "collection": "foundation"
+    "collection": "foundation",
+    "duration_s": 38
   },
   {
     "id": "F_YRNBw228w",
@@ -199,11 +206,12 @@
     "platform": "youtube",
     "date_added": "foundation",
     "status": "sent_backfilled_from_discord",
-    "title": "",
-    "brand": "",
+    "title": "Shady Lemonade Stand",
+    "brand": "PayPal",
     "feedback": null,
     "source": "discord_export_attachment:1481119383823716402",
-    "collection": "foundation"
+    "collection": "foundation",
+    "duration_s": 15
   },
   {
     "id": "Ilqhb8pAjrg",
@@ -211,11 +219,12 @@
     "platform": "youtube",
     "date_added": "foundation",
     "status": "sent_backfilled_from_discord",
-    "title": "",
-    "brand": "",
+    "title": "Pay with PayPal",
+    "brand": "PayPal",
     "feedback": null,
     "source": "discord_export_attachment:1481119383823716402",
-    "collection": "foundation"
+    "collection": "foundation",
+    "duration_s": 15
   },
   {
     "id": "KPG4YIIQv8c",
@@ -223,11 +232,12 @@
     "platform": "youtube",
     "date_added": "foundation",
     "status": "sent_backfilled_from_discord",
-    "title": "",
-    "brand": "",
+    "title": "Will Ferrell  -  PayPal    'The Great PayPal Checkout'",
+    "brand": "PayPal",
     "feedback": null,
     "source": "discord_export_attachment:1481119383823716402",
-    "collection": "foundation"
+    "collection": "foundation",
+    "duration_s": 30
   },
   {
     "id": "QjTGnGREVkQ",
@@ -235,11 +245,12 @@
     "platform": "youtube",
     "date_added": "foundation",
     "status": "sent_backfilled_from_discord",
-    "title": "",
-    "brand": "",
+    "title": "Will Ferrell Paypal Commercial",
+    "brand": "PayPal",
     "feedback": null,
     "source": "discord_export_attachment:1481119383823716402",
-    "collection": "foundation"
+    "collection": "foundation",
+    "duration_s": 30
   },
   {
     "id": "pyvGh2-Gsdg",
@@ -247,11 +258,12 @@
     "platform": "youtube",
     "date_added": "foundation",
     "status": "sent_backfilled_from_discord",
-    "title": "",
-    "brand": "",
+    "title": "Grubhub | Big Game 2026 | The Feest",
+    "brand": "Grubhub",
     "feedback": null,
     "source": "discord_export_attachment:1481119383823716402",
-    "collection": "foundation"
+    "collection": "foundation",
+    "duration_s": 30
   },
   {
     "id": "svhDzeoppvg",
@@ -259,10 +271,11 @@
     "platform": "youtube",
     "date_added": "2026-03-11",
     "status": "sent_backfilled_from_discord",
-    "title": "",
-    "brand": "",
+    "title": "Finance Is Fashion - 30s",
+    "brand": "Experian",
     "feedback": null,
-    "source": "discord_export_attachment"
+    "source": "discord_export_attachment",
+    "duration_s": 30
   },
   {
     "id": "ToJTrPTekg4",
@@ -270,19 +283,20 @@
     "platform": "youtube",
     "date_added": "2026-03-11",
     "status": "sent_backfilled_from_discord",
-    "title": "",
-    "brand": "",
+    "title": "Explainer Video for Finance AI Assistant: 30-Second SaaS Platform Teaser & Product Demo Video",
+    "brand": "What a Story | SaaS & AI Product Video Experts",
     "feedback": null,
-    "source": "discord_export_attachment"
+    "source": "discord_export_attachment",
+    "duration_s": 33
   },
   {
     "id": "70T7Q6y4eZc",
     "url": "https://www.youtube.com/watch?v=70T7Q6y4eZc",
     "platform": "youtube",
     "date_added": "2026-03-11",
-    "status": "sent_backfilled_from_discord",
-    "title": "",
-    "brand": "",
+    "status": "playback_risky",
+    "title": "Welcome Home | Spike Jonze × Apple",
+    "brand": "Apple",
     "feedback": null,
     "source": "discord_export_attachment:1481119383823716402"
   },
@@ -292,19 +306,20 @@
     "platform": "youtube",
     "date_added": "2026-03-11",
     "status": "sent_backfilled_from_discord",
-    "title": "",
-    "brand": "",
+    "title": "Bo Burnham - Bezos I+II [HQ Extended Mix]",
+    "brand": "I Can't Stop Making Noise",
     "feedback": null,
-    "source": "discord_export_attachment:1481119383823716402"
+    "source": "discord_export_attachment:1481119383823716402",
+    "duration_s": 182
   },
   {
     "id": "VtC7Fq4m0Qs",
     "url": "https://www.youtube.com/watch?v=VtC7Fq4m0Qs",
     "platform": "youtube",
     "date_added": "2026-03-11",
-    "status": "sent_backfilled_from_discord",
-    "title": "",
-    "brand": "",
+    "status": "playback_risky",
+    "title": "Original Is Never Finished | Adidas",
+    "brand": "Adidas",
     "feedback": null,
     "source": "discord_export_attachment:1481119383823716402"
   },
@@ -313,9 +328,9 @@
     "url": "https://www.youtube.com/watch?v=WA4dDs0T7sM",
     "platform": "youtube",
     "date_added": "2026-03-11",
-    "status": "sent_backfilled_from_discord",
-    "title": "",
-    "brand": "",
+    "status": "playback_risky",
+    "title": "You Can't Stop Us | Nike",
+    "brand": "Nike",
     "feedback": null,
     "source": "discord_export_attachment:1481119383823716402"
   },
@@ -325,19 +340,20 @@
     "platform": "youtube",
     "date_added": "2026-03-11",
     "status": "sent_backfilled_from_discord",
-    "title": "",
-    "brand": "",
+    "title": "Arcane S01 e101 2DFX smoke Line test Animation",
+    "brand": "Aurelien Ressencourt 2DFX Animation",
     "feedback": null,
-    "source": "discord_export_attachment:1481119383823716402"
+    "source": "discord_export_attachment:1481119383823716402",
+    "duration_s": 12
   },
   {
     "id": "Yb7H9Z6yZxQ",
     "url": "https://www.youtube.com/watch?v=Yb7H9Z6yZxQ",
     "platform": "youtube",
     "date_added": "2026-03-11",
-    "status": "sent_backfilled_from_discord",
-    "title": "",
-    "brand": "",
+    "status": "playback_risky",
+    "title": "We Are All Investors | Robinhood Super Bowl 2021",
+    "brand": "Robinhood",
     "feedback": null,
     "source": "discord_export_attachment:1481119383823716402"
   },
@@ -347,19 +363,20 @@
     "platform": "youtube",
     "date_added": "2026-03-11",
     "status": "sent_backfilled_from_discord",
-    "title": "",
-    "brand": "",
+    "title": "Stromae, Pomme - “Ma Meilleure Ennemie” (from Arcane Season 2) [Official Music Video]",
+    "brand": "League of Legends",
     "feedback": null,
-    "source": "discord_export_attachment:1481119383823716402"
+    "source": "discord_export_attachment:1481119383823716402",
+    "duration_s": 169
   },
   {
     "id": "nhwhnEe7CjE",
     "url": "https://www.youtube.com/watch?v=nhwhnEe7CjE",
     "platform": "youtube",
     "date_added": "2026-03-11",
-    "status": "sent_backfilled_from_discord",
-    "title": "",
-    "brand": "",
+    "status": "playback_risky",
+    "title": "The Song | Apple iPhone Holiday Film",
+    "brand": "Apple",
     "feedback": null,
     "source": "discord_export_attachment:1481119383823716402"
   },
@@ -369,10 +386,11 @@
     "platform": "youtube",
     "date_added": "2026-03-11",
     "status": "sent_backfilled_from_discord",
-    "title": "",
-    "brand": "",
+    "title": "Parisian Love",
+    "brand": "Google",
     "feedback": null,
-    "source": "discord_export_attachment:1481119383823716402"
+    "source": "discord_export_attachment:1481119383823716402",
+    "duration_s": 52
   },
   {
     "id": "q0MG4xSt--Q",
@@ -380,19 +398,20 @@
     "platform": "youtube",
     "date_added": "2026-03-11",
     "status": "sent_backfilled_from_discord",
-    "title": "",
-    "brand": "",
+    "title": "Building an inclusive digital economy (30s) | CNN Truly Transformative by DBS",
+    "brand": "DBS",
     "feedback": null,
-    "source": "discord_export_attachment:1481119383823716402"
+    "source": "discord_export_attachment:1481119383823716402",
+    "duration_s": 30
   },
   {
     "id": "qbI_9qVx6l4",
     "url": "https://www.youtube.com/watch?v=qbI_9qVx6l4",
     "platform": "youtube",
     "date_added": "2026-03-11",
-    "status": "sent_backfilled_from_discord",
-    "title": "",
-    "brand": "",
+    "status": "playback_risky",
+    "title": "QR Code Bouncing | Coinbase Super Bowl 2022",
+    "brand": "Coinbase",
     "feedback": null,
     "source": "discord_export_attachment:1481119383823716402"
   },
@@ -402,10 +421,11 @@
     "platform": "youtube",
     "date_added": "2026-03-11",
     "status": "sent_backfilled_from_discord",
-    "title": "",
-    "brand": "",
+    "title": "Meet the new Wise design system",
+    "brand": "Wise",
     "feedback": null,
-    "source": "discord_export_attachment:1481119383823716402"
+    "source": "discord_export_attachment:1481119383823716402",
+    "duration_s": 80
   },
   {
     "id": "-8hUiJYXfVY",
@@ -413,14 +433,15 @@
     "platform": "youtube",
     "date_added": "2026-03-11",
     "status": "full_ready_pending_send",
-    "title": "",
-    "brand": "",
+    "title": "[30s] Digital Finance Matters in Southeast Asia - Hitachi",
+    "brand": "Hitachi",
     "feedback": {
       "vote": -1,
       "by": "slun",
       "reason": "太 B2B（宏观/机构叙事，不适合日更灵感）"
     },
-    "source": "discord_thread"
+    "source": "discord_thread",
+    "duration_s": 30
   },
   {
     "id": "SWNQZYPZiVw",
@@ -428,14 +449,15 @@
     "platform": "youtube",
     "date_added": "2026-03-11",
     "status": "full_ready_pending_send",
-    "title": "",
-    "brand": "",
+    "title": "Here’s how Hunter Hunter grew with flexible business banking 30s",
+    "brand": "Greater Bank",
     "feedback": {
       "vote": -1,
       "by": "slun",
       "reason": "不够国际化/审美不够前沿"
     },
-    "source": "discord_thread"
+    "source": "discord_thread",
+    "duration_s": 30
   },
   {
     "id": "6gSRE8mzqvw",
@@ -576,10 +598,11 @@
     "platform": "youtube",
     "date_added": "2026-03-10",
     "status": "sent_backfilled_from_discord",
-    "title": "",
-    "brand": "",
+    "title": "Klarna: The best of smoooth",
+    "brand": "Klarna",
     "feedback": null,
-    "source": "discord_export_attachment:1481119383823716402"
+    "source": "discord_export_attachment:1481119383823716402",
+    "duration_s": 34
   },
   {
     "id": "JRRzPITP1R4",
@@ -587,10 +610,11 @@
     "platform": "youtube",
     "date_added": "2026-03-10",
     "status": "sent_backfilled_from_discord",
-    "title": "",
-    "brand": "",
+    "title": "Whoa, new look",
+    "brand": "Wise",
     "feedback": null,
-    "source": "discord_export_attachment:1481119383823716402"
+    "source": "discord_export_attachment:1481119383823716402",
+    "duration_s": 55
   },
   {
     "id": "TdzcsHW6uBI",
@@ -598,10 +622,11 @@
     "platform": "youtube",
     "date_added": "2026-03-10",
     "status": "sent_backfilled_from_discord",
-    "title": "",
-    "brand": "",
+    "title": "You Make Monzo, Monzo - Travel",
+    "brand": "Monzo",
     "feedback": null,
-    "source": "discord_export_attachment:1481119383823716402"
+    "source": "discord_export_attachment:1481119383823716402",
+    "duration_s": 30
   },
   {
     "id": "d_fbOwJO_10",
@@ -722,10 +747,11 @@
     "platform": "youtube",
     "date_added": "2026-03-09",
     "status": "sent_backfilled_from_discord",
-    "title": "",
-    "brand": "",
+    "title": "Apple Holiday Ad 2020 - AJR’s “Bang!” - 30s",
+    "brand": "AJREarlyReleases2",
     "feedback": null,
-    "source": "discord_export_attachment:1481119383823716402"
+    "source": "discord_export_attachment:1481119383823716402",
+    "duration_s": 30
   },
   {
     "id": "NON0euNOj3k",
@@ -733,10 +759,11 @@
     "platform": "youtube",
     "date_added": "2026-03-09",
     "status": "sent_backfilled_from_discord",
-    "title": "",
-    "brand": "",
+    "title": "This Commercial Isn’t About Pizza | Crypto Moves Money Forward",
+    "brand": "Coinbase",
     "feedback": null,
-    "source": "discord_export_attachment:1481119383823716402"
+    "source": "discord_export_attachment:1481119383823716402",
+    "duration_s": 60
   },
   {
     "id": "VEi7rub0jcs",
@@ -744,10 +771,11 @@
     "platform": "youtube",
     "date_added": "2026-03-09",
     "status": "sent_backfilled_from_discord",
-    "title": "",
-    "brand": "",
+    "title": "It’s Time to Update the System",
+    "brand": "Coinbase",
     "feedback": null,
-    "source": "discord_export_attachment:1481119383823716402"
+    "source": "discord_export_attachment:1481119383823716402",
+    "duration_s": 60
   },
   {
     "id": "YPYvZEgRagc",
@@ -755,10 +783,11 @@
     "platform": "youtube",
     "date_added": "2026-03-09",
     "status": "sent_backfilled_from_discord",
-    "title": "",
-    "brand": "",
+    "title": "Revolut Your Way In (Transfers)",
+    "brand": "Revolut",
     "feedback": null,
-    "source": "discord_export_attachment:1481119383823716402"
+    "source": "discord_export_attachment:1481119383823716402",
+    "duration_s": 20
   },
   {
     "id": "hklYCRDOkEg",
@@ -766,10 +795,11 @@
     "platform": "youtube",
     "date_added": "2026-03-09",
     "status": "sent_backfilled_from_discord",
-    "title": "",
-    "brand": "",
+    "title": "Set yourself free | Starling Bank UK TV commercial Autumn 2021",
+    "brand": "Starling",
     "feedback": null,
-    "source": "discord_export_attachment:1481119383823716402"
+    "source": "discord_export_attachment:1481119383823716402",
+    "duration_s": 60
   },
   {
     "id": "m_AO-rGmnnA",
@@ -777,10 +807,11 @@
     "platform": "youtube",
     "date_added": "2026-03-09",
     "status": "sent_backfilled_from_discord",
-    "title": "",
-    "brand": "",
+    "title": "Timothée Chalamet for Cash App",
+    "brand": "Cash App",
     "feedback": null,
-    "source": "discord_export_attachment:1481119383823716402"
+    "source": "discord_export_attachment:1481119383823716402",
+    "duration_s": 120
   },
   {
     "id": "md1DUNLRzAM",
@@ -788,10 +819,11 @@
     "platform": "youtube",
     "date_added": "2026-03-09",
     "status": "sent_backfilled_from_discord",
-    "title": "",
-    "brand": "",
+    "title": "The Vega Family | Cash App Communities",
+    "brand": "Cash App",
     "feedback": null,
-    "source": "discord_export_attachment:1481119383823716402"
+    "source": "discord_export_attachment:1481119383823716402",
+    "duration_s": 60
   },
   {
     "id": "o-Ikkh5oxuo",
@@ -799,10 +831,11 @@
     "platform": "youtube",
     "date_added": "2026-03-09",
     "status": "sent_backfilled_from_discord",
-    "title": "",
-    "brand": "",
+    "title": "Every Table Has A Story",
+    "brand": "Starbucks UK",
     "feedback": null,
-    "source": "discord_export_attachment:1481119383823716402"
+    "source": "discord_export_attachment:1481119383823716402",
+    "duration_s": 60
   },
   {
     "id": "waZe5mICotY",
@@ -810,10 +843,11 @@
     "platform": "youtube",
     "date_added": "2026-03-09",
     "status": "sent_backfilled_from_discord",
-    "title": "",
-    "brand": "",
+    "title": "The Royal Bank of Scotland – Making banking easier. Watch our new ad here",
+    "brand": "Royal Bank of Scotland",
     "feedback": null,
-    "source": "discord_export_attachment:1481119383823716402"
+    "source": "discord_export_attachment:1481119383823716402",
+    "duration_s": 40
   },
   {
     "id": "64irDRl3E7E",
@@ -821,10 +855,11 @@
     "platform": "youtube",
     "date_added": "2026-03-08",
     "status": "sent_backfilled_from_discord",
-    "title": "",
-    "brand": "",
+    "title": "Toshiba Brand Film - The Bowler (30 sec.)",
+    "brand": "Toshiba Lifestyle India",
     "feedback": null,
-    "source": "discord_export_attachment:1481119383823716402"
+    "source": "discord_export_attachment:1481119383823716402",
+    "duration_s": 31
   },
   {
     "id": "W9y6Od5gKlY",
@@ -832,10 +867,11 @@
     "platform": "youtube",
     "date_added": "2026-03-08",
     "status": "sent_backfilled_from_discord",
-    "title": "",
-    "brand": "",
+    "title": "Hundred Acre - Title Sequence Short Film",
+    "brand": "bee ☆",
     "feedback": null,
-    "source": "discord_export_attachment:1481119383823716402"
+    "source": "discord_export_attachment:1481119383823716402",
+    "duration_s": 58
   },
   {
     "id": "Wrp41DxkWvo",
@@ -843,10 +879,11 @@
     "platform": "youtube",
     "date_added": "2026-03-08",
     "status": "sent_backfilled_from_discord",
-    "title": "",
-    "brand": "",
+    "title": "50 Professional Cinematic Titles, Credits Roll, and Movie Badges | Movie Title",
+    "brand": "Pixflow",
     "feedback": null,
-    "source": "discord_export_attachment:1481119383823716402"
+    "source": "discord_export_attachment:1481119383823716402",
+    "duration_s": 43
   },
   {
     "id": "aP2up9N6H-g",
@@ -854,10 +891,11 @@
     "platform": "youtube",
     "date_added": "2026-03-08",
     "status": "sent_backfilled_from_discord",
-    "title": "",
-    "brand": "",
+    "title": "Pringles | Stuck In :30",
+    "brand": "Pringles U.S.",
     "feedback": null,
-    "source": "discord_export_attachment:1481119383823716402"
+    "source": "discord_export_attachment:1481119383823716402",
+    "duration_s": 30
   },
   {
     "id": "iw4NobfELVU",
@@ -865,10 +903,11 @@
     "platform": "youtube",
     "date_added": "2026-03-08",
     "status": "sent_backfilled_from_discord",
-    "title": "",
-    "brand": "",
+    "title": "Most Creative Advertisement",
+    "brand": "Timespan",
     "feedback": null,
-    "source": "discord_export_attachment:1481119383823716402"
+    "source": "discord_export_attachment:1481119383823716402",
+    "duration_s": 40
   },
   {
     "id": "lSj_7nmpXTM",
@@ -876,10 +915,11 @@
     "platform": "youtube",
     "date_added": "2026-03-08",
     "status": "sent_backfilled_from_discord",
-    "title": "",
-    "brand": "",
+    "title": "Grimace 30s Film",
+    "brand": "McDonald's Australia",
     "feedback": null,
-    "source": "discord_export_attachment:1481119383823716402"
+    "source": "discord_export_attachment:1481119383823716402",
+    "duration_s": 30
   },
   {
     "id": "oYmU8Av_e84",
@@ -887,10 +927,11 @@
     "platform": "youtube",
     "date_added": "2026-03-08",
     "status": "sent_backfilled_from_discord",
-    "title": "",
-    "brand": "",
+    "title": "Spec commercial - SONY",
+    "brand": "Sofia Pompei",
     "feedback": null,
-    "source": "discord_export_attachment:1481119383823716402"
+    "source": "discord_export_attachment:1481119383823716402",
+    "duration_s": 60
   },
   {
     "id": "uXlWYZ022zU",
@@ -898,9 +939,10 @@
     "platform": "youtube",
     "date_added": "2026-03-08",
     "status": "sent_backfilled_from_discord",
-    "title": "",
-    "brand": "",
+    "title": "Nike - Running Isn't Just Running | Spec Ad",
+    "brand": "Adam Saunders",
     "feedback": null,
-    "source": "discord_export_attachment:1481119383823716402"
+    "source": "discord_export_attachment:1481119383823716402",
+    "duration_s": 46
   }
 ]

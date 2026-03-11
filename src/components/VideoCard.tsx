@@ -4,7 +4,13 @@ import { useState, useEffect } from "react";
 import type { Video } from "@/lib/types";
 import { getFeedback, setFeedback, getShortlist, toggleShortlist } from "@/lib/feedback";
 
-function YouTubeThumbnail({ videoId }: { videoId: string }) {
+function formatDuration(s: number | undefined): string | null {
+  if (!s) return null;
+  if (s >= 60) return `${Math.floor(s / 60)}:${String(s % 60).padStart(2, '0')}`;
+  return `0:${String(s).padStart(2, '0')}`;
+}
+
+function YouTubeThumbnail({ videoId, duration }: { videoId: string; duration?: string | null }) {
   return (
     <div className="relative aspect-video w-full overflow-hidden rounded-lg" style={{ background: 'var(--border)' }}>
       <img
@@ -18,6 +24,11 @@ function YouTubeThumbnail({ videoId }: { videoId: string }) {
           <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
         </div>
       </div>
+      {duration && (
+        <div className="absolute bottom-2 right-2 rounded bg-black/75 px-1.5 py-0.5 text-xs font-medium text-white">
+          {duration}
+        </div>
+      )}
     </div>
   );
 }
@@ -53,12 +64,13 @@ export default function VideoCard({ video, compact = false }: { video: Video; co
       style={{ background: 'var(--card)', borderColor: 'var(--border)' }}
     >
       <a href={`/video/${video.id}`} className="block">
-        <YouTubeThumbnail videoId={video.id} />
+        <YouTubeThumbnail videoId={video.id} duration={formatDuration(video.duration_s)} />
       </a>
       <div className="p-4">
         <div className="mb-2 flex items-start justify-between gap-2">
           <a href={`/video/${video.id}`} className="block flex-1">
             <h3 className="font-semibold leading-snug line-clamp-2" style={{ color: 'var(--text)' }}>
+              {video.status === 'playback_risky' && <span title="可能不可播放" className="mr-1 text-xs opacity-60">⚠️</span>}
               {displayTitle}
             </h3>
           </a>
@@ -71,6 +83,13 @@ export default function VideoCard({ video, compact = false }: { video: Video; co
             </span>
           )}
         </div>
+        {video.breakdown && (
+          <div className="mb-2">
+            <span className="rounded px-1.5 py-0.5 text-xs font-medium" style={{ background: 'color-mix(in srgb, var(--accent) 8%, transparent)', color: 'var(--accent)', border: '1px solid color-mix(in srgb, var(--accent) 25%, transparent)' }}>
+              📐 拆解
+            </span>
+          </div>
+        )}
 
         {!compact && video.why && (
           <p className="mb-3 text-sm leading-relaxed line-clamp-3" style={{ color: 'var(--text-muted)' }}>

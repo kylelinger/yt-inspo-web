@@ -21,6 +21,7 @@ export interface Video {
   vo_excerpt?: string;
   collection?: string;
   duration?: string;
+  duration_s?: number;
   breakdown?: VideoBreakdown;
 }
 

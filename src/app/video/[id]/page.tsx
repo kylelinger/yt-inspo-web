@@ -76,12 +76,24 @@ export default function VideoDetailPage() {
               {video.brand}
             </span>
           )}
+          {video.duration_s && (
+            <span className="rounded px-1.5 py-0.5 text-xs font-medium" style={{ background: "var(--border)", color: "var(--text-muted)" }}>
+              {video.duration_s >= 60 ? `${Math.floor(video.duration_s / 60)}:${String(video.duration_s % 60).padStart(2, '0')}` : `${video.duration_s}s`}
+            </span>
+          )}
+          {video.collection === 'foundation' && (
+            <span className="rounded px-1.5 py-0.5 text-xs font-medium" style={{ background: "color-mix(in srgb, var(--accent) 12%, transparent)", color: "var(--accent)" }}>
+              Foundation
+            </span>
+          )}
           <span className="text-xs" style={{ color: "var(--text-muted)" }}>
             {video.date_added}
           </span>
-          <span className="text-xs" style={{ color: "var(--text-muted)" }}>
-            {video.status}
-          </span>
+          {video.status === 'playback_risky' && (
+            <span className="rounded px-1.5 py-0.5 text-xs font-medium" style={{ background: "color-mix(in srgb, var(--red) 12%, transparent)", color: "var(--red, #ef4444)" }}>
+              ⚠️ 可能不可播放
+            </span>
+          )}
         </div>
       </div>
 

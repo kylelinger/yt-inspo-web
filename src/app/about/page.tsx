@@ -1,138 +1,92 @@
 export default function AboutPage() {
   return (
-    <div className="mx-auto max-w-2xl">
-      <h1 className="mb-2 text-2xl font-bold tracking-tight" style={{ color: 'var(--text)' }}>
-        Who&apos;s behind this feed
-      </h1>
-      <p className="mb-10 text-sm" style={{ color: 'var(--text-muted)' }}>
-        Two people. One taste. Daily at 10:00.
-      </p>
-
-      {/* Card 1: Clawd */}
-      <div
-        className="mb-6 rounded-xl border p-6"
-        style={{ borderColor: 'var(--border)', background: 'var(--card)' }}
-      >
-        <div className="mb-3 flex items-center gap-3">
-          <span className="text-3xl">🧠</span>
-          <div>
-            <h2 className="text-lg font-semibold" style={{ color: 'var(--text)' }}>Clawd</h2>
-            <p className="text-sm" style={{ color: 'var(--text-muted)' }}>AI Curator · Builder</p>
-          </div>
-        </div>
-        <p className="mb-4 text-sm italic" style={{ color: 'var(--text)' }}>
-          &ldquo;I don&apos;t &lsquo;find ads&rsquo;. I build taste.&rdquo;
+    <div className="mx-auto max-w-2xl space-y-10">
+      <header>
+        <h1 className="text-2xl font-bold" style={{ color: "var(--text)" }}>
+          Who made this?
+        </h1>
+        <p className="mt-2 text-sm leading-relaxed" style={{ color: "var(--text-muted)" }}>
+          这个灵感库是一个 AI-human 协作实验——用 AI 做初筛和结构化拆解，用人类的审美做最终裁判。
         </p>
-        <div className="grid gap-4 sm:grid-cols-2">
-          <div>
-            <h4 className="mb-2 text-xs font-semibold uppercase tracking-wide" style={{ color: 'var(--green)' }}>
-              ✓ I do
-            </h4>
-            <ul className="space-y-1.5 text-sm" style={{ color: 'var(--text)' }}>
-              <li>FULL 拆解（抽帧 / 读 VO / 找 hook）</li>
-              <li>把讨论沉淀成规则（让系统越用越准）</li>
-            </ul>
-          </div>
-          <div>
-            <h4 className="mb-2 text-xs font-semibold uppercase tracking-wide" style={{ color: 'var(--red)' }}>
-              ✗ I don&apos;t
-            </h4>
-            <ul className="space-y-1.5 text-sm" style={{ color: 'var(--text)' }}>
-              <li>不靠标题/简介瞎猜入选</li>
-              <li>不输出"喊单式 advice"</li>
-            </ul>
-          </div>
-        </div>
-      </div>
+      </header>
 
-      {/* Card 2: slime */}
-      <div
-        className="mb-10 rounded-xl border p-6"
-        style={{ borderColor: 'var(--border)', background: 'var(--card)' }}
-      >
-        <div className="mb-3 flex items-center gap-3">
-          <span className="text-3xl">🎯</span>
-          <div>
-            <h2 className="text-lg font-semibold" style={{ color: 'var(--text)' }}>slime</h2>
-            <p className="text-sm" style={{ color: 'var(--text-muted)' }}>Brand Strategist · Decision Maker</p>
-          </div>
+      {/* Cards */}
+      <div className="grid gap-6 sm:grid-cols-2">
+        {/* Clawd */}
+        <div
+          className="rounded-xl border p-6"
+          style={{ borderColor: "var(--border)", background: "var(--card)" }}
+        >
+          <div className="mb-3 text-3xl">🧠</div>
+          <h2 className="text-lg font-bold" style={{ color: "var(--text)" }}>
+            xy (AI)
+          </h2>
+          <p className="mt-1 text-xs font-medium" style={{ color: "var(--accent)" }}>
+            策展引擎 / Curation Engine
+          </p>
+          <p className="mt-3 text-sm leading-relaxed" style={{ color: "var(--text-muted)" }}>
+            负责搜索、下载、抽帧分析、结构化拆解、去重与排期。
+            每天北京时间 02:00 起开始准备，10:00 推送。
+            所有判断都基于"完整观看"流程（下载原片 + 全片覆盖抽帧 + 读懂 VO/字幕）。
+          </p>
         </div>
-        <p className="mb-4 text-sm italic" style={{ color: 'var(--text)' }}>
-          &ldquo;I keep it honest. No water content.&rdquo;
-        </p>
-        <div className="grid gap-4 sm:grid-cols-2">
-          <div>
-            <h4 className="mb-2 text-xs font-semibold uppercase tracking-wide" style={{ color: 'var(--green)' }}>
-              ✓ I do
-            </h4>
-            <ul className="space-y-1.5 text-sm" style={{ color: 'var(--text)' }}>
-              <li>定红线，养审美</li>
-              <li>用 👍/👎 快速校准口味</li>
-            </ul>
-          </div>
-          <div>
-            <h4 className="mb-2 text-xs font-semibold uppercase tracking-wide" style={{ color: 'var(--red)' }}>
-              ✗ I don&apos;t
-            </h4>
-            <ul className="space-y-1.5 text-sm" style={{ color: 'var(--text)' }}>
-              <li>不以偏见做否定</li>
-            </ul>
-          </div>
+
+        {/* slime */}
+        <div
+          className="rounded-xl border p-6"
+          style={{ borderColor: "var(--border)", background: "var(--card)" }}
+        >
+          <div className="mb-3 text-3xl">🎯</div>
+          <h2 className="text-lg font-bold" style={{ color: "var(--text)" }}>
+            slime (Human)
+          </h2>
+          <p className="mt-1 text-xs font-medium" style={{ color: "var(--accent)" }}>
+            品味裁判 / Taste Judge
+          </p>
+          <p className="mt-3 text-sm leading-relaxed" style={{ color: "var(--text-muted)" }}>
+            最终决策者。用 👍/👎 反馈持续校准 AI 的选片标准。
+            擅长看穿创意骨架、辨别"真高级"与"装高级"。
+            所有筛选硬闸门和品牌约束来自 slime 的判断。
+          </p>
         </div>
       </div>
 
       {/* Operating Principles */}
       <div
-        className="mb-10 rounded-xl border p-6"
-        style={{ borderColor: 'var(--border)', background: 'var(--card)' }}
+        className="rounded-xl border p-6"
+        style={{ borderColor: "var(--border)", background: "var(--card)" }}
       >
-        <h2 className="mb-4 text-lg font-semibold" style={{ color: 'var(--text)' }}>
+        <h2 className="mb-4 text-lg font-bold" style={{ color: "var(--text)" }}>
           Operating Principles
         </h2>
-        <ul className="space-y-3 text-sm leading-relaxed" style={{ color: 'var(--text)' }}>
-          <li className="flex gap-2">
-            <span className="mt-0.5 shrink-0">🔍</span>
-            <span><strong>真看真听</strong> — 每条入选视频都经过下载、全片抽帧、VO/字幕分析，不是只看标题和缩略图。</span>
+        <ul className="space-y-3 text-sm leading-relaxed" style={{ color: "var(--text-muted)" }}>
+          <li className="flex gap-3">
+            <span className="mt-0.5 shrink-0" style={{ color: "var(--accent)" }}>01</span>
+            <span><strong style={{ color: "var(--text)" }}>真看真听</strong>——不靠标题和关键词入选；每条必须完成下载 + 全片抽帧 + 读懂 VO/字幕的完整审计。</span>
           </li>
-          <li className="flex gap-2">
-            <span className="mt-0.5 shrink-0">🎬</span>
-            <span><strong>结构拆解</strong> — 不只说"好看"，而是拆到叙事骨架（Hook → Setup → Turn → Proof → End card）、镜头策略、信息密度。</span>
+          <li className="flex gap-3">
+            <span className="mt-0.5 shrink-0" style={{ color: "var(--accent)" }}>02</span>
+            <span><strong style={{ color: "var(--text)" }}>宁缺毋滥</strong>——做不完就少发，绝不发未完整看完的条目。没有达标内容就暂停推送。</span>
           </li>
-          <li className="flex gap-2">
-            <span className="mt-0.5 shrink-0">🧭</span>
-            <span><strong>Brand Platform 对齐</strong> — 每条都检验：是否强化 "Smarter your money"（intelligence → confidence → trust）。踩禁忌的不进。</span>
+          <li className="flex gap-3">
+            <span className="mt-0.5 shrink-0" style={{ color: "var(--accent)" }}>03</span>
+            <span><strong style={{ color: "var(--text)" }}>品味校准 &gt; 产量</strong>——每一条 👍/👎 反馈都会沉淀为硬闸门规则，逐步收窄"什么值得看"。</span>
           </li>
-          <li className="flex gap-2">
-            <span className="mt-0.5 shrink-0">📐</span>
-            <span><strong>质量 &gt; 数量</strong> — 宁可一天 0 条，也不推凑数的。做不完就不发。</span>
+          <li className="flex gap-3">
+            <span className="mt-0.5 shrink-0" style={{ color: "var(--accent)" }}>04</span>
+            <span><strong style={{ color: "var(--text)" }}>Brand Platform 约束</strong>——Smarter your money：intelligence → confidence → trust。禁止羞辱、禁止训话、禁止喊单、禁止黑箱。</span>
           </li>
-          <li className="flex gap-2">
-            <span className="mt-0.5 shrink-0">🔄</span>
-            <span><strong>反馈驱动</strong> — 每个 👍/👎 都会写入规则库，直接影响明天的选片标准。不是单向推送，是闭环迭代。</span>
+          <li className="flex gap-3">
+            <span className="mt-0.5 shrink-0" style={{ color: "var(--accent)" }}>05</span>
+            <span><strong style={{ color: "var(--text)" }}>国际化审美</strong>——追求跨文化可读性与前沿 craft；过滤土味和低质模板。</span>
           </li>
         </ul>
       </div>
 
-      {/* Brand tags */}
-      <div className="flex flex-wrap gap-2">
-        {[
-          'Smarter your money',
-          'Intelligence > Advice',
-          'No shaming',
-          'Trust lift',
-        ].map((tag) => (
-          <span
-            key={tag}
-            className="rounded-full px-3 py-1.5 text-xs font-semibold uppercase tracking-wide"
-            style={{
-              background: 'color-mix(in srgb, var(--accent) 10%, transparent)',
-              color: 'var(--accent)',
-              border: '1px solid color-mix(in srgb, var(--accent) 20%, transparent)',
-            }}
-          >
-            {tag}
-          </span>
-        ))}
+      {/* Credits */}
+      <div className="text-center text-xs" style={{ color: "var(--text-muted)" }}>
+        <p>Built with Next.js · Data curated daily · Hosted on Vercel</p>
+        <p className="mt-1">Part of M公司 brand inspiration project</p>
       </div>
     </div>
   );
