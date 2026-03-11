@@ -66,7 +66,49 @@
     "feedback": null,
     "source": "discord_export_attachment",
     "collection": "foundation",
-    "duration_s": 17
+    "duration_s": 17,
+    "breakdown": {
+      "summary": "把 Wealthsimple 的 match 优惠字面意思演出来：两个人穿一模一样的衣服坐在一起，干燥幽默到极致，17秒。",
+      "structure": [
+        {
+          "time": "0:00–0:08",
+          "desc": "[Hook / Setup] 一个女生对着镜头讲话，documentary-interview 风格，没有任何异常——建立观众期待。"
+        },
+        {
+          "time": "0:08–0:13",
+          "desc": "[Turn / Punchline] 镜头拉远，旁边坐着一个穿完全一样衣服的男人。同款毛衣、同款眼镜、同款咖啡杯、同款姿势。"
+        },
+        {
+          "time": "0:13–0:16",
+          "desc": "[Offer Slate] 屏幕出 offer 文字：'Transfer your RRSP, we'll match it with a 0.5% bonus'。"
+        },
+        {
+          "time": "0:16–0:17",
+          "desc": "[End card] 两人同时举起咖啡杯喝，Wealthsimple wordmark 出现。"
+        }
+      ],
+      "vo_quotes": [
+        "(视觉驱动，无关键VO，对白不可闻)"
+      ],
+      "strengths": [
+        "机制纯粹：一个词 match 从 offer 转译为视觉动作，无需解释，自动成立",
+        "Deadpan 执行：越认真穿一样的衣服，越好笑——不油腻，信任不掉",
+        "17秒完成 setup→punchline→offer→branding，节奏标杆",
+        "审美稳：indie-film 摄影风格，砖墙+暖光+浅景深，不像金融广告",
+        "可复用性强：同一 CEO Mike 公式，不需要名人预算"
+      ],
+      "risks": [
+        "RRSP 是加拿大特有概念，直接迁移国际市场需替换 offer 语境",
+        "纯视觉梗，没有产品功能说明——适合已有一定认知的市场",
+        "时效性强（offer 有截止日期），无法常青化"
+      ],
+      "transferable": [
+        "语义→行为→视觉法：把金融术语（match/bonus/transfer）转译为一个可被摄影机拍到的动作，不解释，直接演",
+        "Deadpan + 对称构图 = 干燥喜剧公式：越认真执行荒诞前提，越可信也越好笑",
+        "留白一拍节奏：先给观众一个正常预期，再用 reveal 打破——整个节奏在这个 beat 上"
+      ],
+      "brand_platform": "～ 部分对齐——intelligence→confidence 路径弱，更多是功能促销片（match bonus）。但 deadpan 语气不羞辱用户，anti-shaming ✓；不喊单 ✓。"
+    }
   },
   {
     "id": "EQvXI_CuvXE",
@@ -79,7 +121,48 @@
     "feedback": null,
     "source": "discord_export_attachment",
     "collection": "foundation",
-    "duration_s": 20
+    "duration_s": 20,
+    "breakdown": {
+      "summary": "Wealthsimple 的姊妹篇：CEO Mike 去咖啡馆点'同款咖啡'来兑现 match 承诺——同一创意机制，喜剧变体。",
+      "structure": [
+        {
+          "time": "0:00–0:10",
+          "desc": "[Hook / Setup] 男生在咖啡馆柜台讲话，barista 略显困惑——建立'这人在点什么奇怪的单'的期待。"
+        },
+        {
+          "time": "0:10–0:16",
+          "desc": "[Turn] CEO Mike（或男主角）真的'点了和你一样的咖啡'，字面意思执行 match 动作。Barista deadpan 回望。"
+        },
+        {
+          "time": "0:16–0:19",
+          "desc": "[Offer Slate] 'Transfer your account' 文字出现，legal fine print 在下方。"
+        },
+        {
+          "time": "0:19–0:20",
+          "desc": "[End card] Wealthsimple wordmark。"
+        }
+      ],
+      "vo_quotes": [
+        "(对白不可闻，但核心动作是：I'll have what he's having)"
+      ],
+      "strengths": [
+        "同一创意公式在不同场景的延续——品牌角色资产（CEO Mike）开始建立",
+        "咖啡馆场景比采访间更日常，进一步降低金融品牌门槛",
+        "20秒极短版本，彻底去产品化，情绪优先",
+        "Barista 的 deadpan 眼神是整个喜剧高光"
+      ],
+      "risks": [
+        "同样是 RRSP 促销限时片，不可常青",
+        "CEO 身份信息不在画面里说明，不熟悉品牌的人可能 miss 掉身份梗",
+        "和 Sweater Sweater 太像，独立投放效果可能弱于组合投放"
+      ],
+      "transferable": [
+        "品牌角色连续剧式资产：同一个 CEO/创始人 + 同一创意机制 跨多条片复用，建立 brand character（不依赖名人，依赖人格）",
+        "I'll have what he's having 结构：用'模仿/复刻'动作物化金融 offer 的抽象概念",
+        "Deadpan 服务员视角：第三者的困惑/淡定 = 观众的笑点 + 可信度代理人"
+      ],
+      "brand_platform": "～ 部分对齐——和 Sweater Sweater 同，更多是功能促销片。Deadpan 语气保持了品牌克制，anti-shaming ✓。"
+    }
   },
   {
     "id": "NYukyZmdNrA",
@@ -105,7 +188,49 @@
     "feedback": null,
     "source": "discord_export_attachment",
     "collection": "foundation",
-    "duration_s": 30
+    "duration_s": 30,
+    "breakdown": {
+      "summary": "如果订披萨像转账一样需要经过保险库+无菌车间+一栋楼的官僚机构，最后送到你手里的披萨缺了几片——Coinbase 用荒诞类比让传统金融的摩擦成本'被看见'。",
+      "structure": [
+        {
+          "time": "0:00–0:05",
+          "desc": "[Hook] 女生在披萨厨房打电话——日常感，不像金融广告，注意力瞬间被抓住。"
+        },
+        {
+          "time": "0:05–0:18",
+          "desc": "[Escalation] 镜头依次切到：保险库机房、无菌车间里工人搬运披萨、巨型官僚办公区（'SURCHARGING 07' 标语）——系统越来越荒诞。"
+        },
+        {
+          "time": "0:18–0:25",
+          "desc": "[Punchline] 披萨盒打开，缺了好几片——'中间商都吃掉了'，无需台词，画面即论点。"
+        },
+        {
+          "time": "0:25–0:30",
+          "desc": "[End card] 送餐员走进夜晚街道，'crypto moves money' 白字出现，Coinbase logo 跟随。"
+        }
+      ],
+      "vo_quotes": [
+        "crypto moves money"
+      ],
+      "strengths": [
+        "跨文化可读：披萨是全球通货，系统批判情绪无需本地化",
+        "缺片视觉 = 费用损耗：不用说'手续费'，观众自己推导出结论",
+        "制作水准极高：复古机构美学、浅景深、微妙色调，整条片像短片不像广告",
+        "反叙事（critique the old, not just promote the new）——信任建立路径更长远",
+        "VO 极简：整条片只有一句 'crypto moves money'，留白给画面"
+      ],
+      "risks": [
+        "对 crypto/Coinbase 无认知的用户，'crypto moves money' 可能不够 actionable",
+        "不直接说产品功能/差异化——更像品牌片而非转化片",
+        "荒诞风格对金融信任有一定风险：如果观众不接受幽默，可能觉得'不严肃'"
+      ],
+      "transferable": [
+        "荒诞类比法：把目标用户不满的'现有系统'用夸张场景演出来，不说'我们更好'，让对比自然产生——观众自己得出结论",
+        "缺片 = 费用可视化：用'少了什么'而非'多了什么'来呈现 value prop（负向可视化）",
+        "VO 克制原则：全片只一句话，其余靠画面——强迫自己想清楚最核心的一句是什么"
+      ],
+      "brand_platform": "✓ 强对齐——批判'黑箱/不透明/中间商'正好对应 intelligence→confidence→trust 路径；让用户感到'看清楚了''可以更聪明地选择'；anti-喊单 ✓，anti-黑箱 ✓。"
+    }
   },
   {
     "id": "fjf7c-O5GyQ",
@@ -185,7 +310,45 @@
     "feedback": null,
     "source": "discord_export_attachment",
     "collection": "foundation",
-    "duration_s": 30
+    "duration_s": 30,
+    "breakdown": {
+      "summary": "Apple 用警察审讯室的黑色电影美学来演'你的数据被索取'——iPhone 是那个拒绝开口的沉默英雄，最后一帧才亮出身份。",
+      "structure": [
+        {
+          "time": "0:00–0:20",
+          "desc": "[Hook + Build] 审讯室：强悍的审讯者步步紧逼，被审者（普通用户）沉默以对——类型片张力全开，完全不像科技广告。"
+        },
+        {
+          "time": "0:20–0:26",
+          "desc": "[Reveal] 审讯者举起 iPhone——锁屏状态，无法破解。原来这是数据索取场景的具象化。"
+        },
+        {
+          "time": "0:26–0:30",
+          "desc": "[End card] 纯黑背景，白字 'Privacy. That's iPhone.' + Apple logo。"
+        }
+      ],
+      "vo_quotes": [
+        "Privacy. That's iPhone."
+      ],
+      "strengths": [
+        "类型颠覆：金融/科技广告里用 noir 审讯美学，立即区别于所有竞品",
+        "产品不出现到第26秒：先让威胁感被感受到，再 reveal 守护者身份——情绪弓拉满",
+        "End card 公式无敌：'[价值]。That's iPhone.' ——定义产品身份而非功能",
+        "普通演员 cast：代入感强于明星，威胁感更真实",
+        "全片无 UI 演示、无功能列表——trust 建立完全靠情绪叙事"
+      ],
+      "risks": [
+        "暗色系 + 审讯氛围：对金融品牌移植风险较高（恐吓感可能伤信任而非建信任）",
+        "Apple 品牌力加持巨大，同样手法 unknown 品牌做出来可能'吓跑'用户",
+        "隐私叙事对金融语境的迁移需要明确出口：'你的钱也受到同等保护'"
+      ],
+      "transferable": [
+        "情绪威胁→产品守护结构：先让用户感受到风险的真实重量，再 reveal 产品是保护盾——比直接说'我们安全'更有力",
+        "That's [Brand] 公式：用价值词（privacy/intelligence/confidence）直接定义品牌身份，比功能描述长效 10 倍",
+        "类型嫁接：把金融/科技议题用观众已有的类型片情感记忆（惊悚/悬疑/犯罪）来传递——降低认知门槛，提高情绪响应"
+      ],
+      "brand_platform": "✓ 强对齐（trust 维度）——增信路径清晰：威胁存在→产品是屏障→用户更安全→trust lift。对 M公司金融信任场景有高迁移性。anti-黑箱 ✓（反面：不让数据成为黑箱）。"
+    }
   },
   {
     "id": "uJ-PDXHUl5E",
@@ -237,7 +400,49 @@
     "feedback": null,
     "source": "discord_export_attachment:1481119383823716402",
     "collection": "foundation",
-    "duration_s": 30
+    "duration_s": 30,
+    "breakdown": {
+      "summary": "Will Ferrell 在飞机上劫持广播系统，用大喜剧能量宣传 PayPal 的'结账可能替你付钱'促销——名人+荒诞场景+sweepstakes。",
+      "structure": [
+        {
+          "time": "0:00–0:08",
+          "desc": "[Hook] 正常飞机广播画面——乘客和空姐，日常场景建立。"
+        },
+        {
+          "time": "0:08–0:22",
+          "desc": "[Turn] Will Ferrell 拿走麦克风，用他标志性的过度认真风格开始广播 PayPal 促销信息——空姐捂嘴惊喜，乘客困惑。"
+        },
+        {
+          "time": "0:22–0:28",
+          "desc": "[Offer + Legal] 'Check out and PayPal could pay for your purchase' 字幕出现，legal fine print 占满下方。"
+        },
+        {
+          "time": "0:28–0:30",
+          "desc": "[End card] Will Ferrell 做庆祝动作，PayPal 品牌收尾。"
+        }
+      ],
+      "vo_quotes": [
+        "Check out and PayPal could pay for your purchase."
+      ],
+      "strengths": [
+        "Will Ferrell 的喜剧身份让'打断日常场景'的荒诞行为完全成立",
+        "飞机广播是高共鸣场景——所有人都坐过飞机，注意力机制强",
+        "空姐 starstruck 反应 = 品牌友好信号（不是'他在乱闯'，而是'哇！'）",
+        "促销信息塞进喜剧里，减少广告感"
+      ],
+      "risks": [
+        "高度依赖 Will Ferrell 的名人身份——不识别他的受众 joke 失效",
+        "Sweepstakes 机制复杂（legal fine print 极长），实际转化路径不清晰",
+        "对 M公司：B端/国际市场 Will Ferrell 知名度下降快，迁移性弱",
+        "整体是促销片而非品牌片，不建立长期品牌认知"
+      ],
+      "transferable": [
+        "日常场景劫持结构：选一个所有人都经历过的'高注意力时刻'（飞机广播、超市广播、电梯等），让品牌/促销信息'意外插入'——荒诞感自带注意力",
+        "名人的'认真执行荒诞事'：喜剧效果来自'过度认真'而非夸张表演——同样适用于 CEO 出镜做荒诞事（Wealthsimple 公式）",
+        "空姐/第三者的惊喜反应：用旁观者情绪来引导观众应有的反应（这很酷/这很好笑）"
+      ],
+      "brand_platform": "✗ 弱对齐——intelligence→confidence→trust 路径几乎不存在；更多是促销娱乐片。和 M公司 brand platform 的 Smarter your money 方向偏离，作为'喜剧技法参考'入库，不作为叙事模板。"
+    }
   },
   {
     "id": "QjTGnGREVkQ",
