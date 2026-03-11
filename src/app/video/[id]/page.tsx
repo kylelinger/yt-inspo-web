@@ -33,13 +33,13 @@ export default function VideoDetailPage() {
   const isShortlisted = sl.has(video.id);
   const displayTitle = video.title || video.brand || video.id;
 
-  const handleFeedback = (action: "thumbsup" | "thumbsdown") => {
-    const newFb = setFeedback(video.id, action);
+  const handleFeedback = async (action: "thumbsup" | "thumbsdown") => {
+    const newFb = await setFeedback(video.id, action);
     setFb({ ...newFb });
   };
 
-  const handleShortlist = () => {
-    const newSl = toggleShortlist(video.id);
+  const handleShortlist = async () => {
+    const newSl = await toggleShortlist(video.id);
     setSl(new Set(newSl));
   };
 

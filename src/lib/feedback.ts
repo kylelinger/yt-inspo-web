@@ -5,41 +5,114 @@ import type { FeedbackEntry } from "./types";
 const FEEDBACK_KEY = "yt_inspo_feedback";
 const SHORTLIST_KEY = "yt_inspo_shortlist";
 
-export function getFeedback(): Record<string, 'thumbsup' | 'thumbsdown'> {
+// ─── localStorage helpers ───────────────────────────────────────────────────
+
+function lsGetFeedback(): Record<string, 'thumbsup' | 'thumbsdown'> {
   if (typeof window === 'undefined') return {};
-  try {
-    return JSON.parse(localStorage.getItem(FEEDBACK_KEY) || '{}');
-  } catch { return {}; }
+  try { return JSON.parse(localStorage.getItem(FEEDBACK_KEY) || '{}'); } catch { return {}; }
+}
+function lsSetFeedback(fb: Record<string, 'thumbsup' | 'thumbsdown'>) {
+  localStorage.setItem(FEEDBACK_KEY, JSON.stringify(fb));
+}
+function lsGetShortlist(): Set<string> {
+  if (typeof window === 'undefined') return new Set();
+  try { return new Set(JSON.parse(localStorage.getItem(SHORTLIST_KEY) || '[]')); } catch { return new Set(); }
+}
+function lsSetShortlist(sl: Set<string>) {
+  localStorage.setItem(SHORTLIST_KEY, JSON.stringify([...sl]));
 }
 
-export function setFeedback(videoId: string, action: 'thumbsup' | 'thumbsdown') {
-  const fb = getFeedback();
+// ─── KV-backed API helpers (best-effort, falls back to localStorage) ─────────
+
+let _kvAvailable: boolean | null = null; // cached after first probe
+
+async function postAction(videoId: string, action: string): Promise<boolean> {
+  try {
+    const res = await fetch('/api/feedback', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ videoId, action }),
+    });
+    const data = await res.json();
+    if (_kvAvailable === null) _kvAvailable = data.kv ?? false;
+    return data.ok && data.kv;
+  } catch {
+    _kvAvailable = false;
+    return false;
+  }
+}
+
+export async function fetchRemoteFeedback(): Promise<{
+  feedback: Record<string, 'thumbsup' | 'thumbsdown'>;
+  shortlist: string[];
+  kv: boolean;
+}> {
+  try {
+    const res = await fetch('/api/feedback');
+    const data = await res.json();
+    _kvAvailable = data.kv ?? false;
+    return data;
+  } catch {
+    _kvAvailable = false;
+    return { feedback: {}, shortlist: [], kv: false };
+  }
+}
+
+// ─── Public API ──────────────────────────────────────────────────────────────
+
+export function getFeedback(): Record<string, 'thumbsup' | 'thumbsdown'> {
+  return lsGetFeedback();
+}
+
+export async function setFeedback(
+  videoId: string,
+  action: 'thumbsup' | 'thumbsdown'
+): Promise<Record<string, 'thumbsup' | 'thumbsdown'>> {
+  // Optimistic local update
+  const fb = lsGetFeedback();
   if (fb[videoId] === action) {
-    // Toggle off
     delete fb[videoId];
   } else {
     fb[videoId] = action;
   }
-  localStorage.setItem(FEEDBACK_KEY, JSON.stringify(fb));
+  lsSetFeedback(fb);
+
+  // Async sync to KV
+  postAction(videoId, action);
+
   return fb;
 }
 
 export function getShortlist(): Set<string> {
-  if (typeof window === 'undefined') return new Set();
-  try {
-    return new Set(JSON.parse(localStorage.getItem(SHORTLIST_KEY) || '[]'));
-  } catch { return new Set(); }
+  return lsGetShortlist();
 }
 
-export function toggleShortlist(videoId: string): Set<string> {
-  const sl = getShortlist();
+export async function toggleShortlist(videoId: string): Promise<Set<string>> {
+  const sl = lsGetShortlist();
   if (sl.has(videoId)) {
     sl.delete(videoId);
+    postAction(videoId, 'remove_shortlist');
   } else {
     sl.add(videoId);
+    postAction(videoId, 'shortlist');
   }
-  localStorage.setItem(SHORTLIST_KEY, JSON.stringify([...sl]));
+  lsSetShortlist(sl);
   return sl;
+}
+
+/** Call on app mount to hydrate localStorage from KV (so cross-device state syncs) */
+export async function hydrateFromRemote(): Promise<void> {
+  const remote = await fetchRemoteFeedback();
+  if (!remote.kv) return; // no KV configured — stay with localStorage
+
+  // Merge: remote wins for any key present remotely
+  const localFb = lsGetFeedback();
+  const merged = { ...localFb, ...remote.feedback };
+  lsSetFeedback(merged as Record<string, 'thumbsup' | 'thumbsdown'>);
+
+  const localSl = lsGetShortlist();
+  for (const id of remote.shortlist) localSl.add(id);
+  lsSetShortlist(localSl);
 }
 
 export function getAllFeedbackEntries(): FeedbackEntry[] {

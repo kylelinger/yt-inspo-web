@@ -44,13 +44,13 @@ export default function VideoCard({ video, compact = false }: { video: Video; co
     setMounted(true);
   }, []);
 
-  const handleFeedback = (action: 'thumbsup' | 'thumbsdown') => {
-    const newFb = setFeedback(video.id, action);
+  const handleFeedback = async (action: 'thumbsup' | 'thumbsdown') => {
+    const newFb = await setFeedback(video.id, action);
     setFb({ ...newFb });
   };
 
-  const handleShortlist = () => {
-    const newSl = toggleShortlist(video.id);
+  const handleShortlist = async () => {
+    const newSl = await toggleShortlist(video.id);
     setSl(new Set(newSl));
   };
 

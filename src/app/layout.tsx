@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import { HydrateProvider } from "@/components/HydrateProvider";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -30,9 +31,11 @@ export default function RootLayout({
             </div>
           </div>
         </nav>
-        <main className="mx-auto max-w-5xl px-4 py-6">
-          {children}
-        </main>
+        <HydrateProvider>
+          <main className="mx-auto max-w-5xl px-4 py-6">
+            {children}
+          </main>
+        </HydrateProvider>
       </body>
     </html>
   );
