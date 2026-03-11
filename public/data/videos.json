@@ -498,7 +498,41 @@
     "feedback": null,
     "source": "discord_export_attachment:1481119383823716402",
     "collection": "foundation",
-    "duration_s": 15
+    "duration_s": 15,
+    "breakdown": {
+      "summary": "PayPal 'Shady Lemonade Stand'——男人在小孩柠檬摊前表现出'交易不安全感'，用最低风险场景演示最大心理摩擦，反衬 PayPal 保护的荒诞必要性。15 秒极简。",
+      "structure": [
+        {
+          "time": "0:00–0:05",
+          "desc": "[Setup] 阳光美国郊区，小孩柠檬摊（$1/杯），红格子桌布+气球——最纯真的场景。"
+        },
+        {
+          "time": "0:05–0:12",
+          "desc": "[Comedy Beat] 男人审视柠檬摊如同审视可疑商户——怀疑表情+紧攥手机。荒诞反差最大化。"
+        },
+        {
+          "time": "0:12–0:15",
+          "desc": "[Payoff + End card] 'Don't just pay, PayPal' 白色大字。verbing 品牌名=功能宣言。"
+        }
+      ],
+      "vo_quotes": [
+        "Don't just pay, PayPal"
+      ],
+      "strengths": [
+        "最低风险场景 × 最大焦虑表演 = 即刻理解'保护'的价值",
+        "15 秒极短——社交投放零摩擦",
+        "'Don't just pay, PayPal' 把品牌名动词化=最强 tagline 结构之一"
+      ],
+      "risks": [
+        "场景太美国郊区，亚洲/欧洲用户可能缺少柠檬摊文化共鸣",
+        "对 M公司：保护叙事可迁移，但需要找到自己的'柠檬摊'等价物（极低风险但仍需信任的场景）"
+      ],
+      "transferable": [
+        "最低风险场景反衬法：故意找一个'根本不需要保护'的场景来演示保护功能→ 笑点即卖点",
+        "品牌名动词化：'Don't just X, [Brand]'——把品牌变成动作，比 slogan 更强"
+      ],
+      "brand_platform": "✓ 对齐（trust 维度）——用幽默降低'安全'话题的说教感；anti-恐吓 ✓（不是吓唬用户，而是让用户笑着理解保护价值）。"
+    }
   },
   {
     "id": "Ilqhb8pAjrg",
@@ -511,7 +545,42 @@
     "feedback": null,
     "source": "discord_export_attachment:1481119383823716402",
     "collection": "foundation",
-    "duration_s": 15
+    "duration_s": 15,
+    "breakdown": {
+      "summary": "PayPal 'Pay with PayPal'——名人挤在经济舱两个小孩中间，边飞边用 Pay in 4 分期付款，15 秒内同时传递'分期'和'返现'两个功能点。",
+      "structure": [
+        {
+          "time": "0:00–0:05",
+          "desc": "[Setup] 飞机经济舱，名人被两个小孩夹在中间——身份反差建立。"
+        },
+        {
+          "time": "0:05–0:12",
+          "desc": "[Product Demo] 手机屏幕展示 Pay in 4（3/4 已付）——功能植入。小孩好奇偷看。"
+        },
+        {
+          "time": "0:12–0:15",
+          "desc": "[End card] 'Make the most of your money this holiday' + '5% cash back' + 'Go to the app'。"
+        }
+      ],
+      "vo_quotes": [
+        "Pay for your holiday gifts later and get 5% cash back",
+        "Make the most of your money this holiday"
+      ],
+      "strengths": [
+        "名人+经济舱的身份反差=即刻吸引力",
+        "15 秒内塞进两个功能点（分期+返现）且不觉得拥挤",
+        "飞机=节日出行信号，场景即 targeting"
+      ],
+      "risks": [
+        "BNPL（先买后付）可能引发'鼓励消费'争议",
+        "名人依赖性强，无名人版本可能不成立"
+      ],
+      "transferable": [
+        "场景即 targeting：选择一个特定消费时刻（飞行=节日）自动过滤目标人群",
+        "身份反差植入法：让'不应该出现在这里'的人出现在'这里'——注意力钩子"
+      ],
+      "brand_platform": "△ 部分对齐——'make the most of your money'接近 intelligence 路径；但 BNPL 叙事需注意 anti-喊单红线（不能暗示'先花再说'）。"
+    }
   },
   {
     "id": "KPG4YIIQv8c",
@@ -579,7 +648,41 @@
     "feedback": null,
     "source": "discord_export_attachment:1481119383823716402",
     "collection": "foundation",
-    "duration_s": 30
+    "duration_s": 30,
+    "breakdown": {
+      "summary": "PayPal × Will Ferrell——Ferrell 用标志性的一本正经荒诞风格在咖啡店/零售店/集市演示 PayPal 线下支付，30 秒内从'线上支付工具'重新定位为'到处都能用'。",
+      "structure": [
+        {
+          "time": "0:00–0:08",
+          "desc": "[Setup] Ferrell 走进咖啡店，和 barista 'Chad' 互动——日常场景建立。"
+        },
+        {
+          "time": "0:08–0:20",
+          "desc": "[Escalation] 零售结账 → 驴叫 non-sequitur 插入（Ferrell 式随机喜剧）→ 集市举手机 power pose。"
+        },
+        {
+          "time": "0:20–0:30",
+          "desc": "[End card] 'Don't just pay, PayPal' + 5% cashback legal copy。"
+        }
+      ],
+      "vo_quotes": [
+        "Don't just pay, PayPal"
+      ],
+      "strengths": [
+        "Ferrell 的 deadpan absurdism 让支付广告变得不可预测——驴叫那个镜头是纯 pattern interrupt",
+        "多场景快切=暗示'到处都能用'，不需要明说",
+        "Super Bowl 级制作质感+Ferrell 号召力=最大曝光效率"
+      ],
+      "risks": [
+        "过度依赖 Ferrell 个人魅力——品牌信息可能被喜剧淹没",
+        "对 M公司：名人策略成本极高，但'多场景快切=无处不在'的结构可以低成本复刻"
+      ],
+      "transferable": [
+        "non-sequitur 插入（驴叫/动物/荒诞画面）：在密集功能信息中制造 pattern interrupt，反而让观众更记住前后的信息",
+        "power pose 收尾：最后一帧让人物+产品做一个'胜利姿势'=情绪定格=品牌印象锁定"
+      ],
+      "brand_platform": "✓ 对齐（confidence 维度）——Ferrell 的 power pose + 多场景自信支付=confidence 路径清晰；anti-说教 ✓（全程喜剧，零训话感）。"
+    }
   },
   {
     "id": "pyvGh2-Gsdg",
@@ -592,7 +695,39 @@
     "feedback": null,
     "source": "discord_export_attachment:1481119383823716402",
     "collection": "foundation",
-    "duration_s": 30
+    "duration_s": 30,
+    "breakdown": {
+      "summary": "Grubhub 'The Feest'（Big Game 2026）——在豪宅晚宴里把外卖配送演成皇家盛宴，30 秒 Super Bowl 级制作，最后一帧揭示'$50 以上免配送费'促销。",
+      "structure": [
+        {
+          "time": "0:00–0:10",
+          "desc": "[Hook] 暗色调豪宅餐厅，水晶杯+金色餐具+烛光——悬念：这是什么场景？"
+        },
+        {
+          "time": "0:10–0:25",
+          "desc": "[Build] 女主人（绿色亮片裙+珍珠）主持宴席，银钟罩揭开——ensemble cast 夸张反应。喜剧荒诞感递增。"
+        },
+        {
+          "time": "0:25–0:30",
+          "desc": "[Payoff + End card] 橙色底 Grubhub logo + 'No fees on restaurant orders over $50'。"
+        }
+      ],
+      "vo_quotes": [],
+      "strengths": [
+        "bait-and-switch：用皇家宴席视觉吊足好奇心，最后揭示是外卖=最大惊喜感",
+        "Knives Out 式视觉（暗色调/ensemble/豪宅）给 food delivery 品类注入从未有过的电影感",
+        "end card 极简：一个促销点（$50 免运费）——信息密度完美"
+      ],
+      "risks": [
+        "Super Bowl 制作成本不可复制",
+        "外卖品类与 M公司金融品类距离远——但'用高级场景包装日常服务'的方法论通用"
+      ],
+      "transferable": [
+        "genre bait-and-switch：前 80% 看起来像另一个品类（悬疑电影/时装秀/纪录片），最后 20% reveal 真实品牌=惊喜记忆",
+        "促销信息极简化：30 秒里只说一个数字（$50），观众走出去能复述=最大 ROI"
+      ],
+      "brand_platform": "△ 弱对齐——Grubhub 非金融品类，但'把日常服务包装成仪式感体验'的升维逻辑对 M公司有参考价值（把日常理财包装成'掌控感仪式'）。"
+    }
   },
   {
     "id": "svhDzeoppvg",
@@ -604,7 +739,39 @@
     "brand": "Experian",
     "feedback": null,
     "source": "discord_export_attachment",
-    "duration_s": 30
+    "duration_s": 30,
+    "breakdown": {
+      "summary": "Experian 'Finance Is Fashion'——把信用分数搬上时装秀 T 台，模特穿着写有 FICO Score 的球衣走秀，+13 分变成'当季新品'。30 秒内把金融服务重新编码为 Gen-Z 的自我表达。",
+      "structure": [
+        {
+          "time": "0:00–0:08",
+          "desc": "[Hook] 霓虹紫/洋红灯光 T 台——观众第一反应：这是时装秀？"
+        },
+        {
+          "time": "0:08–0:22",
+          "desc": "[Build] 模特走秀，背景 LED 依次亮出 'FICO SCORE'、'BOOST'——金融术语变成秀场 keyword。核心模特穿 13 号球衣+手举手机展示 +13 分。"
+        },
+        {
+          "time": "0:22–0:30",
+          "desc": "[End card] Experian logo + 'Download the App' + App Store badges。"
+        }
+      ],
+      "vo_quotes": [],
+      "strengths": [
+        "品类颠覆：信用分数 × 时装秀=前所未有的组合，注意力即获取",
+        "'+13'同时出现在手机屏+球衣+浮动数字=三重强化记忆锚点",
+        "霓虹紫视觉系统与传统金融的蓝/绿完全割裂——在 feed 中秒杀同品类"
+      ],
+      "risks": [
+        "信用分概念在中国/亚洲市场不直接对应——需要本地化等价物",
+        "纯感觉驱动，没有任何功能解释——首次接触 Experian 的用户可能不知道它是什么"
+      ],
+      "transferable": [
+        "金融 × 非金融品类嫁接（时装/音乐/体育）：让金融产品'入侵'一个完全不相关的审美体系→ 瞬间打破品类预期",
+        "把数字变成可穿戴符号：信用分→球衣号码/收益率→赛事分数——让金融数据有'炫耀性'"
+      ],
+      "brand_platform": "✓ 强对齐（confidence 维度）——把信用分从'被评判'的焦虑转化为'可展示'的自信；anti-羞辱 ✓（完全相反——分数是值得走秀的东西）。对 M公司'intelligence→confidence'路径：如果能让用户把投资收益/理财能力当作'值得秀的东西'，这就是最理想的品牌状态。"
+    }
   },
   {
     "id": "ToJTrPTekg4",
@@ -919,7 +1086,45 @@
     "feedback": null,
     "source": "",
     "why": "反复句式（Can you Venmo… / You can Venmo…）做节奏点，把产品卖点塞进连续场景切换里。",
-    "vo_excerpt": "“Now you can Venmo everything.” “Get the Venmo Debit Card and get up to 15% cash back.”"
+    "vo_excerpt": "“Now you can Venmo everything.” “Get the Venmo Debit Card and get up to 15% cash back.”",
+    "breakdown": {
+      "summary": "Venmo 'Now You Can Venmo Everything'——从街头咖啡到唱片店到百货公司到梦境舞台，用音乐剧递增结构演示 Venmo 从 P2P 到'万物可付'的品牌扩展。66 秒长版本。",
+      "structure": [
+        {
+          "time": "0:00–0:15",
+          "desc": "[Setup] 咖啡馆俯拍+街头——日常 P2P 支付场景。"
+        },
+        {
+          "time": "0:15–0:35",
+          "desc": "[Escalation 1] 唱片店购物——场景升级，开始有编舞暗示。"
+        },
+        {
+          "time": "0:35–0:55",
+          "desc": "[Escalation 2] 百货大楼+群舞——La La Land 式大场面，彩色柱子+聚光灯。"
+        },
+        {
+          "time": "0:55–1:06",
+          "desc": "[Meta Reveal + End card] 拉远镜头揭示摄影棚/剧组/导演椅——自嘲式第四面墙打破。'venmo everything' 白色字幕。"
+        }
+      ],
+      "vo_quotes": [],
+      "strengths": [
+        "音乐剧递增结构：每个场景都比前一个更大/更彩色/更编舞——'everything'不用说出来，观众自己感受到了",
+        "meta 结尾（揭示摄影棚）：既自嘲'我们知道这很夸张'，又让观众觉得品牌有自知之明——好感度+1",
+        "La La Land 式梦境色彩——在支付类广告中独一无二"
+      ],
+      "risks": [
+        "66 秒长度对社交媒体有摩擦——30 秒剪辑版更实用",
+        "音乐剧风格可能疏远非北美市场",
+        "对 M公司：如果不做日常消费支付，直接迁移路径有限"
+      ],
+      "transferable": [
+        "递增结构（小→大）演示品牌扩展：用场景大小递增来隐喻'从 A 功能扩展到 Everything'——不需要 feature list",
+        "meta 自嘲收尾：在最夸张的时刻突然揭示后台=给观众'你和我们是一伙的'的共谋感",
+        "色彩递增叙事：开头写实色调→中段饱和→结尾梦境——色彩本身在叙事"
+      ],
+      "brand_platform": "△ 部分对齐——Venmo 的'万物可付'扩展逻辑与 M公司'一站式理财'愿景有结构相似性；音乐剧的乐观调性与 confidence 维度对齐，但 intelligence 维度缺失。"
+    }
   },
   {
     "id": "6i5Rhm7-bpA",
@@ -931,7 +1136,42 @@
     "brand": "Klarna",
     "feedback": null,
     "source": "discord_export_attachment:1481119383823716402",
-    "duration_s": 34
+    "duration_s": 34,
+    "breakdown": {
+      "summary": "Klarna 'The Best of Smoooth'——鱼滑水滑梯、狗跳水、男人独舞……纯感官蒙太奇，34 秒里从不提支付/分期/金融，只卖一个词：smoooth。",
+      "structure": [
+        {
+          "time": "0:00–0:10",
+          "desc": "[Montage x1] 鱼从水滑梯滑下+粉色丝缎手套——oddly satisfying 系列开始。"
+        },
+        {
+          "time": "0:10–0:22",
+          "desc": "[Montage x2] 狗跳水+男人在复古客厅独舞——荒诞+满足感递增。"
+        },
+        {
+          "time": "0:22–0:34",
+          "desc": "[End card] 白底 'Klarna.' + 'Smoooth payments.'（三个 o）。"
+        }
+      ],
+      "vo_quotes": [],
+      "strengths": [
+        "极致感官品牌化：34 秒没提一次产品功能，但观众走出去只记得'smoooth'——品牌词占领完成",
+        "oddly satisfying 内容天然高分享率——社交传播自驱动",
+        "鱼+狗+裸身舞蹈=完全不可预测的组合——feed 中 thumb-stop 率极高",
+        "'Smoooth'三个 o 的拼写=视觉记忆钩子"
+      ],
+      "risks": [
+        "零功能信息——不知道 Klarna 的人看完仍然不知道它是什么",
+        "对 M公司：如果品牌知名度不够高，纯感官广告可能导致'记住广告但不记住品牌'",
+        "文化语境依赖：某些市场可能觉得'裸身跳舞'不合适"
+      ],
+      "transferable": [
+        "感官词占领法：选一个形容词（smooth/smart/instant），围绕它做蒙太奇，让观众看到任何'smooth'的东西都联想到你",
+        "oddly satisfying 作为广告类型：把'看了很舒服'的内容编排进品牌蒙太奇——不需要叙事，感觉即品牌",
+        "品牌词畸形拼写：smoooth（三个 o）= 微小但持久的视觉记忆装置"
+      ],
+      "brand_platform": "△ 弱对齐——纯感官路线与 M公司'intelligence→confidence'路径不同轴；但'让金融体验感觉 smoooth'的底层诉求完全一致。如果 M公司有一天需要做纯品牌词广告，Klarna 的方法论值得参考。"
+    }
   },
   {
     "id": "JRRzPITP1R4",
@@ -955,7 +1195,41 @@
     "brand": "Monzo",
     "feedback": null,
     "source": "discord_export_attachment:1481119383823716402",
-    "duration_s": 30
+    "duration_s": 30,
+    "breakdown": {
+      "summary": "Monzo 'You Make Monzo, Monzo – Travel'——英国阴雨公交站 vs 异国海边泳池，用色温对比演示'Monzo 卡消除出境消费摩擦'，30 秒内完成情绪翻转。",
+      "structure": [
+        {
+          "time": "0:00–0:10",
+          "desc": "[Before] 灰蓝色调英国雨天公交站——女人淋雨等车，压抑到底。"
+        },
+        {
+          "time": "0:10–0:20",
+          "desc": "[Turn] 异国出租车（虎纹内饰）里，男人掏出现金犯难→亮出珊瑚色 Monzo 卡=解决。插入泳池俯拍——女人漂浮微笑，暖色调全开。"
+        },
+        {
+          "time": "0:20–0:30",
+          "desc": "[End card] 深蓝底+Monzo logo+珊瑚色卡+App 界面+App Store badges+Which?推荐标志。"
+        }
+      ],
+      "vo_quotes": [],
+      "strengths": [
+        "色温叙事：冷灰→暖金的色彩翻转=不需要 VO 就能传递情绪",
+        "珊瑚色卡作为 hero prop：在暖色调异国场景里，卡本身就是'自由'的视觉符号",
+        "30 秒内只讲一个功能点（境外免手续费）=信息清晰度满分",
+        "Which?推荐标志=第三方背书，不需要自己说自己好"
+      ],
+      "risks": [
+        "英国本土强烈的文化锚定（公交站/英国雨）→ 全球化复用需要替换'Before'场景",
+        "挑战者银行定位对 M公司参考度中等"
+      ],
+      "transferable": [
+        "色温即叙事：用调色板讲'Before→After'的故事——最低成本的情绪操控工具",
+        "产品卡作为 hero prop：让物理产品在关键转折帧出现=产品即解决方案的视觉速记",
+        "第三方背书徽章收尾：在 end card 放一个权威机构认证=代替口头承诺"
+      ],
+      "brand_platform": "✓ 强对齐（confidence + trust 双维度）——'出境消费无摩擦'= confidence 体验；Which?推荐= trust 背书；anti-焦虑 ✓（不放大出境换汇恐惧，而是用色彩翻转直接给答案）。对 M公司：全球化用户境外消费场景高度可迁移。"
+    }
   },
   {
     "id": "d_fbOwJO_10",
