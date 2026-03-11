@@ -26,6 +26,7 @@ export default function RootLayout({
               <a href="/" className="hover:opacity-80 transition-opacity">Today</a>
               <a href="/archive" className="hover:opacity-80 transition-opacity">Archive</a>
               <a href="/shortlist" className="hover:opacity-80 transition-opacity">收藏</a>
+              <a href="/about" className="hover:opacity-80 transition-opacity">About</a>
             </div>
           </div>
         </nav>
