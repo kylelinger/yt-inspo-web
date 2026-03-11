@@ -175,7 +175,53 @@
     "feedback": null,
     "source": "discord_export_attachment",
     "collection": "foundation",
-    "duration_s": 34
+    "duration_s": 34,
+    "breakdown": {
+      "summary": "Coinbase One Card 的整张卡面就是比特币创世区块的十六进制 dump——'The Times 03/Jan/2009 Chancellor on brink of second bailout for banks' 完整出现在卡面上，对 crypto-native 用户这是最高级别的身份认同。",
+      "structure": [
+        {
+          "time": "0:00–0:05",
+          "desc": "[Hook / Mystery] 纯黑背景，四个白色'0'字符排成菱形，什么都不解释——密码学感，好奇心驱动。"
+        },
+        {
+          "time": "0:05–0:15",
+          "desc": "[Artifact Reveal] 卡放在原始石块上，像是博物馆展品——工业精密 vs 地质粗糙，极度奢侈品叙事。"
+        },
+        {
+          "time": "0:15–0:25",
+          "desc": "[Deep Detail] 极端微距：卡面 hex 数字逐渐清晰——这不是装饰，是真实数据。"
+        },
+        {
+          "time": "0:25–0:30",
+          "desc": "[Meaning Reveal] 卡面完整 hex dump：左列地址、中列十六进制、右列 ASCII——'The Times 03/Jan/2009...' 字样清晰可读。这是 Satoshi 嵌入创世块的原话。"
+        },
+        {
+          "time": "0:30–0:34",
+          "desc": "[End card] 'coinbase' 字母粒子化动画凝聚，蓝色'a'点缀，legal 文字出现。"
+        }
+      ],
+      "vo_quotes": [
+        "(全片无 VO，纯视觉叙事)"
+      ],
+      "strengths": [
+        "对 crypto 社区是 shibboleth（内部暗号）：认识创世块 = 立即共鸣；不认识 = 神秘感驱动好奇",
+        "产品身份即品牌身份：Coinbase 名字来自区块链的 coinbase field，把公司名和创世故事绑定",
+        "奢侈品视觉语言（石材/极端微距/chiaroscuro 光）用于金融产品，完全颠覆预期",
+        "全片无人物、无 lifestyle——只有物件和意义，极克制",
+        "Bitcoin genesis block 原文引用 = 对银行系统的静默批判（也是 Brand Platform 对齐点）"
+      ],
+      "risks": [
+        "深度依赖 crypto-native 文化认知，对 Web2 用户基本失效",
+        "没有任何功能/权益说明（cashback、安全等）——纯品牌片",
+        "对 M公司：如果不做 crypto 产品，直接迁移路径不存在；但'卡=身份宣言'的结构可以借用"
+      ],
+      "transferable": [
+        "物件即宣言结构：把产品（卡/App/界面）本身作为品牌价值的物化容器，让用户拿到它就拥有了一个'立场'",
+        "内部文化密码：在广告里嵌一个只有目标用户认识的符号——既做身份认同，又做神秘感给外圈",
+        "奢侈品产品电影语法嫁接金融：石材/微距/无声/chiaroscuro = 立即提升感知质感，成本不需要最高"
+      ],
+      "brand_platform": "✓ 强对齐（trust + intelligence 维度）——批判银行体系（创世块文字）+ 智识密码（hex dump）= intelligence→confidence 路径清晰；anti-黑箱 ✓（把'看不见的系统'变成'可读的数据'）。"
+    }
   },
   {
     "id": "YjUwajAc1oE",
@@ -243,7 +289,49 @@
     "feedback": null,
     "source": "discord_export_attachment",
     "collection": "foundation",
-    "duration_s": 68
+    "duration_s": 68,
+    "breakdown": {
+      "summary": "一个普通人在城市里被字面意义上的'一整群人'跟踪、偷看购物袋、撞穿浴室墙——Apple 把数字追踪变成可以被摄影机拍到的荒诞现实，68秒完整版（App Tracking Transparency 系列）。",
+      "structure": [
+        {
+          "time": "0:00–0:10",
+          "desc": "[Hook / Setup] 主角在咖啡馆日常工作，一切正常——建立平静。"
+        },
+        {
+          "time": "0:10–0:30",
+          "desc": "[Escalation x3] 三段递进：被陌生人的车跟踪 → 在药店被一群人翻购物袋、偷看选购 → 群体越来越多，空间越来越私密。"
+        },
+        {
+          "time": "0:30–0:55",
+          "desc": "[Peak Absurdity] 浴室场景：陌生人砸穿墙闯入——最私密空间的最终侵入，喜剧高峰。"
+        },
+        {
+          "time": "0:55–1:00",
+          "desc": "[Resolution] 白色屏幕 + 'Privacy. That's iPhone.' + Apple logo。干净收尾，如同终于'清场'的松弛感。"
+        }
+      ],
+      "vo_quotes": [
+        "Privacy. That's iPhone."
+      ],
+      "strengths": [
+        "可见性机制：数字追踪本来是隐形的，把它变成可以被肉眼看见的'人群'——观众立刻'感受'到问题",
+        "三段递进的喜剧结构：每段升级一次入侵烈度，节奏控制教科书",
+        "浴室穿墙高光：喜剧 + 恐怖 + 真实感同时到达，最强记忆点",
+        "普通演员 cast：代入感极强，威胁感更真实",
+        "白色 end card 的松弛感：视觉和情绪一起'被清理'"
+      ],
+      "risks": [
+        "68秒长版对社交媒体传播有摩擦；30s 剪辑版（见 rdhQ4Erm3c8）效果更强",
+        "对 M公司：'隐私'叙事需要接到金融场景（你的资产/交易数据也一样被追踪）才能迁移",
+        "Apple 品牌背书对场景可信度有加持——无名品牌做同样内容，可信度下降"
+      ],
+      "transferable": [
+        "隐形→可见化法：把用户感受不到但确实存在的风险（追踪/费用/信息不对称）用物理动作演出来——让'威胁被感知'是建立信任的前提",
+        "三段递进喜剧结构：每次重复都升级一个维度（场景+人数+私密度）——不是三遍重复，是三次升级",
+        "空间私密度阶梯：公共（咖啡馆）→ 半公共（药店）→ 私密（浴室）= 戏剧张力的空间设计工具"
+      ],
+      "brand_platform": "✓ 强对齐（trust 维度）——最强力的 trust 建立路径：先让用户感受到风险，再 reveal 产品是屏障。对 M公司'你的钱也在被追踪/被吃掉'场景高度可迁移。anti-黑箱 ✓（反面演示）。"
+    }
   },
   {
     "id": "ivvw5uBvTh4",
@@ -361,7 +449,43 @@
     "feedback": null,
     "source": "discord_export_attachment",
     "collection": "foundation",
-    "duration_s": 38
+    "duration_s": 38,
+    "breakdown": {
+      "summary": "Jane Lynch 乔装成等候室大妈，把就诊者的个人信息（地址、薪资、秘密）大声广播给整个候诊室——Apple 继续用'可见化'方式演示隐私侵犯，38秒版本更精炼。",
+      "structure": [
+        {
+          "time": "0:00–0:08",
+          "desc": "[Setup] 主角走进等候室——机构感、不舒适感即建立。"
+        },
+        {
+          "time": "0:08–0:28",
+          "desc": "[Build] Jane Lynch（刻意不 glamorous：黑色 bob 假发+厚框眼镜+毛衣背心）大声宣读别人的私人信息——候诊室所有人都听到了。屈辱感和荒诞感同时存在。"
+        },
+        {
+          "time": "0:28–0:34",
+          "desc": "[Payoff + End card] 手持 iPhone 挡住脸——'Privacy. That's iPhone.' — 产品成为物理屏障。"
+        }
+      ],
+      "vo_quotes": [
+        "Privacy. That's iPhone."
+      ],
+      "strengths": [
+        "Jane Lynch 反差扮装：用观众认识的明星做'认不出来'的变装，增加发现惊喜感",
+        "等候室场景极通用：任何有过医院/政府窗口经历的人秒懂屈辱感",
+        "38秒比 fjf7c-O5GyQ（68秒）更适合数字投放",
+        "iPhone 挡脸=物理屏障：产品 reveal 兼功能演示，最后一帧信息密度高"
+      ],
+      "risks": [
+        "Jane Lynch 知名度有地区局限（美国强，亚洲弱）",
+        "等候室场景对年轻纯数字用户共鸣度可能低于药店/街头场景"
+      ],
+      "transferable": [
+        "明星变装+反差扮装：用知名面孔做意外角色——不指望观众一眼认出，而是让发现过程本身成为记忆点",
+        "产品 = 物理屏障视觉：最后让产品'真的挡住'某个威胁物（不是 demo 功能，而是视觉动作）——比 UI 截图说服力高 10 倍",
+        "机构建筑场景的情绪记忆：等候室/DMV/医院 = 被支配、被暴露的通用情绪记忆，进入这个场景即触发共情"
+      ],
+      "brand_platform": "✓ 强对齐（trust 维度）——和 fjf7c-O5GyQ 同系列，trust 建立路径一致；等候室公开宣读 = 典型 anti-黑箱 ✓。对 M公司：'你的金融数据也可能被陌生人公开宣读'场景可迁移。"
+    }
   },
   {
     "id": "F_YRNBw228w",
