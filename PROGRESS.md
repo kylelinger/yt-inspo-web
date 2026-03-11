@@ -1,22 +1,23 @@
-# yt-inspo-web Buildout Progress
+# yt-inspo-web Progress
 
-## Status: 🔨 IN PROGRESS
+## Current Status (2026-03-12 02:39 BJT)
+- **FULL Breakdowns**: 44/55 completed (remaining 11: 6 playback_risky + 2 negative feedback + 3 reference/creative)
+- **Metadata**: 55/55 complete
+- **Deployed**: https://ytinspowebrepo.vercel.app
+- **Latest commit**: `cb4734f` on `main`
 
-### Done
-- [x] 55/55 视频元数据补全（title/brand/duration）— 6条不可播放已标 playback_risky
-- [x] FULL 拆解卡模板定稿写进 SOP
-- [x] LinkedIn seed 写进 SEARCH_FRAMEWORK.md
-- [x] VideoCard 增加「拆解」标签 + playback_risky ⚠️ 标识
-- [x] Vercel 部署更新完成
-- [x] 进度 cron 已设
+## Done
+- 55/55 video metadata (title/brand/duration)
+- 44/55 FULL structural breakdowns written to videos.json
+- About page (/about)
+- Duration badges, breakdown tags, playback_risky markers
+- VideoCard enhancements
+- FULL breakdown template in SOP
+- LinkedIn seed in SEARCH_FRAMEWORK
 
-### In Progress
-- [ ] 视频详情页增强（breakdown 展示优化 + duration badge）
-- [ ] 更多视频做 FULL 拆解（当前 6/55）
-- [ ] About/Who-made-this 版块
-- [ ] 反馈数据服务端持久化（当前 localStorage）
+## In Progress
+- Final 11 breakdowns (analyzing frames now)
+- Deploy after completion
 
-### Blocked
+## Blocked
 - (none)
-
-## Last updated: 23:38 IST

@@ -783,7 +783,46 @@
     "brand": "What a Story | SaaS & AI Product Video Experts",
     "feedback": null,
     "source": "discord_export_attachment",
-    "duration_s": 33
+    "duration_s": 33,
+    "breakdown": {
+      "summary": "Kitaabh AI 金融助手产品 demo——纯 UI 动画+零人物，用自然语言搜索框展示'问一句话就出财务报表'的核心价值。30 秒暗黑科技风。",
+      "structure": [
+        {
+          "time": "0:00–0:08",
+          "desc": "[Hook] 青色弧光动画——抽象科技感建立氛围。"
+        },
+        {
+          "time": "0:08–0:18",
+          "desc": "[Demo 1] 搜索框输入'Last month's expense report'→ 柱状图即出；功能植入。"
+        },
+        {
+          "time": "0:18–0:28",
+          "desc": "[Demo 2] '2B records missing in books'→ 对账表出现（红色标记差异）——复杂场景证明 AI 能力。"
+        },
+        {
+          "time": "0:28–0:33",
+          "desc": "[End card] Kitaabh logo + 'The answers you need are always ready and waiting.' + URL。"
+        }
+      ],
+      "vo_quotes": [
+        "The answers you need are always ready and waiting"
+      ],
+      "strengths": [
+        "搜索框即交互范式：一个输入框=传达'AI 能做任何事'——比 feature list 高效 10 倍",
+        "渐进式复杂度：简单查询→复杂对账，2 步证明从入门到专业都能用",
+        "'安静权威'调性：零 hype 零紧迫感——让数据说话"
+      ],
+      "risks": [
+        "印度 GST 特定场景，全球通用性有限",
+        "纯 UI 动画对非目标用户吸引力低",
+        "对 M公司：如果做 AI 理财助手功能发布，这种'搜索框→即时回答'的 demo 结构可直接参考"
+      ],
+      "transferable": [
+        "搜索框作为 hero interaction：产品广告只展示一个输入框+两个查询=传达无限能力",
+        "渐进式信任建立：先用简单查询证明可用性，再用复杂查询证明专业度"
+      ],
+      "brand_platform": "✓ 对齐（intelligence 维度）——'问就有答案'=intelligence 的最直接体现；对 M公司：如果做 AI 理财助手，这就是产品发布视频的参考模板。"
+    }
   },
   {
     "id": "70T7Q6y4eZc",
@@ -794,7 +833,38 @@
     "title": "Welcome Home | Spike Jonze × Apple",
     "brand": "Apple",
     "feedback": null,
-    "source": "discord_export_attachment:1481119383823716402"
+    "source": "discord_export_attachment:1481119383823716402",
+    "breakdown": {
+      "summary": "Apple 'Welcome Home'（Spike Jonze 执导）——FKA twigs 在公寓里跳舞，房间随音乐和情绪膨胀/变形/延展。HomePod=家变成表达空间。⚠️ 播放受限。",
+      "structure": [
+        {
+          "time": "0:00–0:45",
+          "desc": "[Arrival] 疲惫回家→ HomePod 开始播放→ 房间开始变化。"
+        },
+        {
+          "time": "0:45–3:00",
+          "desc": "[Expansion] FKA twigs 在不断延展的空间里舞蹈——墙壁/家具随身体动作扩张/收缩。"
+        },
+        {
+          "time": "3:00–3:50",
+          "desc": "[Return] 房间回归正常尺寸——但情感状态已经改变。HomePod end card。"
+        }
+      ],
+      "vo_quotes": [],
+      "strengths": [
+        "物理空间随情绪变形=产品利益的终极可视化：'音乐改变你的空间'从比喻变成字面",
+        "Spike Jonze 导演级别=品牌作为艺术赞助人——广告本身是值得收藏的短片",
+        "FKA twigs 的文化资本=Apple 的审美声明"
+      ],
+      "risks": [
+        "⚠️ playback_risky：播放受地区限制"
+      ],
+      "transferable": [
+        "利益字面化-空间篇：让产品带来的改变在物理空间中可见——房间变大/颜色变化/重力改变",
+        "导演即品牌声明：选择有强烈个人风格的导演=品牌审美立场的外化"
+      ],
+      "brand_platform": "✓ 参考价值高——'回到家+开始使用=整个世界改变'的叙事与 M公司'打开 App=世界变清晰'的品牌愿景一致。"
+    }
   },
   {
     "id": "R8iaViNIy3U",
@@ -806,7 +876,42 @@
     "brand": "I Can't Stop Making Noise",
     "feedback": null,
     "source": "discord_export_attachment:1481119383823716402",
-    "duration_s": 182
+    "duration_s": 182,
+    "breakdown": {
+      "summary": "Bo Burnham 'Bezos I+II'——用体育场摇滚乐格式'崇拜' Jeff Bezos，讽刺与赞美不可分辨。DIY 房间拍摄 vs 史诗音乐野心=Inside 的核心张力。182 秒。",
+      "structure": [
+        {
+          "time": "0:00–0:40",
+          "desc": "[Bezos I] Arena rock anthem——power chords+戏剧化鞠躬，'CEO, entrepreneur'如同颂歌。"
+        },
+        {
+          "time": "0:40–2:00",
+          "desc": "[Bezos II] 转为柔和 singer-songwriter 调→逐步回升——'You did it!'的讽刺/真诚叠加。"
+        },
+        {
+          "time": "2:00–3:02",
+          "desc": "[Extended Mix] 循环+叠加+紫色星云背景下 Bezos 头像——封神仪式。"
+        }
+      ],
+      "vo_quotes": [
+        "CEO, entrepreneur, born in 1964",
+        "You did it!"
+      ],
+      "strengths": [
+        "调性错位=最强讽刺：用崇拜音乐的真诚格式讲荒诞内容——观众不确定自己该笑还是感动",
+        "DIY 制作 vs 史诗主题：一个人在小房间里制作'比 Super Bowl 中场秀更有能量的东西'——反差即创意",
+        "互联网原生传播：'Bezos' 片段成为 TikTok/meme 现象——证明音乐讽刺的传播力"
+      ],
+      "risks": [
+        "纯创意/文化参考——不可直接作为广告模板",
+        "对 M公司：'调性错位'手法有参考价值——用不匹配的格式（如歌剧/摇滚/童谣）讲金融概念=注意力收割"
+      ],
+      "transferable": [
+        "调性错位法：用完全不匹配的情感格式（崇拜/悲伤/愤怒）包装你的信息——真诚与讽刺的模糊地带最吸引注意力",
+        "DIY 美学的真诚感：低制作成本+高创意密度=比抛光广告更真实的文化渗透力"
+      ],
+      "brand_platform": "△ 文化参考——Burnham 对科技巨头崇拜文化的讽刺与 M公司 anti-喊单（anti-盲目崇拜财富）一致。"
+    }
   },
   {
     "id": "VtC7Fq4m0Qs",
@@ -817,7 +922,33 @@
     "title": "Original Is Never Finished | Adidas",
     "brand": "Adidas",
     "feedback": null,
-    "source": "discord_export_attachment:1481119383823716402"
+    "source": "discord_export_attachment:1481119383823716402",
+    "breakdown": {
+      "summary": "Adidas 'Original Is Never Finished'——重新演绎经典 icon（Snoop Dogg/Desiigner/Stormzy 等）的蒙太奇，'没有原创是完成的'=永远进化的品牌宣言。⚠️ 播放受限。",
+      "structure": [
+        {
+          "time": "0:00–0:30",
+          "desc": "[Montage] 多位文化 icon 在各种场景中——每个人都在'重新定义'Original。"
+        },
+        {
+          "time": "0:30–0:60",
+          "desc": "[Build + End] 密度持续升高——三条纹 logo 浮现。"
+        }
+      ],
+      "vo_quotes": [],
+      "strengths": [
+        "'Original is never finished'=品牌进化的永恒宣言——不是怀旧，是持续前进",
+        "多 icon 蒙太奇=文化丰富度最大化——每个观众都能找到自己的锚点"
+      ],
+      "risks": [
+        "⚠️ playback_risky：播放受地区限制"
+      ],
+      "transferable": [
+        "品牌宣言 tagline 作为创意 brief：'X is never Y'结构——简单但能孵化无限执行",
+        "多 icon 蒙太奇法：选 5-10 个不同领域的人物展示同一个品牌精神——覆盖面最大化"
+      ],
+      "brand_platform": "✓ 对齐（intelligence 维度）——'从不完成'=持续学习/进化，与 M公司 intelligence 路径一致。"
+    }
   },
   {
     "id": "WA4dDs0T7sM",
@@ -828,7 +959,35 @@
     "title": "You Can't Stop Us | Nike",
     "brand": "Nike",
     "feedback": null,
-    "source": "discord_export_attachment:1481119383823716402"
+    "source": "discord_export_attachment:1481119383823716402",
+    "breakdown": {
+      "summary": "Nike 'You Can't Stop Us'——36 组分屏运动画面精确对齐（左右屏动作完美衔接），'你阻止不了我们'是疫情后最强品牌宣言之一。⚠️ 播放受限。",
+      "structure": [
+        {
+          "time": "0:00–0:30",
+          "desc": "[Split Screen Montage] 不同运动/运动员的画面左右分屏精确匹配——动作无缝过渡。"
+        },
+        {
+          "time": "0:30–0:90",
+          "desc": "[Build + VO] Megan Rapinoe 旁白——运动/社会正义/坚韧主题。"
+        }
+      ],
+      "vo_quotes": [
+        "You can't stop us"
+      ],
+      "strengths": [
+        "分屏精确对齐=技术奇观：花了 4,000+ 小时匹配 36 组画面——工艺本身就是品牌声明",
+        "运动作为社会隐喻：不只是体育广告，是疫情+种族正义运动时期的文化声明"
+      ],
+      "risks": [
+        "⚠️ playback_risky：播放受地区限制"
+      ],
+      "transferable": [
+        "分屏对齐法：从不同源素材中找到视觉对称点——用剪辑创造'命运交汇'感",
+        "品牌宣言时机：在社会危机时刻发声=品牌从商业实体升级为文化参与者"
+      ],
+      "brand_platform": "✓ 强对齐（confidence 维度）——'阻止不了'=最强 confidence 声明；对 M公司：市场动荡时期的品牌沟通参考。"
+    }
   },
   {
     "id": "Y3Iy-KMwSz0",
@@ -840,7 +999,39 @@
     "brand": "Aurelien Ressencourt 2DFX Animation",
     "feedback": null,
     "source": "discord_export_attachment:1481119383823716402",
-    "duration_s": 12
+    "duration_s": 12,
+    "breakdown": {
+      "summary": "Arcane S01 2DFX 烟雾 line test——Fortiche 工作室的手绘 2D 特效层与 3D CG 角色的合成过程展示。12 秒左右分屏对比。",
+      "structure": [
+        {
+          "time": "0:00–0:06",
+          "desc": "[左屏] 最终合成画面：装甲执法者双拳相击+烟雾爆发。"
+        },
+        {
+          "time": "0:00–0:06",
+          "desc": "[右屏] 孤立的 2DFX 层：蓝色占位色+手绘烟雾帧——chunky/图形化/有机运动。"
+        },
+        {
+          "time": "0:06–0:12",
+          "desc": "烟雾消散+拳头残余能量火花——手绘质感的消散动画。"
+        }
+      ],
+      "vo_quotes": [],
+      "strengths": [
+        "手绘 2D + 3D CG 混合美学=Arcane 的标志性视觉语言——独一无二的辨识度",
+        "分屏对比展示=制作工艺透明化——'看看我们是怎么做的'本身就是内容",
+        "手绘特效的触感质地：在全 CG 时代，手工制作=奢侈品级差异化"
+      ],
+      "risks": [
+        "12 秒动画技术参考——非广告模板",
+        "对 M公司：如果做品牌动画/motion design，手绘特效层可以考虑——给数字产品增加'手工温度'"
+      ],
+      "transferable": [
+        "制作过程透明化即内容：展示'如何制作'的幕后=建立工艺信任+生成额外内容",
+        "手绘层+数字层混合：在纯数字产品的视觉中加入手绘/手写/手工元素——人性化品牌感知"
+      ],
+      "brand_platform": "△ 技术参考——与品牌战略无直接关联，但'工艺透明化'与 anti-黑箱原则一致。"
+    }
   },
   {
     "id": "Yb7H9Z6yZxQ",
@@ -851,7 +1042,36 @@
     "title": "We Are All Investors | Robinhood Super Bowl 2021",
     "brand": "Robinhood",
     "feedback": null,
-    "source": "discord_export_attachment:1481119383823716402"
+    "source": "discord_export_attachment:1481119383823716402",
+    "breakdown": {
+      "summary": "Robinhood 'We Are All Investors' Super Bowl 广告——'投资不只是华尔街的事'，用普通人影像重新定义'投资者'概念。Robinhood 的品牌宣言核心片。⚠️ 播放受限。",
+      "structure": [
+        {
+          "time": "0:00–0:15",
+          "desc": "[Redefine] 快速蒙太奇：各种普通人+日常场景——他们都是投资者。"
+        },
+        {
+          "time": "0:15–0:30",
+          "desc": "[End card] 'We are all investors' + Robinhood。"
+        }
+      ],
+      "vo_quotes": [
+        "We are all investors"
+      ],
+      "strengths": [
+        "直接竞品=最高参考价值：Robinhood 的 democratization 品牌宣言是 M公司的直接对标物",
+        "'We are all'包容性叙事：把精英概念（投资者）平民化=品牌使命声明",
+        "Super Bowl 级投放=品牌宣言的最大声量"
+      ],
+      "risks": [
+        "⚠️ playback_risky：播放受地区限制"
+      ],
+      "transferable": [
+        "身份重新定义法：'X 不只是 Y 的事'——把一个被精英垄断的身份归还给普通人",
+        "品牌宣言 vs 功能广告：Super Bowl 做宣言、数字渠道做功能——分层沟通策略"
+      ],
+      "brand_platform": "✓ 最强对齐——直接竞品的核心品牌片。'We are all investors'与 M公司'smarter your money'同路径。必须研究+超越。"
+    }
   },
   {
     "id": "j-RpvIuazmc",
@@ -863,7 +1083,39 @@
     "brand": "League of Legends",
     "feedback": null,
     "source": "discord_export_attachment:1481119383823716402",
-    "duration_s": 169
+    "duration_s": 169,
+    "breakdown": {
+      "summary": "Stromae & Pomme 'Ma Meilleure Ennemie'（Arcane S2）——CRT 电视作为现实/动画世界的膜，Jinx/Vi 姐妹破裂叙事+法语亲密感。169 秒动画 MV。",
+      "structure": [
+        {
+          "time": "0:00–0:30",
+          "desc": "[CRT Portal] Stromae 在紫色灯光中通过扫描线滤镜——他存在于'我们的世界'看向 Arcane。"
+        },
+        {
+          "time": "0:30–2:00",
+          "desc": "[Animated Core] Jinx 倒在地板+纸屑——庆祝变空洞；Vi 面对她，悲痛/冲突。红/青色对比编码对立阵营。"
+        },
+        {
+          "time": "2:00–2:49",
+          "desc": "[Convergence + End] CRT 扫描线包裹 Netflix logo——两个世界从未真正合并。"
+        }
+      ],
+      "vo_quotes": [],
+      "strengths": [
+        "CRT 作为叙事装置：复古电视扫描线=两个世界之间的物理边界——概念化的世界观构建",
+        "法语+动画=双重陌生化：语言本身的陌生感加强了姐妹关系'不可翻译'的主题",
+        "庆祝变空洞的视觉隐喻：Jinx 周围的纸屑=本该快乐的场景反转为最孤独的时刻"
+      ],
+      "risks": [
+        "169 秒动画 MV——非广告模板",
+        "对 M公司：如果做品牌 IP/动画内容，Fortiche 的'3D+手绘+实拍混合'美学值得研究"
+      ],
+      "transferable": [
+        "介质作为叙事装置：用特定媒介形式（CRT/VHS/胶片/传真）作为'世界切换'的视觉信号——比简单转场更有深度",
+        "语言陌生化：在非母语市场用当地语言配乐——'听不懂但感受到'的情感效果"
+      ],
+      "brand_platform": "△ 文化参考——Arcane 的叙事工艺对 M公司长期品牌内容建设有间接参考价值。"
+    }
   },
   {
     "id": "nhwhnEe7CjE",
@@ -874,7 +1126,37 @@
     "title": "The Song | Apple iPhone Holiday Film",
     "brand": "Apple",
     "feedback": null,
-    "source": "discord_export_attachment:1481119383823716402"
+    "source": "discord_export_attachment:1481119383823716402",
+    "breakdown": {
+      "summary": "Apple 'The Song'——女孩用 iPad 翻录祖母旧卡带唱片+加入自己的声音做成双人合唱圣诞礼物。代际连接+Apple 产品=情感桥梁。⚠️ 播放受限。",
+      "structure": [
+        {
+          "time": "0:00–0:30",
+          "desc": "[Discovery] 女孩在阁楼找到祖母旧照片/旧唱片——nostalgia 建立。"
+        },
+        {
+          "time": "0:30–1:20",
+          "desc": "[Creation] 用 iPad/Mac 翻录+录音+混音——产品自然嵌入创作过程。"
+        },
+        {
+          "time": "1:20–1:30",
+          "desc": "[Gift] 圣诞节祖母戴上耳机听到孙女的声音加入——泪点。"
+        }
+      ],
+      "vo_quotes": [],
+      "strengths": [
+        "产品作为连接器而非主角：iPad=把两代人的声音合在一起的工具——功能内嵌叙事",
+        "祖母/孙女=最强代际共情——不需要解释，画面自己讲故事"
+      ],
+      "risks": [
+        "⚠️ playback_risky：播放受地区限制"
+      ],
+      "transferable": [
+        "代际连接叙事：让产品成为连接不同世代的桥梁——在金融语境中='帮父母理财/教孩子储蓄'的情感角度",
+        "创作过程即产品演示：展示用户'用产品做东西'的过程=最自然的功能展示"
+      ],
+      "brand_platform": "✓ 对齐（trust 维度）——代际信任=最深层的 trust；对 M公司：如果做家庭理财/代际财富传承主题，这是情感模板。"
+    }
   },
   {
     "id": "nnsSUqgkDwU",
@@ -886,7 +1168,46 @@
     "brand": "Google",
     "feedback": null,
     "source": "discord_export_attachment:1481119383823716402",
-    "duration_s": 52
+    "duration_s": 52,
+    "breakdown": {
+      "summary": "Google 'Parisian Love'——整个广告只有 Google 搜索框和打字声，用搜索记录讲了一个从巴黎留学到结婚生子的完整爱情故事。零画面零人物，产品即叙事媒介。",
+      "structure": [
+        {
+          "time": "0:00–0:15",
+          "desc": "[Act 1: Meet] 'study abroad paris'→'cafés near the louvre'→'impress a french girl'——恋爱开始。"
+        },
+        {
+          "time": "0:15–0:35",
+          "desc": "[Act 2: Build] 'chocolate shops paris'→'tu es très belle'翻译→'AA120 JFK-CDG'→'long distance advice'——升级+波折。"
+        },
+        {
+          "time": "0:35–0:50",
+          "desc": "[Act 3: Commit] 'jobs in paris'→'churches in paris'→'how to assemble a crib'——结婚生子。"
+        },
+        {
+          "time": "0:50–0:52",
+          "desc": "[End card] 'Search on.'——双关：继续搜索/继续生活。"
+        }
+      ],
+      "vo_quotes": [
+        "Search on."
+      ],
+      "strengths": [
+        "产品即媒介：不展示产品，产品本身就是故事的叙事工具——最高级别的产品广告",
+        "想象力填充：零画面意味着观众用自己的记忆填满画面——情感代入比实拍更强",
+        "在 Super Bowl 全是高预算特效大片中，一个白屏+打字声的广告反而最被记住——反差即注意力",
+        "'Search on.' 双关收尾：品牌功能+人生态度合二为一"
+      ],
+      "risks": [
+        "需要产品本身有足够强的通用性（Google 搜索框人人都用）——不适合小众产品",
+        "对 M公司：如果 App 有'记录用户金融旅程'的功能（如交易记录/目标追踪），可以用类似结构讲'一个人从第一笔投资到财务自由'的故事"
+      ],
+      "transferable": [
+        "产品界面即叙事媒介：不用实拍，用产品自己的 UI 讲故事——最低成本+最强品牌绑定",
+        "人生里程碑搜索序列：按时间线排列用户行为/查询，让产品陪伴感自然浮现"
+      ],
+      "brand_platform": "✓ 强对齐（intelligence + trust 双维度）——搜索=intelligence 的体现；陪伴整个人生旅程=trust 的最终形态；对 M公司：如果交易记录/目标追踪能串成故事线，'Search on.'='Invest on.'='Grow on.'可迁移。"
+    }
   },
   {
     "id": "q0MG4xSt--Q",
@@ -898,7 +1219,41 @@
     "brand": "DBS",
     "feedback": null,
     "source": "discord_export_attachment:1481119383823716402",
-    "duration_s": 30
+    "duration_s": 30,
+    "breakdown": {
+      "summary": "DBS 'Building an Inclusive Digital Economy'——CNN 品牌新闻风格，用雅加达年轻创业者视角讲述东南亚金融包容，30 秒内把银行定位为'系统建设者'而非'服务提供商'。",
+      "structure": [
+        {
+          "time": "0:00–0:10",
+          "desc": "[Context] 雅加达街头（摩托车/城市天际线/绿植）——东南亚新兴市场即设定。"
+        },
+        {
+          "time": "0:10–0:25",
+          "desc": "[Human Story] 年轻人（牛仔衬衫+平板）讲述'we thought there should be a better way'+监管层面合作——DBS 不只是银行，是生态建设者。"
+        },
+        {
+          "time": "0:25–0:30",
+          "desc": "[End card] DBS 星形 logo + 黑红白品牌色 + 'Truly Transformative' tagline。"
+        }
+      ],
+      "vo_quotes": [
+        "we thought there should be a better way"
+      ],
+      "strengths": [
+        "品牌新闻格式：看起来像 CNN 纪录片而非银行广告——观众防御心最低",
+        "新兴市场真实质感：hijab 客户+摩托车+本地咖啡馆=非刻意多元，是真实场景",
+        "'better way' 叙事框架：不说 DBS 多好，说'当地人认为应该有更好的方式，DBS 帮他们做了'——主角是用户不是银行"
+      ],
+      "risks": [
+        "CNN 品牌新闻调性偏沉稳，年轻受众可能无感",
+        "对 M公司：如果进入东南亚市场，DBS 的本地化叙事方式有参考价值"
+      ],
+      "transferable": [
+        "品牌新闻格式（而非传统广告）：制作看起来像纪录片/新闻报道的内容——观众当'信息'而非'广告'消费",
+        "当地人做主角：不是品牌进入市场，而是市场里的人选择了品牌——叙事权交给用户"
+      ],
+      "brand_platform": "✓ 强对齐（trust + intelligence 双维度）——金融包容=trust 的社会层面；与监管合作=transparency ✓；对 M公司全球化战略：进入新兴市场时的叙事模板。"
+    }
   },
   {
     "id": "qbI_9qVx6l4",
@@ -909,7 +1264,34 @@
     "title": "QR Code Bouncing | Coinbase Super Bowl 2022",
     "brand": "Coinbase",
     "feedback": null,
-    "source": "discord_export_attachment:1481119383823716402"
+    "source": "discord_export_attachment:1481119383823716402",
+    "breakdown": {
+      "summary": "Coinbase QR Code Super Bowl 广告——60 秒只有一个彩色 QR 码在黑色屏幕上弹跳（致敬 DVD screensaver），扫码去 coinbase.com/superbowl。整个 Super Bowl 最不像广告的广告。⚠️ 播放受限。",
+      "structure": [
+        {
+          "time": "0:00–0:55",
+          "desc": "[QR Bounce] 彩色 QR 码在纯黑屏幕上弹跳——DVD screensaver 怀旧+悬念（它会碰到角吗？）。"
+        },
+        {
+          "time": "0:55–1:00",
+          "desc": "[End card] Coinbase logo + URL reveal。"
+        }
+      ],
+      "vo_quotes": [],
+      "strengths": [
+        "极致减法：在所有 Super Bowl 广告都在'加'时，Coinbase 什么都不放——最大的注意力获取",
+        "DVD screensaver 怀旧：千禧一代/Gen Z 的共同记忆=自动传播素材",
+        "互动即 CTA：'扫码'不是号召，是本能——61% 观众扫了码"
+      ],
+      "risks": [
+        "⚠️ playback_risky：播放受地区限制"
+      ],
+      "transferable": [
+        "极致减法：当竞争环境极度嘈杂时，沉默/空白/极简反而是最强信号",
+        "互动内嵌广告：让广告本身就是一个互动行为（扫码/摇手机/截图）——从观看变为参与"
+      ],
+      "brand_platform": "✓ 强对齐（intelligence 维度）——用最少元素传达最多信息=intelligence 的极致体现；anti-喊单 ✓（什么都不说反而比说100句更有力）。"
+    }
   },
   {
     "id": "x59J0l2EjAs",
@@ -921,7 +1303,39 @@
     "brand": "Wise",
     "feedback": null,
     "source": "discord_export_attachment:1481119383823716402",
-    "duration_s": 80
+    "duration_s": 80,
+    "breakdown": {
+      "summary": "Wise 设计系统发布——货币符号嵌入字母（Y€$→¥EN、£DN=London），用 motion design 把'国际汇款'变成'可穿戴的字体设计'。80 秒纯品牌标识片。",
+      "structure": [
+        {
+          "time": "0:00–0:25",
+          "desc": "[Typography System] 品牌绿底+超大字体快速切换——建立新视觉语言的密度感。"
+        },
+        {
+          "time": "0:25–0:60",
+          "desc": "[Currency-as-Letter] Y€$→¥EN / £DN 等货币符号嵌入单词——产品（汇款）和设计（字体）融为一体。"
+        },
+        {
+          "time": "0:60–0:80",
+          "desc": "[New Identity Reveal] 更新后 Wise flag logo + UI 组件（滑块/按钮）动画——设计系统完整展示。"
+        }
+      ],
+      "vo_quotes": [],
+      "strengths": [
+        "货币符号=字母 的创意：€=E、£=L、¥=Y——让品牌字体本身就在'说'国际汇款",
+        "Motion design 作为品牌表达：不需要任何 lifestyle 场景，纯动态排版就能传递品牌个性",
+        "绿色系统的极致辨识度：在所有金融品牌中 Wise 的颜色是唯一的"
+      ],
+      "risks": [
+        "80 秒设计系统展示对非设计师受众吸引力有限",
+        "对 M公司：品牌视觉升级/设计系统发布时的首选参考"
+      ],
+      "transferable": [
+        "产品语义嵌入字体设计：让品牌字体的字形本身包含产品信息（货币符号/图形/数据图标）",
+        "Motion design 品牌片：零 lifestyle 纯排版动画——低成本高辨识度的品牌展示方式"
+      ],
+      "brand_platform": "△ 部分对齐——设计系统发布是品牌基建，对 M公司的 intelligence 维度有间接贡献（'我们的每个像素都经过深思熟虑'=intelligence 信号）。"
+    }
   },
   {
     "id": "-8hUiJYXfVY",
@@ -937,7 +1351,37 @@
       "reason": "太 B2B（宏观/机构叙事，不适合日更灵感）"
     },
     "source": "discord_thread",
-    "duration_s": 30
+    "duration_s": 30,
+    "breakdown": {
+      "summary": "Hitachi 'Digital Finance Matters in Southeast Asia'——东南亚金融数字化的机构叙事，30 秒。👎 反馈：太 B2B/宏观机构叙事，不符合日更标准。",
+      "structure": [
+        {
+          "time": "0:00–0:10",
+          "desc": "[Context] 东南亚城市航拍+数字金融生态镜头。"
+        },
+        {
+          "time": "0:10–0:25",
+          "desc": "[Solution] Hitachi 数字解决方案展示——机构视角。"
+        },
+        {
+          "time": "0:25–0:30",
+          "desc": "[End card] Hitachi Inspire the Next。"
+        }
+      ],
+      "vo_quotes": [
+        "Inspire the Next"
+      ],
+      "strengths": [
+        "东南亚金融数字化场景有区域参考价值"
+      ],
+      "risks": [
+        "👎 用户反馈：太 B2B/宏观机构叙事——不够 consumer-facing，审美不前沿，不适合 M公司日更参考"
+      ],
+      "transferable": [
+        "区域化数字金融叙事：如果要拍东南亚市场版广告，这是'不要这样做'的反面教材——应更 consumer/human-scale"
+      ],
+      "brand_platform": "✗ 不对齐——机构宣传片气质与 M公司 consumer-facing 品牌路线冲突。"
+    }
   },
   {
     "id": "SWNQZYPZiVw",
@@ -953,7 +1397,35 @@
       "reason": "不够国际化/审美不够前沿"
     },
     "source": "discord_thread",
-    "duration_s": 30
+    "duration_s": 30,
+    "breakdown": {
+      "summary": "Greater Bank 'Hunter Hunter'——澳洲本地 SME case-study，展示灵活商业贷款如何帮助小企业成长。30 秒。👎 反馈：不够国际化，审美不够前沿。",
+      "structure": [
+        {
+          "time": "0:00–0:10",
+          "desc": "[Setup] Hunter Hunter 咖啡/美食店场景——本地小企业。"
+        },
+        {
+          "time": "0:10–0:25",
+          "desc": "[Growth Story] 灵活贷款→扩张叙事。"
+        },
+        {
+          "time": "0:25–0:30",
+          "desc": "[End card] Greater Bank logo + 'flexible business finance'。"
+        }
+      ],
+      "vo_quotes": [],
+      "strengths": [
+        "真实 SME 故事有地方银行 marketing 参考价值"
+      ],
+      "risks": [
+        "👎 用户反馈：不够国际化、审美不够前沿——SME case-study 格式无法作为 M公司品牌灵感"
+      ],
+      "transferable": [
+        "SME 故事格式在地方银行有效，但不适合全球化互联网金融品牌——是'不做什么'的参考"
+      ],
+      "brand_platform": "✗ 不对齐——地方银行 case-study 调性与 M公司国际化品牌路线冲突。"
+    }
   },
   {
     "id": "6gSRE8mzqvw",
@@ -1389,7 +1861,39 @@
     "brand": "AJREarlyReleases2",
     "feedback": null,
     "source": "discord_export_attachment:1481119383823716402",
-    "duration_s": 30
+    "duration_s": 30,
+    "breakdown": {
+      "summary": "Apple Holiday 2020 × AJR 'Bang!'——零叙事零人物，纯产品编舞（iPhone/Watch/AirPods 在白色背景上做万花筒式旋转排列），音乐节奏驱动视觉，产品=舞者。",
+      "structure": [
+        {
+          "time": "0:00–0:10",
+          "desc": "[iPhone Ballet] 多色 iPhone 12 在白背景上翻转/扇形排列——踩着节拍。"
+        },
+        {
+          "time": "0:10–0:20",
+          "desc": "[Watch + AirPods] Apple Watch 彩色表带+AirPods Pro 加入编舞——产品家族感。"
+        },
+        {
+          "time": "0:20–0:30",
+          "desc": "[End card] Apple logo 变成红色礼物蝴蝶结——零 tagline，logo 即信息。"
+        }
+      ],
+      "vo_quotes": [],
+      "strengths": [
+        "产品即表演者：不需要人物，产品自己'跳舞'——物件拟人化+节奏同步=即刻吸引力",
+        "万花筒排列：多设备组合成几何图案=社交媒体 GIF/循环素材天然适配",
+        "礼物蝴蝶结 Apple logo：最小改动，最大节日感——logo 变体的教科书"
+      ],
+      "risks": [
+        "只有 Apple 的品牌积累+产品美学才能让'纯产品编舞'成立——新品牌无法复制",
+        "对 M公司：无叙事广告需要极强的品牌认知基础，但产品编舞的美学方向可以用在 App 图标/UI 动画短视频中"
+      ],
+      "transferable": [
+        "音乐节奏驱动产品展示：让产品出现/切换的时机精准踩拍——观众不自觉被节奏带走",
+        "Logo 变体做节日/事件标记：不换 logo 设计，只加一个节日元素——最低成本的品牌节日化"
+      ],
+      "brand_platform": "△ 弱对齐——Apple 纯产品美学路线与 M公司品牌阶段不匹配；但'产品美学自信'是 confidence 维度的终极目标。"
+    }
   },
   {
     "id": "NON0euNOj3k",
@@ -1725,7 +2229,41 @@
     "brand": "Royal Bank of Scotland",
     "feedback": null,
     "source": "discord_export_attachment:1481119383823716402",
-    "duration_s": 40
+    "duration_s": 40,
+    "breakdown": {
+      "summary": "RBS 'Making Banking Easier'——Sophie 丢了信用卡但在咖啡馆淡定喝茶，幻想段落（金箔/马卡龙/侍者）exaggerate 了'解决问题如此享受'的感觉。40 秒轻喜剧。",
+      "structure": [
+        {
+          "time": "0:00–0:10",
+          "desc": "[Setup] 旁白：'Sophie 丢了信用卡。' 她在植物环绕的咖啡馆里——看起来完全不慌。"
+        },
+        {
+          "time": "0:10–0:30",
+          "desc": "[Fantasy] 金色纸屑+侍者端来精致蛋糕/马卡龙——夸张到荒诞的'享受感'：在手机上解决问题的体验被魔幻化。"
+        },
+        {
+          "time": "0:30–0:40",
+          "desc": "[Reality + End card] 回到现实咖啡馆+RBS logo + 'Search Royal Bank Easier Banking'。"
+        }
+      ],
+      "vo_quotes": [
+        "Sophie lost her credit card"
+      ],
+      "strengths": [
+        "现实/幻想切换：用视觉落差让'无感解决问题'变得戏剧性——本来无聊的'挂失'流程变成值得看的内容",
+        "场景营造的安全感：咖啡馆+植物+茶=calm，不需要说'我们很安全'",
+        "角色化叙事（Sophie）比匿名用户更有代入感"
+      ],
+      "risks": [
+        "传统银行的创新广告仍可能被 challenger bank 的更激进叙事淹没",
+        "对 M公司：'丢卡不慌'场景可直接迁移到'账户安全'叙事——关键是让解决过程看起来毫不费力"
+      ],
+      "transferable": [
+        "现实/幻想切换法：用夸张的美好想象来exaggerate一个本该无聊的产品流程——让功能变成'体验'",
+        "角色命名化：给广告里的匿名用户一个名字（Sophie/Alex/...）——代入感+记忆锚点"
+      ],
+      "brand_platform": "✓ 对齐（trust + confidence）——危机时刻的从容=trust 最强信号；'享受解决问题的过程'=confidence；anti-恐吓 ✓（不渲染丢卡的可怕，而是渲染解决的轻松）。"
+    }
   },
   {
     "id": "64irDRl3E7E",
@@ -1737,7 +2275,39 @@
     "brand": "Toshiba Lifestyle India",
     "feedback": null,
     "source": "discord_export_attachment:1481119383823716402",
-    "duration_s": 31
+    "duration_s": 31,
+    "breakdown": {
+      "summary": "Toshiba India 'The Bowler'——板球少年在尘土飞扬的训练场上直面高速球的特写叙事，Toshiba logo 出现时零产品信息，纯精神转移广告。30 秒。",
+      "structure": [
+        {
+          "time": "0:00–0:10",
+          "desc": "[Inner World] 黑暗房间/镜前凝视——少年的决心在内心酝酿。"
+        },
+        {
+          "time": "0:10–0:25",
+          "desc": "[Confrontation] 练习场上，红色板球直飞面门——freeze frame。极端特写+尘土=严酷训练环境。"
+        },
+        {
+          "time": "0:25–0:31",
+          "desc": "[End card] TOSHIBA 红字白底——零 tagline 零产品。"
+        }
+      ],
+      "vo_quotes": [],
+      "strengths": [
+        "体育精神转移：用板球（印度国民运动）的坚毅直接绑定品牌——不需要产品逻辑，情感逻辑即可",
+        "freeze frame 红球直飞面门：30 秒内最强视觉高潮——危险+美感+勇气",
+        "极简 end card：让叙事余韵持续，品牌在'沉默中'出现更有力量"
+      ],
+      "risks": [
+        "品牌-运动关联度完全依赖情感转移——理性层面 Toshiba 和板球无关",
+        "对 M公司：精神转移法有风险但也有高回报——选择与金融相关的'勇气时刻'（创业/第一次投资）效果更好"
+      ],
+      "transferable": [
+        "精神转移法：选择一个文化运动/仪式，用极致影像把它的精神特质（勇气/精准/坚持）转移给品牌——不需要逻辑链接，情感链接即可",
+        "Freeze frame 作为高潮装置：在运动/动作最激烈的一帧暂停——让观众的注意力固定在那一刻"
+      ],
+      "brand_platform": "△ 弱对齐——品类差距大；但'勇气面对不确定性'与 M公司'面对金融市场的 confidence'有隐喻空间。"
+    }
   },
   {
     "id": "W9y6Od5gKlY",
@@ -1749,7 +2319,38 @@
     "brand": "bee ☆",
     "feedback": null,
     "source": "discord_export_attachment:1481119383823716402",
-    "duration_s": 58
+    "duration_s": 58,
+    "breakdown": {
+      "summary": "Hundred Acre 标题序列——手绘风格 Winnie-the-Pooh 式动画，柔和粉彩色系，角色横向滚动。学生作品展示 Toon Boom Harmony 能力。58 秒。",
+      "structure": [
+        {
+          "time": "0:00–0:15",
+          "desc": "[Opening] 暖棕色→奶油色背景——手绘线条出现。"
+        },
+        {
+          "time": "0:15–0:45",
+          "desc": "[Character Walk] Christopher Robin 类角色+黄色小熊+蓝色驴+橙色老虎——侧滚行走循环。"
+        },
+        {
+          "time": "0:45–0:58",
+          "desc": "[Credits + End card] 手写字体蓝色 credits + 'Bee Minnitt / VC 365 / Toon Boom Harmony'。"
+        }
+      ],
+      "vo_quotes": [],
+      "strengths": [
+        "手绘温暖感：在全 3D/AI 生成时代，手绘 2D 动画反而成为差异化——nostalgia=情感连接",
+        "粉彩色系极其统一——整片视觉如同翻开一本绘本"
+      ],
+      "risks": [
+        "学生作品——商业参考价值有限",
+        "对 M公司：如果做面向儿童/家庭的金融教育内容，绘本式动画风格可参考"
+      ],
+      "transferable": [
+        "绘本动画作为金融教育格式：复杂金融概念（复利/分散投资）用手绘动画讲——降低理解门槛，增加分享欲",
+        "横向滚动式叙事：人物从左走到右=旅程隐喻——适合讲'从起点到目标'的故事"
+      ],
+      "brand_platform": "△ 弱对齐——风格参考为主；如果 M公司有金融教育/亲子理财内容线，手绘风格有差异化价值。"
+    }
   },
   {
     "id": "Wrp41DxkWvo",
@@ -1761,7 +2362,37 @@
     "brand": "Pixflow",
     "feedback": null,
     "source": "discord_export_attachment:1481119383823716402",
-    "duration_s": 43
+    "duration_s": 43,
+    "breakdown": {
+      "summary": "Pixflow 50 个电影标题模板合集——黑底红字惊悚片/白色衬线字剧情片/金色西部片字体，43 秒内快速展示 After Effects 预设包。纯工具产品 demo。",
+      "structure": [
+        {
+          "time": "0:00–0:15",
+          "desc": "[Genre Titles] 惊悚/剧情/西部片等不同类型的标题设计快速轮播。"
+        },
+        {
+          "time": "0:15–0:35",
+          "desc": "[End Credits] 完整电影片尾 credit roll 模板展示——含 Dolby/SDDS logo。"
+        },
+        {
+          "time": "0:35–0:43",
+          "desc": "[Product CTA] Pixflow 品牌+模板包信息。"
+        }
+      ],
+      "vo_quotes": [],
+      "strengths": [
+        "极高信息密度：43 秒内展示 50 种不同风格——'量感'即说服力",
+        "电影类型视觉素养：每种标题设计精准匹配其类型调性——专业度即信任"
+      ],
+      "risks": [
+        "纯模板产品 demo——商业广告参考价值有限",
+        "对 M公司：可参考的是'品牌物料类型化'的思路——不同场景/功能用不同视觉类型"
+      ],
+      "transferable": [
+        "类型化品牌物料：为不同产品功能/场景设计不同的'电影类型'视觉——储蓄=温暖家庭剧/投资=悬疑片/保险=动作片"
+      ],
+      "brand_platform": "△ 弱对齐——工具产品，参考价值仅在视觉方法论层面。"
+    }
   },
   {
     "id": "aP2up9N6H-g",
@@ -1773,7 +2404,41 @@
     "brand": "Pringles U.S.",
     "feedback": null,
     "source": "discord_export_attachment:1481119383823716402",
-    "duration_s": 30
+    "duration_s": 30,
+    "breakdown": {
+      "summary": "Pringles 'Stuck In :30'——把产品缺陷（罐子太窄手伸进去拿不出来）变成 hero feature，从派对到 85 岁生日，一辈子都在'被卡住'。Super Bowl 级喜剧。",
+      "structure": [
+        {
+          "time": "0:00–0:08",
+          "desc": "[Setup] 派对场景，多种口味 Pringles 排列——产品+社交场景建立。"
+        },
+        {
+          "time": "0:08–0:22",
+          "desc": "[Montage] 不同人生阶段/场景的人都被卡在罐子里——年轻人/老人/正装/休闲——普遍性即笑点。"
+        },
+        {
+          "time": "0:22–0:30",
+          "desc": "[End card] 'GET STUCK IN' 黄色大字+Pringles logo——缺陷变 CTA。"
+        }
+      ],
+      "vo_quotes": [
+        "Get Stuck In"
+      ],
+      "strengths": [
+        "缺陷即特征：把最常被吐槽的问题变成品牌标志——'如果修不了就拥抱它'的最佳案例",
+        "年龄蒙太奇：85 岁老人还在被卡=产品是一辈子的习惯——忠诚度即笑话即品牌",
+        "'Get Stuck In' tagline 双关：被卡住 / 全力以赴——负面→正面的语义翻转"
+      ],
+      "risks": [
+        "FMCG 品类与金融距离远",
+        "对 M公司：'拥抱缺陷'策略在金融领域需谨慎——但如果有一个'不完美但真实'的产品特征（如收益率不是最高但最透明），可以用类似逻辑"
+      ],
+      "transferable": [
+        "缺陷即品牌法：找到产品/服务中一个'所有人都知道但无伤大雅的小问题'，大声承认它并把它变成品牌符号",
+        "人生蒙太奇法：用同一个动作在不同年龄/场景重复——暗示'一辈子的关系'"
+      ],
+      "brand_platform": "△ 弱对齐——品类差距大，但'拥抱不完美'与 anti-黑箱（坦诚面对局限）的品牌哲学一致。"
+    }
   },
   {
     "id": "iw4NobfELVU",
@@ -1785,7 +2450,40 @@
     "brand": "Timespan",
     "feedback": null,
     "source": "discord_export_attachment:1481119383823716402",
-    "duration_s": 40
+    "duration_s": 40,
+    "breakdown": {
+      "summary": "Saint-Gobain '654 PPM'——用惊悚片级电影美学包装玻璃纯度指标，在地铁/走廊空间制造悬念，最后 reveal 是建材品牌。40 秒反品类预期。",
+      "structure": [
+        {
+          "time": "0:00–0:15",
+          "desc": "[Suspense] 冷色调地铁站/工业走廊，男子读报+警觉观望——悬疑片语法。"
+        },
+        {
+          "time": "0:15–0:35",
+          "desc": "[Build] 更多空间探索，张力持续——观众完全不知道这是什么广告。"
+        },
+        {
+          "time": "0:35–0:40",
+          "desc": "[Reveal + End card] SAINT-GOBAIN logo + '654 PPM — Purity Ka Perfect Measure'——建材品牌。"
+        }
+      ],
+      "vo_quotes": [
+        "654 PPM — Purity Ka Perfect Measure"
+      ],
+      "strengths": [
+        "品类颠覆度最大化：建材广告用惊悚片语法=100%预期违反，注意力收获最大",
+        "技术指标+印地语混搭：654 PPM 变成一个'值得展示的数字'，Ka=of 做本地化"
+      ],
+      "risks": [
+        "品牌与叙事之间的逻辑链接偏弱——看完可能记住悬疑但不记住 Saint-Gobain",
+        "对 M公司：电影美学+技术指标的组合可以参考（如透明度指标/执行速度等数据用电影方式呈现）"
+      ],
+      "transferable": [
+        "电影类型嫁接法：用完全不相关的电影类型（惊悚/科幻/西部片）来包装日常品类——类型期望违反=注意力钩子",
+        "技术指标浪漫化：把一个枯燥的技术数据（654 PPM / 0.01% fee / 3ms latency）变成可以大声说出来的、令人印象深刻的'成就'"
+      ],
+      "brand_platform": "△ 弱对齐——品类差距大，但'技术指标浪漫化'对 M公司讲手续费/执行速度等数据有直接参考价值。"
+    }
   },
   {
     "id": "lSj_7nmpXTM",
@@ -1797,7 +2495,41 @@
     "brand": "McDonald's Australia",
     "feedback": null,
     "source": "discord_export_attachment:1481119383823716402",
-    "duration_s": 30
+    "duration_s": 30,
+    "breakdown": {
+      "summary": "McDonald's Australia 'Grimace'——紫色巨人 mascot 到达澳洲，引发店员手机传播+紫色灯光派对，用明星抵达/病毒传播的语法包装限定产品发布。30 秒。",
+      "structure": [
+        {
+          "time": "0:00–0:10",
+          "desc": "[Arrival] Grimace 趴飞机窗→ 店员刷手机互传消息——'名人降临'叙事。"
+        },
+        {
+          "time": "0:10–0:25",
+          "desc": "[Celebration] McDonald's 内紫色灯光+纸屑+女孩喝紫色 Grimace 奶昔——限定产品=派对主角。"
+        },
+        {
+          "time": "0:25–0:30",
+          "desc": "[End card] 金色拱门+红底+'i'm lovin' it'。"
+        }
+      ],
+      "vo_quotes": [
+        "i'm lovin' it"
+      ],
+      "strengths": [
+        "Mascot 作为名人对待：用'明星到访'的叙事框架包装 mascot 回归——把已有 IP 的回归变成文化事件",
+        "紫色灯光整体氛围：一个颜色=一个角色=一个产品=一个事件——极致的品牌色 owning",
+        "病毒传播嵌入叙事：广告内的角色在手机上传播消息=暗示观众也应该传播"
+      ],
+      "risks": [
+        "QSR 品类与金融无关",
+        "对 M公司：如果未来有品牌 mascot/IP 角色，Grimace 的'角色即事件'策略有参考价值"
+      ],
+      "transferable": [
+        "角色即事件法：让品牌 IP 的'到来/回归/亮相'本身成为值得传播的新闻——而非只是装饰",
+        "单色氛围灯光：用一种品牌色笼罩整个场景——成本低但品牌记忆极强"
+      ],
+      "brand_platform": "△ 弱对齐——QSR vs 金融品类差距大；但'品牌色 owning'和'角色即事件'的方法论通用。"
+    }
   },
   {
     "id": "oYmU8Av_e84",
@@ -1809,7 +2541,39 @@
     "brand": "Sofia Pompei",
     "feedback": null,
     "source": "discord_export_attachment:1481119383823716402",
-    "duration_s": 60
+    "duration_s": 60,
+    "breakdown": {
+      "summary": "Sony spec 商业片（Sofia Pompei）——深色学术图书馆+螺旋楼梯里，时尚年轻人在 Sony 笔记本上工作/吹泡泡糖。Wes Anderson 暗色系，氛围>功能。60 秒。",
+      "structure": [
+        {
+          "time": "0:00–0:20",
+          "desc": "[World Build] 暗色调多层图书馆——翡翠绿/胡桃木/银行灯——场景即品牌世界。"
+        },
+        {
+          "time": "0:20–0:50",
+          "desc": "[Character] 格子外套+珍珠耳环女孩吹泡泡糖——不敬但自信；Sony 笔记本作为道具自然出现。"
+        },
+        {
+          "time": "0:50–1:00",
+          "desc": "[End card] SONY 白字黑底——极简收尾。"
+        }
+      ],
+      "vo_quotes": [],
+      "strengths": [
+        "产品场景融合：Sony 笔记本不是 hero shot，而是世界的一部分——'这种人自然会用 Sony'",
+        "Dark academia 美学：这个特定的审美亚文化在 TikTok/社交媒体有大量受众——精准文化定位",
+        "泡泡糖瞬间：一个不经意的小动作=角色性格 definition=整片的记忆锚点"
+      ],
+      "risks": [
+        "Spec ad 没有品牌方需求约束——真实投放可能需要更多产品信息",
+        "对 M公司：氛围广告需要品牌已有一定认知度，冷启动品牌风险更高"
+      ],
+      "transferable": [
+        "审美亚文化作为 targeting 工具：选择一个特定的视觉亚文化（dark academia/cottagecore/cyberpunk）做品牌世界观——自动筛选目标受众",
+        "道具化产品展示：产品出现在场景里但不做特写——'这个世界里的人自然会使用这个产品'"
+      ],
+      "brand_platform": "△ 弱对齐——spec ad 品类不同；但'审美亚文化 targeting'的方法论对 M公司社交媒体内容策略有参考价值。"
+    }
   },
   {
     "id": "uXlWYZ022zU",
@@ -1821,6 +2585,38 @@
     "brand": "Adam Saunders",
     "feedback": null,
     "source": "discord_export_attachment:1481119383823716402",
-    "duration_s": 46
+    "duration_s": 46,
+    "breakdown": {
+      "summary": "Nike spec ad 'Running Isn't Just Running'——闹钟 7:00+英国乡村晨跑，用金色晨光和开阔地景讲述'跑步不是运动是冥想'。46 秒无台词，NRC logo 收尾。",
+      "structure": [
+        {
+          "time": "0:00–0:10",
+          "desc": "[The Night Before] 闹钟 11:00（晚）→ 7:00（早）——设定/起跑的决心。"
+        },
+        {
+          "time": "0:10–0:35",
+          "desc": "[The Run] 英国乡村黎明——空旷田野/静水倒影/冬树——孤独但自由的跑步。"
+        },
+        {
+          "time": "0:35–0:46",
+          "desc": "[End card] NRC (Nike Run Club) logo 浮在金色地景上——品牌=这个时刻的伴侣。"
+        }
+      ],
+      "vo_quotes": [],
+      "strengths": [
+        "反城市跑步广告：英国乡村=安静/孤独/自然——在所有跑步广告都拍城市/人群时，这是差异化",
+        "闹钟开头：7:00 起床=跑步者最共鸣的时刻——'设闹钟的纪律'=观众自我认同触发器",
+        "零对白零配乐（可能有环境音）——让安静本身成为叙事工具"
+      ],
+      "risks": [
+        "Spec ad 品质依赖导演个人审美——批量复制困难",
+        "对 M公司：'仪式感'叙事可迁移到'每日查看投资组合/每周复盘'等理财习惯——用同样的安静+日出+专注镜头语言"
+      ],
+      "transferable": [
+        "仪式感叙事：把一个日常重复动作（跑步/查账/存钱）拍成晨间仪式——提升行为的心理价值",
+        "反品类场景选择：当所有竞品都在同一个场景（城市/办公室）时，选择对立场景（乡村/自然/夜晚）"
+      ],
+      "brand_platform": "✓ 对齐（confidence 维度）——独自晨跑=自律=confidence 的安静形态；anti-训话 ✓（不是'你应该跑步'，而是'跑步的人知道为什么'——尊重而非说教）。对 M公司：'理财不是任务是习惯'的叙事。"
+    }
   }
 ]
