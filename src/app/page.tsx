@@ -173,7 +173,7 @@ export default function Home() {
       {/* ═══ ARCHIVE ═══ */}
       {olderDates.length > 0 && (
         <div className="section-full section-alt pt-24" style={{ borderTop: "1px solid rgba(255, 90, 0, 0.15)" }}>
-          <div className="section-inner pb-8">
+          <div className="section-inner pb-24">
             <FadeInView>
               <div className="flex items-end justify-between mb-10">
                 <div>
@@ -185,10 +185,8 @@ export default function Home() {
                 </a>
               </div>
             </FadeInView>
-          </div>
 
-          {/* Archive blocks — no gaps, just 1px lines */}
-          <div className="section-inner pb-24">
+            {/* Archive blocks — no gaps, just 1px lines */}
             <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-px" style={{ background: "#1a1a1a" }}>
               <a href="/archive/foundation" className="group flex items-start justify-between p-6 transition-colors hover:bg-[#151515]" style={{ background: "var(--bg)" }}>
                 <div>
