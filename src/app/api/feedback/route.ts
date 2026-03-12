@@ -66,6 +66,13 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ ok: true, kv: false });
   }
 
+  // Check admin token
+  const adminKey = process.env.ADMIN_KEY;
+  const authHeader = req.headers.get('x-admin-key');
+  if (adminKey && authHeader !== adminKey) {
+    return NextResponse.json({ ok: false, error: "Unauthorized" }, { status: 403 });
+  }
+
   const { videoId, action } = await req.json();
   if (!videoId || !action) {
     return NextResponse.json({ ok: false, error: "missing fields" }, { status: 400 });

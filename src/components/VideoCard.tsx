@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import type { Video } from "@/lib/types";
 import { getFeedback, setFeedback, getShortlist, toggleShortlist } from "@/lib/feedback";
+import { useAuth } from "./AuthProvider";
 
 const TAG_COLORS: Record<string, string> = {
   B1: "#f59e0b",
@@ -27,6 +28,7 @@ export default function VideoCard({
   compact?: boolean;
   onFeedbackChange?: () => void;
 }) {
+  const { isAdmin } = useAuth();
   const [fb, setFb] = useState<Record<string, "thumbsup" | "thumbsdown">>({});
   const [sl, setSl] = useState<Set<string>>(new Set());
   const [mounted, setMounted] = useState(false);
@@ -122,7 +124,7 @@ export default function VideoCard({
         {/* Bottom row */}
         <div className="mt-5 flex items-center justify-between border-t pt-4" style={{ borderColor: "#1a1a1a" }}>
           <span className="text-[11px] font-medium text-[#444]">{video.date_added}</span>
-          {mounted && (
+          {mounted && isAdmin && (
             <div className="flex gap-1">
               {([
                 { action: "thumbsup" as const, emoji: "👍", active: currentFb === "thumbsup", activeColor: "var(--green)" },

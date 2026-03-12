@@ -1,6 +1,7 @@
 "use client";
 
 import type { FeedbackEntry } from "./types";
+import { getAdminKey } from "./auth";
 
 const FEEDBACK_KEY = "yt_inspo_feedback";
 const SHORTLIST_KEY = "yt_inspo_shortlist";
@@ -28,9 +29,15 @@ let _kvAvailable: boolean | null = null; // cached after first probe
 
 async function postAction(videoId: string, action: string): Promise<boolean> {
   try {
+    const adminKey = getAdminKey();
+    const headers: Record<string, string> = { 'Content-Type': 'application/json' };
+    if (adminKey) {
+      headers['x-admin-key'] = adminKey;
+    }
+    
     const res = await fetch('/api/feedback', {
       method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
+      headers,
       body: JSON.stringify({ videoId, action }),
     });
     const data = await res.json();

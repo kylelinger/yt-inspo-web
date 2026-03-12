@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { HydrateProvider } from "@/components/HydrateProvider";
+import { AuthProvider } from "@/components/AuthProvider";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -63,9 +64,11 @@ export default function RootLayout({
 
         <div className="h-14" />
 
-        <HydrateProvider>
-          <main>{children}</main>
-        </HydrateProvider>
+        <AuthProvider>
+          <HydrateProvider>
+            <main>{children}</main>
+          </HydrateProvider>
+        </AuthProvider>
 
         {/* ─── Footer: dark bottom + accent band ─── */}
         <footer>
