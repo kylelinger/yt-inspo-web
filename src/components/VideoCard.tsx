@@ -84,13 +84,7 @@ export default function VideoCard({
             </div>
           )}
 
-          {/* Tag stripe — left edge accent bar */}
-          {video.tag && (
-            <div
-              className="absolute top-0 left-0 bottom-0 w-1"
-              style={{ background: tagColor }}
-            />
-          )}
+
         </div>
       </a>
 
