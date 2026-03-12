@@ -74,7 +74,7 @@ export default function RootLayout({
                   fontWeight: 900,
                   lineHeight: 0.82,
                   letterSpacing: "-0.05em",
-                  color: "#0e0e0e",
+                  color: "#000000",
                 }}
               >
                 BrandCut
