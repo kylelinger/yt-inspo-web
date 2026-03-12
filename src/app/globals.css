@@ -80,5 +80,29 @@ html {
 /* Selection color */
 ::selection {
   background: var(--accent);
-  color: #000;
+  color: #fff;
+}
+
+/* Focus ring */
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* Smooth image loading */
+img {
+  transition: opacity 0.3s ease;
+}
+
+/* Card hover glow layer (used by VideoCard) */
+.card-glow {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.group:hover .card-glow {
+  opacity: 1;
 }

@@ -39,11 +39,21 @@ export default function RootLayout({
               </span>
             </a>
             <div className="flex items-center gap-6 text-[13px] font-medium" style={{ color: "var(--text-secondary)" }}>
-              <a href="/" className="transition-colors hover:text-[var(--text)]">Today</a>
-              <a href="/archive" className="transition-colors hover:text-[var(--text)]">Archive</a>
-              <a href="/archive/foundation" className="transition-colors hover:text-[var(--text)]">Foundation</a>
-              <a href="/shortlist" className="transition-colors hover:text-[var(--text)]">Saved</a>
-              <a href="/about" className="transition-colors hover:text-[var(--text)]">About</a>
+              {[
+                { href: "/", label: "Today" },
+                { href: "/archive", label: "Archive" },
+                { href: "/archive/foundation", label: "Foundation" },
+                { href: "/shortlist", label: "Saved" },
+                { href: "/about", label: "About" },
+              ].map((link) => (
+                <a
+                  key={link.href}
+                  href={link.href}
+                  className="relative transition-colors hover:text-[var(--text)] after:absolute after:bottom-[-2px] after:left-0 after:h-[2px] after:w-0 after:bg-[var(--accent)] after:transition-all after:duration-300 hover:after:w-full"
+                >
+                  {link.label}
+                </a>
+              ))}
               <a href="/admin" className="transition-colors hover:text-[var(--text)]" title="Admin">
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                   <circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/>
@@ -54,7 +64,7 @@ export default function RootLayout({
         </nav>
 
         <HydrateProvider>
-          <main className="mx-auto max-w-6xl px-6 py-8">
+          <main className="mx-auto max-w-6xl px-6 py-12">
             {children}
           </main>
         </HydrateProvider>
