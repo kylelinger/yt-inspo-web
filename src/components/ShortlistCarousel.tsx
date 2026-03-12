@@ -39,7 +39,7 @@ export default function ShortlistCarousel({ allVideos }: { allVideos: Video[] })
 
   if (!mounted) {
     return (
-      <div className="relative overflow-hidden h-[180px]" style={{ background: "#0a0a0a" }}>
+      <div className="relative overflow-hidden h-[500px]" style={{ background: "#0a0a0a" }}>
         <div className="w-full h-full animate-pulse" />
       </div>
     );
@@ -47,7 +47,7 @@ export default function ShortlistCarousel({ allVideos }: { allVideos: Video[] })
 
   if (saved.length === 0) {
     return (
-      <div className="h-[180px] flex items-center justify-center" style={{ background: "#080808" }}>
+      <div className="h-[500px] flex items-center justify-center" style={{ background: "#080808" }}>
         <div className="text-center">
           <p className="text-3xl mb-3">⭐</p>
           <p className="text-sm font-bold text-[#666]">Your saved collection</p>
@@ -62,7 +62,7 @@ export default function ShortlistCarousel({ allVideos }: { allVideos: Video[] })
   return (
     <div className="relative group">
       <a href={`/video/${video.id}`} className="block">
-        <div className="relative overflow-hidden h-[180px]" style={{ background: "#000" }}>
+        <div className="relative overflow-hidden h-[500px]" style={{ background: "#000" }}>
           <div className="w-full h-full overflow-hidden">
             <img
               src={`https://img.youtube.com/vi/${video.id}/maxresdefault.jpg`}
