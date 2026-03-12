@@ -65,7 +65,7 @@ export default function RootLayout({
 
         {/* ─── Footer: dark bottom + accent band ─── */}
         <footer>
-          <div className="section-full" style={{ background: "#050505" }}>
+          <div className="section-full" style={{ background: "#000000" }}>
             <div className="section-inner py-10">
               <div
                 className="mt-8 select-none overflow-hidden"
