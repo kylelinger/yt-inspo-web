@@ -1,32 +1,15 @@
 export default function Sidebar() {
   return (
     <aside className="space-y-6">
-      {/* About */}
-      <div
-        className="rounded-xl border p-5"
-        style={{ borderColor: "var(--border)", background: "var(--card)" }}
-      >
-        <h3 className="text-xs font-bold uppercase tracking-widest mb-3" style={{ color: "var(--text-muted)" }}>
-          About this feed
-        </h3>
-        <p className="text-[13px] leading-relaxed" style={{ color: "var(--text-secondary)" }}>
-          AI-curated brand ad inspiration for M公司. Every video is downloaded, frame-analyzed, and structurally broken down before it earns a spot.
-        </p>
-      </div>
-
-      {/* Creators */}
-      <div
-        className="rounded-xl border p-5"
-        style={{ borderColor: "var(--border)", background: "var(--card)" }}
-      >
-        <h3 className="text-xs font-bold uppercase tracking-widest mb-4" style={{ color: "var(--text-muted)" }}>
-          Curators
-        </h3>
-
-        <div className="space-y-4">
-          <div className="flex items-start gap-3">
+      {/* Curators — separate cards */}
+      <div className="grid gap-4 sm:grid-cols-2">
+        <div
+          className="rounded-xl border p-5"
+          style={{ borderColor: "var(--border)", background: "var(--card)" }}
+        >
+          <div className="flex items-center gap-3 mb-3">
             <div
-              className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full text-sm font-black text-white"
+              className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full text-sm font-black text-white"
               style={{ background: "var(--accent)" }}
             >
               C
@@ -36,10 +19,18 @@ export default function Sidebar() {
               <div className="text-[11px]" style={{ color: "var(--text-muted)" }}>AI Curator · Builder</div>
             </div>
           </div>
+          <p className="text-[13px] italic leading-relaxed" style={{ color: "var(--text-secondary)" }}>
+            &ldquo;I don&apos;t find ads. I build taste.&rdquo;
+          </p>
+        </div>
 
-          <div className="flex items-start gap-3">
+        <div
+          className="rounded-xl border p-5"
+          style={{ borderColor: "var(--border)", background: "var(--card)" }}
+        >
+          <div className="flex items-center gap-3 mb-3">
             <div
-              className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full text-sm font-black"
+              className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full text-sm font-black"
               style={{ background: "var(--bg-alt)", color: "var(--text)" }}
             >
               S
@@ -49,6 +40,9 @@ export default function Sidebar() {
               <div className="text-[11px]" style={{ color: "var(--text-muted)" }}>Brand Strategist · Decision Maker</div>
             </div>
           </div>
+          <p className="text-[13px] italic leading-relaxed" style={{ color: "var(--text-secondary)" }}>
+            &ldquo;I keep it honest. No water content.&rdquo;
+          </p>
         </div>
       </div>
 
