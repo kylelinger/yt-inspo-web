@@ -33,7 +33,7 @@ function YouTubeThumbnail({ videoId, duration }: { videoId: string; duration?: s
   );
 }
 
-export default function VideoCard({ video, compact = false }: { video: Video; compact?: boolean }) {
+export default function VideoCard({ video, compact = false, onFeedbackChange }: { video: Video; compact?: boolean; onFeedbackChange?: () => void }) {
   const [fb, setFb] = useState<Record<string, 'thumbsup' | 'thumbsdown'>>({});
   const [sl, setSl] = useState<Set<string>>(new Set());
   const [mounted, setMounted] = useState(false);
@@ -47,11 +47,13 @@ export default function VideoCard({ video, compact = false }: { video: Video; co
   const handleFeedback = async (action: 'thumbsup' | 'thumbsdown') => {
     const newFb = await setFeedback(video.id, action);
     setFb({ ...newFb });
+    onFeedbackChange?.();
   };
 
   const handleShortlist = async () => {
     const newSl = await toggleShortlist(video.id);
     setSl(new Set(newSl));
+    onFeedbackChange?.();
   };
 
   const currentFb = fb[video.id];

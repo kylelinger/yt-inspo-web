@@ -1,6 +1,6 @@
 import videosData from "@/../public/data/videos.json";
 import type { Video } from "@/lib/types";
-import VideoCard from "@/components/VideoCard";
+import SortedVideoGrid from "@/components/SortedVideoGrid";
 
 export default async function ArchiveDatePage({ params }: { params: Promise<{ date: string }> }) {
   const { date } = await params;
@@ -22,9 +22,7 @@ export default async function ArchiveDatePage({ params }: { params: Promise<{ da
           </p>
         </div>
         <p className="mb-4 text-sm" style={{ color: 'var(--text-muted)' }}>{videos.length} videos</p>
-        <div className="grid gap-4 sm:grid-cols-2">
-          {videos.map((v) => (<VideoCard key={v.id} video={v} />))}
-        </div>
+        <SortedVideoGrid videos={videos} />
       </div>
     );
   }
@@ -43,11 +41,7 @@ export default async function ArchiveDatePage({ params }: { params: Promise<{ da
         {videos.length} videos
       </p>
       {videos.length > 0 ? (
-        <div className="grid gap-4 sm:grid-cols-2">
-          {videos.map((v) => (
-            <VideoCard key={v.id} video={v} />
-          ))}
-        </div>
+        <SortedVideoGrid videos={videos} />
       ) : (
         <div className="rounded-xl border p-8 text-center" style={{ borderColor: 'var(--border)', color: 'var(--text-muted)' }}>
           这天没有内容

@@ -1,6 +1,6 @@
 import videosData from "@/../public/data/videos.json";
 import type { Video } from "@/lib/types";
-import VideoCard from "@/components/VideoCard";
+import SortedVideoGrid from "@/components/SortedVideoGrid";
 
 interface VideoWithCollection extends Video {
   collection?: string;
@@ -27,11 +27,7 @@ export default function FoundationPage() {
       <p className="mb-4 text-sm" style={{ color: 'var(--text-muted)' }}>
         {videos.length} videos
       </p>
-      <div className="grid gap-4 sm:grid-cols-2">
-        {videos.map((v) => (
-          <VideoCard key={v.id} video={v} />
-        ))}
-      </div>
+      <SortedVideoGrid videos={videos} />
     </div>
   );
 }
