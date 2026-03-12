@@ -14,12 +14,6 @@ const TAG_FILTERS = [
   { value: "C", label: "\u6587\u5316\u53C2\u8003", emoji: "\u{1F3A8}" },
 ] as const;
 
-const gridItemVariants = {
-  hidden: { opacity: 0, y: 20, scale: 0.97 },
-  visible: { opacity: 1, y: 0, scale: 1 },
-  exit: { opacity: 0, scale: 0.95, transition: { duration: 0.2 } },
-};
-
 export default function SortedVideoGrid({ videos, showFilter = false }: { videos: Video[]; showFilter?: boolean }) {
   const [fb, setFb] = useState<Record<string, "thumbsup" | "thumbsdown">>({});
   const [mounted, setMounted] = useState(false);
@@ -28,7 +22,6 @@ export default function SortedVideoGrid({ videos, showFilter = false }: { videos
   useEffect(() => {
     setFb(getFeedback());
     setMounted(true);
-
     const handler = () => setFb(getFeedback());
     window.addEventListener("feedback-changed", handler);
     return () => window.removeEventListener("feedback-changed", handler);
@@ -59,68 +52,51 @@ export default function SortedVideoGrid({ videos, showFilter = false }: { videos
   return (
     <div>
       {showFilter && (
-        <div className="mb-5 flex flex-wrap gap-2">
+        <div className="mb-6 flex flex-wrap gap-px" style={{ background: "#1a1a1a" }}>
           {TAG_FILTERS.map((tf) => {
             const count = tagCounts[tf.value] || 0;
             if (tf.value !== "all" && count === 0) return null;
             const active = tagFilter === tf.value;
             return (
-              <motion.button
+              <button
                 key={tf.value}
                 onClick={() => setTagFilter(tf.value)}
-                className="rounded-full px-3.5 py-1.5 text-xs font-medium transition-colors"
+                className="px-5 py-2.5 text-xs font-bold uppercase tracking-wider transition-colors cursor-pointer"
                 style={{
-                  background: active ? "var(--accent)" : "transparent",
-                  color: active ? "#fff" : "#777",
-                  border: `1px solid ${active ? "var(--accent)" : "#333"}`,
+                  background: active ? "var(--accent)" : "var(--bg)",
+                  color: active ? "#fff" : "#555",
                 }}
-                whileHover={{ scale: 1.04 }}
-                whileTap={{ scale: 0.96 }}
-                transition={{ type: "spring", stiffness: 500, damping: 25 }}
               >
-                {tf.emoji} {tf.label} ({count})
-              </motion.button>
+                {tf.label} ({count})
+              </button>
             );
           })}
         </div>
       )}
 
-      <motion.div
-        className="grid gap-5 sm:grid-cols-2"
-        initial="hidden"
-        animate="visible"
-        variants={{
-          hidden: {},
-          visible: { transition: { staggerChildren: 0.06 } },
-        }}
-      >
+      {/* Grid with 1px gap lines */}
+      <div className="grid gap-px sm:grid-cols-2" style={{ background: "#1a1a1a" }}>
         <AnimatePresence mode="popLayout">
           {sorted.map((v) => (
             <motion.div
               key={v.id}
               layout
-              variants={gridItemVariants}
-              transition={{ duration: 0.4, ease: [0.25, 0.4, 0.25, 1] }}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 0.3 }}
             >
               <VideoCard video={v} onFeedbackChange={() => setFb(getFeedback())} />
             </motion.div>
           ))}
         </AnimatePresence>
-      </motion.div>
+      </div>
 
-      <AnimatePresence>
-        {sorted.length === 0 && (
-          <motion.div
-            initial={{ opacity: 0, y: 10 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0 }}
-            className="rounded-xl border p-8 text-center"
-            style={{ borderColor: "var(--border)", color: "var(--text-muted)" }}
-          >
-            该分类下暂无视频
-          </motion.div>
-        )}
-      </AnimatePresence>
+      {sorted.length === 0 && (
+        <div className="py-16 text-center" style={{ background: "var(--bg-alt)", color: "#444" }}>
+          该分类下暂无视频
+        </div>
+      )}
     </div>
   );
 }
