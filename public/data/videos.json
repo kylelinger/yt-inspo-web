@@ -841,15 +841,15 @@
     "tag": "C"
   },
   {
-    "id": "70T7Q6y4eZc",
-    "url": "https://www.youtube.com/watch?v=70T7Q6y4eZc",
+    "id": "Xwc22EK8qE0",
+    "url": "https://www.youtube.com/watch?v=Xwc22EK8qE0",
     "platform": "youtube",
     "date_added": "2026-03-11",
-    "status": "playback_risky",
+    "status": "full_breakdown",
     "title": "Welcome Home | Spike Jonze × Apple",
     "brand": "Apple",
     "feedback": null,
-    "source": "discord_export_attachment:1481119383823716402",
+    "source": "replaced_70T7Q6y4eZc_with_Xwc22EK8qE0_AlisamiXploration reupload",
     "breakdown": {
       "summary": "Apple 'Welcome Home'（Spike Jonze 执导）——FKA twigs 在公寓里跳舞，房间随音乐和情绪膨胀/变形/延展。HomePod=家变成表达空间。⚠️ 播放受限。",
       "structure": [
@@ -932,15 +932,15 @@
     "tag": "C"
   },
   {
-    "id": "VtC7Fq4m0Qs",
-    "url": "https://www.youtube.com/watch?v=VtC7Fq4m0Qs",
+    "id": "dWu9X4b9aXg",
+    "url": "https://www.youtube.com/watch?v=dWu9X4b9aXg",
     "platform": "youtube",
     "date_added": "2026-03-11",
-    "status": "playback_risky",
+    "status": "full_breakdown",
     "title": "Original Is Never Finished | Adidas",
     "brand": "Adidas",
     "feedback": null,
-    "source": "discord_export_attachment:1481119383823716402",
+    "source": "replaced_VtC7Fq4m0Qs_with_dWu9X4b9aXg_weloveadidas.archive reupload",
     "breakdown": {
       "summary": "Adidas 'Original Is Never Finished'——重新演绎经典 icon（Snoop Dogg/Desiigner/Stormzy 等）的蒙太奇，'没有原创是完成的'=永远进化的品牌宣言。⚠️ 播放受限。",
       "structure": [
@@ -970,15 +970,15 @@
     "tag": "A"
   },
   {
-    "id": "WA4dDs0T7sM",
-    "url": "https://www.youtube.com/watch?v=WA4dDs0T7sM",
+    "id": "pcXTnyCmQbg",
+    "url": "https://www.youtube.com/watch?v=pcXTnyCmQbg",
     "platform": "youtube",
     "date_added": "2026-03-11",
-    "status": "playback_risky",
+    "status": "full_breakdown",
     "title": "You Can't Stop Us | Nike",
     "brand": "Nike",
     "feedback": null,
-    "source": "discord_export_attachment:1481119383823716402",
+    "source": "replaced_WA4dDs0T7sM_with_pcXTnyCmQbg_Marketing The Rainbow reupload",
     "breakdown": {
       "summary": "Nike 'You Can't Stop Us'——36 组分屏运动画面精确对齐（左右屏动作完美衔接），'你阻止不了我们'是疫情后最强品牌宣言之一。⚠️ 播放受限。",
       "structure": [
@@ -1010,60 +1010,15 @@
     "tag": "A"
   },
   {
-    "id": "Y3Iy-KMwSz0",
-    "url": "https://www.youtube.com/watch?v=Y3Iy-KMwSz0",
+    "id": "pmdozXl4T4E",
+    "url": "https://www.youtube.com/watch?v=pmdozXl4T4E",
     "platform": "youtube",
     "date_added": "2026-03-11",
-    "status": "sent_backfilled_from_discord",
-    "title": "Arcane S01 e101 2DFX smoke Line test Animation",
-    "brand": "Aurelien Ressencourt 2DFX Animation",
-    "feedback": null,
-    "source": "discord_export_attachment:1481119383823716402",
-    "duration_s": 12,
-    "breakdown": {
-      "summary": "Arcane S01 2DFX 烟雾 line test——Fortiche 工作室的手绘 2D 特效层与 3D CG 角色的合成过程展示。12 秒左右分屏对比。",
-      "structure": [
-        {
-          "time": "0:00–0:06",
-          "desc": "[左屏] 最终合成画面：装甲执法者双拳相击+烟雾爆发。"
-        },
-        {
-          "time": "0:00–0:06",
-          "desc": "[右屏] 孤立的 2DFX 层：蓝色占位色+手绘烟雾帧——chunky/图形化/有机运动。"
-        },
-        {
-          "time": "0:06–0:12",
-          "desc": "烟雾消散+拳头残余能量火花——手绘质感的消散动画。"
-        }
-      ],
-      "vo_quotes": [],
-      "strengths": [
-        "手绘 2D + 3D CG 混合美学=Arcane 的标志性视觉语言——独一无二的辨识度",
-        "分屏对比展示=制作工艺透明化——'看看我们是怎么做的'本身就是内容",
-        "手绘特效的触感质地：在全 CG 时代，手工制作=奢侈品级差异化"
-      ],
-      "risks": [
-        "12 秒动画技术参考——非广告模板",
-        "对 M公司：如果做品牌动画/motion design，手绘特效层可以考虑——给数字产品增加'手工温度'"
-      ],
-      "transferable": [
-        "制作过程透明化即内容：展示'如何制作'的幕后=建立工艺信任+生成额外内容",
-        "手绘层+数字层混合：在纯数字产品的视觉中加入手绘/手写/手工元素——人性化品牌感知"
-      ],
-      "brand_platform": "△ 技术参考——与品牌战略无直接关联，但'工艺透明化'与 anti-黑箱原则一致。"
-    },
-    "tag": "C"
-  },
-  {
-    "id": "Yb7H9Z6yZxQ",
-    "url": "https://www.youtube.com/watch?v=Yb7H9Z6yZxQ",
-    "platform": "youtube",
-    "date_added": "2026-03-11",
-    "status": "playback_risky",
+    "status": "full_breakdown",
     "title": "We Are All Investors | Robinhood Super Bowl 2021",
     "brand": "Robinhood",
     "feedback": null,
-    "source": "discord_export_attachment:1481119383823716402",
+    "source": "replaced_Yb7H9Z6yZxQ_with_pmdozXl4T4E_Superbowl Commercials reupload",
     "breakdown": {
       "summary": "Robinhood 'We Are All Investors' Super Bowl 广告——'投资不只是华尔街的事'，用普通人影像重新定义'投资者'概念。Robinhood 的品牌宣言核心片。⚠️ 播放受限。",
       "structure": [
@@ -1096,60 +1051,15 @@
     "tag": "B1"
   },
   {
-    "id": "j-RpvIuazmc",
-    "url": "https://www.youtube.com/watch?v=j-RpvIuazmc",
+    "id": "VwQJ8Z73TrA",
+    "url": "https://www.youtube.com/watch?v=VwQJ8Z73TrA",
     "platform": "youtube",
     "date_added": "2026-03-11",
-    "status": "sent_backfilled_from_discord",
-    "title": "Stromae, Pomme - “Ma Meilleure Ennemie” (from Arcane Season 2) [Official Music Video]",
-    "brand": "League of Legends",
-    "feedback": null,
-    "source": "discord_export_attachment:1481119383823716402",
-    "duration_s": 169,
-    "breakdown": {
-      "summary": "Stromae & Pomme 'Ma Meilleure Ennemie'（Arcane S2）——CRT 电视作为现实/动画世界的膜，Jinx/Vi 姐妹破裂叙事+法语亲密感。169 秒动画 MV。",
-      "structure": [
-        {
-          "time": "0:00–0:30",
-          "desc": "[CRT Portal] Stromae 在紫色灯光中通过扫描线滤镜——他存在于'我们的世界'看向 Arcane。"
-        },
-        {
-          "time": "0:30–2:00",
-          "desc": "[Animated Core] Jinx 倒在地板+纸屑——庆祝变空洞；Vi 面对她，悲痛/冲突。红/青色对比编码对立阵营。"
-        },
-        {
-          "time": "2:00–2:49",
-          "desc": "[Convergence + End] CRT 扫描线包裹 Netflix logo——两个世界从未真正合并。"
-        }
-      ],
-      "vo_quotes": [],
-      "strengths": [
-        "CRT 作为叙事装置：复古电视扫描线=两个世界之间的物理边界——概念化的世界观构建",
-        "法语+动画=双重陌生化：语言本身的陌生感加强了姐妹关系'不可翻译'的主题",
-        "庆祝变空洞的视觉隐喻：Jinx 周围的纸屑=本该快乐的场景反转为最孤独的时刻"
-      ],
-      "risks": [
-        "169 秒动画 MV——非广告模板",
-        "对 M公司：如果做品牌 IP/动画内容，Fortiche 的'3D+手绘+实拍混合'美学值得研究"
-      ],
-      "transferable": [
-        "介质作为叙事装置：用特定媒介形式（CRT/VHS/胶片/传真）作为'世界切换'的视觉信号——比简单转场更有深度",
-        "语言陌生化：在非母语市场用当地语言配乐——'听不懂但感受到'的情感效果"
-      ],
-      "brand_platform": "△ 文化参考——Arcane 的叙事工艺对 M公司长期品牌内容建设有间接参考价值。"
-    },
-    "tag": "C"
-  },
-  {
-    "id": "nhwhnEe7CjE",
-    "url": "https://www.youtube.com/watch?v=nhwhnEe7CjE",
-    "platform": "youtube",
-    "date_added": "2026-03-11",
-    "status": "playback_risky",
+    "status": "full_breakdown",
     "title": "The Song | Apple iPhone Holiday Film",
     "brand": "Apple",
     "feedback": null,
-    "source": "discord_export_attachment:1481119383823716402",
+    "source": "replaced_nhwhnEe7CjE_with_VwQJ8Z73TrA_apfelspot reupload",
     "breakdown": {
       "summary": "Apple 'The Song'——女孩用 iPad 翻录祖母旧卡带唱片+加入自己的声音做成双人合唱圣诞礼物。代际连接+Apple 产品=情感桥梁。⚠️ 播放受限。",
       "structure": [
@@ -1282,15 +1192,15 @@
     "tag": "B2"
   },
   {
-    "id": "qbI_9qVx6l4",
-    "url": "https://www.youtube.com/watch?v=qbI_9qVx6l4",
+    "id": "Vrf-Q3Jhzig",
+    "url": "https://www.youtube.com/watch?v=Vrf-Q3Jhzig",
     "platform": "youtube",
     "date_added": "2026-03-11",
-    "status": "playback_risky",
+    "status": "full_breakdown",
     "title": "QR Code Bouncing | Coinbase Super Bowl 2022",
     "brand": "Coinbase",
     "feedback": null,
-    "source": "discord_export_attachment:1481119383823716402",
+    "source": "replaced_qbI_9qVx6l4_with_Vrf-Q3Jhzig_Nova reupload",
     "breakdown": {
       "summary": "Coinbase QR Code Super Bowl 广告——60 秒只有一个彩色 QR 码在黑色屏幕上弹跳（致敬 DVD screensaver），扫码去 coinbase.com/superbowl。整个 Super Bowl 最不像广告的广告。⚠️ 播放受限。",
       "structure": [
@@ -1362,98 +1272,6 @@
         "Motion design 品牌片：零 lifestyle 纯排版动画——低成本高辨识度的品牌展示方式"
       ],
       "brand_platform": "△ 部分对齐——设计系统发布是品牌基建，对 M公司的 intelligence 维度有间接贡献（'我们的每个像素都经过深思熟虑'=intelligence 信号）。"
-    },
-    "tag": "B2"
-  },
-  {
-    "id": "-8hUiJYXfVY",
-    "url": "https://www.youtube.com/watch?v=-8hUiJYXfVY",
-    "platform": "youtube",
-    "date_added": "2026-03-11",
-    "status": "full_ready_pending_send",
-    "title": "[30s] Digital Finance Matters in Southeast Asia - Hitachi",
-    "brand": "Hitachi",
-    "feedback": {
-      "vote": -1,
-      "by": "slun",
-      "reason": "太 B2B（宏观/机构叙事，不适合日更灵感）"
-    },
-    "source": "discord_thread",
-    "duration_s": 30,
-    "breakdown": {
-      "summary": "Hitachi 'Digital Finance Matters in Southeast Asia'——东南亚金融数字化的机构叙事，30 秒。👎 反馈：太 B2B/宏观机构叙事，不符合日更标准。",
-      "structure": [
-        {
-          "time": "0:00–0:10",
-          "desc": "[Context] 东南亚城市航拍+数字金融生态镜头。"
-        },
-        {
-          "time": "0:10–0:25",
-          "desc": "[Solution] Hitachi 数字解决方案展示——机构视角。"
-        },
-        {
-          "time": "0:25–0:30",
-          "desc": "[End card] Hitachi Inspire the Next。"
-        }
-      ],
-      "vo_quotes": [
-        "Inspire the Next"
-      ],
-      "strengths": [
-        "东南亚金融数字化场景有区域参考价值"
-      ],
-      "risks": [
-        "👎 用户反馈：太 B2B/宏观机构叙事——不够 consumer-facing，审美不前沿，不适合 M公司日更参考"
-      ],
-      "transferable": [
-        "区域化数字金融叙事：如果要拍东南亚市场版广告，这是'不要这样做'的反面教材——应更 consumer/human-scale"
-      ],
-      "brand_platform": "✗ 不对齐——机构宣传片气质与 M公司 consumer-facing 品牌路线冲突。"
-    },
-    "tag": "B2"
-  },
-  {
-    "id": "SWNQZYPZiVw",
-    "url": "https://www.youtube.com/watch?v=SWNQZYPZiVw",
-    "platform": "youtube",
-    "date_added": "2026-03-11",
-    "status": "full_ready_pending_send",
-    "title": "Here’s how Hunter Hunter grew with flexible business banking 30s",
-    "brand": "Greater Bank",
-    "feedback": {
-      "vote": -1,
-      "by": "slun",
-      "reason": "不够国际化/审美不够前沿"
-    },
-    "source": "discord_thread",
-    "duration_s": 30,
-    "breakdown": {
-      "summary": "Greater Bank 'Hunter Hunter'——澳洲本地 SME case-study，展示灵活商业贷款如何帮助小企业成长。30 秒。👎 反馈：不够国际化，审美不够前沿。",
-      "structure": [
-        {
-          "time": "0:00–0:10",
-          "desc": "[Setup] Hunter Hunter 咖啡/美食店场景——本地小企业。"
-        },
-        {
-          "time": "0:10–0:25",
-          "desc": "[Growth Story] 灵活贷款→扩张叙事。"
-        },
-        {
-          "time": "0:25–0:30",
-          "desc": "[End card] Greater Bank logo + 'flexible business finance'。"
-        }
-      ],
-      "vo_quotes": [],
-      "strengths": [
-        "真实 SME 故事有地方银行 marketing 参考价值"
-      ],
-      "risks": [
-        "👎 用户反馈：不够国际化、审美不够前沿——SME case-study 格式无法作为 M公司品牌灵感"
-      ],
-      "transferable": [
-        "SME 故事格式在地方银行有效，但不适合全球化互联网金融品牌——是'不做什么'的参考"
-      ],
-      "brand_platform": "✗ 不对齐——地方银行 case-study 调性与 M公司国际化品牌路线冲突。"
     },
     "tag": "B2"
   },
