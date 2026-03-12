@@ -186,25 +186,27 @@ export default function Home() {
               </div>
             </FadeInView>
 
-            {/* Archive blocks — no gaps, just 1px lines */}
-            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-px" style={{ background: "#1a1a1a" }}>
-              <a href="/archive/foundation" className="group flex items-start justify-between p-6 transition-colors hover:bg-[#1a1a1a]" style={{ background: "var(--bg)" }}>
-                <div>
-                  <div className="text-base font-bold text-white">Foundation</div>
-                  <div className="mt-1 text-sm text-[#555]">{foundationCount} videos</div>
-                </div>
-                <div className="text-2xl">📐</div>
-              </a>
+            {/* Archive blocks — border grid on black */}
+            <div className="border-r border-b border-[#1a1a1a]" style={{ background: "var(--bg)" }}>
+              <div className="grid sm:grid-cols-2 lg:grid-cols-4">
+                <a href="/archive/foundation" className="group flex items-start justify-between p-6 transition-colors hover:bg-[#1a1a1a] border-t border-l border-[#1a1a1a]" style={{ background: "var(--bg)" }}>
+                  <div>
+                    <div className="text-base font-bold text-white">Foundation</div>
+                    <div className="mt-1 text-sm text-[#555]">{foundationCount} videos</div>
+                  </div>
+                  <div className="text-2xl">📐</div>
+                </a>
 
-              {olderDates.map((date) => {
-                const count = grouped.get(date)?.length || 0;
-                return (
-                  <a key={date} href={`/archive/${date}`} className="group block p-6 transition-colors hover:bg-[#1a1a1a]" style={{ background: "var(--bg)" }}>
-                    <div className="text-base font-bold text-white">{date}</div>
-                    <div className="mt-1 text-sm text-[#555]">{count} videos</div>
-                  </a>
-                );
-              })}
+                {olderDates.map((date) => {
+                  const count = grouped.get(date)?.length || 0;
+                  return (
+                    <a key={date} href={`/archive/${date}`} className="group block p-6 transition-colors hover:bg-[#1a1a1a] border-t border-l border-[#1a1a1a]" style={{ background: "var(--bg)" }}>
+                      <div className="text-base font-bold text-white">{date}</div>
+                      <div className="mt-1 text-sm text-[#555]">{count} videos</div>
+                    </a>
+                  );
+                })}
+              </div>
             </div>
           </div>
         </div>
