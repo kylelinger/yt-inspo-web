@@ -68,8 +68,10 @@ export default function RootLayout({
           <div className="section-full" style={{ background: "#050505" }}>
             <div className="section-inner py-10">
               <div
-                className="mt-8 select-none overflow-hidden mx-[-2rem]"
+                className="mt-8 select-none overflow-hidden"
                 style={{
+                  width: "100vw",
+                  marginLeft: "calc(-50vw + 50%)",
                   fontSize: "clamp(4rem, 16vw, 14rem)",
                   fontWeight: 900,
                   lineHeight: 0.82,
