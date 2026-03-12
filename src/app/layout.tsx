@@ -63,16 +63,8 @@ export default function RootLayout({
           <main>{children}</main>
         </HydrateProvider>
 
-        {/* ─── Footer: accent band + dark bottom ─── */}
+        {/* ─── Footer: dark bottom + accent band ─── */}
         <footer>
-          <div className="section-full section-accent">
-            <div className="section-inner py-16 text-center">
-              <h2 className="display-md text-black">Build taste, not just campaigns.</h2>
-              <a href="/about" className="mt-6 inline-block bg-black px-8 py-3 text-sm font-bold text-white transition-transform hover:scale-105">
-                Learn more
-              </a>
-            </div>
-          </div>
           <div className="section-full" style={{ background: "#050505" }}>
             <div className="section-inner py-10">
               <div className="flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between">
@@ -95,6 +87,14 @@ export default function RootLayout({
               >
                 BrandCut
               </div>
+            </div>
+          </div>
+          <div className="section-full section-accent h-14">
+            <div className="section-inner h-full flex items-center justify-between">
+              <h2 className="text-2xl font-black tracking-tight text-black">Build taste, not just campaigns.</h2>
+              <a href="/about" className="bg-black px-6 py-2 text-sm font-bold text-white transition-transform hover:scale-105">
+                Learn more
+              </a>
             </div>
           </div>
         </footer>
