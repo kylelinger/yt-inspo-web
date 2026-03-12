@@ -27,28 +27,22 @@ export default function Home() {
 
   return (
     <div>
-      {/* ═══ STATS BAR — first thing on screen ═══ */}
+      {/* ═══ STATS BAR — compact, nav-height ═══ */}
       <div className="section-full section-accent">
         <div className="section-inner">
-          <FadeIn>
-            <div className="grid grid-cols-2 sm:grid-cols-4">
-              {[
-                { num: totalVideos.toString(), label: "Videos reviewed" },
-                { num: "20+", label: "Frames per video" },
-                { num: "10:00", label: "Daily at BJT" },
-                { num: "4", label: "Tag categories" },
-              ].map((stat, i) => (
-                <div
-                  key={stat.label}
-                  className="py-10 px-8 text-center"
-                  style={{ borderLeft: i > 0 ? "1px solid rgba(0,0,0,0.15)" : "none" }}
-                >
-                  <div className="text-2xl font-black text-black sm:text-3xl">{stat.num}</div>
-                  <div className="mt-1 text-[10px] font-bold uppercase tracking-wider text-black/50">{stat.label}</div>
-                </div>
-              ))}
-            </div>
-          </FadeIn>
+          <div className="flex items-center justify-center h-14 gap-8 sm:gap-12">
+            {[
+              { num: totalVideos.toString(), label: "Videos" },
+              { num: "20+", label: "Frames" },
+              { num: "10:00", label: "Daily BJT" },
+              { num: "4", label: "Tags" },
+            ].map((stat, i) => (
+              <div key={stat.label} className="flex items-center gap-2" style={{ borderLeft: i > 0 ? "1px solid rgba(0,0,0,0.15)" : "none", paddingLeft: i > 0 ? "2rem" : "0" }}>
+                <span className="text-sm font-black text-black sm:text-base">{stat.num}</span>
+                <span className="text-[10px] font-bold uppercase tracking-wider text-black/50">{stat.label}</span>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
 
