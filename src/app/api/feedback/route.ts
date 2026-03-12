@@ -70,7 +70,16 @@ export async function POST(req: NextRequest) {
   const adminKey = process.env.ADMIN_KEY;
   const authHeader = req.headers.get('x-admin-key');
   if (adminKey && authHeader !== adminKey) {
-    return NextResponse.json({ ok: false, error: "Unauthorized" }, { status: 403 });
+    return NextResponse.json({
+      ok: false,
+      error: "Unauthorized",
+      debug: {
+        hasAdminKey: !!adminKey,
+        hasAuthHeader: !!authHeader,
+        adminKeyLen: adminKey?.length,
+        authHeaderLen: authHeader?.length,
+      }
+    }, { status: 403 });
   }
 
   const { videoId, action } = await req.json();
