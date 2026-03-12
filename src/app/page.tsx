@@ -126,60 +126,83 @@ export default function Home() {
         <h2 className="mb-6 text-xl font-bold" style={{ color: "var(--text)" }}>
           Who&apos;s behind this
         </h2>
-        <div className="grid gap-4 lg:grid-cols-3">
-          {/* Clawd */}
-          <div
-            className="rounded-xl border p-5"
-            style={{ borderColor: "var(--border)", background: "var(--card)" }}
-          >
-            <div className="flex items-center gap-3 mb-3">
-              <div
-                className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full text-sm font-black text-white"
-                style={{ background: "var(--accent)" }}
-              >
-                C
+        <div className="grid gap-4 lg:grid-cols-2">
+          {/* Left: Clawd + slime stacked */}
+          <div className="flex flex-col gap-4">
+            {/* Clawd */}
+            <div
+              className="rounded-xl border p-5"
+              style={{ borderColor: "var(--border)", background: "var(--card)" }}
+            >
+              <div className="flex items-center gap-3 mb-3">
+                <div
+                  className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full text-sm font-black text-white"
+                  style={{ background: "var(--accent)" }}
+                >
+                  C
+                </div>
+                <div>
+                  <div className="text-sm font-bold" style={{ color: "var(--text)" }}>Clawd</div>
+                  <div className="text-[11px]" style={{ color: "var(--text-muted)" }}>AI Curator · Builder</div>
+                </div>
               </div>
-              <div>
-                <div className="text-sm font-bold" style={{ color: "var(--text)" }}>Clawd</div>
-                <div className="text-[11px]" style={{ color: "var(--text-muted)" }}>AI Curator · Builder</div>
-              </div>
+              <p className="text-[13px] italic leading-relaxed" style={{ color: "var(--text-secondary)" }}>
+                &ldquo;I don&apos;t find ads. I build taste.&rdquo;
+              </p>
             </div>
-            <p className="text-[13px] italic leading-relaxed" style={{ color: "var(--text-secondary)" }}>
-              &ldquo;I don&apos;t find ads. I build taste.&rdquo;
-            </p>
+
+            {/* slime */}
+            <div
+              className="rounded-xl border p-5"
+              style={{ borderColor: "var(--border)", background: "var(--card)" }}
+            >
+              <div className="flex items-center gap-3 mb-3">
+                <div
+                  className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full text-sm font-black"
+                  style={{ background: "var(--bg-alt)", color: "var(--text)" }}
+                >
+                  S
+                </div>
+                <div>
+                  <div className="text-sm font-bold" style={{ color: "var(--text)" }}>slime</div>
+                  <div className="text-[11px]" style={{ color: "var(--text-muted)" }}>Brand Strategist · Decision Maker</div>
+                </div>
+              </div>
+              <p className="text-[13px] italic leading-relaxed" style={{ color: "var(--text-secondary)" }}>
+                &ldquo;I keep it honest. No water content.&rdquo;
+              </p>
+            </div>
+
+            {/* Tags + Read more */}
+            <div className="flex flex-wrap items-center gap-1.5">
+              {["Smarter your money", "Intelligence > Advice", "No shaming", "Trust lift"].map((tag) => (
+                <span
+                  key={tag}
+                  className="rounded-full px-2.5 py-1 text-[10px] font-semibold"
+                  style={{ background: "var(--accent-soft)", color: "var(--accent)" }}
+                >
+                  {tag}
+                </span>
+              ))}
+              <a
+                href="/about"
+                className="ml-2 text-xs font-semibold transition-colors hover:opacity-70"
+                style={{ color: "var(--accent)" }}
+              >
+                Read more →
+              </a>
+            </div>
           </div>
 
-          {/* slime */}
+          {/* Right: How it works */}
           <div
-            className="rounded-xl border p-5"
+            className="rounded-xl border p-6 flex flex-col justify-center"
             style={{ borderColor: "var(--border)", background: "var(--card)" }}
           >
-            <div className="flex items-center gap-3 mb-3">
-              <div
-                className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full text-sm font-black"
-                style={{ background: "var(--bg-alt)", color: "var(--text)" }}
-              >
-                S
-              </div>
-              <div>
-                <div className="text-sm font-bold" style={{ color: "var(--text)" }}>slime</div>
-                <div className="text-[11px]" style={{ color: "var(--text-muted)" }}>Brand Strategist · Decision Maker</div>
-              </div>
-            </div>
-            <p className="text-[13px] italic leading-relaxed" style={{ color: "var(--text-secondary)" }}>
-              &ldquo;I keep it honest. No water content.&rdquo;
-            </p>
-          </div>
-
-          {/* How it works */}
-          <div
-            className="rounded-xl border p-5"
-            style={{ borderColor: "var(--border)", background: "var(--card)" }}
-          >
-            <h3 className="text-xs font-bold uppercase tracking-widest mb-4" style={{ color: "var(--text-muted)" }}>
+            <h3 className="text-xs font-bold uppercase tracking-widest mb-5" style={{ color: "var(--text-muted)" }}>
               How it works
             </h3>
-            <div className="space-y-3 text-[13px] leading-relaxed" style={{ color: "var(--text-secondary)" }}>
+            <div className="space-y-4 text-[13px] leading-relaxed" style={{ color: "var(--text-secondary)" }}>
               <div className="flex gap-3">
                 <span className="shrink-0 font-black" style={{ color: "var(--accent)" }}>01</span>
                 <span>AI searches and downloads candidates daily</span>
@@ -197,28 +220,6 @@ export default function Home() {
                 <span>Only videos passing brand platform alignment earn a spot</span>
               </div>
             </div>
-          </div>
-        </div>
-
-        {/* Tags + Read more — below first two columns */}
-        <div className="mt-4 lg:w-2/3">
-          <div className="flex flex-wrap items-center gap-1.5">
-            {["Smarter your money", "Intelligence > Advice", "No shaming", "Trust lift"].map((tag) => (
-              <span
-                key={tag}
-                className="rounded-full px-2.5 py-1 text-[10px] font-semibold"
-                style={{ background: "var(--accent-soft)", color: "var(--accent)" }}
-              >
-                {tag}
-              </span>
-            ))}
-            <a
-              href="/about"
-              className="ml-2 text-xs font-semibold transition-colors hover:opacity-70"
-              style={{ color: "var(--accent)" }}
-            >
-              Read more →
-            </a>
           </div>
         </div>
       </section>
