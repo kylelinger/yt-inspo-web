@@ -81,6 +81,21 @@ export default function VideoDetailPage() {
               {video.duration_s >= 60 ? `${Math.floor(video.duration_s / 60)}:${String(video.duration_s % 60).padStart(2, '0')}` : `${video.duration_s}s`}
             </span>
           )}
+          {video.tag && (
+            <span className="rounded px-1.5 py-0.5 text-xs font-medium" style={{
+              background: video.tag === 'B1' ? 'color-mix(in srgb, #f59e0b 15%, transparent)' :
+                          video.tag === 'B2' ? 'color-mix(in srgb, #3b82f6 15%, transparent)' :
+                          video.tag === 'A' ? 'color-mix(in srgb, #a855f7 15%, transparent)' :
+                          'color-mix(in srgb, #6b7280 15%, transparent)',
+              color: video.tag === 'B1' ? '#f59e0b' :
+                     video.tag === 'B2' ? '#3b82f6' :
+                     video.tag === 'A' ? '#a855f7' : '#9ca3af',
+            }}>
+              {video.tag === 'B1' ? '🎯 直接竞品' :
+               video.tag === 'B2' ? '💰 金融品牌' :
+               video.tag === 'A' ? '✨ 审美标杆' : '🎨 文化参考'}
+            </span>
+          )}
           {video.collection === 'foundation' && (
             <span className="rounded px-1.5 py-0.5 text-xs font-medium" style={{ background: "color-mix(in srgb, var(--accent) 12%, transparent)", color: "var(--accent)" }}>
               Foundation

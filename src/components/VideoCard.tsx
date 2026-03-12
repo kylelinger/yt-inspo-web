@@ -85,13 +85,28 @@ export default function VideoCard({ video, compact = false, onFeedbackChange }: 
             </span>
           )}
         </div>
-        {video.breakdown && (
-          <div className="mb-2">
+        <div className="mb-2 flex flex-wrap gap-1.5">
+          {video.tag && (
+            <span className="rounded px-1.5 py-0.5 text-xs font-medium" style={{
+              background: video.tag === 'B1' ? 'color-mix(in srgb, #f59e0b 15%, transparent)' :
+                          video.tag === 'B2' ? 'color-mix(in srgb, #3b82f6 15%, transparent)' :
+                          video.tag === 'A' ? 'color-mix(in srgb, #a855f7 15%, transparent)' :
+                          'color-mix(in srgb, #6b7280 15%, transparent)',
+              color: video.tag === 'B1' ? '#f59e0b' :
+                     video.tag === 'B2' ? '#3b82f6' :
+                     video.tag === 'A' ? '#a855f7' : '#9ca3af',
+            }}>
+              {video.tag === 'B1' ? '🎯 直接竞品' :
+               video.tag === 'B2' ? '💰 金融品牌' :
+               video.tag === 'A' ? '✨ 审美标杆' : '🎨 文化参考'}
+            </span>
+          )}
+          {video.breakdown && (
             <span className="rounded px-1.5 py-0.5 text-xs font-medium" style={{ background: 'color-mix(in srgb, var(--accent) 8%, transparent)', color: 'var(--accent)', border: '1px solid color-mix(in srgb, var(--accent) 25%, transparent)' }}>
               📐 拆解
             </span>
-          </div>
-        )}
+          )}
+        </div>
 
         {!compact && video.why && (
           <p className="mb-3 text-sm leading-relaxed line-clamp-3" style={{ color: 'var(--text-muted)' }}>

@@ -27,7 +27,7 @@ export default function FoundationPage() {
       <p className="mb-4 text-sm" style={{ color: 'var(--text-muted)' }}>
         {videos.length} videos
       </p>
-      <SortedVideoGrid videos={videos} />
+      <SortedVideoGrid videos={videos} showFilter />
     </div>
   );
 }

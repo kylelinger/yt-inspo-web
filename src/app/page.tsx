@@ -37,7 +37,7 @@ export default function Home() {
         </div>
 
         {latestVideos.length > 0 ? (
-          <SortedVideoGrid videos={latestVideos} />
+          <SortedVideoGrid videos={latestVideos} showFilter />
         ) : (
           <div className="rounded-xl border p-8 text-center" style={{ borderColor: 'var(--border)', color: 'var(--text-muted)' }}>
             今天还没有内容
