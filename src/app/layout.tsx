@@ -39,7 +39,7 @@ export default function RootLayout({
               </span>
             </a>
             <div className="flex items-center gap-6 text-[13px] font-medium" style={{ color: "var(--text-secondary)" }}>
-              <a href="/" className="transition-colors hover:text-[var(--text)]">Feed</a>
+              <a href="/" className="transition-colors hover:text-[var(--text)]">Today</a>
               <a href="/archive" className="transition-colors hover:text-[var(--text)]">Archive</a>
               <a href="/archive/foundation" className="transition-colors hover:text-[var(--text)]">Foundation</a>
               <a href="/shortlist" className="transition-colors hover:text-[var(--text)]">Saved</a>

@@ -17,7 +17,9 @@ export default function ArchivePage() {
     if (!grouped.has(date)) grouped.set(date, []);
     grouped.get(date)!.push(v);
   }
-  const sortedDates = [...grouped.keys()].sort((a, b) => b.localeCompare(a));
+  const allDates = [...grouped.keys()].sort((a, b) => b.localeCompare(a));
+  // Exclude latest date (today) — it lives on the home page
+  const sortedDates = allDates.slice(1);
 
   return (
     <div>

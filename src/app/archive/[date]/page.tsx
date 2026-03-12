@@ -1,9 +1,25 @@
+import { redirect } from "next/navigation";
 import videosData from "@/../public/data/videos.json";
 import type { Video } from "@/lib/types";
 import SortedVideoGrid from "@/components/SortedVideoGrid";
 
+function getLatestDate(): string {
+  const allVideos = videosData as Array<{ date_added?: string; collection?: string }>;
+  const dates = allVideos
+    .filter((v) => v.collection !== "foundation" && v.date_added)
+    .map((v) => v.date_added!)
+    .sort((a, b) => b.localeCompare(a));
+  return dates[0] || "";
+}
+
 export default async function ArchiveDatePage({ params }: { params: Promise<{ date: string }> }) {
   const { date } = await params;
+
+  // Today's date → redirect to home
+  const latestDate = getLatestDate();
+  if (date === latestDate) {
+    redirect("/");
+  }
 
   // Handle foundation redirect (it has its own page, but just in case)
   if (date === "foundation") {
