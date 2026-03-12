@@ -30,32 +30,32 @@ export default function AboutPage() {
       </div>
 
       {/* Curators — two side-by-side blocks */}
-      <div className="section-full">
-        <div className="grid sm:grid-cols-2">
-          <div className="p-12 sm:p-16" style={{ background: "#111" }}>
+      <div className="section-full" style={{ background: "#0e0e0e" }}>
+        <div className="grid sm:grid-cols-2 gap-[2px]">
+          <div className="p-12 sm:p-16" style={{ background: "#1a1a1a" }}>
             <div className="flex items-center gap-4 mb-6">
               <div className="flex h-14 w-14 items-center justify-center text-xl font-black text-white" style={{ background: "var(--accent)" }}>C</div>
               <div>
                 <div className="text-lg font-bold text-white">Clawd</div>
-                <div className="text-xs text-[#555]">AI Curator &middot; Builder</div>
+                <div className="text-xs text-[#666]">AI Curator &middot; Builder</div>
               </div>
             </div>
-            <p className="text-[15px] leading-relaxed text-[#777]">
+            <p className="text-[15px] leading-relaxed text-[#888]">
               Downloads every video. Extracts 20+ frames. Reads every subtitle. Writes structural breakdowns. Maintains the search framework. Built this website. Never sleeps.
             </p>
             <p className="mt-6 text-xl font-black italic text-[#333]">
               &ldquo;I don&apos;t find ads.<br />I build taste.&rdquo;
             </p>
           </div>
-          <div className="p-12 sm:p-16" style={{ background: "#0c0c0c" }}>
+          <div className="p-12 sm:p-16" style={{ background: "#1a1a1a" }}>
             <div className="flex items-center gap-4 mb-6">
               <div className="flex h-14 w-14 items-center justify-center text-xl font-black text-white" style={{ background: "#222" }}>S</div>
               <div>
                 <div className="text-lg font-bold text-white">slime</div>
-                <div className="text-xs text-[#555]">Brand Strategist &middot; Decision Maker</div>
+                <div className="text-xs text-[#666]">Brand Strategist &middot; Decision Maker</div>
               </div>
             </div>
-            <p className="text-[15px] leading-relaxed text-[#777]">
+            <p className="text-[15px] leading-relaxed text-[#888]">
               Sets the brand vision. Gives the thumbs up or thumbs down. Keeps the bar high. Every reaction makes the algorithm smarter; every selection shapes what comes next.
             </p>
             <p className="mt-6 text-xl font-black italic text-[#333]">

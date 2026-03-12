@@ -76,16 +76,18 @@ export default function AdminPage() {
   ];
 
   return (
-    <div className="mx-auto max-w-4xl space-y-6">
-      {/* Header */}
-      <header>
-        <h1 className="text-2xl font-black" style={{ color: "var(--text)" }}>
-          Control Center
-        </h1>
-        <p className="mt-1 text-sm" style={{ color: "var(--text-muted)" }}>
-          BrandCut admin · AI curation engine parameters & status
-        </p>
-      </header>
+    <div className="section-full section-dark">
+      <div className="section-inner pt-20 pb-20">
+        <div className="mx-auto max-w-4xl space-y-6">
+          {/* Header */}
+          <header>
+            <h1 className="text-2xl font-black" style={{ color: "var(--text)" }}>
+              Control Center
+            </h1>
+            <p className="mt-1 text-sm" style={{ color: "var(--text-muted)" }}>
+              BrandCut admin · AI curation engine parameters & status
+            </p>
+          </header>
 
       {/* Tabs */}
       <div className="flex gap-2 overflow-x-auto pb-1">
@@ -415,6 +417,8 @@ export default function AdminPage() {
           </div>
         </div>
       )}
+        </div>
+      </div>
     </div>
   );
 }
