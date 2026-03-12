@@ -710,36 +710,53 @@
     "collection": "foundation",
     "duration_s": 30,
     "breakdown": {
-      "summary": "Grubhub 'The Feest'（Big Game 2026）——在豪宅晚宴里把外卖配送演成皇家盛宴，30 秒 Super Bowl 级制作，最后一帧揭示'$50 以上免配送费'促销。",
+      "summary": "Grubhub Super Bowl 2026——在极奢晚宴里把 'fees'（各种费用）当成一道菜端上桌，全员花式拒绝吃它，最后 Grubhub 说「我来吃」。核心机关：把抽象费用问题字面化成「可吃的食物」，用 feast + fees = Feest 的谐音梗完成品牌承诺。",
       "structure": [
         {
-          "time": "0:00–0:10",
-          "desc": "[Hook] 暗色调豪宅餐厅，水晶杯+金色餐具+烛光——悬念：这是什么场景？"
+          "time": "0-6s",
+          "desc": "Setup：银色餐罩揭盖仪式 + \"And for the final course, we have the fees.\"——把 fees 立为压轴菜"
         },
         {
-          "time": "0:10–0:25",
-          "desc": "[Build] 女主人（绿色亮片裙+珍珠）主持宴席，银钟罩揭开——ensemble cast 夸张反应。喜剧荒诞感递增。"
+          "time": "6-16s",
+          "desc": "Escalation：群像用\"胃口/过敏\"花式拒绝 fees——\"Who will eat the fees?\" / \"I couldn't possibly stomach the fees.\" / \"I have a terrible fee allergy.\"（建立共识：fees 是恶心人的东西）"
         },
         {
-          "time": "0:25–0:30",
-          "desc": "[Payoff + End card] 橙色底 Grubhub logo + 'No fees on restaurant orders over $50'。"
+          "time": "16-24s",
+          "desc": "Turn：一句话解决——\"Grubhub will eat the fees.\"（从抱怨切到解决方案）"
+        },
+        {
+          "time": "24-30s",
+          "desc": "Payoff：俯拍桌面 + 橙色大字 offer 逐条落地——NO DELIVERY FEES / NO SERVICE FEES / on orders over $50 + end card / bit.ly/GHEatTheFees"
         }
       ],
-      "vo_quotes": [],
+      "vo_quotes": [
+        "And for the final course, we have the fees.",
+        "Oh no.",
+        "Who will eat the fees?",
+        "I couldn't possibly stomach the fees.",
+        "I have a terrible fee allergy.",
+        "Who will eat the fees?",
+        "Grubhub will eat the fees.",
+        "Yes, that's what I said. No delivery fees, no service fees… on restaurant orders over $50."
+      ],
       "strengths": [
-        "bait-and-switch：用皇家宴席视觉吊足好奇心，最后揭示是外卖=最大惊喜感",
-        "Knives Out 式视觉（暗色调/ensemble/豪宅）给 food delivery 品类注入从未有过的电影感",
-        "end card 极简：一个促销点（$50 免运费）——信息密度完美"
+        "语言机关精准：把抽象的「谁承担费用」变成具象的「谁吃这道菜」，观众不用理解任何机制，听懂 eat the fees = 平台承担就完成教育",
+        "谐音梗自然：Feast（盛宴）+ Fees（费用）= Feest，标题一语双关，品牌承诺和创意概念完美咬合",
+        "Knives Out 式 ensemble cast + 极奢场景给 food delivery 品类注入从未有过的电影感，Super Bowl 级制作",
+        "信息密度完美：30 秒里只说两个 no-fees（delivery / service）+ 一个门槛（$50），观众走出去能复述",
+        "storytelling + 用户教育同场完成：观众跟着剧情走，笑完自然记住 offer"
       ],
       "risks": [
-        "Super Bowl 制作成本不可复制",
-        "外卖品类与 M公司金融品类距离远——但'用高级场景包装日常服务'的方法论通用"
+        "Super Bowl 制作成本不可复制（ensemble cast + 豪宅场景 + 电影级摄影）",
+        "依赖英语谐音梗：非英语市场「fees/feast/feest」的语言机关失效",
+        "门槛偏高：$50+ 才免费可能排除小单用户，且「service fees」的概念对新用户仍是黑盒"
       ],
       "transferable": [
-        "genre bait-and-switch：前 80% 看起来像另一个品类（悬疑电影/时装秀/纪录片），最后 20% reveal 真实品牌=惊喜记忆",
-        "促销信息极简化：30 秒里只说一个数字（$50），观众走出去能复述=最大 ROI"
-      ],
-      "brand_platform": "△ 弱对齐——Grubhub 非金融品类，但'把日常服务包装成仪式感体验'的升维逻辑对 M公司有参考价值（把日常理财包装成'掌控感仪式'）。"
+        "抽象问题具象化：把用户痛点（fees / 利率 / 等待时间）变成一个可视觉化、可戏剧化的物件（一道菜 / 一块石头 / 一团乱麻）",
+        "「谁来承担」的戏剧结构：Setup 建立问题 → Escalation 全员拒绝 → Turn 品牌说「我来」→ Payoff 具体 offer 落地",
+        "谐音梗品牌化：找到品牌承诺和日常词汇的谐音重叠（Feast/Fees → Feest），让标题自带记忆点",
+        "电影 genre 借用：用悬疑片/时装秀/豪宅剧的视觉语法包装日常服务，制造反差记忆"
+      ]
     },
     "tag": "A"
   },
