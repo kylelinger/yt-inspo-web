@@ -64,8 +64,9 @@ export default function SortedVideoGrid({ videos, showFilter = false }: { videos
                 onClick={() => setTagFilter(tf.value)}
                 className="rounded-full px-3 py-1.5 text-xs font-medium transition-all"
                 style={{
-                  background: active ? 'var(--accent)' : 'color-mix(in srgb, var(--text-muted) 10%, transparent)',
-                  color: active ? 'white' : 'var(--text-muted)',
+                  background: active ? "var(--accent)" : "var(--bg-alt)",
+                  color: active ? "#000" : "var(--text-secondary)",
+                  border: `1px solid ${active ? "var(--accent)" : "var(--border)"}`,
                 }}
               >
                 {tf.emoji} {tf.label} ({count})

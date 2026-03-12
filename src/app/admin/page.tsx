@@ -79,11 +79,11 @@ export default function AdminPage() {
     <div className="mx-auto max-w-4xl space-y-6">
       {/* Header */}
       <header>
-        <h1 className="text-2xl font-bold" style={{ color: "var(--text)" }}>
-          🧠 控制大脑
+        <h1 className="text-2xl font-black" style={{ color: "var(--text)" }}>
+          Control Center
         </h1>
         <p className="mt-1 text-sm" style={{ color: "var(--text-muted)" }}>
-          yt-brand-inspo 后台管理 · AI 策展引擎参数与状态
+          BrandCut admin · AI curation engine parameters & status
         </p>
       </header>
 

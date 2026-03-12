@@ -47,8 +47,9 @@ export default function VideoDetailPage() {
   return (
     <div className="mx-auto max-w-2xl">
       {/* Back */}
-      <button onClick={() => router.back()} className="mb-4 inline-flex items-center gap-1 text-sm transition-opacity hover:opacity-70 cursor-pointer bg-transparent border-none p-0" style={{ color: "var(--text-muted)" }}>
-        ← 返回列表
+      <button onClick={() => router.back()} className="mb-6 inline-flex items-center gap-1.5 text-[13px] font-medium transition-colors hover:text-[var(--accent)] cursor-pointer bg-transparent border-none p-0" style={{ color: "var(--text-muted)" }}>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+        Back
       </button>
 
       {/* Video embed */}

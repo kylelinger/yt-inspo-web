@@ -1,93 +1,146 @@
 export default function AboutPage() {
   return (
-    <div className="mx-auto max-w-2xl space-y-10">
-      <header>
-        <h1 className="text-2xl font-bold" style={{ color: "var(--text)" }}>
-          Who made this?
+    <div className="mx-auto max-w-3xl space-y-16">
+      {/* Hero */}
+      <section className="text-center py-12">
+        <div
+          className="mx-auto mb-6 flex h-16 w-16 items-center justify-center rounded-2xl text-2xl font-black text-black"
+          style={{ background: "var(--accent)" }}
+        >
+          B
+        </div>
+        <h1 className="text-4xl font-black tracking-tight" style={{ color: "var(--text)" }}>
+          BrandCut
         </h1>
-        <p className="mt-2 text-sm leading-relaxed" style={{ color: "var(--text-muted)" }}>
-          这个灵感库是一个 AI-human 协作实验——用 AI 做初筛和结构化拆解，用人类的审美做最终裁判。
+        <p className="mt-3 text-lg" style={{ color: "var(--text-secondary)" }}>
+          AI-curated brand ad inspiration, daily at 10:00 BJT
         </p>
-      </header>
+      </section>
 
-      {/* Cards */}
-      <div className="grid gap-6 sm:grid-cols-2">
-        {/* Clawd */}
-        <div
-          className="rounded-xl border p-6"
-          style={{ borderColor: "var(--border)", background: "var(--card)" }}
-        >
-          <div className="mb-3 text-3xl">🧠</div>
-          <h2 className="text-lg font-bold" style={{ color: "var(--text)" }}>
-            xy (AI)
-          </h2>
-          <p className="mt-1 text-xs font-medium" style={{ color: "var(--accent)" }}>
-            策展引擎 / Curation Engine
-          </p>
-          <p className="mt-3 text-sm leading-relaxed" style={{ color: "var(--text-muted)" }}>
-            负责搜索、下载、抽帧分析、结构化拆解、去重与排期。
-            每天北京时间 02:00 起开始准备，10:00 推送。
-            所有判断都基于"完整观看"流程（下载原片 + 全片覆盖抽帧 + 读懂 VO/字幕）。
-          </p>
-        </div>
+      {/* What is this */}
+      <section>
+        <h2 className="text-sm font-bold uppercase tracking-widest mb-4" style={{ color: "var(--accent)" }}>
+          What is this
+        </h2>
+        <p className="text-[15px] leading-relaxed" style={{ color: "var(--text-secondary)" }}>
+          BrandCut is an internal brand inspiration feed built for M公司 &mdash; a global fintech company building the next-generation trading platform. Every day, an AI curator downloads, frame-analyzes, and structurally breaks down the best brand ads from around the world. Only videos that pass the full review process earn a spot.
+        </p>
+      </section>
 
-        {/* slime */}
-        <div
-          className="rounded-xl border p-6"
-          style={{ borderColor: "var(--border)", background: "var(--card)" }}
-        >
-          <div className="mb-3 text-3xl">🎯</div>
-          <h2 className="text-lg font-bold" style={{ color: "var(--text)" }}>
-            slime (Human)
-          </h2>
-          <p className="mt-1 text-xs font-medium" style={{ color: "var(--accent)" }}>
-            品味裁判 / Taste Judge
-          </p>
-          <p className="mt-3 text-sm leading-relaxed" style={{ color: "var(--text-muted)" }}>
-            最终决策者。用 👍/👎 反馈持续校准 AI 的选片标准。
-            擅长看穿创意骨架、辨别"真高级"与"装高级"。
-            所有筛选硬闸门和品牌约束来自 slime 的判断。
-          </p>
+      {/* Curators */}
+      <section>
+        <h2 className="text-sm font-bold uppercase tracking-widest mb-6" style={{ color: "var(--accent)" }}>
+          Who&apos;s behind this
+        </h2>
+        <div className="grid gap-6 sm:grid-cols-2">
+          {/* Clawd */}
+          <div
+            className="rounded-2xl border p-6"
+            style={{ borderColor: "var(--border)", background: "var(--card)" }}
+          >
+            <div className="flex items-center gap-3 mb-4">
+              <div
+                className="flex h-12 w-12 items-center justify-center rounded-full text-lg font-black text-black"
+                style={{ background: "var(--accent)" }}
+              >
+                C
+              </div>
+              <div>
+                <div className="text-base font-bold" style={{ color: "var(--text)" }}>Clawd</div>
+                <div className="text-xs" style={{ color: "var(--text-muted)" }}>AI Curator · Builder</div>
+              </div>
+            </div>
+            <p className="text-[13px] leading-relaxed" style={{ color: "var(--text-secondary)" }}>
+              Downloads every video. Extracts 20+ frames. Reads every subtitle. Writes structural breakdowns. Maintains the search framework. Built this website. Never sleeps.
+            </p>
+            <p className="mt-3 text-[13px] italic" style={{ color: "var(--text-muted)" }}>
+              &ldquo;I don&apos;t find ads. I build taste.&rdquo;
+            </p>
+          </div>
+
+          {/* slime */}
+          <div
+            className="rounded-2xl border p-6"
+            style={{ borderColor: "var(--border)", background: "var(--card)" }}
+          >
+            <div className="flex items-center gap-3 mb-4">
+              <div
+                className="flex h-12 w-12 items-center justify-center rounded-full text-lg font-black"
+                style={{ background: "var(--bg-alt)", color: "var(--text)" }}
+              >
+                S
+              </div>
+              <div>
+                <div className="text-base font-bold" style={{ color: "var(--text)" }}>slime</div>
+                <div className="text-xs" style={{ color: "var(--text-muted)" }}>Brand Strategist · Decision Maker</div>
+              </div>
+            </div>
+            <p className="text-[13px] leading-relaxed" style={{ color: "var(--text-secondary)" }}>
+              Sets the brand vision. Gives the thumbs up or thumbs down. Keeps the bar high. Every 👎 makes the algorithm smarter; every 👍 shapes what comes next.
+            </p>
+            <p className="mt-3 text-[13px] italic" style={{ color: "var(--text-muted)" }}>
+              &ldquo;I keep it honest. No water content.&rdquo;
+            </p>
+          </div>
         </div>
-      </div>
+      </section>
 
       {/* Operating Principles */}
-      <div
-        className="rounded-xl border p-6"
-        style={{ borderColor: "var(--border)", background: "var(--card)" }}
-      >
-        <h2 className="mb-4 text-lg font-bold" style={{ color: "var(--text)" }}>
+      <section>
+        <h2 className="text-sm font-bold uppercase tracking-widest mb-6" style={{ color: "var(--accent)" }}>
           Operating Principles
         </h2>
-        <ul className="space-y-3 text-sm leading-relaxed" style={{ color: "var(--text-muted)" }}>
-          <li className="flex gap-3">
-            <span className="mt-0.5 shrink-0" style={{ color: "var(--accent)" }}>01</span>
-            <span><strong style={{ color: "var(--text)" }}>真看真听</strong>——不靠标题和关键词入选；每条必须完成下载 + 全片抽帧 + 读懂 VO/字幕的完整审计。</span>
-          </li>
-          <li className="flex gap-3">
-            <span className="mt-0.5 shrink-0" style={{ color: "var(--accent)" }}>02</span>
-            <span><strong style={{ color: "var(--text)" }}>宁缺毋滥</strong>——做不完就少发，绝不发未完整看完的条目。没有达标内容就暂停推送。</span>
-          </li>
-          <li className="flex gap-3">
-            <span className="mt-0.5 shrink-0" style={{ color: "var(--accent)" }}>03</span>
-            <span><strong style={{ color: "var(--text)" }}>品味校准 &gt; 产量</strong>——每一条 👍/👎 反馈都会沉淀为硬闸门规则，逐步收窄"什么值得看"。</span>
-          </li>
-          <li className="flex gap-3">
-            <span className="mt-0.5 shrink-0" style={{ color: "var(--accent)" }}>04</span>
-            <span><strong style={{ color: "var(--text)" }}>Brand Platform 约束</strong>——Smarter your money：intelligence → confidence → trust。禁止羞辱、禁止训话、禁止喊单、禁止黑箱。</span>
-          </li>
-          <li className="flex gap-3">
-            <span className="mt-0.5 shrink-0" style={{ color: "var(--accent)" }}>05</span>
-            <span><strong style={{ color: "var(--text)" }}>国际化审美</strong>——追求跨文化可读性与前沿 craft；过滤土味和低质模板。</span>
-          </li>
-        </ul>
-      </div>
-
-      {/* Credits */}
-      <div className="text-center text-xs" style={{ color: "var(--text-muted)" }}>
-        <p>Built with Next.js · Data curated daily · Hosted on Vercel</p>
-        <p className="mt-1">Part of M公司 brand inspiration project</p>
-      </div>
+        <div className="space-y-4">
+          {[
+            {
+              num: "01",
+              title: "Full review, no shortcuts",
+              desc: "Every video is downloaded, frame-analyzed (20+ frames), subtitles extracted, and structurally broken down. No video earns a spot from title alone.",
+            },
+            {
+              num: "02",
+              title: "Brand platform alignment",
+              desc: "Smarter your money. Intelligence → Confidence → Trust. Every selection is checked against this framework. No shaming, no guru-talks-down.",
+            },
+            {
+              num: "03",
+              title: "Quality over quantity",
+              desc: "If the batch isn\u2019t ready, we skip the day. Zero videos is better than one that wasn\u2019t fully reviewed.",
+            },
+            {
+              num: "04",
+              title: "Feedback-driven evolution",
+              desc: "Every 👍 and 👎 updates the search framework. Winning patterns become search queries; losing patterns become filters.",
+            },
+            {
+              num: "05",
+              title: "Craft matters",
+              desc: "We study ads like directors study films. Structure, hooks, VO mechanics, end cards. The goal is transferable methodology, not surface imitation.",
+            },
+          ].map((p) => (
+            <div
+              key={p.num}
+              className="flex gap-5 rounded-xl border p-5"
+              style={{ borderColor: "var(--border)", background: "var(--card)" }}
+            >
+              <span
+                className="shrink-0 text-2xl font-black"
+                style={{ color: "var(--accent)" }}
+              >
+                {p.num}
+              </span>
+              <div>
+                <div className="text-sm font-bold mb-1" style={{ color: "var(--text)" }}>
+                  {p.title}
+                </div>
+                <div className="text-[13px] leading-relaxed" style={{ color: "var(--text-secondary)" }}>
+                  {p.desc}
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
     </div>
   );
 }

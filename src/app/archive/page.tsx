@@ -21,34 +21,34 @@ export default function ArchivePage() {
 
   return (
     <div>
-      <h1 className="mb-6 text-2xl font-bold tracking-tight" style={{ color: 'var(--text)' }}>
-        📁 Archive
+      <h1 className="mb-2 text-2xl font-black tracking-tight" style={{ color: "var(--text)" }}>
+        Archive
       </h1>
+      <p className="mb-8 text-sm" style={{ color: "var(--text-muted)" }}>
+        Browse all curated inspiration by date
+      </p>
 
-      <div className="space-y-3">
-        {/* Foundation — pinned at top */}
+      <div className="space-y-2">
+        {/* Foundation — pinned */}
         {foundation.length > 0 && (
           <a
             href="/archive/foundation"
-            className="flex items-center justify-between rounded-lg border p-4 transition-shadow hover:shadow-md"
-            style={{
-              borderColor: 'var(--accent)',
-              background: 'color-mix(in srgb, var(--accent) 5%, var(--card))',
-            }}
+            className="group flex items-center justify-between rounded-xl border-2 p-5 transition-all hover:shadow-md"
+            style={{ borderColor: "var(--accent)", background: "var(--accent-soft)" }}
           >
             <div>
-              <span className="text-sm font-semibold" style={{ color: 'var(--accent)' }}>
-                📐 Aesthetic Foundation
+              <span className="text-sm font-bold" style={{ color: "var(--text)" }}>
+                Foundation
               </span>
-              <p className="mt-0.5 text-xs" style={{ color: 'var(--text-muted)' }}>
-                审美地基 — 最初定义品味的坐标系
+              <p className="mt-0.5 text-xs" style={{ color: "var(--text-muted)" }}>
+                The reference library that defines our taste
               </p>
             </div>
             <span
-              className="rounded-full px-2 py-0.5 text-xs font-medium"
-              style={{ background: 'color-mix(in srgb, var(--accent) 15%, transparent)', color: 'var(--accent)' }}
+              className="rounded-full px-3 py-1 text-xs font-bold text-black"
+              style={{ background: "var(--accent)" }}
             >
-              {foundation.length} videos
+              {foundation.length}
             </span>
           </a>
         )}
@@ -60,11 +60,15 @@ export default function ArchivePage() {
             <a
               key={date}
               href={`/archive/${date}`}
-              className="flex items-center justify-between rounded-lg border p-4 transition-shadow hover:shadow-sm"
-              style={{ borderColor: 'var(--border)', background: 'var(--card)' }}
+              className="group flex items-center justify-between rounded-xl border p-5 transition-all hover:shadow-md hover:border-[var(--accent)]"
+              style={{ borderColor: "var(--border)", background: "var(--card)" }}
             >
-              <span className="font-medium" style={{ color: 'var(--text)' }}>{date}</span>
-              <span className="text-sm" style={{ color: 'var(--text-muted)' }}>{count} videos</span>
+              <span className="text-sm font-bold" style={{ color: "var(--text)" }}>
+                {date}
+              </span>
+              <span className="text-xs font-medium" style={{ color: "var(--text-muted)" }}>
+                {count} videos
+              </span>
             </a>
           );
         })}
