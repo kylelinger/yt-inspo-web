@@ -67,7 +67,7 @@ export async function POST(req: NextRequest) {
   }
 
   // Check admin token
-  const adminKey = process.env.ADMIN_KEY;
+  const adminKey = process.env.ADMIN_KEY?.trim();
   const authHeader = req.headers.get('x-admin-key');
   if (adminKey && authHeader !== adminKey) {
     return NextResponse.json({
