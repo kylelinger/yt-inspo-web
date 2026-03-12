@@ -1,13 +1,14 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { useParams } from "next/navigation";
+import { useParams, useRouter } from "next/navigation";
 import videosData from "@/../public/data/videos.json";
 import type { Video } from "@/lib/types";
 import { getFeedback, setFeedback, getShortlist, toggleShortlist } from "@/lib/feedback";
 
 export default function VideoDetailPage() {
   const params = useParams();
+  const router = useRouter();
   const id = params.id as string;
   const video = (videosData as Video[]).find((v) => v.id === id);
 
@@ -46,9 +47,9 @@ export default function VideoDetailPage() {
   return (
     <div className="mx-auto max-w-2xl">
       {/* Back */}
-      <a href="/" className="mb-4 inline-flex items-center gap-1 text-sm transition-opacity hover:opacity-70" style={{ color: "var(--text-muted)" }}>
+      <button onClick={() => router.back()} className="mb-4 inline-flex items-center gap-1 text-sm transition-opacity hover:opacity-70 cursor-pointer bg-transparent border-none p-0" style={{ color: "var(--text-muted)" }}>
         ← 返回列表
-      </a>
+      </button>
 
       {/* Video embed */}
       <div className="mb-6 overflow-hidden rounded-xl">
