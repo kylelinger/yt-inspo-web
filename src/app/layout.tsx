@@ -67,14 +67,6 @@ export default function RootLayout({
         <footer>
           <div className="section-full" style={{ background: "#050505" }}>
             <div className="section-inner py-10">
-              <div className="flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between">
-                <div className="flex gap-6 text-xs text-[#333]">
-                  <span>Updated daily 10:00 BJT</span>
-                  <a href="/" className="hover:text-[#666]">Today</a>
-                  <a href="/archive" className="hover:text-[#666]">Archive</a>
-                  <a href="/about" className="hover:text-[#666]">About</a>
-                </div>
-              </div>
               <div
                 className="mt-8 select-none overflow-hidden"
                 style={{
