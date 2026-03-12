@@ -190,10 +190,12 @@ export default function Home() {
           {/* Archive blocks — no gaps, just 1px lines */}
           <div className="section-inner pb-24">
             <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-px" style={{ background: "#1a1a1a" }}>
-              <a href="/archive/foundation" className="group block p-6 transition-colors hover:bg-[#151515]" style={{ background: "var(--bg)" }}>
-                <div className="text-2xl mb-2">📐</div>
-                <div className="text-base font-bold text-white">Foundation</div>
-                <div className="mt-1 text-sm text-[#555]">{foundationCount} videos</div>
+              <a href="/archive/foundation" className="group flex items-start justify-between p-6 transition-colors hover:bg-[#151515]" style={{ background: "var(--bg)" }}>
+                <div>
+                  <div className="text-base font-bold text-white">Foundation</div>
+                  <div className="mt-1 text-sm text-[#555]">{foundationCount} videos</div>
+                </div>
+                <div className="text-2xl">📐</div>
               </a>
 
               {olderDates.map((date) => {
