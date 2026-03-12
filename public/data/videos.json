@@ -1603,44 +1603,54 @@
     "feedback": null,
     "source": "discord_export_attachment:1481119383823716402",
     "breakdown": {
-      "summary": "灰西装「ATM布道者」在大卖场强行搭话，dry humor 不伤可信。payoff 给了硬数字：credit score +75 points in 6 months。",
+      "summary": "NBA 名嘴 Mark Jackson 在超市 ATM 区化身 Chime 布道者,用他标志性的解说词（\"Hand down, man down\" / \"Mama, there goes that man\"）把取钱/刷卡变成 NBA 级别的高光时刻。最后用 Credit Builder 功能的 +75 分实锤收尾。",
       "structure": [
         {
-          "time": "冷启动",
-          "desc": "logo→大卖场自助结账"
+          "time": "0-3s",
+          "desc": "Chime logo → 刷卡特写（建立产品）"
         },
         {
-          "time": "主体",
-          "desc": "灰西装「ATM大佬」强行搭话（重复gag）"
+          "time": "3-17s",
+          "desc": "Mark Jackson 在超市 ATM 区用 NBA 解说词夸赞路人取钱：\"Hand down, man down. Fee free withdrawal. Spectacular. Thanks, Mark Jackson.\" / \"Talk about a pros pro. Magnificent. That's just beautiful banking.\""
         },
         {
-          "time": "Payoff",
-          "desc": "功能收束：credit score +75 points in 6 months"
+          "time": "17-20s",
+          "desc": "遇到没有 catchphrase 的人：\"No catchphrase? You gotta bank through Chime to get a catchphrase.\""
         },
         {
-          "time": "CTA",
-          "desc": "落版 + disclaimer"
+          "time": "20-27s",
+          "desc": "Credit Builder 硬数字：\"Not now. My man is building his credit score with everyday purchases. 75 points up in 6 months.\" + 屏幕弹出 +75 分通知"
+        },
+        {
+          "time": "27-30s",
+          "desc": "Mark Jackson 经典签名词收尾：\"Mama, there goes that man.\" + Chime end card"
         }
       ],
       "vo_quotes": [
-        "A fee free withdrawal? Spectacular.",
-        "No cashphrase? You got to bank through Chime to get a cashphrase.",
-        "Not now my man is building his credit score with everyday purchases. 75 points up in 6 months."
+        "Hand down, man down. A fee free withdrawal. Spectacular.",
+        "Thanks, Mark Jackson. We got another one. Talk about a pros pro. Magnificent. See, that's just beautiful banking.",
+        "No catchphrase? You gotta bank through Chime to get a catchphrase.",
+        "Well, but not now. My man is building his credit score with everyday purchases. 75 points up in 6 months.",
+        "Mama, there goes that man."
       ],
       "strengths": [
-        "场景很 TA：大卖场 + ATM + 自助结账 = Chime 真实生活语境",
-        "角色错位自带笑点：西装男在折扣店当「ATM布道者」，dry humor 不伤可信",
-        "payoff 给了硬数字：credit score \"+75 points in 6 months\" 记忆点强"
+        "名人 IP 精准对位：Mark Jackson = NBA 解说 = 金句制造机，用他来卖 'catchphrase' 概念完美自洽",
+        "经典台词全套移植：\"Hand down, man down\" / \"Mama, there goes that man\" 都是 Jackson 的标志性解说词，NBA 粉丝秒懂梗",
+        "场景反差制造喜剧：把 NBA 解说的激情强度用在超市取钱/刷卡上，absurd 但不尴尬",
+        "产品功能收束清晰：Credit Builder + 75 points in 6 months，硬数字说话",
+        "品牌关联自然：catchphrase（金句）→ Chime（谐音 chime in，加入对话）→ 你也能有自己的 banking catchphrase"
       ],
       "risks": [
-        "功能仍偏糊：观众可能不清楚 Chime 到底是 ATM网络/借记卡/credit builder 哪一个核心",
-        "单场景对切偏单调：静音信息流里像「两个人聊天」，不够抓",
-        "disclaimer 堆叠太重：最后一屏小字多，且「平均30分」与画面「+75分」可能引发信任质疑"
+        "名人依赖度高：不认识 Mark Jackson 的人（非 NBA 粉丝）会错过 80% 的幽默点",
+        "catchphrase 概念偏抽象：\"你得用 Chime 才能有 catchphrase\" 的逻辑链条需要观众脑补（catchphrase = 成功标志 = Chime 让你成功）",
+        "Credit Builder 功能说明仍不够直白：\"everyday purchases 建立 credit score\" 的机制对小白用户还是黑盒",
+        "disclaimer 堆叠过重：最后一屏小字密度大，且「平均 30 分」与画面「75 分」的差异可能引发信任质疑"
       ],
       "transferable": [
-        "角色错位 gag：让一个不合时宜的人反复执行同一动作，越认真越好笑",
-        "硬数字 payoff：在最后 3 秒给一个可记住、可复述的数字",
-        "大卖场/日常场景：让 fintech 走下「精英」，进入真实生活"
+        "名人 catchphrase 移植：找一个以金句/slogan 著称的名人，把他的经典台词用在日常场景里制造反差",
+        "体育解说语法借用：把体育解说的激情和夸张用词移植到金融/日常消费场景（\"spectacular withdrawal\" / \"pros pro\"）",
+        "硬数字 payoff：在最后 5 秒给一个可记住、可复述的具体数字（75 points / 6 months）",
+        "品牌谐音梗：Chime（钟声/加入对话）→ catchphrase（金句）→ 你的 banking 也能有 signature moment"
       ]
     },
     "duration": "30s",
