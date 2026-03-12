@@ -30,16 +30,16 @@ export default function Home() {
       {/* ═══ STATS BAR — compact, nav-height ═══ */}
       <div className="section-full section-accent">
         <div className="section-inner">
-          <div className="flex items-center justify-center h-14 gap-8 sm:gap-12">
+          <div className="flex items-center justify-center h-14 gap-3 sm:gap-8">
             {[
               { num: totalVideos.toString(), label: "Videos" },
               { num: "20+", label: "Frames" },
               { num: "10:00", label: "Daily BJT" },
               { num: "4", label: "Tags" },
             ].map((stat, i) => (
-              <div key={stat.label} className="flex items-center gap-2" style={{ borderLeft: i > 0 ? "1px solid rgba(0,0,0,0.15)" : "none", paddingLeft: i > 0 ? "2rem" : "0" }}>
-                <span className="text-sm font-black text-black sm:text-base">{stat.num}</span>
-                <span className="text-[10px] font-bold uppercase tracking-wider text-black/50">{stat.label}</span>
+              <div key={stat.label} className="flex items-center gap-1.5 sm:gap-2" style={{ borderLeft: i > 0 ? "1px solid rgba(0,0,0,0.15)" : "none", paddingLeft: i > 0 ? "0.75rem" : "0" }}>
+                <span className="text-base font-black text-black sm:text-lg">{stat.num}</span>
+                <span className="text-xs font-bold uppercase tracking-wider text-black/50 sm:text-sm">{stat.label}</span>
               </div>
             ))}
           </div>

@@ -36,19 +36,23 @@ export default function RootLayout({
               </div>
               <span className="text-[15px] font-bold tracking-tight text-white">BrandCut</span>
             </a>
-            <div className="flex items-center gap-7 text-[13px] font-medium text-[#666]">
+            <div className="flex items-center gap-4 sm:gap-7 text-[13px] font-medium text-[#666]">
               {[
                 { href: "/", label: "Today" },
                 { href: "/archive", label: "Archive" },
-                { href: "/archive/foundation", label: "Foundation" },
-                { href: "/shortlist", label: "Saved" },
-                { href: "/about", label: "About" },
+                { href: "/shortlist", label: "Saved", mobile: true },
+                { href: "/archive/foundation", label: "Foundation", mobile: false },
+                { href: "/about", label: "About", mobile: false },
               ].map((link) => (
-                <a key={link.href} href={link.href} className="transition-colors hover:text-white">
+                <a
+                  key={link.href}
+                  href={link.href}
+                  className={`transition-colors hover:text-white ${link.mobile === false ? 'hidden sm:inline' : ''}`}
+                >
                   {link.label}
                 </a>
               ))}
-              <a href="/admin" className="text-[#444] transition-colors hover:text-white" title="Admin">
+              <a href="/admin" className="hidden sm:inline text-[#444] transition-colors hover:text-white" title="Admin">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                   <circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/>
                 </svg>
@@ -81,10 +85,10 @@ export default function RootLayout({
               </div>
             </div>
           </div>
-          <div className="section-full section-accent h-14">
-            <div className="section-inner h-full flex items-center justify-between">
-              <h2 className="text-2xl font-black tracking-tight text-black">Build taste, not just campaigns.</h2>
-              <a href="/about" className="bg-black px-6 py-2 text-sm font-bold text-white transition-transform hover:scale-105">
+          <div className="section-full section-accent min-h-14">
+            <div className="section-inner h-full flex flex-col sm:flex-row items-center justify-between gap-3 sm:gap-0 py-3 sm:py-0 sm:h-14">
+              <h2 className="text-sm sm:text-2xl font-black tracking-tight text-black text-center sm:text-left leading-tight">Build taste, not just campaigns.</h2>
+              <a href="/about" className="bg-black px-6 py-2 text-sm font-bold text-white transition-transform hover:scale-105 shrink-0">
                 Learn more
               </a>
             </div>
