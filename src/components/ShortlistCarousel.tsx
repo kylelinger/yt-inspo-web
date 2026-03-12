@@ -47,7 +47,7 @@ export default function ShortlistCarousel({ allVideos }: { allVideos: Video[] })
 
   if (saved.length === 0) {
     return (
-      <div className="py-20 text-center" style={{ background: "#080808" }}>
+      <div className="py-24 text-center" style={{ background: "#080808" }}>
         <p className="text-3xl mb-3">⭐</p>
         <p className="text-sm font-bold text-[#666]">Your saved collection</p>
         <p className="text-xs mt-2 text-[#444]">Star videos to see them here</p>

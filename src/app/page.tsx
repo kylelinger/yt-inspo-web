@@ -40,7 +40,7 @@ export default function Home() {
               ].map((stat, i) => (
                 <div
                   key={stat.label}
-                  className="py-8 px-6 text-center"
+                  className="py-10 px-8 text-center"
                   style={{ borderLeft: i > 0 ? "1px solid rgba(0,0,0,0.15)" : "none" }}
                 >
                   <div className="text-2xl font-black text-black sm:text-3xl">{stat.num}</div>
@@ -114,8 +114,8 @@ export default function Home() {
               { bg: "#0e0e0e", icon: "📝", title: "Structural breakdown", desc: "Hook \u2192 setup \u2192 turn \u2192 proof \u2192 end card. Every beat mapped." },
               { bg: "#0a0a0a", icon: "✅", title: "Brand alignment check", desc: "Smarter your money. Intelligence \u2192 Confidence \u2192 Trust." },
             ].map((item, i) => (
-              <div key={i} className="p-12 sm:p-16" style={{ background: item.bg }}>
-                <div className="text-3xl mb-5">{item.icon}</div>
+              <div key={i} className="p-14 sm:p-20" style={{ background: item.bg }}>
+                <div className="text-3xl mb-6">{item.icon}</div>
                 <h3 className="text-lg font-bold text-white mb-2">{item.title}</h3>
                 <p className="text-sm leading-relaxed text-[#666]">{item.desc}</p>
               </div>
@@ -129,8 +129,8 @@ export default function Home() {
         <FadeInView>
           <div className="grid sm:grid-cols-2">
             {/* Clawd */}
-            <div className="p-12 sm:p-16" style={{ background: "#111" }}>
-              <div className="flex items-center gap-4 mb-6">
+            <div className="p-14 sm:p-20" style={{ background: "#111" }}>
+              <div className="flex items-center gap-4 mb-8">
                 <div className="flex h-12 w-12 items-center justify-center text-lg font-black text-white" style={{ background: "var(--accent)" }}>C</div>
                 <div>
                   <div className="text-lg font-bold text-white">Clawd</div>
@@ -146,8 +146,8 @@ export default function Home() {
             </div>
 
             {/* slime */}
-            <div className="p-12 sm:p-16" style={{ background: "#0c0c0c" }}>
-              <div className="flex items-center gap-4 mb-6">
+            <div className="p-14 sm:p-20" style={{ background: "#0c0c0c" }}>
+              <div className="flex items-center gap-4 mb-8">
                 <div className="flex h-12 w-12 items-center justify-center text-lg font-black text-white" style={{ background: "#222" }}>S</div>
                 <div>
                   <div className="text-lg font-bold text-white">slime</div>

@@ -52,7 +52,7 @@ export default function SortedVideoGrid({ videos, showFilter = false }: { videos
   return (
     <div>
       {showFilter && (
-        <div className="mb-6 flex flex-wrap gap-px" style={{ background: "#1a1a1a" }}>
+        <div className="mb-8 flex flex-wrap gap-[2px]" style={{ background: "#1a1a1a" }}>
           {TAG_FILTERS.map((tf) => {
             const count = tagCounts[tf.value] || 0;
             if (tf.value !== "all" && count === 0) return null;
@@ -61,7 +61,7 @@ export default function SortedVideoGrid({ videos, showFilter = false }: { videos
               <button
                 key={tf.value}
                 onClick={() => setTagFilter(tf.value)}
-                className="px-5 py-2.5 text-xs font-bold uppercase tracking-wider transition-colors cursor-pointer"
+                className="px-6 py-3.5 text-xs font-bold uppercase tracking-wider transition-colors cursor-pointer"
                 style={{
                   background: active ? "var(--accent)" : "var(--bg)",
                   color: active ? "#fff" : "#555",
@@ -74,8 +74,8 @@ export default function SortedVideoGrid({ videos, showFilter = false }: { videos
         </div>
       )}
 
-      {/* Grid with 1px gap lines */}
-      <div className="grid gap-px sm:grid-cols-2" style={{ background: "#1a1a1a" }}>
+      {/* Grid with visible gap lines */}
+      <div className="grid gap-[2px] sm:grid-cols-2" style={{ background: "#1a1a1a" }}>
         <AnimatePresence mode="popLayout">
           {sorted.map((v) => (
             <motion.div

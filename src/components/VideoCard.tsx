@@ -89,7 +89,7 @@ export default function VideoCard({
       </a>
 
       {/* Content block */}
-      <div className="p-5">
+      <div className="p-6 sm:p-8">
         {/* Brand + Tag inline */}
         <div className="flex items-center gap-3 mb-2">
           {video.brand && (
@@ -120,7 +120,7 @@ export default function VideoCard({
         )}
 
         {/* Bottom row */}
-        <div className="mt-4 flex items-center justify-between border-t pt-3" style={{ borderColor: "#1a1a1a" }}>
+        <div className="mt-5 flex items-center justify-between border-t pt-4" style={{ borderColor: "#1a1a1a" }}>
           <span className="text-[11px] font-medium text-[#444]">{video.date_added}</span>
           {mounted && (
             <div className="flex gap-1">
