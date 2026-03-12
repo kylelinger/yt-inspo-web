@@ -172,7 +172,7 @@ export default function Home() {
 
       {/* ═══ ARCHIVE ═══ */}
       {olderDates.length > 0 && (
-        <div className="section-full section-alt pt-16">
+        <div className="section-full section-dark pt-16">
           <div className="section-inner pb-24">
             <FadeInView>
               <div className="flex items-end justify-between mb-10">
@@ -188,7 +188,7 @@ export default function Home() {
 
             {/* Archive blocks — no gaps, just 1px lines */}
             <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-px" style={{ background: "#1a1a1a" }}>
-              <a href="/archive/foundation" className="group flex items-start justify-between p-6 transition-colors hover:bg-[#151515]" style={{ background: "var(--bg)" }}>
+              <a href="/archive/foundation" className="group flex items-start justify-between p-6 transition-colors hover:bg-[#1a1a1a]" style={{ background: "var(--bg)" }}>
                 <div>
                   <div className="text-base font-bold text-white">Foundation</div>
                   <div className="mt-1 text-sm text-[#555]">{foundationCount} videos</div>
@@ -199,7 +199,7 @@ export default function Home() {
               {olderDates.map((date) => {
                 const count = grouped.get(date)?.length || 0;
                 return (
-                  <a key={date} href={`/archive/${date}`} className="group block p-6 transition-colors hover:bg-[#151515]" style={{ background: "var(--bg)" }}>
+                  <a key={date} href={`/archive/${date}`} className="group block p-6 transition-colors hover:bg-[#1a1a1a]" style={{ background: "var(--bg)" }}>
                     <div className="text-base font-bold text-white">{date}</div>
                     <div className="mt-1 text-sm text-[#555]">{count} videos</div>
                   </a>
