@@ -70,8 +70,6 @@ export default function RootLayout({
               <div
                 className="mt-8 select-none overflow-hidden"
                 style={{
-                  width: "100vw",
-                  marginLeft: "calc(-50vw + 50%)",
                   fontSize: "clamp(4rem, 16vw, 14rem)",
                   fontWeight: 900,
                   lineHeight: 0.82,
