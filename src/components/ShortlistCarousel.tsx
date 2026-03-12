@@ -42,10 +42,7 @@ export default function ShortlistCarousel({ allVideos }: { allVideos: Video[] })
 
   if (!mounted) {
     return (
-      <div
-        className="relative overflow-hidden rounded-2xl"
-        style={{ background: "var(--bg-alt)" }}
-      >
+      <div className="relative overflow-hidden rounded-3xl" style={{ background: "#111" }}>
         <div className="aspect-[21/9] w-full animate-pulse" />
       </div>
     );
@@ -54,13 +51,13 @@ export default function ShortlistCarousel({ allVideos }: { allVideos: Video[] })
   if (saved.length === 0) {
     return (
       <div
-        className="flex items-center justify-center rounded-2xl border-2 border-dashed py-16"
-        style={{ borderColor: "var(--border)", color: "var(--text-muted)" }}
+        className="flex items-center justify-center rounded-3xl border border-dashed py-20"
+        style={{ borderColor: "#333", color: "#555" }}
       >
         <div className="text-center">
-          <p className="text-3xl mb-2">⭐</p>
-          <p className="text-sm font-medium">Your saved collection</p>
-          <p className="text-xs mt-1">Star videos to see them here</p>
+          <p className="text-4xl mb-3">⭐</p>
+          <p className="text-base font-bold text-[#888]">Your saved collection</p>
+          <p className="text-sm mt-2 text-[#555]">Star videos to see them here</p>
         </div>
       </div>
     );
@@ -72,8 +69,8 @@ export default function ShortlistCarousel({ allVideos }: { allVideos: Video[] })
     <div className="relative group">
       <a href={`/video/${video.id}`} className="block">
         <div
-          className="relative overflow-hidden rounded-2xl"
-          style={{ background: "var(--hero-bg)" }}
+          className="relative overflow-hidden rounded-3xl"
+          style={{ background: "#000" }}
         >
           <div className="aspect-[21/9] w-full overflow-hidden">
             <img

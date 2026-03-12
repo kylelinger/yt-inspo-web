@@ -70,9 +70,9 @@ export default function SortedVideoGrid({ videos, showFilter = false }: { videos
                 onClick={() => setTagFilter(tf.value)}
                 className="rounded-full px-3.5 py-1.5 text-xs font-medium transition-colors"
                 style={{
-                  background: active ? "var(--accent)" : "var(--bg-alt)",
-                  color: active ? "#fff" : "var(--text-secondary)",
-                  border: `1px solid ${active ? "var(--accent)" : "var(--border)"}`,
+                  background: active ? "var(--accent)" : "transparent",
+                  color: active ? "#fff" : "#777",
+                  border: `1px solid ${active ? "var(--accent)" : "#333"}`,
                 }}
                 whileHover={{ scale: 1.04 }}
                 whileTap={{ scale: 0.96 }}

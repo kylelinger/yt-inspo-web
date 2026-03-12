@@ -1,52 +1,26 @@
 @import "tailwindcss";
 
 :root {
-  /* Robinhood-inspired: clean white + lime green */
-  --bg: #ffffff;
-  --bg-alt: #f5f5f5;
-  --card: #ffffff;
-  --card-hover: #fafafa;
-  --border: #e8e8e8;
-  --border-strong: #d4d4d4;
-  --text: #1a1a1a;
-  --text-secondary: #525252;
-  --text-muted: #8a8a8a;
+  /* Force dark — Robinhood DNA */
+  --bg: #000000;
+  --bg-alt: #0c0c0c;
+  --bg-section: #111111;
+  --bg-elevated: #1a1a1a;
+  --card: #141414;
+  --card-hover: #1e1e1e;
+  --border: #222222;
+  --border-strong: #333333;
+  --text: #ffffff;
+  --text-secondary: #a0a0a0;
+  --text-muted: #666666;
   --accent: #FF5A00;
-  --accent-hover: #e65100;
-  --accent-soft: rgba(255, 90, 0, 0.08);
-  --green: #22c55e;
-  --red: #ff5000;
+  --accent-hover: #ff7a33;
+  --accent-soft: rgba(255, 90, 0, 0.10);
+  --green: #34d399;
+  --red: #ff6b35;
   --yellow: #fbbf24;
-  --hero-bg: #1a1a1a;
-  --hero-text: #ffffff;
-  --hero-accent: #00C805;
-  --nav-bg: rgba(255, 255, 255, 0.92);
-  --nav-border: #e8e8e8;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --bg: #0a0a0a;
-    --bg-alt: #141414;
-    --card: #1a1a1a;
-    --card-hover: #222222;
-    --border: #2a2a2a;
-    --border-strong: #3a3a3a;
-    --text: #f5f5f5;
-    --text-secondary: #b0b0b0;
-    --text-muted: #707070;
-    --accent: #FF5A00;
-    --accent-hover: #ff7a33;
-    --accent-soft: rgba(255, 90, 0, 0.12);
-    --green: #34d399;
-    --red: #ff6b35;
-    --yellow: #fbbf24;
-    --hero-bg: #0a0a0a;
-    --hero-text: #f5f5f5;
-    --hero-accent: #00C805;
-    --nav-bg: rgba(10, 10, 10, 0.92);
-    --nav-border: #2a2a2a;
-  }
+  --nav-bg: rgba(0, 0, 0, 0.85);
+  --nav-border: #1a1a1a;
 }
 
 * {
@@ -60,49 +34,71 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* Smooth scrolling */
 html {
   scroll-behavior: smooth;
 }
 
-/* Custom scrollbar */
-::-webkit-scrollbar {
-  width: 6px;
-}
-::-webkit-scrollbar-track {
-  background: transparent;
-}
-::-webkit-scrollbar-thumb {
-  background: var(--border-strong);
-  border-radius: 3px;
-}
+/* Scrollbar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #333; border-radius: 3px; }
 
-/* Selection color */
 ::selection {
   background: var(--accent);
   color: #fff;
 }
 
-/* Focus ring */
 :focus-visible {
   outline: 2px solid var(--accent);
   outline-offset: 2px;
   border-radius: 4px;
 }
 
-/* Smooth image loading */
-img {
-  transition: opacity 0.3s ease;
+img { transition: opacity 0.3s ease; }
+
+/* ─── Robinhood section patterns ─── */
+.section-full {
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  position: relative;
 }
 
-/* Card hover glow layer (used by VideoCard) */
-.card-glow {
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
-  opacity: 0;
-  transition: opacity 0.3s ease;
+.section-dark { background: var(--bg); }
+.section-alt { background: var(--bg-section); }
+.section-accent {
+  background: var(--accent);
+  color: #000;
 }
-.group:hover .card-glow {
-  opacity: 1;
+
+.section-inner {
+  max-width: 72rem; /* 1152px = max-w-6xl */
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* ─── Robinhood typography scale ─── */
+.display-xl {
+  font-size: clamp(2.5rem, 6vw, 5rem);
+  font-weight: 900;
+  line-height: 1.05;
+  letter-spacing: -0.03em;
+}
+
+.display-lg {
+  font-size: clamp(2rem, 4.5vw, 3.5rem);
+  font-weight: 900;
+  line-height: 1.1;
+  letter-spacing: -0.025em;
+}
+
+.display-md {
+  font-size: clamp(1.5rem, 3vw, 2.25rem);
+  font-weight: 800;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+}
+
+.body-lg {
+  font-size: 1.125rem;
+  line-height: 1.7;
 }
