@@ -71,6 +71,20 @@ export default function Home() {
                 <h2 className="display-md text-white">{latestDate}</h2>
                 <p className="mt-2 text-sm text-[#444]">{latestVideos.length} videos curated</p>
               </div>
+              <div className="hidden sm:flex items-center gap-5">
+                {[
+                  { tag: "B1", label: "\u76F4\u63A5\u7ADE\u54C1", color: "#f59e0b" },
+                  { tag: "B2", label: "\u91D1\u878D\u54C1\u724C", color: "#3b82f6" },
+                  { tag: "A", label: "\u5BA1\u7F8E\u6807\u6746", color: "#a855f7" },
+                  { tag: "C", label: "\u6587\u5316\u53C2\u8003", color: "#555" },
+                ].map((t) => (
+                  <div key={t.tag} className="flex items-center gap-2">
+                    <div className="h-2.5 w-2.5" style={{ background: t.color }} />
+                    <span className="text-[11px] font-bold text-[#555]">{t.tag}</span>
+                    <span className="text-[11px] text-[#333]">{t.label}</span>
+                  </div>
+                ))}
+              </div>
             </div>
           </FadeInView>
         </div>
