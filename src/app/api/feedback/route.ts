@@ -40,6 +40,7 @@ async function writeState(state: FeedbackState): Promise<{ ok: boolean; error?: 
     await put(BLOB_PATH, JSON.stringify(state), {
       access: "public",
       addRandomSuffix: false,
+      allowOverwrite: true,
     });
     return { ok: true };
   } catch (e) {
