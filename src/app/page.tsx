@@ -106,7 +106,7 @@ export default function Home() {
               {/* Left column: Clawd + slime stacked */}
               <div className="flex flex-col gap-6">
                 {/* Clawd */}
-                <div className="p-6" style={{ background: "#1a1a1a" }}>
+                <div className="p-1" style={{ background: "#1a1a1a" }}>
                   <div className="flex items-center gap-3 mb-4">
                     <div className="flex h-10 w-10 items-center justify-center text-base font-black text-white" style={{ background: "var(--accent)" }}>C</div>
                     <div>
@@ -123,7 +123,7 @@ export default function Home() {
                 </div>
 
                 {/* slime */}
-                <div className="p-6" style={{ background: "#1a1a1a" }}>
+                <div className="p-1" style={{ background: "#1a1a1a" }}>
                   <div className="flex items-center gap-3 mb-4">
                     <div className="flex h-10 w-10 items-center justify-center text-base font-black text-white" style={{ background: "#222" }}>S</div>
                     <div>
@@ -140,20 +140,24 @@ export default function Home() {
                 </div>
               </div>
 
-              {/* Right column: How it works (4 items stacked) */}
-              <div className="flex flex-col gap-6">
-                {[
-                  { icon: "🔍", title: "AI searches daily", desc: "YouTube, Vimeo, LinkedIn — multiple sources, one pipeline." },
-                  { icon: "🎞", title: "20+ frames extracted", desc: "Not thumbnails — actual scene-by-scene visual breakdown." },
-                  { icon: "📝", title: "Structural breakdown", desc: "Hook → setup → turn → proof → end card. Every beat mapped." },
-                  { icon: "✅", title: "Brand alignment check", desc: "Smarter your money. Intelligence → Confidence → Trust." },
-                ].map((item, i) => (
-                  <div key={i} className="p-6" style={{ background: "#1a1a1a" }}>
-                    <div className="text-xl mb-2">{item.icon}</div>
-                    <h3 className="text-sm font-bold text-white mb-1">{item.title}</h3>
-                    <p className="text-xs leading-relaxed text-[#666]">{item.desc}</p>
-                  </div>
-                ))}
+              {/* Right column: How it works (merged single card) */}
+              <div className="p-1" style={{ background: "#1a1a1a" }}>
+                <div className="flex flex-col gap-6">
+                  {[
+                    { icon: "🔍", title: "AI searches daily", desc: "YouTube, Vimeo, LinkedIn — multiple sources, one pipeline." },
+                    { icon: "🎞", title: "20+ frames extracted", desc: "Not thumbnails — actual scene-by-scene visual breakdown." },
+                    { icon: "📝", title: "Structural breakdown", desc: "Hook → setup → turn → proof → end card. Every beat mapped." },
+                    { icon: "✅", title: "Brand alignment check", desc: "Smarter your money. Intelligence → Confidence → Trust." },
+                  ].map((item, i) => (
+                    <div key={i} className="flex gap-4">
+                      <div className="text-2xl flex-shrink-0">{item.icon}</div>
+                      <div>
+                        <h3 className="text-sm font-bold text-white mb-1">{item.title}</h3>
+                        <p className="text-xs leading-relaxed text-[#666]">{item.desc}</p>
+                      </div>
+                    </div>
+                  ))}
+                </div>
               </div>
             </div>
           </FadeInView>
