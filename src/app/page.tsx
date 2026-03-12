@@ -98,65 +98,66 @@ export default function Home() {
         )}
       </div>
 
-      {/* ═══ HOW IT WORKS — 2×2 color block grid ═══ */}
-      <div className="section-full">
-        <FadeInView>
-          <div className="grid sm:grid-cols-2">
-            {[
-              { bg: "#0a0a0a", icon: "🔍", title: "AI searches daily", desc: "YouTube, Vimeo, LinkedIn \u2014 multiple sources, one pipeline." },
-              { bg: "#0e0e0e", icon: "🎞", title: "20+ frames extracted", desc: "Not thumbnails \u2014 actual scene-by-scene visual breakdown." },
-              { bg: "#0e0e0e", icon: "📝", title: "Structural breakdown", desc: "Hook \u2192 setup \u2192 turn \u2192 proof \u2192 end card. Every beat mapped." },
-              { bg: "#0a0a0a", icon: "✅", title: "Brand alignment check", desc: "Smarter your money. Intelligence \u2192 Confidence \u2192 Trust." },
-            ].map((item, i) => (
-              <div key={i} className="p-14 sm:p-20" style={{ background: item.bg }}>
-                <div className="text-3xl mb-6">{item.icon}</div>
-                <h3 className="text-lg font-bold text-white mb-2">{item.title}</h3>
-                <p className="text-sm leading-relaxed text-[#666]">{item.desc}</p>
-              </div>
-            ))}
-          </div>
-        </FadeInView>
-      </div>
+      {/* ═══ CURATORS — left: Clawd+slime stacked, right: How it works (4 items) ═══ */}
+      <div className="section-full py-16">
+        <div className="section-inner">
+          <FadeInView>
+            <div className="grid lg:grid-cols-2 gap-6">
+              {/* Left column: Clawd + slime stacked */}
+              <div className="flex flex-col gap-6">
+                {/* Clawd */}
+                <div className="p-10" style={{ background: "#0e0e0e" }}>
+                  <div className="flex items-center gap-4 mb-6">
+                    <div className="flex h-10 w-10 items-center justify-center text-base font-black text-white" style={{ background: "var(--accent)" }}>C</div>
+                    <div>
+                      <div className="text-base font-bold text-white">Clawd</div>
+                      <div className="text-xs text-[#666]">AI Curator</div>
+                    </div>
+                  </div>
+                  <p className="text-sm leading-relaxed text-[#888]">
+                    Downloads every video. Extracts 20+ frames. Writes structural breakdowns. Built this entire site. Never sleeps.
+                  </p>
+                  <p className="mt-5 text-lg font-black italic text-[#333]">
+                    &ldquo;I don&apos;t find ads. I build taste.&rdquo;
+                  </p>
+                </div>
 
-      {/* ═══ WHO'S BEHIND THIS — two half-screen blocks side by side ═══ */}
-      <div className="section-full">
-        <FadeInView>
-          <div className="grid sm:grid-cols-2">
-            {/* Clawd */}
-            <div className="p-14 sm:p-20" style={{ background: "#111" }}>
-              <div className="flex items-center gap-4 mb-8">
-                <div className="flex h-12 w-12 items-center justify-center text-lg font-black text-white" style={{ background: "var(--accent)" }}>C</div>
-                <div>
-                  <div className="text-lg font-bold text-white">Clawd</div>
-                  <div className="text-xs text-[#555]">AI Curator &middot; Builder</div>
+                {/* slime */}
+                <div className="p-10" style={{ background: "#0e0e0e" }}>
+                  <div className="flex items-center gap-4 mb-6">
+                    <div className="flex h-10 w-10 items-center justify-center text-base font-black text-white" style={{ background: "#222" }}>S</div>
+                    <div>
+                      <div className="text-base font-bold text-white">slime</div>
+                      <div className="text-xs text-[#666]">Decision Maker</div>
+                    </div>
+                  </div>
+                  <p className="text-sm leading-relaxed text-[#888]">
+                    Sets the brand vision. Gives the thumbs up or thumbs down. Every reaction shapes what comes next.
+                  </p>
+                  <p className="mt-5 text-lg font-black italic text-[#333]">
+                    &ldquo;I keep it honest. No water content.&rdquo;
+                  </p>
                 </div>
               </div>
-              <p className="text-[15px] leading-relaxed text-[#777]">
-                Downloads every video. Extracts 20+ frames. Writes structural breakdowns. Built this entire site. Never sleeps.
-              </p>
-              <p className="mt-6 text-xl font-black italic text-[#333]">
-                &ldquo;I don&apos;t find ads.<br />I build taste.&rdquo;
-              </p>
-            </div>
 
-            {/* slime */}
-            <div className="p-14 sm:p-20" style={{ background: "#0c0c0c" }}>
-              <div className="flex items-center gap-4 mb-8">
-                <div className="flex h-12 w-12 items-center justify-center text-lg font-black text-white" style={{ background: "#222" }}>S</div>
-                <div>
-                  <div className="text-lg font-bold text-white">slime</div>
-                  <div className="text-xs text-[#555]">Brand Strategist &middot; Decision Maker</div>
-                </div>
+              {/* Right column: How it works (4 items stacked) */}
+              <div className="flex flex-col gap-6">
+                {[
+                  { icon: "🔍", title: "AI searches daily", desc: "YouTube, Vimeo, LinkedIn — multiple sources, one pipeline." },
+                  { icon: "🎞", title: "20+ frames extracted", desc: "Not thumbnails — actual scene-by-scene visual breakdown." },
+                  { icon: "📝", title: "Structural breakdown", desc: "Hook → setup → turn → proof → end card. Every beat mapped." },
+                  { icon: "✅", title: "Brand alignment check", desc: "Smarter your money. Intelligence → Confidence → Trust." },
+                ].map((item, i) => (
+                  <div key={i} className="p-10" style={{ background: "#0e0e0e" }}>
+                    <div className="text-2xl mb-4">{item.icon}</div>
+                    <h3 className="text-base font-bold text-white mb-2">{item.title}</h3>
+                    <p className="text-sm leading-relaxed text-[#666]">{item.desc}</p>
+                  </div>
+                ))}
               </div>
-              <p className="text-[15px] leading-relaxed text-[#777]">
-                Sets the brand vision. Gives the thumbs up or thumbs down. Every reaction shapes what comes next.
-              </p>
-              <p className="mt-6 text-xl font-black italic text-[#333]">
-                &ldquo;I keep it honest.<br />No water content.&rdquo;
-              </p>
             </div>
-          </div>
-        </FadeInView>
+          </FadeInView>
+        </div>
       </div>
 
       {/* ═══ BRAND TAGS strip ═══ */}
