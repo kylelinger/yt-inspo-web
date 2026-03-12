@@ -33,18 +33,19 @@ async function readState(): Promise<FeedbackState> {
   return { feedback: {}, shortlist: [] };
 }
 
-async function writeState(state: FeedbackState): Promise<boolean> {
-  if (!BLOB_AVAILABLE) return false;
+async function writeState(state: FeedbackState): Promise<{ ok: boolean; error?: string }> {
+  if (!BLOB_AVAILABLE) return { ok: false, error: "BLOB_TOKEN missing" };
   try {
     const { put } = await import("@vercel/blob");
     await put(BLOB_PATH, JSON.stringify(state), {
       access: "public",
       addRandomSuffix: false,
     });
-    return true;
+    return { ok: true };
   } catch (e) {
-    console.error("Blob write error:", e);
-    return false;
+    const errorMsg = e instanceof Error ? e.message : String(e);
+    console.error("Blob write error:", errorMsg);
+    return { ok: false, error: errorMsg };
   }
 }
 
@@ -85,6 +86,6 @@ export async function POST(req: NextRequest) {
     delete state.feedback[videoId];
   }
 
-  const ok = await writeState(state);
-  return NextResponse.json({ ok, kv: true });
+  const result = await writeState(state);
+  return NextResponse.json({ ...result, kv: true });
 }
