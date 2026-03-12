@@ -102,11 +102,11 @@ export default function Home() {
       <div className="section-full py-16" style={{ background: "#0e0e0e" }}>
         <div className="section-inner">
           <FadeInView>
-            <div className="grid lg:grid-cols-2 gap-6">
+            <div className="grid lg:grid-cols-2 gap-[2px]">
               {/* Left column: Clawd + slime stacked */}
-              <div className="flex flex-col gap-6">
+              <div className="flex flex-col gap-[2px]">
                 {/* Clawd */}
-                <div className="p-1" style={{ background: "#1a1a1a" }}>
+                <div className="p-6" style={{ background: "#1a1a1a" }}>
                   <div className="flex items-center gap-3 mb-4">
                     <div className="flex h-10 w-10 items-center justify-center text-base font-black text-white" style={{ background: "var(--accent)" }}>C</div>
                     <div>
@@ -123,7 +123,7 @@ export default function Home() {
                 </div>
 
                 {/* slime */}
-                <div className="p-1" style={{ background: "#1a1a1a" }}>
+                <div className="p-6" style={{ background: "#1a1a1a" }}>
                   <div className="flex items-center gap-3 mb-4">
                     <div className="flex h-10 w-10 items-center justify-center text-base font-black text-white" style={{ background: "#222" }}>S</div>
                     <div>
@@ -141,7 +141,7 @@ export default function Home() {
               </div>
 
               {/* Right column: How it works (merged single card) */}
-              <div className="p-1" style={{ background: "#1a1a1a" }}>
+              <div className="p-6" style={{ background: "#1a1a1a" }}>
                 <div className="flex flex-col gap-6">
                   {[
                     { icon: "🔍", title: "AI searches daily", desc: "YouTube, Vimeo, LinkedIn — multiple sources, one pipeline." },
