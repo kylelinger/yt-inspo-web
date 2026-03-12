@@ -21,14 +21,14 @@ interface FeedbackState {
 async function readState(): Promise<FeedbackState> {
   if (!BLOB_AVAILABLE) return { feedback: {}, shortlist: [] };
   try {
-    const { head } = await import("@vercel/blob");
-    const blob = await head(BLOB_PATH);
-    if (blob?.url) {
-      const res = await fetch(blob.url, { cache: "no-store" });
+    const { list } = await import("@vercel/blob");
+    const { blobs } = await list({ prefix: BLOB_PATH });
+    if (blobs.length > 0) {
+      const res = await fetch(blobs[0].url, { cache: "no-store" });
       return (await res.json()) as FeedbackState;
     }
-  } catch {
-    // blob doesn't exist yet or read error
+  } catch (e) {
+    console.error("Blob read error:", e);
   }
   return { feedback: {}, shortlist: [] };
 }
