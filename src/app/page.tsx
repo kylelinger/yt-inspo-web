@@ -186,11 +186,14 @@ export default function Home() {
               </div>
             </FadeInView>
 
-            {/* Archive blocks — gap-based grid, no outer borders */}
-            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-px" style={{ background: "#1a1a1a" }}>
+            {/* Archive blocks — borders only between cards */}
+            <div 
+              className="grid sm:grid-cols-2 lg:grid-cols-4 [&>a:not(:nth-child(2n+1))]:sm:border-l [&>a:nth-child(n+3)]:sm:border-t [&>a:not(:nth-child(4n+1))]:lg:border-l [&>a:nth-child(n+5)]:lg:border-t" 
+              style={{ background: "var(--bg)" }}
+            >
               <a 
                 href="/archive/foundation" 
-                className="group flex items-start justify-between p-6 transition-colors hover:bg-[#1a1a1a]"
+                className="group flex items-start justify-between p-6 transition-colors hover:bg-[#1a1a1a] border-[#1a1a1a]"
                 style={{ background: "var(--bg)" }}
               >
                 <div>
@@ -206,7 +209,7 @@ export default function Home() {
                   <a 
                     key={date} 
                     href={`/archive/${date}`}
-                    className="group block p-6 transition-colors hover:bg-[#1a1a1a]"
+                    className="group block p-6 transition-colors hover:bg-[#1a1a1a] border-[#1a1a1a]"
                     style={{ background: "var(--bg)" }}
                   >
                     <div className="text-base font-bold text-white">{date}</div>
