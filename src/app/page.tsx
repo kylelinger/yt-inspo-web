@@ -99,15 +99,15 @@ export default function Home() {
       </div>
 
       {/* ═══ CURATORS — left: Clawd+slime stacked, right: How it works (4 items) ═══ */}
-      <div className="section-full py-16">
+      <div className="section-full py-16" style={{ background: "#0e0e0e" }}>
         <div className="section-inner">
           <FadeInView>
             <div className="grid lg:grid-cols-2 gap-6">
               {/* Left column: Clawd + slime stacked */}
               <div className="flex flex-col gap-6">
                 {/* Clawd */}
-                <div className="p-10" style={{ background: "#0e0e0e" }}>
-                  <div className="flex items-center gap-4 mb-6">
+                <div className="p-6" style={{ background: "#1a1a1a" }}>
+                  <div className="flex items-center gap-3 mb-4">
                     <div className="flex h-10 w-10 items-center justify-center text-base font-black text-white" style={{ background: "var(--accent)" }}>C</div>
                     <div>
                       <div className="text-base font-bold text-white">Clawd</div>
@@ -117,14 +117,14 @@ export default function Home() {
                   <p className="text-sm leading-relaxed text-[#888]">
                     Downloads every video. Extracts 20+ frames. Writes structural breakdowns. Built this entire site. Never sleeps.
                   </p>
-                  <p className="mt-5 text-lg font-black italic text-[#333]">
+                  <p className="mt-4 text-base font-black italic text-[#333]">
                     &ldquo;I don&apos;t find ads. I build taste.&rdquo;
                   </p>
                 </div>
 
                 {/* slime */}
-                <div className="p-10" style={{ background: "#0e0e0e" }}>
-                  <div className="flex items-center gap-4 mb-6">
+                <div className="p-6" style={{ background: "#1a1a1a" }}>
+                  <div className="flex items-center gap-3 mb-4">
                     <div className="flex h-10 w-10 items-center justify-center text-base font-black text-white" style={{ background: "#222" }}>S</div>
                     <div>
                       <div className="text-base font-bold text-white">slime</div>
@@ -134,7 +134,7 @@ export default function Home() {
                   <p className="text-sm leading-relaxed text-[#888]">
                     Sets the brand vision. Gives the thumbs up or thumbs down. Every reaction shapes what comes next.
                   </p>
-                  <p className="mt-5 text-lg font-black italic text-[#333]">
+                  <p className="mt-4 text-base font-black italic text-[#333]">
                     &ldquo;I keep it honest. No water content.&rdquo;
                   </p>
                 </div>
@@ -148,10 +148,10 @@ export default function Home() {
                   { icon: "📝", title: "Structural breakdown", desc: "Hook → setup → turn → proof → end card. Every beat mapped." },
                   { icon: "✅", title: "Brand alignment check", desc: "Smarter your money. Intelligence → Confidence → Trust." },
                 ].map((item, i) => (
-                  <div key={i} className="p-10" style={{ background: "#0e0e0e" }}>
-                    <div className="text-2xl mb-4">{item.icon}</div>
-                    <h3 className="text-base font-bold text-white mb-2">{item.title}</h3>
-                    <p className="text-sm leading-relaxed text-[#666]">{item.desc}</p>
+                  <div key={i} className="p-6" style={{ background: "#1a1a1a" }}>
+                    <div className="text-xl mb-2">{item.icon}</div>
+                    <h3 className="text-sm font-bold text-white mb-1">{item.title}</h3>
+                    <p className="text-xs leading-relaxed text-[#666]">{item.desc}</p>
                   </div>
                 ))}
               </div>
