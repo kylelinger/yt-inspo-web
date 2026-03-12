@@ -2572,62 +2572,6 @@
     "tag": "B2"
   },
   {
-    "id": "0Z0v86-h6Ls",
-    "url": "https://www.youtube.com/watch?v=0Z0v86-h6Ls",
-    "platform": "youtube",
-    "date_added": "2026-03-12",
-    "status": "full_breakdown",
-    "title": "Born Investors — Super Bowl 2021",
-    "brand": "Robinhood",
-    "feedback": null,
-    "source": "yt_search_batch_2026-03-12",
-    "collection": null,
-    "breakdown": {
-      "summary": "31 秒零产品、零 UI — 只有狗狗、小店主、街角餐厅。Robinhood 在 GameStop 风暴后用「每个人天生就是投资者」重建信任。温暖但保守。",
-      "structure": [
-        {
-          "time": "0-5s",
-          "desc": "收容所里的狗 → 浅景深 + 金色光 → 情感钩子（谁不爱狗）"
-        },
-        {
-          "time": "5-15s",
-          "desc": "小店主在橱窗后 → 非裔女性创业者 → 多元化但不刻意"
-        },
-        {
-          "time": "15-25s",
-          "desc": "街角餐厅卡座 → 钨丝灯暖光 → 美国小镇日常 → 「投资就在身边」"
-        },
-        {
-          "time": "25-31s",
-          "desc": "Robinhood logo 叠在实景上（不切纯白底）→ 保持电影连续性"
-        }
-      ],
-      "vo_quotes": [
-        "We are all born investors."
-      ],
-      "strengths": [
-        "极致克制 — 31 秒零 App、零数字、零功能 → 纯信任修复",
-        "暖调胶片质感（金色 + 低饱和）= 反 fintech 冷蓝 → 信任信号",
-        "logo 叠在实景上而非切到纯色屏 — 小技巧大效果",
-        "Super Bowl 级制作水准 + 民主化选角 = 「投资属于所有人」"
-      ],
-      "risks": [
-        "视觉语言极度美式（收容所/小镇餐厅）— 国际迁移性低",
-        "GameStop 背景下「安全牌」打法 — 缺乏锐度和观点",
-        "「Born Investors」概念虽好但执行偏平 — 易被遗忘"
-      ],
-      "transferable": [
-        "「暖色 > 冷色」策略 — 金融 App 默认蓝/黑，用暖色做差异化 = 人性化 = 信任感",
-        "logo 结尾叠在实景上 — 1 秒技巧，让 endcard 不再突兀",
-        "「每个人天生就是 ___」句式 — 去除投资门槛感，但要比 Robinhood 做得更锐利",
-        "零产品策略适合品牌信任修复期 — M公司 如果遇到信任危机可参考"
-      ],
-      "brand_platform": "'Born Investors' 说每个人天生就有投资本能 — 与 M公司 'Smarter your money' 的「你已经很聪明，只需要更好的工具」完全对齐。没有训话（你不需要被教育），没有羞辱（你天生就行），没有黑箱（这里什么功能都没展示因为重点是你，不是我们的技术）。"
-    },
-    "duration": "31s",
-    "tag": "B1"
-  },
-  {
     "id": "OASYs3TGf0E",
     "url": "https://www.youtube.com/watch?v=OASYs3TGf0E",
     "platform": "youtube",
