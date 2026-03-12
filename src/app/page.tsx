@@ -1,6 +1,7 @@
 import videosData from "@/../public/data/videos.json";
 import type { Video } from "@/lib/types";
 import SortedVideoGrid from "@/components/SortedVideoGrid";
+import Sidebar from "@/components/Sidebar";
 
 interface VideoWithCollection extends Video {
   collection?: string;
@@ -93,7 +94,7 @@ export default function Home() {
                 )}
               </div>
               {/* Play icon */}
-              <div className="absolute right-8 bottom-8 flex h-14 w-14 items-center justify-center rounded-full bg-[var(--accent)] text-black transition-transform group-hover:scale-110">
+              <div className="absolute right-8 bottom-8 flex h-14 w-14 items-center justify-center rounded-full bg-[var(--accent)] text-white transition-transform group-hover:scale-110">
                 <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
                   <path d="M8 5v14l11-7z" />
                 </svg>
@@ -120,6 +121,41 @@ export default function Home() {
           <SortedVideoGrid videos={restVideos} showFilter />
         </section>
       )}
+
+      {/* ─── About / Curators ─── */}
+      <section>
+        <div className="grid gap-6 lg:grid-cols-3">
+          <div className="lg:col-span-2">
+            <Sidebar />
+          </div>
+          <div
+            className="flex flex-col justify-center rounded-2xl border p-6"
+            style={{ borderColor: "var(--border)", background: "var(--card)" }}
+          >
+            <h3 className="text-xs font-bold uppercase tracking-widest mb-3" style={{ color: "var(--text-muted)" }}>
+              How it works
+            </h3>
+            <div className="space-y-3 text-[13px] leading-relaxed" style={{ color: "var(--text-secondary)" }}>
+              <div className="flex gap-3">
+                <span className="shrink-0 font-black" style={{ color: "var(--accent)" }}>01</span>
+                <span>AI searches and downloads candidates daily</span>
+              </div>
+              <div className="flex gap-3">
+                <span className="shrink-0 font-black" style={{ color: "var(--accent)" }}>02</span>
+                <span>Every video gets 20+ frame extraction & visual analysis</span>
+              </div>
+              <div className="flex gap-3">
+                <span className="shrink-0 font-black" style={{ color: "var(--accent)" }}>03</span>
+                <span>Structural breakdown: hook → setup → turn → proof → end card</span>
+              </div>
+              <div className="flex gap-3">
+                <span className="shrink-0 font-black" style={{ color: "var(--accent)" }}>04</span>
+                <span>Only videos passing brand platform alignment earn a spot</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* ─── Archive Grid ─── */}
       {olderDates.length > 0 && (

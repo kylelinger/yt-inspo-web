@@ -26,7 +26,7 @@ export default function Sidebar() {
         <div className="space-y-4">
           <div className="flex items-start gap-3">
             <div
-              className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full text-sm font-black text-black"
+              className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full text-sm font-black text-white"
               style={{ background: "var(--accent)" }}
             >
               C

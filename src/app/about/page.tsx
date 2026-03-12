@@ -4,7 +4,7 @@ export default function AboutPage() {
       {/* Hero */}
       <section className="text-center py-12">
         <div
-          className="mx-auto mb-6 flex h-16 w-16 items-center justify-center rounded-2xl text-2xl font-black text-black"
+          className="mx-auto mb-6 flex h-16 w-16 items-center justify-center rounded-2xl text-2xl font-black text-white"
           style={{ background: "var(--accent)" }}
         >
           B
@@ -40,7 +40,7 @@ export default function AboutPage() {
           >
             <div className="flex items-center gap-3 mb-4">
               <div
-                className="flex h-12 w-12 items-center justify-center rounded-full text-lg font-black text-black"
+                className="flex h-12 w-12 items-center justify-center rounded-full text-lg font-black text-white"
                 style={{ background: "var(--accent)" }}
               >
                 C

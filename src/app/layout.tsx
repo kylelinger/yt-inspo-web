@@ -29,7 +29,7 @@ export default function RootLayout({
           <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-3.5">
             <a href="/" className="flex items-center gap-2">
               <div
-                className="flex h-7 w-7 items-center justify-center rounded-md text-xs font-black text-black"
+                className="flex h-7 w-7 items-center justify-center rounded-md text-xs font-black text-white"
                 style={{ background: "var(--accent)" }}
               >
                 B
@@ -65,7 +65,7 @@ export default function RootLayout({
             <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
               <div className="flex items-center gap-2">
                 <div
-                  className="flex h-5 w-5 items-center justify-center rounded text-[9px] font-black text-black"
+                  className="flex h-5 w-5 items-center justify-center rounded text-[9px] font-black text-white"
                   style={{ background: "var(--accent)" }}
                 >
                   B

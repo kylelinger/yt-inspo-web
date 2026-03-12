@@ -45,7 +45,7 @@ export default function ArchivePage() {
               </p>
             </div>
             <span
-              className="rounded-full px-3 py-1 text-xs font-bold text-black"
+              className="rounded-full px-3 py-1 text-xs font-bold text-white"
               style={{ background: "var(--accent)" }}
             >
               {foundation.length}

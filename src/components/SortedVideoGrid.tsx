@@ -65,7 +65,7 @@ export default function SortedVideoGrid({ videos, showFilter = false }: { videos
                 className="rounded-full px-3 py-1.5 text-xs font-medium transition-all"
                 style={{
                   background: active ? "var(--accent)" : "var(--bg-alt)",
-                  color: active ? "#000" : "var(--text-secondary)",
+                  color: active ? "#fff" : "var(--text-secondary)",
                   border: `1px solid ${active ? "var(--accent)" : "var(--border)"}`,
                 }}
               >
