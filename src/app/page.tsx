@@ -186,15 +186,12 @@ export default function Home() {
               </div>
             </FadeInView>
 
-            {/* Archive blocks — borders only between cards */}
-            <div 
-              className="grid sm:grid-cols-2 lg:grid-cols-4 [&>a:not(:nth-child(2n+1))]:sm:border-l [&>a:nth-child(n+3)]:sm:border-t [&>a:not(:nth-child(4n+1))]:lg:border-l [&>a:nth-child(n+5)]:lg:border-t" 
-              style={{ background: "var(--bg)" }}
-            >
+            {/* Archive blocks — 2px gap, #0e0e0e cards on #000 */}
+            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-[2px]" style={{ background: "var(--bg)" }}>
               <a 
                 href="/archive/foundation" 
-                className="group flex items-start justify-between p-6 transition-colors hover:bg-[#1a1a1a] border-[#1a1a1a]"
-                style={{ background: "var(--bg)" }}
+                className="group flex items-start justify-between p-6 transition-colors hover:bg-[#1a1a1a]"
+                style={{ background: "#0e0e0e" }}
               >
                 <div>
                   <div className="text-base font-bold text-white">Foundation</div>
@@ -209,8 +206,8 @@ export default function Home() {
                   <a 
                     key={date} 
                     href={`/archive/${date}`}
-                    className="group block p-6 transition-colors hover:bg-[#1a1a1a] border-[#1a1a1a]"
-                    style={{ background: "var(--bg)" }}
+                    className="group block p-6 transition-colors hover:bg-[#1a1a1a]"
+                    style={{ background: "#0e0e0e" }}
                   >
                     <div className="text-base font-bold text-white">{date}</div>
                     <div className="mt-1 text-sm text-[#555]">{count} videos</div>
