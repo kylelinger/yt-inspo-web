@@ -127,14 +127,18 @@ export default function VideoCard({
           {mounted && isAdmin && (
             <div className="flex gap-1">
               {([
-                { action: "thumbsup" as const, emoji: "👍", active: currentFb === "thumbsup", activeColor: "var(--green)" },
-                { action: "thumbsdown" as const, emoji: "👎", active: currentFb === "thumbsdown", activeColor: "var(--red)" },
+                { action: "thumbsup" as const, emoji: "👍", active: currentFb === "thumbsup", activeBg: "#34d399", activeBorder: "#34d399" },
+                { action: "thumbsdown" as const, emoji: "👎", active: currentFb === "thumbsdown", activeBg: "#ff6b35", activeBorder: "#ff6b35" },
               ]).map((btn) => (
                 <motion.button
                   key={btn.action}
                   onClick={(e) => { e.preventDefault(); handleFeedback(btn.action); }}
-                  className="px-2 py-1 text-sm cursor-pointer"
-                  style={{ color: btn.active ? btn.activeColor : "#333" }}
+                  className="px-2 py-1 text-sm cursor-pointer transition-all"
+                  style={{
+                    background: btn.active ? `${btn.activeBg}15` : "transparent",
+                    border: `1px solid ${btn.active ? btn.activeBorder : "transparent"}`,
+                    borderRadius: "4px",
+                  }}
                   whileTap={{ scale: 1.3 }}
                 >
                   {btn.emoji}
@@ -142,8 +146,12 @@ export default function VideoCard({
               ))}
               <motion.button
                 onClick={(e) => { e.preventDefault(); handleShortlist(); }}
-                className="px-2 py-1 text-sm cursor-pointer"
-                style={{ color: isShortlisted ? "var(--yellow)" : "#333" }}
+                className="px-2 py-1 text-sm cursor-pointer transition-all"
+                style={{
+                  background: isShortlisted ? "#fbbf2415" : "transparent",
+                  border: `1px solid ${isShortlisted ? "#fbbf24" : "transparent"}`,
+                  borderRadius: "4px",
+                }}
                 whileTap={{ scale: 1.4 }}
               >
                 {isShortlisted ? "★" : "☆"}
