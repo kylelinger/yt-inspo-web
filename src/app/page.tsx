@@ -27,43 +27,10 @@ export default function Home() {
 
   return (
     <div>
-      {/* ═══ HERO ═══ */}
-      <div className="section-full section-dark">
-        <div className="section-inner py-24 sm:py-32 lg:py-40">
-          <FadeIn>
-            <p className="text-[11px] font-bold uppercase tracking-[0.25em] mb-6" style={{ color: "var(--accent)" }}>
-              Daily Brand Inspiration
-            </p>
-            <h1 className="display-xl text-white max-w-4xl">
-              The best brand ads, dissected daily.
-            </h1>
-            <p className="mt-8 text-lg text-[#666] max-w-xl leading-relaxed">
-              AI-curated. Frame-analyzed. Structurally broken down. Only what passes the bar earns a spot.
-            </p>
-            <div className="mt-12 flex gap-px">
-              <a
-                href="#today"
-                className="px-8 py-3.5 text-sm font-bold text-white"
-                style={{ background: "var(--accent)" }}
-              >
-                See today&apos;s picks
-              </a>
-              <a
-                href="/about"
-                className="px-8 py-3.5 text-sm font-bold text-[#888] transition-colors hover:text-white"
-                style={{ background: "#151515" }}
-              >
-                How it works
-              </a>
-            </div>
-          </FadeIn>
-        </div>
-      </div>
-
-      {/* ═══ STATS BAR — single accent strip ═══ */}
+      {/* ═══ STATS BAR — first thing on screen ═══ */}
       <div className="section-full section-accent">
         <div className="section-inner">
-          <FadeIn delay={0.15}>
+          <FadeIn>
             <div className="grid grid-cols-2 sm:grid-cols-4">
               {[
                 { num: totalVideos.toString(), label: "Videos reviewed" },
@@ -73,7 +40,7 @@ export default function Home() {
               ].map((stat, i) => (
                 <div
                   key={stat.label}
-                  className="py-6 px-6 text-center"
+                  className="py-8 px-6 text-center"
                   style={{ borderLeft: i > 0 ? "1px solid rgba(0,0,0,0.15)" : "none" }}
                 >
                   <div className="text-2xl font-black text-black sm:text-3xl">{stat.num}</div>
@@ -87,7 +54,7 @@ export default function Home() {
 
       {/* ═══ SAVED CAROUSEL ═══ */}
       <div className="section-full section-alt">
-        <div className="section-inner py-16">
+        <div className="section-inner py-20">
           <FadeInView>
             <ShortlistCarousel allVideos={allVideos} />
           </FadeInView>
@@ -96,7 +63,7 @@ export default function Home() {
 
       {/* ═══ TODAY ═══ */}
       <div id="today" className="section-full section-dark">
-        <div className="section-inner pt-20 pb-4">
+        <div className="section-inner pt-24 pb-6">
           <FadeInView>
             <div className="flex items-end justify-between mb-10">
               <div>
@@ -109,12 +76,12 @@ export default function Home() {
         </div>
 
         {latestVideos.length > 0 ? (
-          <div className="section-inner pb-0">
+          <div className="section-inner pb-24">
             <SortedVideoGrid videos={latestVideos} showFilter />
           </div>
         ) : (
-          <div className="section-inner pb-20">
-            <div className="py-20 text-center" style={{ background: "var(--bg-alt)" }}>
+          <div className="section-inner pb-24">
+            <div className="py-24 text-center" style={{ background: "var(--bg-alt)" }}>
               <p className="text-5xl mb-4">🎬</p>
               <p className="text-lg font-bold text-white">Today&apos;s batch is brewing</p>
               <p className="text-sm mt-2 text-[#444]">Check back at 10:00 BJT</p>
@@ -186,7 +153,7 @@ export default function Home() {
 
       {/* ═══ BRAND TAGS strip ═══ */}
       <div className="section-full" style={{ background: "#080808" }}>
-        <div className="section-inner py-8 flex flex-wrap items-center justify-center gap-6">
+        <div className="section-inner py-12 flex flex-wrap items-center justify-center gap-6">
           {["Smarter your money", "Intelligence > Advice", "No shaming", "Trust lift"].map((tag) => (
             <span key={tag} className="text-xs font-bold uppercase tracking-widest text-[#333]">
               {tag}
@@ -198,7 +165,7 @@ export default function Home() {
       {/* ═══ ARCHIVE ═══ */}
       {olderDates.length > 0 && (
         <div className="section-full section-alt">
-          <div className="section-inner pt-20 pb-4">
+          <div className="section-inner pt-24 pb-6">
             <FadeInView>
               <div className="flex items-end justify-between mb-10">
                 <div>
@@ -213,7 +180,7 @@ export default function Home() {
           </div>
 
           {/* Archive blocks — no gaps, just 1px lines */}
-          <div className="section-inner pb-20">
+          <div className="section-inner pb-24">
             <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-px" style={{ background: "#1a1a1a" }}>
               <a href="/archive/foundation" className="group block p-6 transition-colors hover:bg-[#151515]" style={{ background: "var(--bg)" }}>
                 <div className="text-2xl mb-2">📐</div>
