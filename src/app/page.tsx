@@ -48,11 +48,9 @@ export default function Home() {
 
       {/* ═══ SAVED CAROUSEL ═══ */}
       <div className="section-full section-alt">
-        <div className="section-inner py-20">
-          <FadeInView>
-            <ShortlistCarousel allVideos={allVideos} />
-          </FadeInView>
-        </div>
+        <FadeInView>
+          <ShortlistCarousel allVideos={allVideos} />
+        </FadeInView>
       </div>
 
       {/* ═══ TODAY ═══ */}

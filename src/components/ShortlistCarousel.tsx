@@ -39,18 +39,20 @@ export default function ShortlistCarousel({ allVideos }: { allVideos: Video[] })
 
   if (!mounted) {
     return (
-      <div className="relative overflow-hidden" style={{ background: "#0a0a0a" }}>
-        <div className="aspect-[21/9] w-full animate-pulse" />
+      <div className="relative overflow-hidden h-[180px]" style={{ background: "#0a0a0a" }}>
+        <div className="w-full h-full animate-pulse" />
       </div>
     );
   }
 
   if (saved.length === 0) {
     return (
-      <div className="py-24 text-center" style={{ background: "#080808" }}>
-        <p className="text-3xl mb-3">⭐</p>
-        <p className="text-sm font-bold text-[#666]">Your saved collection</p>
-        <p className="text-xs mt-2 text-[#444]">Star videos to see them here</p>
+      <div className="h-[180px] flex items-center justify-center" style={{ background: "#080808" }}>
+        <div className="text-center">
+          <p className="text-3xl mb-3">⭐</p>
+          <p className="text-sm font-bold text-[#666]">Your saved collection</p>
+          <p className="text-xs mt-2 text-[#444]">Star videos to see them here</p>
+        </div>
       </div>
     );
   }
@@ -60,8 +62,8 @@ export default function ShortlistCarousel({ allVideos }: { allVideos: Video[] })
   return (
     <div className="relative group">
       <a href={`/video/${video.id}`} className="block">
-        <div className="relative overflow-hidden" style={{ background: "#000" }}>
-          <div className="aspect-[21/9] w-full overflow-hidden">
+        <div className="relative overflow-hidden h-[180px]" style={{ background: "#000" }}>
+          <div className="w-full h-full overflow-hidden">
             <img
               src={`https://img.youtube.com/vi/${video.id}/maxresdefault.jpg`}
               alt=""
