@@ -29,12 +29,7 @@ export default function RootLayout({
         >
           <div className="mx-auto flex max-w-7xl items-center justify-between px-8 h-14">
             <a href="/" className="flex items-center gap-2">
-              <div
-                className="flex h-7 w-7 items-center justify-center text-xs font-black text-white"
-                style={{ background: "var(--accent)" }}
-              >
-                B
-              </div>
+              <img src="/logo.png" alt="BrandCut" className="h-6" />
               <span className="text-[15px] font-bold tracking-tight text-white">BrandCut</span>
             </a>
             <div className="flex items-center gap-4 sm:gap-7 text-[13px] font-medium text-[#666]">
