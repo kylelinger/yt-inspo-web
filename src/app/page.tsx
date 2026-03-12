@@ -57,7 +57,7 @@ export default function Home() {
 
       {/* ═══ TODAY ═══ */}
       <div id="today" className="section-full section-dark">
-        <div className="section-inner pt-32 pb-8">
+        <div className="section-inner pt-48 pb-8">
           <FadeInView>
             <div className="flex items-end justify-between mb-10">
               <div>
@@ -161,7 +161,7 @@ export default function Home() {
 
       {/* ═══ BRAND TAGS strip ═══ */}
       <div className="section-full" style={{ background: "#080808" }}>
-        <div className="section-inner py-16 flex flex-wrap items-center justify-center gap-6">
+        <div className="section-inner py-24 flex flex-wrap items-center justify-center gap-6">
           {["Smarter your money", "Intelligence > Advice", "No shaming", "Trust lift"].map((tag) => (
             <span key={tag} className="text-xs font-bold uppercase tracking-widest text-[#333]">
               {tag}
@@ -173,7 +173,7 @@ export default function Home() {
       {/* ═══ ARCHIVE ═══ */}
       {olderDates.length > 0 && (
         <div className="section-full section-alt">
-          <div className="section-inner pt-32 pb-8">
+          <div className="section-inner pt-48 pb-8">
             <FadeInView>
               <div className="flex items-end justify-between mb-10">
                 <div>
