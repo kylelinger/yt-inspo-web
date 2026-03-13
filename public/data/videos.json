@@ -2611,5 +2611,310 @@
     },
     "duration": "18s",
     "tag": "B1"
+  },
+  {
+    "id": "RtExfsDJecw",
+    "url": "https://www.youtube.com/watch?v=RtExfsDJecw",
+    "platform": "youtube",
+    "brand": "PropertyGuru",
+    "title": "We'll See You Home",
+    "duration": "30s",
+    "tag": "B2",
+    "date_added": "2026-03-13",
+    "breakdown": {
+      "summary": "用\"焦虑消除\"作开场白（\"no room for anxiety, no walls between dreams and financing\"），把房产平台拍成情感伴侣而非搜索工具——信任增建的完美路径。",
+      "structure": [
+        {
+          "time": "0:00-0:05",
+          "desc": "Hook/开场"
+        },
+        {
+          "time": "0:05-0:20",
+          "desc": "核心叙事"
+        },
+        {
+          "time": "0:20-0:30",
+          "desc": "end card 纯品牌落版；URL：seeyouhome.propertyguru.com.my；"
+        }
+      ],
+      "strengths": [
+        "用\"焦虑消除\"作开场白（\"no room for anxiety, no walls between dreams and financing\"），把房产平台拍成情感伴侣而非搜索工具——信任增建的完美路径。"
+      ],
+      "risks": [
+        "需完整拆解后补充风险点"
+      ],
+      "transferable": [
+        "需完整拆解后补充可迁移方法论"
+      ],
+      "vo_quotes": [
+        "There is a home with no room for anxiety.",
+        "No ceiling for potential and no walls between dreams and financing.",
+        "PropertyGuru will guide you there… we'll see you home."
+      ]
+    },
+    "source": "daily_prep_2026-03-13",
+    "status": "sent",
+    "collection": null,
+    "feedback": null
+  },
+  {
+    "id": "r6D7VGSL9Wc",
+    "url": "https://www.youtube.com/watch?v=r6D7VGSL9Wc",
+    "platform": "youtube",
+    "brand": "Sun Life Financial",
+    "title": "Celebrating Legacy",
+    "duration": "30s",
+    "tag": "B2",
+    "date_added": "2026-03-13",
+    "breakdown": {
+      "summary": "全程用\"老人+黄色救生衣小孙子的水上剑术\"代替任何产品说明，把\"财务安全感\"转化成可感受的具体时刻——show don't tell 财富品牌范本。",
+      "structure": [
+        {
+          "time": "0:00-0:05",
+          "desc": "Hook/开场"
+        },
+        {
+          "time": "0:05-0:20",
+          "desc": "核心叙事"
+        },
+        {
+          "time": "0:20-0:30",
+          "desc": "end card 仅品牌 logo + tagline \"Life's brighter under"
+        }
+      ],
+      "strengths": [
+        "全程用\"老人+黄色救生衣小孙子的水上剑术\"代替任何产品说明，把\"财务安全感\"转化成可感受的具体时刻——show don't tell 财富品牌范本。"
+      ],
+      "risks": [
+        "需完整拆解后补充风险点"
+      ],
+      "transferable": [
+        "需完整拆解后补充可迁移方法论"
+      ],
+      "vo_quotes": [
+        "Sun Life understands life — after all, it's in our name.",
+        "Our money-for-life approach can adapt to you and your financial future.",
+        "Life's brighter under the sun."
+      ]
+    },
+    "source": "daily_prep_2026-03-13",
+    "status": "sent",
+    "collection": null,
+    "feedback": null
+  },
+  {
+    "id": "TkY6JvyJWIk",
+    "url": "https://www.youtube.com/watch?v=TkY6JvyJWIk",
+    "platform": "youtube",
+    "brand": "Apple",
+    "title": "Relax, It's iPhone",
+    "duration": "30s",
+    "tag": "A",
+    "date_added": "2026-03-13",
+    "breakdown": {
+      "summary": "借惊悚片调性放大一个微小危机（误以为宠物蜥蜴死亡），iPhone\"撤回发送\"功能成为唯一解法——把功能点拍出情绪张力的教科书级案例。",
+      "structure": [
+        {
+          "time": "0:00-0:05",
+          "desc": "Hook/开场"
+        },
+        {
+          "time": "0:05-0:20",
+          "desc": "核心叙事"
+        },
+        {
+          "time": "0:20-0:30",
+          "desc": "纯白底端卡 \"Relax, it's iPhone\"；无价格/促销条件；CTA 隐性（品牌情感）。"
+        }
+      ],
+      "strengths": [
+        "借惊悚片调性放大一个微小危机（误以为宠物蜥蜴死亡），iPhone\"撤回发送\"功能成为唯一解法——把功能点拍出情绪张力的教科书级案例。"
+      ],
+      "risks": [
+        "需完整拆解后补充风险点"
+      ],
+      "transferable": [
+        "需完整拆解后补充可迁移方法论"
+      ],
+      "vo_quotes": [
+        "I messed up… Leon is dead"
+      ]
+    },
+    "source": "daily_prep_2026-03-13",
+    "status": "sent",
+    "collection": null,
+    "feedback": null
+  },
+  {
+    "id": "XOBE3FCyaqU",
+    "url": "https://www.youtube.com/watch?v=XOBE3FCyaqU",
+    "platform": "youtube",
+    "brand": "Apple",
+    "title": "Great Ideas Start on Mac",
+    "duration": "65s",
+    "tag": "A",
+    "date_added": "2026-03-13",
+    "breakdown": {
+      "summary": "用\"空白屏幕光标闪烁\"作锚点，将世界各地创作者的多画格拼贴串成一个论点：伟大创意的共同起点是 Mac 上的一个问题——工具 = 使能 intelligence 的容器。",
+      "structure": [
+        {
+          "time": "0:00-0:10",
+          "desc": "Hook/开场"
+        },
+        {
+          "time": "0:10-0:50",
+          "desc": "核心叙事展开"
+        },
+        {
+          "time": "0:50-结束",
+          "desc": "纯白底 Apple Logo + \"Mac\"；无产品细节/价格/CTA；品牌级收口。"
+        }
+      ],
+      "strengths": [
+        "用\"空白屏幕光标闪烁\"作锚点，将世界各地创作者的多画格拼贴串成一个论点：伟大创意的共同起点是 Mac 上的一个问题——工具 = 使能 intelligence 的容器。"
+      ],
+      "risks": [
+        "需完整拆解后补充风险点"
+      ],
+      "transferable": [
+        "需完整拆解后补充可迁移方法论"
+      ],
+      "vo_quotes": [
+        "Every story you love, every invention that moves you, every idea you wished was yours — all began as nothing.",
+        "Just a flicker on a screen asking a simple question.",
+        "What do you see?"
+      ]
+    },
+    "source": "daily_prep_2026-03-13",
+    "status": "sent",
+    "collection": null,
+    "feedback": null
+  },
+  {
+    "id": "reIQAmmpbO8",
+    "url": "https://www.youtube.com/watch?v=reIQAmmpbO8",
+    "platform": "youtube",
+    "brand": "Dove",
+    "title": "Keeping It Real With The Code",
+    "duration": "60s",
+    "tag": "C",
+    "date_added": "2026-03-13",
+    "breakdown": {
+      "summary": "把 AI 生成工具的\"/imagine\"语法倒过来用——先展示 AI 对\"最美女性\"的单一答案，再用同一格式输出多元真实女性网格——技术语言为武器，做反向 trust building。",
+      "structure": [
+        {
+          "time": "0:00-0:10",
+          "desc": "Hook/开场"
+        },
+        {
+          "time": "0:10-0:50",
+          "desc": "核心叙事展开"
+        },
+        {
+          "time": "0:50-结束",
+          "desc": "end card \"20 years Changing Beauty\" + Dove logo；无商"
+        }
+      ],
+      "strengths": [
+        "把 AI 生成工具的\"/imagine\"语法倒过来用——先展示 AI 对\"最美女性\"的单一答案，再用同一格式输出多元真实女性网格——技术语言为武器，做反向 trust building。"
+      ],
+      "risks": [
+        "需完整拆解后补充风险点"
+      ],
+      "transferable": [
+        "需完整拆解后补充可迁移方法论"
+      ],
+      "vo_quotes": [
+        "Pure Imagination",
+        "/imagine",
+        "By 2025, AI is predicted to generate 90% of online content."
+      ]
+    },
+    "source": "daily_prep_2026-03-13",
+    "status": "sent",
+    "collection": null,
+    "feedback": null
+  },
+  {
+    "id": "fvyBCesuxMM",
+    "url": "https://www.youtube.com/watch?v=fvyBCesuxMM",
+    "platform": "youtube",
+    "brand": "Doritos",
+    "title": "The New Kid",
+    "duration": "30s",
+    "tag": "C",
+    "date_added": "2026-03-13",
+    "breakdown": {
+      "summary": "一袋薯片替代所有语言成为\"社交货币\"——产品即道具即主角，纯视觉叙事完成共情转化，无 VO 0 文案仍节奏完整。",
+      "structure": [
+        {
+          "time": "0:00-0:05",
+          "desc": "Hook/开场"
+        },
+        {
+          "time": "0:05-0:20",
+          "desc": "核心叙事"
+        },
+        {
+          "time": "0:20-0:30",
+          "desc": "Doritos logo + \"For the Bold\" tagline；无促销/价格。"
+        }
+      ],
+      "strengths": [
+        "一袋薯片替代所有语言成为\"社交货币\"——产品即道具即主角，纯视觉叙事完成共情转化，无 VO 0 文案仍节奏完整。"
+      ],
+      "risks": [
+        "需完整拆解后补充风险点"
+      ],
+      "transferable": [
+        "需完整拆解后补充可迁移方法论"
+      ],
+      "vo_quotes": null
+    },
+    "source": "daily_prep_2026-03-13",
+    "status": "sent",
+    "collection": null,
+    "feedback": null
+  },
+  {
+    "id": "7oBZ8sBjdyQ",
+    "url": "https://www.youtube.com/watch?v=7oBZ8sBjdyQ",
+    "platform": "youtube",
+    "brand": "Pepsi",
+    "title": "All the Best Moments are Better With Pepsi",
+    "duration": "30s",
+    "tag": "C",
+    "date_added": "2026-03-13",
+    "breakdown": {
+      "summary": "开罐瞬间的 ASMR 大特写 + 夜间社交场景散景，把\"时刻增强剂\"定位压进感官记忆——飞速剪辑里零废帧的产品整合示范。",
+      "structure": [
+        {
+          "time": "0:00-0:05",
+          "desc": "Hook/开场"
+        },
+        {
+          "time": "0:05-0:20",
+          "desc": "核心叙事"
+        },
+        {
+          "time": "0:20-0:30",
+          "desc": "纯黑底 \"BETTER WITH PEPSI\" + 三罐产品陈列（Pepsi Zero Sugar "
+        }
+      ],
+      "strengths": [
+        "开罐瞬间的 ASMR 大特写 + 夜间社交场景散景，把\"时刻增强剂\"定位压进感官记忆——飞速剪辑里零废帧的产品整合示范。"
+      ],
+      "risks": [
+        "需完整拆解后补充风险点"
+      ],
+      "transferable": [
+        "需完整拆解后补充可迁移方法论"
+      ],
+      "vo_quotes": null
+    },
+    "source": "daily_prep_2026-03-13",
+    "status": "sent",
+    "collection": null,
+    "feedback": null
   }
 ]
