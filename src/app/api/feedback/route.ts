@@ -1,121 +1,189 @@
 import { NextRequest, NextResponse } from "next/server";
-import { Redis } from "@upstash/redis";
 
 /**
- * Feedback API with Upstash Redis persistence.
- * 
- * Requires UPSTASH_REDIS_REST_URL and UPSTASH_REDIS_REST_TOKEN
- * (auto-injected when Redis store is connected via Vercel Dashboard → Storage).
- * 
- * Falls back gracefully — if not configured, returns kv:false
- * and client stays on localStorage-only mode.
+ * Feedback API using GitHub Contents API as persistence layer.
+ *
+ * Why GitHub?
+ * - Strong consistency (no CDN caching like Vercel Blob)
+ * - Zero new services (already have gh auth)
+ * - Free (within GitHub API rate limits: 5000 req/hr)
+ * - Atomic read-modify-write via SHA-based optimistic locking
+ *
+ * Requires: GITHUB_TOKEN env var (personal access token with repo scope)
+ * File stored at: data/feedback.json in the repo
  */
 
-const REDIS_AVAILABLE = !!(
-  process.env.UPSTASH_REDIS_REST_URL && 
-  process.env.UPSTASH_REDIS_REST_TOKEN
-);
+const GITHUB_TOKEN = process.env.GITHUB_TOKEN;
+const REPO_OWNER = "kylelinger";
+const REPO_NAME = "yt-inspo-web";
+const FILE_PATH = "data/feedback.json";
+const BRANCH = "main";
 
-const REDIS_KEY = "yt_inspo:feedback_state";
+const GITHUB_AVAILABLE = !!GITHUB_TOKEN;
+
+const NO_CACHE_HEADERS = {
+  "Cache-Control": "no-store, no-cache, must-revalidate, max-age=0",
+  Pragma: "no-cache",
+};
 
 interface FeedbackState {
   feedback: Record<string, "thumbsup" | "thumbsdown">;
   shortlist: string[];
 }
 
-let redis: Redis | null = null;
+const EMPTY_STATE: FeedbackState = { feedback: {}, shortlist: [] };
 
-function getRedis(): Redis | null {
-  if (!REDIS_AVAILABLE) return null;
-  if (!redis) {
-    redis = new Redis({
-      url: process.env.UPSTASH_REDIS_REST_URL!,
-      token: process.env.UPSTASH_REDIS_REST_TOKEN!,
-    });
-  }
-  return redis;
-}
+/**
+ * Read feedback state from GitHub.
+ * Returns { state, sha } where sha is needed for updates (optimistic locking).
+ */
+async function readFromGitHub(): Promise<{
+  state: FeedbackState;
+  sha: string | null;
+}> {
+  if (!GITHUB_TOKEN) return { state: EMPTY_STATE, sha: null };
 
-async function readState(): Promise<FeedbackState> {
-  const client = getRedis();
-  if (!client) return { feedback: {}, shortlist: [] };
-  
   try {
-    const data = await client.get<FeedbackState>(REDIS_KEY);
-    if (data) return data;
+    const res = await fetch(
+      `https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/contents/${FILE_PATH}?ref=${BRANCH}&_t=${Date.now()}`,
+      {
+        headers: {
+          Authorization: `token ${GITHUB_TOKEN}`,
+          Accept: "application/vnd.github.v3+json",
+          "If-None-Match": "", // Bypass GitHub API caching
+        },
+        cache: "no-store",
+      }
+    );
+
+    if (res.status === 404) {
+      // File doesn't exist yet — first write will create it
+      return { state: EMPTY_STATE, sha: null };
+    }
+
+    if (!res.ok) {
+      console.error("GitHub read error:", res.status, await res.text());
+      return { state: EMPTY_STATE, sha: null };
+    }
+
+    const data = await res.json();
+    const content = Buffer.from(data.content, "base64").toString("utf-8");
+    const state = JSON.parse(content) as FeedbackState;
+    return { state, sha: data.sha };
   } catch (e) {
-    console.error("Redis read error:", e);
+    console.error("GitHub read exception:", e);
+    return { state: EMPTY_STATE, sha: null };
   }
-  return { feedback: {}, shortlist: [] };
 }
 
-async function writeState(state: FeedbackState): Promise<{ ok: boolean; error?: string }> {
-  const client = getRedis();
-  if (!client) return { ok: false, error: "Redis not configured" };
-  
+/**
+ * Write feedback state to GitHub.
+ * Uses SHA for optimistic locking (prevents lost updates).
+ */
+async function writeToGitHub(
+  state: FeedbackState,
+  sha: string | null
+): Promise<{ ok: boolean; error?: string }> {
+  if (!GITHUB_TOKEN) return { ok: false, error: "GitHub token not configured" };
+
   try {
-    await client.set(REDIS_KEY, state);
+    const content = Buffer.from(
+      JSON.stringify(state, null, 2),
+      "utf-8"
+    ).toString("base64");
+
+    const body: Record<string, unknown> = {
+      message: `chore: update feedback state [auto]`,
+      content,
+      branch: BRANCH,
+    };
+
+    // Include SHA for update (required for existing files)
+    if (sha) {
+      body.sha = sha;
+    }
+
+    const res = await fetch(
+      `https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/contents/${FILE_PATH}`,
+      {
+        method: "PUT",
+        headers: {
+          Authorization: `token ${GITHUB_TOKEN}`,
+          Accept: "application/vnd.github.v3+json",
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(body),
+      }
+    );
+
+    if (!res.ok) {
+      const errText = await res.text();
+      console.error("GitHub write error:", res.status, errText);
+
+      // SHA conflict — retry once with fresh SHA
+      if (res.status === 409) {
+        const fresh = await readFromGitHub();
+        if (fresh.sha) {
+          return writeToGitHub(state, fresh.sha);
+        }
+      }
+      return { ok: false, error: `GitHub API ${res.status}` };
+    }
+
     return { ok: true };
   } catch (e) {
-    const errorMsg = e instanceof Error ? e.message : String(e);
-    console.error("Redis write error:", errorMsg);
-    return { ok: false, error: errorMsg };
+    const msg = e instanceof Error ? e.message : String(e);
+    console.error("GitHub write exception:", msg);
+    return { ok: false, error: msg };
   }
 }
 
-// GET /api/feedback
+// ─── GET /api/feedback ──────────────────────────────────────────────────────
+
 export async function GET() {
-  try {
-    const state = await readState();
-    return NextResponse.json(
-      { ...state, kv: REDIS_AVAILABLE },
-      {
-        headers: {
-          'Cache-Control': 'no-store, no-cache, must-revalidate, max-age=0',
-          'Pragma': 'no-cache',
-        },
-      }
-    );
-  } catch {
-    return NextResponse.json(
-      { feedback: {}, shortlist: [], kv: false },
-      {
-        headers: {
-          'Cache-Control': 'no-store, no-cache, must-revalidate, max-age=0',
-          'Pragma': 'no-cache',
-        },
-      }
-    );
-  }
+  const { state } = await readFromGitHub();
+  return NextResponse.json(
+    { ...state, kv: GITHUB_AVAILABLE },
+    { headers: NO_CACHE_HEADERS }
+  );
 }
 
-// POST /api/feedback
+// ─── POST /api/feedback ─────────────────────────────────────────────────────
+
 export async function POST(req: NextRequest) {
-  if (!REDIS_AVAILABLE) {
+  if (!GITHUB_AVAILABLE) {
     return NextResponse.json({ ok: true, kv: false });
   }
 
-  // Check admin token
+  // Auth check
   const adminKey = process.env.ADMIN_KEY?.trim();
-  const authHeader = req.headers.get('x-admin-key');
+  const authHeader = req.headers.get("x-admin-key");
   if (adminKey && authHeader !== adminKey) {
-    return NextResponse.json({ ok: false, error: "Unauthorized" }, { status: 403 });
+    return NextResponse.json(
+      { ok: false, error: "Unauthorized" },
+      { status: 403 }
+    );
   }
 
   const { videoId, action } = await req.json();
   if (!videoId || !action) {
-    return NextResponse.json({ ok: false, error: "missing fields" }, { status: 400 });
+    return NextResponse.json(
+      { ok: false, error: "missing fields" },
+      { status: 400 }
+    );
   }
 
-  const state = await readState();
+  // Read current state (with SHA for atomic update)
+  const { state, sha } = await readFromGitHub();
 
+  // Apply mutation
   if (action === "shortlist") {
     if (!state.shortlist.includes(videoId)) state.shortlist.push(videoId);
   } else if (action === "remove_shortlist") {
     state.shortlist = state.shortlist.filter((id) => id !== videoId);
   } else if (action === "thumbsup" || action === "thumbsdown") {
     if (state.feedback[videoId] === action) {
-      delete state.feedback[videoId];
+      delete state.feedback[videoId]; // Toggle off
     } else {
       state.feedback[videoId] = action;
     }
@@ -123,10 +191,12 @@ export async function POST(req: NextRequest) {
     delete state.feedback[videoId];
   }
 
-  const result = await writeState(state);
-  return NextResponse.json({ 
-    ...result, 
+  // Write back (atomic via SHA)
+  const result = await writeToGitHub(state, sha);
+
+  return NextResponse.json({
+    ...result,
     kv: true,
-    state: state
+    state,
   });
 }
