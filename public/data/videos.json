@@ -2933,27 +2933,27 @@
       "structure": [
         {
           "time": "0:00-0:05",
-          "content": "开场：核心文案 \"Make the most of your money every day\" + SoFi Plus Logo"
+          "desc": "开场：核心文案 \"Make the most of your money every day\" + SoFi Plus Logo"
         },
         {
           "time": "0:05-0:11",
-          "content": "价值主张：App UI 界面 + \"earn, save, and access more\""
+          "desc": "价值主张：App UI 界面 + \"earn, save, and access more\""
         },
         {
           "time": "0:11-0:26",
-          "content": "利益点密集展示：卡片堆叠动效，六大核心权益逐一弹出"
+          "desc": "利益点密集展示：卡片堆叠动效，六大核心权益逐一弹出"
         },
         {
           "time": "0:27-0:34",
-          "content": "情感承诺：3D喇叭视觉 + \"这只是开始，我们一直在倾听\""
+          "desc": "情感承诺：3D喇叭视觉 + \"这只是开始，我们一直在倾听\""
         },
         {
           "time": "0:35-0:44",
-          "content": "CTA 教程：App 录屏展示 Direct Deposit 三步设置"
+          "desc": "CTA 教程：App 录屏展示 Direct Deposit 三步设置"
         },
         {
           "time": "0:45-0:51",
-          "content": "收尾：品牌定帧 + 法律免责声明"
+          "desc": "收尾：品牌定帧 + 法律免责声明"
         }
       ],
       "strengths": [

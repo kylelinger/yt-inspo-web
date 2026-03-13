@@ -224,7 +224,7 @@ export default function VideoDetailPage() {
                     >
                       {s.time}
                     </span>
-                    <span style={{ color: "var(--text)" }}>{s.desc}</span>
+                    <span style={{ color: "var(--text)" }}>{s.desc || s.content}</span>
                   </div>
                 ))}
               </div>
