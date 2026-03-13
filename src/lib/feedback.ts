@@ -6,7 +6,7 @@ import { getAdminKey } from "./auth";
 const FEEDBACK_KEY = "yt_inspo_feedback";
 const SHORTLIST_KEY = "yt_inspo_shortlist";
 
-// ─── localStorage helpers ───────────────────────────────────────────────────
+// ─── localStorage helpers (now only used as cache) ──────────────────────────
 
 function lsGetFeedback(): Record<string, 'thumbsup' | 'thumbsdown'> {
   if (typeof window === 'undefined') return {};
@@ -23,9 +23,9 @@ function lsSetShortlist(sl: Set<string>) {
   localStorage.setItem(SHORTLIST_KEY, JSON.stringify([...sl]));
 }
 
-// ─── KV-backed API helpers (best-effort, falls back to localStorage) ─────────
+// ─── KV API (server is the single source of truth) ──────────────────────────
 
-let _kvAvailable: boolean | null = null; // cached after first probe
+let _kvAvailable: boolean | null = null;
 
 async function postAction(videoId: string, action: string): Promise<boolean> {
   try {
@@ -43,7 +43,8 @@ async function postAction(videoId: string, action: string): Promise<boolean> {
     const data = await res.json();
     if (_kvAvailable === null) _kvAvailable = data.kv ?? false;
     return data.ok && data.kv;
-  } catch {
+  } catch (err) {
+    console.error('POST /api/feedback failed:', err);
     _kvAvailable = false;
     return false;
   }
@@ -56,141 +57,123 @@ export async function fetchRemoteFeedback(): Promise<{
 }> {
   try {
     const res = await fetch('/api/feedback', {
-      cache: 'no-store', // Force fresh data, no browser cache
+      cache: 'no-store',
     });
     const data = await res.json();
     _kvAvailable = data.kv ?? false;
     return data;
-  } catch {
+  } catch (err) {
+    console.error('GET /api/feedback failed:', err);
     _kvAvailable = false;
     return { feedback: {}, shortlist: [], kv: false };
   }
 }
 
-// ─── Public API ──────────────────────────────────────────────────────────────
+// ─── Public API (server-first, localStorage is cache only) ──────────────────
 
+/** Get current feedback (from localStorage cache) */
 export function getFeedback(): Record<string, 'thumbsup' | 'thumbsdown'> {
   return lsGetFeedback();
 }
 
-export async function setFeedback(
-  videoId: string,
-  action: 'thumbsup' | 'thumbsdown'
-): Promise<Record<string, 'thumbsup' | 'thumbsdown'>> {
-  // Optimistic local update
-  const fb = lsGetFeedback();
-  if (fb[videoId] === action) {
-    delete fb[videoId];
-  } else {
-    fb[videoId] = action;
-  }
-  lsSetFeedback(fb);
-
-  // Mark this action as pending (record final state, not the action clicked)
-  const pending = JSON.parse(localStorage.getItem('yt_inspo_pending_actions') || '{}');
-  const finalState = fb[videoId]; // undefined if deleted (toggled off)
-  if (finalState) {
-    pending[videoId] = { action: finalState, timestamp: Date.now() };
-  } else {
-    pending[videoId] = { action: 'clear', timestamp: Date.now() };
-  }
-  localStorage.setItem('yt_inspo_pending_actions', JSON.stringify(pending));
-
-  // Async sync to KV (await to ensure write completes)
-  try {
-    await postAction(videoId, action);
-    // Clear pending marker after successful write
-    const updatedPending = JSON.parse(localStorage.getItem('yt_inspo_pending_actions') || '{}');
-    delete updatedPending[videoId];
-    localStorage.setItem('yt_inspo_pending_actions', JSON.stringify(updatedPending));
-  } catch (err) {
-    console.error('Failed to sync feedback to KV:', err);
-  }
-
-  return fb;
-}
-
+/** Get current shortlist (from localStorage cache) */
 export function getShortlist(): Set<string> {
   return lsGetShortlist();
 }
 
-export async function toggleShortlist(videoId: string): Promise<Set<string>> {
-  const sl = lsGetShortlist();
-  const apiAction = sl.has(videoId) ? 'remove_shortlist' : 'shortlist';
+/**
+ * Set feedback (thumbsup/thumbsdown) - server-first approach
+ * 1. POST to KV
+ * 2. Fetch latest state from KV
+ * 3. Update localStorage cache
+ * 4. Trigger UI update
+ */
+export async function setFeedback(
+  videoId: string,
+  action: 'thumbsup' | 'thumbsdown'
+): Promise<Record<string, 'thumbsup' | 'thumbsdown'>> {
+  // POST to server
+  const success = await postAction(videoId, action);
   
-  if (sl.has(videoId)) {
-    sl.delete(videoId);
-  } else {
-    sl.add(videoId);
-  }
-  lsSetShortlist(sl);
-
-  // Mark as pending (record final state)
-  const pending = JSON.parse(localStorage.getItem('yt_inspo_pending_actions') || '{}');
-  const finalState = sl.has(videoId) ? 'shortlist' : 'remove_shortlist';
-  pending[videoId] = { action: finalState, timestamp: Date.now() };
-  localStorage.setItem('yt_inspo_pending_actions', JSON.stringify(pending));
-
-  // Sync to KV
-  try {
-    await postAction(videoId, apiAction);
-    // Clear pending marker
-    const updatedPending = JSON.parse(localStorage.getItem('yt_inspo_pending_actions') || '{}');
-    delete updatedPending[videoId];
-    localStorage.setItem('yt_inspo_pending_actions', JSON.stringify(updatedPending));
-  } catch (err) {
-    console.error('Failed to sync shortlist to KV:', err);
+  if (!success) {
+    // Fallback: use localStorage if KV not available
+    const fb = lsGetFeedback();
+    if (fb[videoId] === action) {
+      delete fb[videoId];
+    } else {
+      fb[videoId] = action;
+    }
+    lsSetFeedback(fb);
+    window.dispatchEvent(new Event('feedback-changed'));
+    return fb;
   }
 
-  return sl;
+  // Fetch latest state from server (single source of truth)
+  const remote = await fetchRemoteFeedback();
+  
+  // Update localStorage cache
+  lsSetFeedback(remote.feedback as Record<string, 'thumbsup' | 'thumbsdown'>);
+  lsSetShortlist(new Set(remote.shortlist));
+  
+  // Trigger UI update
+  window.dispatchEvent(new Event('feedback-changed'));
+  
+  return remote.feedback as Record<string, 'thumbsup' | 'thumbsdown'>;
 }
 
-/** Call on app mount to hydrate localStorage from KV (so cross-device state syncs) */
+/**
+ * Toggle shortlist - server-first approach
+ * 1. POST to KV
+ * 2. Fetch latest state from KV
+ * 3. Update localStorage cache
+ * 4. Trigger UI update
+ */
+export async function toggleShortlist(videoId: string): Promise<Set<string>> {
+  // Determine action
+  const sl = lsGetShortlist();
+  const action = sl.has(videoId) ? 'remove_shortlist' : 'shortlist';
+  
+  // POST to server
+  const success = await postAction(videoId, action);
+  
+  if (!success) {
+    // Fallback: use localStorage if KV not available
+    if (sl.has(videoId)) {
+      sl.delete(videoId);
+    } else {
+      sl.add(videoId);
+    }
+    lsSetShortlist(sl);
+    window.dispatchEvent(new Event('feedback-changed'));
+    return sl;
+  }
+
+  // Fetch latest state from server (single source of truth)
+  const remote = await fetchRemoteFeedback();
+  
+  // Update localStorage cache
+  lsSetFeedback(remote.feedback as Record<string, 'thumbsup' | 'thumbsdown'>);
+  lsSetShortlist(new Set(remote.shortlist));
+  
+  // Trigger UI update
+  window.dispatchEvent(new Event('feedback-changed'));
+  
+  return new Set(remote.shortlist);
+}
+
+/**
+ * Load state from server on app mount
+ * Server is the single source of truth - localStorage is just a cache
+ */
 export async function hydrateFromRemote(): Promise<void> {
   const remote = await fetchRemoteFeedback();
-  if (!remote.kv) return; // no KV configured — stay with localStorage
+  if (!remote.kv) return; // KV not available, use localStorage
 
-  // Smart merge: remote wins, except for very recent local actions
-  const pending = JSON.parse(localStorage.getItem('yt_inspo_pending_actions') || '{}');
-  const now = Date.now();
-  const PENDING_THRESHOLD = 5000; // 5 seconds
-
-  const mergedFeedback = { ...remote.feedback };
-  const mergedShortlist = new Set(remote.shortlist);
-  const localFb = lsGetFeedback();
-  const localSl = lsGetShortlist();
+  // Server state is the truth - replace localStorage cache
+  lsSetFeedback(remote.feedback as Record<string, 'thumbsup' | 'thumbsdown'>);
+  lsSetShortlist(new Set(remote.shortlist));
   
-  // Keep local pending actions if they're very recent (race condition protection)
-  for (const [videoId, entry] of Object.entries(pending) as [string, any][]) {
-    if (now - entry.timestamp < PENDING_THRESHOLD) {
-      // This action is fresh, apply it directly (don't rely on localFb which might be stale)
-      if (entry.action === 'thumbsup') {
-        mergedFeedback[videoId] = 'thumbsup';
-      } else if (entry.action === 'thumbsdown') {
-        mergedFeedback[videoId] = 'thumbsdown';
-      } else if (entry.action === 'clear') {
-        delete mergedFeedback[videoId];
-      } else if (entry.action === 'shortlist') {
-        mergedShortlist.add(videoId);
-      } else if (entry.action === 'remove_shortlist') {
-        mergedShortlist.delete(videoId);
-      }
-    }
-  }
-
-  lsSetFeedback(mergedFeedback as Record<string, 'thumbsup' | 'thumbsdown'>);
-  lsSetShortlist(mergedShortlist);
-  
-  // Clean up old pending actions (they should be synced by now)
-  const cleanedPending: Record<string, any> = {};
-  for (const [videoId, entry] of Object.entries(pending) as [string, any][]) {
-    if (now - entry.timestamp < PENDING_THRESHOLD) {
-      cleanedPending[videoId] = entry;
-    }
-  }
-  localStorage.setItem('yt_inspo_pending_actions', JSON.stringify(cleanedPending));
-  
-  // Dispatch event to update UI
+  // Trigger UI update
   window.dispatchEvent(new Event('feedback-changed'));
 }
 
