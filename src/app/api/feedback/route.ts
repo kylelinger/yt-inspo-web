@@ -1,59 +1,64 @@
 import { NextRequest, NextResponse } from "next/server";
+import { Redis } from "@upstash/redis";
 
 /**
- * Feedback API with Vercel Blob persistence.
+ * Feedback API with Upstash Redis persistence.
  * 
- * Requires BLOB_READ_WRITE_TOKEN env var (auto-injected when Blob store
- * is connected via Vercel Dashboard → Storage → Connect Store).
+ * Requires UPSTASH_REDIS_REST_URL and UPSTASH_REDIS_REST_TOKEN
+ * (auto-injected when Redis store is connected via Vercel Dashboard → Storage).
  * 
- * Falls back gracefully — if token missing, returns kv:false
+ * Falls back gracefully — if not configured, returns kv:false
  * and client stays on localStorage-only mode.
  */
 
-const BLOB_AVAILABLE = !!process.env.BLOB_READ_WRITE_TOKEN;
-const BLOB_PATH = "feedback/state.json";
+const REDIS_AVAILABLE = !!(
+  process.env.UPSTASH_REDIS_REST_URL && 
+  process.env.UPSTASH_REDIS_REST_TOKEN
+);
+
+const REDIS_KEY = "yt_inspo:feedback_state";
 
 interface FeedbackState {
   feedback: Record<string, "thumbsup" | "thumbsdown">;
   shortlist: string[];
 }
 
+let redis: Redis | null = null;
+
+function getRedis(): Redis | null {
+  if (!REDIS_AVAILABLE) return null;
+  if (!redis) {
+    redis = new Redis({
+      url: process.env.UPSTASH_REDIS_REST_URL!,
+      token: process.env.UPSTASH_REDIS_REST_TOKEN!,
+    });
+  }
+  return redis;
+}
+
 async function readState(): Promise<FeedbackState> {
-  if (!BLOB_AVAILABLE) return { feedback: {}, shortlist: [] };
+  const client = getRedis();
+  if (!client) return { feedback: {}, shortlist: [] };
+  
   try {
-    const { list } = await import("@vercel/blob");
-    const { blobs } = await list({ prefix: BLOB_PATH });
-    if (blobs.length > 0) {
-      // Add timestamp to bypass CDN cache
-      const url = new URL(blobs[0].url);
-      url.searchParams.set('_t', Date.now().toString());
-      const res = await fetch(url.toString(), { 
-        cache: "no-store",
-        headers: {
-          'Cache-Control': 'no-cache',
-        },
-      });
-      return (await res.json()) as FeedbackState;
-    }
+    const data = await client.get<FeedbackState>(REDIS_KEY);
+    if (data) return data;
   } catch (e) {
-    console.error("Blob read error:", e);
+    console.error("Redis read error:", e);
   }
   return { feedback: {}, shortlist: [] };
 }
 
 async function writeState(state: FeedbackState): Promise<{ ok: boolean; error?: string }> {
-  if (!BLOB_AVAILABLE) return { ok: false, error: "BLOB_TOKEN missing" };
+  const client = getRedis();
+  if (!client) return { ok: false, error: "Redis not configured" };
+  
   try {
-    const { put } = await import("@vercel/blob");
-    await put(BLOB_PATH, JSON.stringify(state), {
-      access: "public",
-      addRandomSuffix: false,
-      allowOverwrite: true,
-    });
+    await client.set(REDIS_KEY, state);
     return { ok: true };
   } catch (e) {
     const errorMsg = e instanceof Error ? e.message : String(e);
-    console.error("Blob write error:", errorMsg);
+    console.error("Redis write error:", errorMsg);
     return { ok: false, error: errorMsg };
   }
 }
@@ -63,12 +68,11 @@ export async function GET() {
   try {
     const state = await readState();
     return NextResponse.json(
-      { ...state, kv: BLOB_AVAILABLE },
+      { ...state, kv: REDIS_AVAILABLE },
       {
         headers: {
-          'Cache-Control': 'no-store, no-cache, must-revalidate, proxy-revalidate, max-age=0',
+          'Cache-Control': 'no-store, no-cache, must-revalidate, max-age=0',
           'Pragma': 'no-cache',
-          'Expires': '0',
         },
       }
     );
@@ -77,9 +81,8 @@ export async function GET() {
       { feedback: {}, shortlist: [], kv: false },
       {
         headers: {
-          'Cache-Control': 'no-store, no-cache, must-revalidate, proxy-revalidate, max-age=0',
+          'Cache-Control': 'no-store, no-cache, must-revalidate, max-age=0',
           'Pragma': 'no-cache',
-          'Expires': '0',
         },
       }
     );
@@ -88,7 +91,7 @@ export async function GET() {
 
 // POST /api/feedback
 export async function POST(req: NextRequest) {
-  if (!BLOB_AVAILABLE) {
+  if (!REDIS_AVAILABLE) {
     return NextResponse.json({ ok: true, kv: false });
   }
 
@@ -121,10 +124,9 @@ export async function POST(req: NextRequest) {
   }
 
   const result = await writeState(state);
-  // Return the NEW state immediately (don't wait for CDN cache to update)
   return NextResponse.json({ 
     ...result, 
     kv: true,
-    state: state  // Include the updated state in response
+    state: state
   });
 }
