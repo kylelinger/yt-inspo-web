@@ -24,7 +24,15 @@ async function readState(): Promise<FeedbackState> {
     const { list } = await import("@vercel/blob");
     const { blobs } = await list({ prefix: BLOB_PATH });
     if (blobs.length > 0) {
-      const res = await fetch(blobs[0].url, { cache: "no-store" });
+      // Add timestamp to bypass CDN cache
+      const url = new URL(blobs[0].url);
+      url.searchParams.set('_t', Date.now().toString());
+      const res = await fetch(url.toString(), { 
+        cache: "no-store",
+        headers: {
+          'Cache-Control': 'no-cache',
+        },
+      });
       return (await res.json()) as FeedbackState;
     }
   } catch (e) {
@@ -54,9 +62,27 @@ async function writeState(state: FeedbackState): Promise<{ ok: boolean; error?: 
 export async function GET() {
   try {
     const state = await readState();
-    return NextResponse.json({ ...state, kv: BLOB_AVAILABLE });
+    return NextResponse.json(
+      { ...state, kv: BLOB_AVAILABLE },
+      {
+        headers: {
+          'Cache-Control': 'no-store, no-cache, must-revalidate, proxy-revalidate, max-age=0',
+          'Pragma': 'no-cache',
+          'Expires': '0',
+        },
+      }
+    );
   } catch {
-    return NextResponse.json({ feedback: {}, shortlist: [], kv: false });
+    return NextResponse.json(
+      { feedback: {}, shortlist: [], kv: false },
+      {
+        headers: {
+          'Cache-Control': 'no-store, no-cache, must-revalidate, proxy-revalidate, max-age=0',
+          'Pragma': 'no-cache',
+          'Expires': '0',
+        },
+      }
+    );
   }
 }
 
