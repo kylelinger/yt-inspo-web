@@ -86,9 +86,14 @@ export async function setFeedback(
   }
   lsSetFeedback(fb);
 
-  // Mark this action as pending (for race condition handling)
+  // Mark this action as pending (record final state, not the action clicked)
   const pending = JSON.parse(localStorage.getItem('yt_inspo_pending_actions') || '{}');
-  pending[videoId] = { action, timestamp: Date.now() };
+  const finalState = fb[videoId]; // undefined if deleted (toggled off)
+  if (finalState) {
+    pending[videoId] = { action: finalState, timestamp: Date.now() };
+  } else {
+    pending[videoId] = { action: 'clear', timestamp: Date.now() };
+  }
   localStorage.setItem('yt_inspo_pending_actions', JSON.stringify(pending));
 
   // Async sync to KV (await to ensure write completes)
@@ -111,7 +116,7 @@ export function getShortlist(): Set<string> {
 
 export async function toggleShortlist(videoId: string): Promise<Set<string>> {
   const sl = lsGetShortlist();
-  const action = sl.has(videoId) ? 'remove_shortlist' : 'shortlist';
+  const apiAction = sl.has(videoId) ? 'remove_shortlist' : 'shortlist';
   
   if (sl.has(videoId)) {
     sl.delete(videoId);
@@ -120,14 +125,15 @@ export async function toggleShortlist(videoId: string): Promise<Set<string>> {
   }
   lsSetShortlist(sl);
 
-  // Mark as pending
+  // Mark as pending (record final state)
   const pending = JSON.parse(localStorage.getItem('yt_inspo_pending_actions') || '{}');
-  pending[videoId] = { action, timestamp: Date.now() };
+  const finalState = sl.has(videoId) ? 'shortlist' : 'remove_shortlist';
+  pending[videoId] = { action: finalState, timestamp: Date.now() };
   localStorage.setItem('yt_inspo_pending_actions', JSON.stringify(pending));
 
   // Sync to KV
   try {
-    await postAction(videoId, action);
+    await postAction(videoId, apiAction);
     // Clear pending marker
     const updatedPending = JSON.parse(localStorage.getItem('yt_inspo_pending_actions') || '{}');
     delete updatedPending[videoId];
@@ -157,13 +163,13 @@ export async function hydrateFromRemote(): Promise<void> {
   // Keep local pending actions if they're very recent (race condition protection)
   for (const [videoId, entry] of Object.entries(pending) as [string, any][]) {
     if (now - entry.timestamp < PENDING_THRESHOLD) {
-      // This action is fresh, keep local version
-      if (entry.action === 'thumbsup' || entry.action === 'thumbsdown') {
-        if (localFb[videoId]) {
-          mergedFeedback[videoId] = localFb[videoId];
-        } else {
-          delete mergedFeedback[videoId]; // User toggled it off
-        }
+      // This action is fresh, apply it directly (don't rely on localFb which might be stale)
+      if (entry.action === 'thumbsup') {
+        mergedFeedback[videoId] = 'thumbsup';
+      } else if (entry.action === 'thumbsdown') {
+        mergedFeedback[videoId] = 'thumbsdown';
+      } else if (entry.action === 'clear') {
+        delete mergedFeedback[videoId];
       } else if (entry.action === 'shortlist') {
         mergedShortlist.add(videoId);
       } else if (entry.action === 'remove_shortlist') {
