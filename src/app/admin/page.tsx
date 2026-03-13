@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect } from "react";
 import videosData from "@/../public/data/videos.json";
 import type { Video } from "@/lib/types";
 
@@ -427,6 +427,23 @@ export default function AdminPage() {
 function VideoTable({ videos }: { videos: Video[] }) {
   const [sortBy, setSortBy] = useState<"date" | "brand" | "tag">("date");
   const [filterTag, setFilterTag] = useState<string>("all");
+  const [feedback, setFeedback] = useState<Record<string, 'thumbsup' | 'thumbsdown'>>({});
+
+  // Fetch feedback from KV on mount (force fresh data)
+  useEffect(() => {
+    async function loadFeedback() {
+      try {
+        const res = await fetch('/api/feedback', { cache: 'no-store' });
+        const data = await res.json();
+        if (data.kv && data.feedback) {
+          setFeedback(data.feedback);
+        }
+      } catch (err) {
+        console.error('Failed to load feedback:', err);
+      }
+    }
+    loadFeedback();
+  }, []);
 
   const filtered = useMemo(() => {
     let list = [...videos];
@@ -490,6 +507,7 @@ function VideoTable({ videos }: { videos: Video[] }) {
               <th className="px-3 py-2 text-left font-medium" style={{ color: "var(--text-muted)" }}>时长</th>
               <th className="px-3 py-2 text-left font-medium" style={{ color: "var(--text-muted)" }}>日期</th>
               <th className="px-3 py-2 text-left font-medium" style={{ color: "var(--text-muted)" }}>拆解</th>
+              <th className="px-3 py-2 text-center font-medium" style={{ color: "var(--text-muted)" }}>反馈</th>
             </tr>
           </thead>
           <tbody>
@@ -534,6 +552,17 @@ function VideoTable({ videos }: { videos: Video[] }) {
                       <span style={{ color: "var(--green, #22c55e)" }}>✅</span>
                     ) : (
                       <span style={{ color: "var(--red, #ef4444)" }}>❌</span>
+                    )}
+                  </td>
+                  <td className="px-3 py-2 text-center">
+                    {feedback[v.id] === 'thumbsup' && (
+                      <span style={{ color: "var(--green, #22c55e)" }}>👍</span>
+                    )}
+                    {feedback[v.id] === 'thumbsdown' && (
+                      <span style={{ color: "var(--red, #ef4444)" }}>👎</span>
+                    )}
+                    {!feedback[v.id] && (
+                      <span style={{ color: "var(--text-muted)" }}>—</span>
                     )}
                   </td>
                 </tr>
