@@ -35,7 +35,7 @@ const SEARCH_DIMS = [
 /* ── Quality gates ── */
 const QUALITY_GATES = [
   "必须下载原片（不靠标题/描述判断）",
-  "全片覆盖抽帧（≤60s=2fps, >60s=120/D fps, 上限120帧）",
+  "全片用 DGemini CLI 做 full‑video 分析（不抽帧）+ 输出结构/VO/结尾/风险", 
   "VO-driven 片必须读懂 VO/字幕",
   "结尾 packshot/end card/offer 必须覆盖",
   "可播放性验证（标记 playback_risky 不占正式名额）",
@@ -404,7 +404,7 @@ export default function AdminPage() {
             <div className="space-y-2 text-sm" style={{ color: "var(--text-muted)" }}>
               <div className="flex gap-3">
                 <span className="font-mono shrink-0" style={{ color: "var(--accent)" }}>02:00</span>
-                <span>AI 开始候选收集 + 下载 + 抽帧 + FULL 拆解</span>
+                <span>AI 开始候选收集 + 下载 + DGemini 全片分析 + FULL 拆解</span>
               </div>
               <div className="flex gap-3">
                 <span className="font-mono shrink-0" style={{ color: "var(--accent)" }}>10:00</span>

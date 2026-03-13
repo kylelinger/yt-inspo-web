@@ -20,7 +20,7 @@ export default function AboutPage() {
               </div>
             </div>
             <p className="mt-6 text-lg leading-relaxed text-[#888] max-w-2xl">
-              Built for M公司, a global fintech company building the next-generation trading platform. Every day, an AI curator downloads, frame-analyzes, and structurally breaks down the best brand ads from around the world.
+              Built for M公司, a global fintech company building the next-generation trading platform. Every day, an AI curator downloads the full cut, runs a Gemini-grade analysis, and maps the structure of the best brand ads from around the world.
             </p>
           </FadeInView>
         </div>
@@ -37,7 +37,7 @@ export default function AboutPage() {
               {[
                 {
                   title: "Full review, no shortcuts",
-                  desc: "Every video is downloaded, frame-analyzed (20+ frames), subtitles extracted, and structurally broken down. Zero shortcuts.",
+                  desc: "Every video is downloaded and analyzed end-to-end via DGemini CLI (full-video Gemini pass). Then we write a structural breakdown. Zero shortcuts.",
                 },
                 {
                   title: "Brand platform alignment",
@@ -93,7 +93,7 @@ export default function AboutPage() {
                   </div>
                 </div>
                 <p className="text-[15px] leading-relaxed text-[#888]">
-                  Downloads every video. Extracts 20+ frames. Reads every subtitle. Writes structural breakdowns. Maintains the search framework. Built this website. Never sleeps.
+                  Downloads every video. Uploads the full cut to Gemini (DGemini CLI). Extracts the narrative spine. Writes structural breakdowns. Maintains the search framework. Built this website. Never sleeps.
                 </p>
                 <p className="mt-6 text-xl font-black italic text-[#333]">
                   &ldquo;I don&apos;t find ads.<br />I build taste.&rdquo;
@@ -136,7 +136,7 @@ export default function AboutPage() {
             <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
               {[
                 { icon: "🔍", title: "AI searches daily", desc: "YouTube, Vimeo, LinkedIn—multiple sources, one pipeline." },
-                { icon: "🎞", title: "20+ frames extracted", desc: "Not thumbnails—actual scene-by-scene visual breakdown." },
+                { icon: "🧬", title: "Full‑video Gemini analysis", desc: "DGemini CLI uploads the whole ad. We get structure, VO, ending, and risks in one pass." },
                 { icon: "📝", title: "Structural breakdown", desc: "Hook → setup → turn → proof → end card. Every beat mapped." },
                 { icon: "✅", title: "Brand alignment check", desc: "Smarter your money. Intelligence → Confidence → Trust." },
               ].map((item, i) => (

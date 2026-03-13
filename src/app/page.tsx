@@ -113,7 +113,7 @@ export default function Home() {
                     </div>
                   </div>
                   <p className="text-sm leading-relaxed text-[#888]">
-                    Downloads every video. Extracts 20+ frames. Writes structural breakdowns. Built this entire site. Never sleeps.
+                    Downloads every video. Feeds the full cut to Gemini (DGemini CLI). Writes structural breakdowns. Built this entire site. Never sleeps.
                   </p>
                   <p className="mt-4 text-base font-black italic text-[#333]">
                     &ldquo;I don&apos;t find ads. I build taste.&rdquo;
@@ -143,7 +143,7 @@ export default function Home() {
                 <div className="flex flex-col gap-6">
                   {[
                     { icon: "🔍", title: "AI searches daily", desc: "YouTube, Vimeo, LinkedIn — multiple sources, one pipeline." },
-                    { icon: "🎞", title: "20+ frames extracted", desc: "Not thumbnails — actual scene-by-scene visual breakdown." },
+                    { icon: "🧬", title: "Full‑video Gemini analysis", desc: "No frame hacks. We upload the whole ad and let the model read the story, VO, and beats." },
                     { icon: "📝", title: "Structural breakdown", desc: "Hook → setup → turn → proof → end card. Every beat mapped." },
                     { icon: "✅", title: "Brand alignment check", desc: "Smarter your money. Intelligence → Confidence → Trust." },
                   ].map((item, i) => (
