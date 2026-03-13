@@ -5,6 +5,7 @@ import { getAdminKey } from "./auth";
 
 const FEEDBACK_KEY = "yt_inspo_feedback";
 const SHORTLIST_KEY = "yt_inspo_shortlist";
+const LAST_WRITE_KEY = "yt_inspo_last_write";
 
 // ─── localStorage helpers (now only used as cache) ──────────────────────────
 
@@ -118,6 +119,9 @@ export async function setFeedback(
   lsSetFeedback(newState.feedback as Record<string, 'thumbsup' | 'thumbsdown'>);
   lsSetShortlist(new Set(newState.shortlist));
   
+  // Mark write timestamp (prevent hydrateFromRemote from overwriting with stale CDN cache)
+  localStorage.setItem(LAST_WRITE_KEY, Date.now().toString());
+  
   // Trigger UI update
   window.dispatchEvent(new Event('feedback-changed'));
   
@@ -158,6 +162,9 @@ export async function toggleShortlist(videoId: string): Promise<Set<string>> {
   lsSetFeedback(newState.feedback as Record<string, 'thumbsup' | 'thumbsdown'>);
   lsSetShortlist(new Set(newState.shortlist));
   
+  // Mark write timestamp (prevent hydrateFromRemote from overwriting with stale CDN cache)
+  localStorage.setItem(LAST_WRITE_KEY, Date.now().toString());
+  
   // Trigger UI update
   window.dispatchEvent(new Event('feedback-changed'));
   
@@ -167,12 +174,29 @@ export async function toggleShortlist(videoId: string): Promise<Set<string>> {
 /**
  * Load state from server on app mount
  * Server is the single source of truth - localStorage is just a cache
+ * 
+ * IMPORTANT: Only updates if enough time has passed since last write
+ * to avoid overwriting fresh data with stale CDN cache
  */
 export async function hydrateFromRemote(): Promise<void> {
   const remote = await fetchRemoteFeedback();
   if (!remote.kv) return; // KV not available, use localStorage
 
-  // Server state is the truth - replace localStorage cache
+  // Check if there was a recent write
+  const lastWriteStr = localStorage.getItem(LAST_WRITE_KEY);
+  if (lastWriteStr) {
+    const lastWrite = parseInt(lastWriteStr, 10);
+    const timeSinceWrite = Date.now() - lastWrite;
+    
+    // If write was < 15 seconds ago, DON'T update from server
+    // (CDN cache might still be stale, and we have fresh data from POST response)
+    if (timeSinceWrite < 15000) {
+      console.log('[hydrateFromRemote] Skipping - recent write detected:', timeSinceWrite, 'ms ago');
+      return;
+    }
+  }
+
+  // Safe to update from server (no recent writes, CDN cache should be fresh)
   lsSetFeedback(remote.feedback as Record<string, 'thumbsup' | 'thumbsdown'>);
   lsSetShortlist(new Set(remote.shortlist));
   
