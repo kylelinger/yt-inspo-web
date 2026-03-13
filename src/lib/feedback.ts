@@ -27,7 +27,10 @@ function lsSetShortlist(sl: Set<string>) {
 
 let _kvAvailable: boolean | null = null;
 
-async function postAction(videoId: string, action: string): Promise<boolean> {
+async function postAction(videoId: string, action: string): Promise<{
+  ok: boolean;
+  state?: { feedback: Record<string, 'thumbsup' | 'thumbsdown'>; shortlist: string[] };
+}> {
   try {
     const adminKey = getAdminKey();
     const headers: Record<string, string> = { 'Content-Type': 'application/json' };
@@ -42,11 +45,11 @@ async function postAction(videoId: string, action: string): Promise<boolean> {
     });
     const data = await res.json();
     if (_kvAvailable === null) _kvAvailable = data.kv ?? false;
-    return data.ok && data.kv;
+    return { ok: data.ok && data.kv, state: data.state };
   } catch (err) {
     console.error('POST /api/feedback failed:', err);
     _kvAvailable = false;
-    return false;
+    return { ok: false };
   }
 }
 
@@ -84,7 +87,7 @@ export function getShortlist(): Set<string> {
 /**
  * Set feedback (thumbsup/thumbsdown) - server-first approach
  * 1. POST to KV
- * 2. Fetch latest state from KV
+ * 2. Use returned state (don't fetch again - avoid CDN cache delay)
  * 3. Update localStorage cache
  * 4. Trigger UI update
  */
@@ -93,9 +96,9 @@ export async function setFeedback(
   action: 'thumbsup' | 'thumbsdown'
 ): Promise<Record<string, 'thumbsup' | 'thumbsdown'>> {
   // POST to server
-  const success = await postAction(videoId, action);
+  const result = await postAction(videoId, action);
   
-  if (!success) {
+  if (!result.ok || !result.state) {
     // Fallback: use localStorage if KV not available
     const fb = lsGetFeedback();
     if (fb[videoId] === action) {
@@ -108,23 +111,23 @@ export async function setFeedback(
     return fb;
   }
 
-  // Fetch latest state from server (single source of truth)
-  const remote = await fetchRemoteFeedback();
+  // Use state returned by API (avoids CDN cache delay)
+  const newState = result.state;
   
   // Update localStorage cache
-  lsSetFeedback(remote.feedback as Record<string, 'thumbsup' | 'thumbsdown'>);
-  lsSetShortlist(new Set(remote.shortlist));
+  lsSetFeedback(newState.feedback as Record<string, 'thumbsup' | 'thumbsdown'>);
+  lsSetShortlist(new Set(newState.shortlist));
   
   // Trigger UI update
   window.dispatchEvent(new Event('feedback-changed'));
   
-  return remote.feedback as Record<string, 'thumbsup' | 'thumbsdown'>;
+  return newState.feedback as Record<string, 'thumbsup' | 'thumbsdown'>;
 }
 
 /**
  * Toggle shortlist - server-first approach
  * 1. POST to KV
- * 2. Fetch latest state from KV
+ * 2. Use returned state (don't fetch again - avoid CDN cache delay)
  * 3. Update localStorage cache
  * 4. Trigger UI update
  */
@@ -134,9 +137,9 @@ export async function toggleShortlist(videoId: string): Promise<Set<string>> {
   const action = sl.has(videoId) ? 'remove_shortlist' : 'shortlist';
   
   // POST to server
-  const success = await postAction(videoId, action);
+  const result = await postAction(videoId, action);
   
-  if (!success) {
+  if (!result.ok || !result.state) {
     // Fallback: use localStorage if KV not available
     if (sl.has(videoId)) {
       sl.delete(videoId);
@@ -148,17 +151,17 @@ export async function toggleShortlist(videoId: string): Promise<Set<string>> {
     return sl;
   }
 
-  // Fetch latest state from server (single source of truth)
-  const remote = await fetchRemoteFeedback();
+  // Use state returned by API (avoids CDN cache delay)
+  const newState = result.state;
   
   // Update localStorage cache
-  lsSetFeedback(remote.feedback as Record<string, 'thumbsup' | 'thumbsdown'>);
-  lsSetShortlist(new Set(remote.shortlist));
+  lsSetFeedback(newState.feedback as Record<string, 'thumbsup' | 'thumbsdown'>);
+  lsSetShortlist(new Set(newState.shortlist));
   
   // Trigger UI update
   window.dispatchEvent(new Event('feedback-changed'));
   
-  return new Set(remote.shortlist);
+  return new Set(newState.shortlist);
 }
 
 /**

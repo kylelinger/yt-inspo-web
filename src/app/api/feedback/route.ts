@@ -95,5 +95,10 @@ export async function POST(req: NextRequest) {
   }
 
   const result = await writeState(state);
-  return NextResponse.json({ ...result, kv: true });
+  // Return the NEW state immediately (don't wait for CDN cache to update)
+  return NextResponse.json({ 
+    ...result, 
+    kv: true,
+    state: state  // Include the updated state in response
+  });
 }
