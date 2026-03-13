@@ -55,7 +55,9 @@ export async function fetchRemoteFeedback(): Promise<{
   kv: boolean;
 }> {
   try {
-    const res = await fetch('/api/feedback');
+    const res = await fetch('/api/feedback', {
+      cache: 'no-store', // Force fresh data, no browser cache
+    });
     const data = await res.json();
     _kvAvailable = data.kv ?? false;
     return data;
@@ -112,14 +114,13 @@ export async function hydrateFromRemote(): Promise<void> {
   const remote = await fetchRemoteFeedback();
   if (!remote.kv) return; // no KV configured — stay with localStorage
 
-  // Merge: remote wins for any key present remotely
-  const localFb = lsGetFeedback();
-  const merged = { ...localFb, ...remote.feedback };
-  lsSetFeedback(merged as Record<string, 'thumbsup' | 'thumbsdown'>);
-
-  const localSl = lsGetShortlist();
-  for (const id of remote.shortlist) localSl.add(id);
-  lsSetShortlist(localSl);
+  // Replace local with remote (full sync, not merge)
+  // This ensures deleted items are also synced across devices
+  lsSetFeedback(remote.feedback as Record<string, 'thumbsup' | 'thumbsdown'>);
+  lsSetShortlist(new Set(remote.shortlist));
+  
+  // Dispatch event to update UI
+  window.dispatchEvent(new Event('feedback-changed'));
 }
 
 export function getAllFeedbackEntries(): FeedbackEntry[] {
