@@ -2916,5 +2916,65 @@
     "status": "sent",
     "collection": null,
     "feedback": null
+  },
+  {
+    "id": "XreE_xoTrKs",
+    "url": "https://www.youtube.com/watch?v=XreE_xoTrKs",
+    "platform": "youtube",
+    "brand": "SoFi",
+    "title": "Introducing SoFi Plus",
+    "duration": "53s",
+    "tag": "B1",
+    "date_added": "2026-03-13",
+    "source": "dgemini_cli_test",
+    "status": "sent",
+    "breakdown": {
+      "summary": "SoFi 为高级会员计划 \"SoFi Plus\" 打造的纯动态图形广告（53秒）。核心诉求\"让你的钱发挥最大价值\"，通过展示高利率、提前两天发薪、现金回馈等财务权益，结合 App 界面演示，传达只需设置 Direct Deposit 即可免费解锁会员福利的核心信息。整体风格干净利落，符合金融科技品牌调性。",
+      "structure": [
+        {
+          "time": "0:00-0:05",
+          "content": "开场：核心文案 \"Make the most of your money every day\" + SoFi Plus Logo"
+        },
+        {
+          "time": "0:05-0:11",
+          "content": "价值主张：App UI 界面 + \"earn, save, and access more\""
+        },
+        {
+          "time": "0:11-0:26",
+          "content": "利益点密集展示：卡片堆叠动效，六大核心权益逐一弹出"
+        },
+        {
+          "time": "0:27-0:34",
+          "content": "情感承诺：3D喇叭视觉 + \"这只是开始，我们一直在倾听\""
+        },
+        {
+          "time": "0:35-0:44",
+          "content": "CTA 教程：App 录屏展示 Direct Deposit 三步设置"
+        },
+        {
+          "time": "0:45-0:51",
+          "content": "收尾：品牌定帧 + 法律免责声明"
+        }
+      ],
+      "strengths": [
+        "利益点视觉化极其清晰：复杂金融条款提炼为极简 UI 标签（如 3% cashback），配合音效逐一弹出，\"堆叠式\"呈现营造权益丰厚的心理暗示",
+        "极低的操作认知门槛：后半段直接切入 App 录屏操作教程（Banking > More > Direct Deposit），\"所见即所得\"的演示打破用户对金融设置的防备",
+        "色彩与品牌调性高度统一：深海蓝、青色品牌色系，视觉干净利落，专业、可信赖且现代"
+      ],
+      "risks": [
+        "信息过载：15秒内抛出6个不同金融利益点，社交媒体快速滑过的受众可能无法完全消化",
+        "免责声明落差感：极简流畅动画后突然出现一整屏法律声明小字，可能削弱\"轻松无门槛\"的氛围"
+      ],
+      "transferable": [
+        "\"条件门槛\"包装为\"免费福利\"：不说\"绑定工资卡\"，而说\"零成本解锁高级会员\"，心理账户转移手法",
+        "渐进式利益展示法（Stacking Effect）：卡片逐个堆叠，比静态列表更有\"价值不断累加\"的递进感",
+        "UI 界面作为证明材料：用美化过的真实 UI 录屏代替纯文字描述，增加可信度并降低学习焦虑"
+      ],
+      "vo_quotes": [
+        "Make the very most of your money every day with the new SoFi Plus premium membership.",
+        "All you need to do to unlock SoFi Plus is set up direct deposit.",
+        "You'll automatically unlock your benefits the day your paycheck gets deposited."
+      ]
+    }
   }
 ]
