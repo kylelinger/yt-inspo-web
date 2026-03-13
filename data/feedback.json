@@ -2,5 +2,7 @@
   "feedback": {
     "test_github_api": "thumbsup"
   },
-  "shortlist": []
+  "shortlist": [
+    "test_github_api"
+  ]
 }
