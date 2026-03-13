@@ -1,6 +1,6 @@
 export interface VideoBreakdown {
   summary: string;
-  structure: { time: string; desc: string }[];
+  structure: { time: string; desc: string; content?: string }[];
   vo_quotes: string[];
   strengths: string[];
   risks: string[];
