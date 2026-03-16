@@ -23,7 +23,7 @@ const brHendrix = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "BrandCut",
+  title: "Brand Pips",
   description: "AI-curated brand ad inspiration",
 };
 
@@ -57,7 +57,7 @@ export default function RootLayout({
                   color: "#000000",
                 }}
               >
-                BrandCut
+                Brand Pips
               </div>
             </div>
           </div>
