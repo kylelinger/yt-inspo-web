@@ -25,8 +25,15 @@
 body {
   background: var(--bg);
   color: var(--text);
+  font-family: var(--font-brand-en), Inter, "Helvetica Neue", Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+:lang(zh),
+:lang(zh-CN),
+:lang(zh-Hans) {
+  font-family: "MiSans", "PingFang SC", "Hiragino Sans GB", "Noto Sans SC", "Microsoft YaHei", sans-serif;
 }
 
 html { scroll-behavior: smooth; }

@@ -1,13 +1,25 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 import { HydrateProvider } from "@/components/HydrateProvider";
 import { AuthProvider } from "@/components/AuthProvider";
 import NavBar from "@/components/NavBar";
 
-const inter = Inter({
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700", "800", "900"],
+const brHendrix = localFont({
+  src: [
+    { path: "../../public/fonts/custom_upload/BR Hendrix/Brink - BR Hendrix Regular.otf", weight: "400", style: "normal" },
+    { path: "../../public/fonts/custom_upload/BR Hendrix/Brink - BR Hendrix Regular Italic.otf", weight: "400", style: "italic" },
+    { path: "../../public/fonts/custom_upload/BR Hendrix/Brink - BR Hendrix Medium.otf", weight: "500", style: "normal" },
+    { path: "../../public/fonts/custom_upload/BR Hendrix/Brink - BR Hendrix Medium Italic.otf", weight: "500", style: "italic" },
+    { path: "../../public/fonts/custom_upload/BR Hendrix/Brink - BR Hendrix SemiBold.otf", weight: "600", style: "normal" },
+    { path: "../../public/fonts/custom_upload/BR Hendrix/Brink - BR Hendrix SemiBold Italic.otf", weight: "600", style: "italic" },
+    { path: "../../public/fonts/custom_upload/BR Hendrix/Brink - BR Hendrix Bold.otf", weight: "700", style: "normal" },
+    { path: "../../public/fonts/custom_upload/BR Hendrix/Brink - BR Hendrix Bold Italic.otf", weight: "700", style: "italic" },
+    { path: "../../public/fonts/custom_upload/BR Hendrix/Brink - BR Hendrix Black.otf", weight: "900", style: "normal" },
+    { path: "../../public/fonts/custom_upload/BR Hendrix/Brink - BR Hendrix Black Italic.otf", weight: "900", style: "italic" },
+  ],
+  display: "swap",
+  variable: "--font-brand-en",
 });
 
 export const metadata: Metadata = {
@@ -22,7 +34,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="zh" className="dark">
-      <body className={`${inter.className} antialiased`}>
+      <body className={`${brHendrix.className} ${brHendrix.variable} antialiased`}>
         <AuthProvider>
           <NavBar />
           <div className="h-14" />
