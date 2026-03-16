@@ -63,6 +63,20 @@ export default async function Home() {
                 <h2 className="display-md text-white">{latestDate}</h2>
                 <p className="mt-2 text-sm text-[#444]">{latestVideos.length} {tr(lang, "videos curated", "条已精选")}</p>
               </div>
+              <div className="hidden sm:flex items-center gap-5">
+                {[
+                  { tag: "B1", label: tr(lang, "Direct rivals", "直接竞品"), color: "#f59e0b" },
+                  { tag: "B2", label: tr(lang, "Finance brands", "金融品牌"), color: "#3b82f6" },
+                  { tag: "A",  label: tr(lang, "Aesthetic benchmark", "审美标杆"), color: "#a855f7" },
+                  { tag: "C",  label: tr(lang, "Culture reference", "文化参考"), color: "#555" },
+                ].map((t) => (
+                  <div key={t.tag} className="flex items-center gap-2">
+                    <div className="h-2.5 w-2.5" style={{ background: t.color }} />
+                    <span className="text-[11px] font-bold text-[#555]">{t.tag}</span>
+                    <span className="text-[11px] text-[#333]">{t.label}</span>
+                  </div>
+                ))}
+              </div>
             </div>
           </FadeInView>
         </div>
@@ -96,7 +110,7 @@ export default async function Home() {
               <div className="grid gap-6 sm:grid-cols-2">
                 {[
                   { icon: "🔍", title: tr(lang, "AI scouts daily", "AI 每日搜片"), desc: tr(lang, "YouTube, Vimeo, LinkedIn — one ruthless pipeline.", "YouTube、Vimeo、LinkedIn 多源并轨，一条流水线。") },
-                  { icon: "🧬", title: tr(lang, "Full-video analysis", "全片深读"), desc: tr(lang, "No frame hacks. Whole ad in, story+VO+beats out.", "不靠抽帧取巧，整片输入，读出剧情/VO/节奏。") },
+                  { icon: "🧬", title: tr(lang, "Full-video analysis", "全片深读"), desc: tr(lang, "Whole ad fed into Gemini — story, VO, and every beat extracted.", "整片输入 Gemini，剧情/VO/每个节点一次全读。") },
                   { icon: "📝", title: tr(lang, "Structure mapped", "结构化拆解"), desc: tr(lang, "Hook → setup → turn → proof → end card.", "Hook → setup → turn → proof → end card，全链路拆解。") },
                   { icon: "✅", title: tr(lang, "Brand-fit gate", "品牌对齐闸门"), desc: tr(lang, "Smarter money. Clear thinking. Trust uplift.", "更聪明的金钱观，清晰表达，稳定抬升信任。") },
                 ].map((item, i) => (

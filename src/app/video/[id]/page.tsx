@@ -8,6 +8,51 @@ import type { Video } from "@/lib/types";
 import { getFeedbackCounts, setFeedback, getShortlist, toggleShortlist, type FeedbackCounts } from "@/lib/feedback";
 import { useAuth } from "@/components/AuthProvider";
 import { getClientLang, tr, type Lang } from "@/lib/language";
+import { useTranslatedText } from "@/lib/translate-client";
+
+function TrText({ text, lang }: { text: string; lang: Lang }) {
+  const value = useTranslatedText(text, lang);
+  return <>{value}</>;
+}
+
+function BreakdownSection({ breakdown, lang, tr: tFn }: { breakdown: NonNullable<Video["breakdown"]>; lang: Lang; tr: (l: Lang, en: string, cn: string) => string }) {
+  return (
+    <>
+      <div className="rounded-lg border p-4" style={{ borderColor: "var(--border)", background: "var(--card)" }}>
+        <p className="text-sm font-medium leading-relaxed" style={{ color: "var(--text)" }}>
+          <TrText text={breakdown.summary} lang={lang} />
+        </p>
+      </div>
+
+      {breakdown.structure && breakdown.structure.length > 0 && (
+        <div className="rounded-lg border p-4" style={{ borderColor: "var(--border)", background: "var(--card)" }}>
+          <h3 className="mb-3 text-xs font-semibold uppercase tracking-wide" style={{ color: "var(--text-muted)" }}>{tFn(lang, "Narrative map", "叙事结构")}</h3>
+          <div className="space-y-2">
+            {breakdown.structure.map((s, i) => (
+              <div key={i} className="flex gap-3 text-sm">
+                <span className="shrink-0 rounded px-2 py-0.5 text-xs font-semibold" style={{ background: "color-mix(in srgb, var(--accent) 10%, transparent)", color: "var(--accent)" }}>{s.time}</span>
+                <span style={{ color: "var(--text)" }}><TrText text={s.desc || s.content || ""} lang={lang} /></span>
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
+
+      {breakdown.vo_quotes && breakdown.vo_quotes.length > 0 && (
+        <div className="rounded-lg border p-4" style={{ borderColor: "var(--border)", background: "var(--card)" }}>
+          <h3 className="mb-3 text-xs font-semibold uppercase tracking-wide" style={{ color: "var(--text-muted)" }}>{tFn(lang, "VO lines", "VO 金句")}</h3>
+          <div className="space-y-2">
+            {breakdown.vo_quotes.map((q, i) => (
+              <p key={i} className="border-l-2 pl-3 text-sm italic" style={{ borderColor: "var(--accent)", color: "var(--text)" }}>
+                &ldquo;<TrText text={String(q)} lang={lang} />&rdquo;
+              </p>
+            ))}
+          </div>
+        </div>
+      )}
+    </>
+  );
+}
 
 export default function VideoDetailPage() {
   const params = useParams();
@@ -114,34 +159,7 @@ export default function VideoDetailPage() {
           {video.breakdown && (
             <div className="mb-8 space-y-4">
               <h2 className="text-lg font-bold" style={{ color: "var(--text)" }}>📐 {tr(lang, "Structure", "结构拆解")}</h2>
-              <div className="rounded-lg border p-4" style={{ borderColor: "var(--border)", background: "var(--card)" }}>
-                <p className="text-sm font-medium leading-relaxed" style={{ color: "var(--text)" }}>{video.breakdown.summary}</p>
-              </div>
-
-              {video.breakdown.structure.length > 0 && (
-                <div className="rounded-lg border p-4" style={{ borderColor: "var(--border)", background: "var(--card)" }}>
-                  <h3 className="mb-3 text-xs font-semibold uppercase tracking-wide" style={{ color: "var(--text-muted)" }}>{tr(lang, "Narrative map", "叙事结构")}</h3>
-                  <div className="space-y-2">
-                    {video.breakdown.structure.map((s, i) => (
-                      <div key={i} className="flex gap-3 text-sm">
-                        <span className="shrink-0 rounded px-2 py-0.5 text-xs font-semibold" style={{ background: "color-mix(in srgb, var(--accent) 10%, transparent)", color: "var(--accent)" }}>{s.time}</span>
-                        <span style={{ color: "var(--text)" }}>{s.desc || s.content}</span>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              )}
-
-              {video.breakdown.vo_quotes.length > 0 && (
-                <div className="rounded-lg border p-4" style={{ borderColor: "var(--border)", background: "var(--card)" }}>
-                  <h3 className="mb-3 text-xs font-semibold uppercase tracking-wide" style={{ color: "var(--text-muted)" }}>{tr(lang, "VO lines", "VO 金句")}</h3>
-                  <div className="space-y-2">
-                    {video.breakdown.vo_quotes.map((q, i) => (
-                      <p key={i} className="border-l-2 pl-3 text-sm italic" style={{ borderColor: "var(--accent)", color: "var(--text)" }}>&ldquo;{q}&rdquo;</p>
-                    ))}
-                  </div>
-                </div>
-              )}
+              <BreakdownSection breakdown={video.breakdown} lang={lang} tr={tr} />
             </div>
           )}
 

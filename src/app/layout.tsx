@@ -6,7 +6,7 @@ import { HydrateProvider } from "@/components/HydrateProvider";
 import { AuthProvider } from "@/components/AuthProvider";
 import NavBar from "@/components/NavBar";
 import FooterStats from "@/components/FooterStats";
-import { normalizeLang, tr } from "@/lib/language";
+import { normalizeLang } from "@/lib/language";
 
 const brHendrix = localFont({
   src: [
@@ -68,7 +68,7 @@ export default async function RootLayout({
           <div className="section-full section-accent min-h-14">
             <div className="section-inner h-full flex flex-col sm:flex-row items-center justify-between gap-3 sm:gap-0 py-3 sm:py-0 sm:h-14">
               <h2 className="text-sm sm:text-2xl font-black tracking-tight text-black text-center sm:text-left leading-tight">
-                {tr(lang, "Craft taste. Ship signal.", "打磨品味，输出信号。")}
+                Build taste, not just campaigns.
               </h2>
               <FooterStats initialLang={lang} />
             </div>
