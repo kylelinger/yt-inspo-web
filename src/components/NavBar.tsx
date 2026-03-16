@@ -61,7 +61,7 @@ export default function NavBar({ initialLang = "us" }: { initialLang?: Lang }) {
             className="rounded border border-[#2a2a2a] px-2.5 py-1 text-[11px] font-bold tracking-wider text-[#aaa] transition-colors hover:border-[var(--accent)] hover:text-white"
             title={tr(lang, "Switch language", "切换语言")}
           >
-            {lang === "us" ? "US" : "CN"}
+            {lang === "us" ? "CN" : "US"}
           </button>
 
           {isAdmin && (
