@@ -134,7 +134,7 @@ export default async function Home() {
             Claw Pips
           </p>
           <div className="flex flex-wrap items-center justify-center gap-6">
-            {[tr(lang, "Smarter your money", "更聪明地管理钱"), tr(lang, "Intelligence > Advice", "认知 > 建议"), tr(lang, "No shaming", "不羞辱用户"), tr(lang, "Trust lift", "提升信任")].map((tag) => (
+            {[tr(lang, "Your money, smarter", "你的钱变得更聪明"), tr(lang, "Intelligence > Advice", "认知 > 建议"), tr(lang, "No shaming", "不羞辱用户"), tr(lang, "Trust lift", "提升信任")].map((tag) => (
               <span key={tag} className="text-xs font-bold uppercase tracking-widest text-[#333]">
                 {tag}
               </span>
