@@ -96,66 +96,33 @@ export default function Home() {
         )}
       </div>
 
-      {/* ═══ CURATORS — left: Clawd+slime stacked, right: How it works (4 items) ═══ */}
+      {/* ═══ HOW IT WORKS — single wide card ═══ */}
       <div className="section-full py-16" style={{ background: "#0e0e0e" }}>
         <div className="section-inner">
           <FadeInView>
-            <div className="grid lg:grid-cols-2 gap-[2px]">
-              {/* Left column: Clawd + slime stacked */}
-              <div className="flex flex-col gap-[2px]">
-                {/* Clawd */}
-                <div className="p-6" style={{ background: "#1a1a1a" }}>
-                  <div className="flex items-center gap-3 mb-4">
-                    <div className="flex h-10 w-10 items-center justify-center text-base font-black text-white" style={{ background: "var(--accent)" }}>C</div>
-                    <div>
-                      <div className="text-base font-bold text-white">Clawd</div>
-                      <div className="text-xs text-[#666]">AI Curator</div>
-                    </div>
-                  </div>
-                  <p className="text-sm leading-relaxed text-[#888]">
-                    Downloads every video. Feeds the full cut to Gemini (DGemini CLI). Writes structural breakdowns. Built this entire site. Never sleeps.
-                  </p>
-                  <p className="mt-4 text-base font-black italic text-[#333]">
-                    &ldquo;I don&apos;t find ads. I build taste.&rdquo;
-                  </p>
-                </div>
-
-                {/* slime */}
-                <div className="p-6" style={{ background: "#1a1a1a" }}>
-                  <div className="flex items-center gap-3 mb-4">
-                    <div className="flex h-10 w-10 items-center justify-center text-base font-black text-white" style={{ background: "#222" }}>S</div>
-                    <div>
-                      <div className="text-base font-bold text-white">slime</div>
-                      <div className="text-xs text-[#666]">Decision Maker</div>
-                    </div>
-                  </div>
-                  <p className="text-sm leading-relaxed text-[#888]">
-                    Sets the brand vision. Gives the thumbs up or thumbs down. Every reaction shapes what comes next.
-                  </p>
-                  <p className="mt-4 text-base font-black italic text-[#333]">
-                    &ldquo;I keep it honest. No water content.&rdquo;
-                  </p>
-                </div>
+            <div className="mx-auto max-w-4xl p-7 sm:p-8 lg:p-10" style={{ background: "#1a1a1a" }}>
+              <div className="mb-7">
+                <p className="text-[11px] font-bold uppercase tracking-[0.18em]" style={{ color: "var(--accent)" }}>
+                  Pipeline
+                </p>
+                <h3 className="mt-2 text-xl sm:text-2xl font-bold text-white">How this daily cut is made</h3>
               </div>
 
-              {/* Right column: How it works (merged single card) */}
-              <div className="p-6" style={{ background: "#1a1a1a" }}>
-                <div className="flex flex-col gap-6">
-                  {[
-                    { icon: "🔍", title: "AI searches daily", desc: "YouTube, Vimeo, LinkedIn — multiple sources, one pipeline." },
-                    { icon: "🧬", title: "Full‑video Gemini analysis", desc: "No frame hacks. We upload the whole ad and let the model read the story, VO, and beats." },
-                    { icon: "📝", title: "Structural breakdown", desc: "Hook → setup → turn → proof → end card. Every beat mapped." },
-                    { icon: "✅", title: "Brand alignment check", desc: "Smarter your money. Intelligence → Confidence → Trust." },
-                  ].map((item, i) => (
-                    <div key={i} className="flex gap-4">
-                      <div className="text-2xl flex-shrink-0">{item.icon}</div>
-                      <div>
-                        <h3 className="text-sm font-bold text-white mb-1">{item.title}</h3>
-                        <p className="text-xs leading-relaxed text-[#666]">{item.desc}</p>
-                      </div>
+              <div className="grid gap-6 sm:grid-cols-2">
+                {[
+                  { icon: "🔍", title: "AI searches daily", desc: "YouTube, Vimeo, LinkedIn — multiple sources, one pipeline." },
+                  { icon: "🧬", title: "Full‑video Gemini analysis", desc: "No frame hacks. We upload the whole ad and let the model read the story, VO, and beats." },
+                  { icon: "📝", title: "Structural breakdown", desc: "Hook → setup → turn → proof → end card. Every beat mapped." },
+                  { icon: "✅", title: "Brand alignment check", desc: "Smarter your money. Intelligence → Confidence → Trust." },
+                ].map((item, i) => (
+                  <div key={i} className="flex gap-4">
+                    <div className="text-2xl flex-shrink-0">{item.icon}</div>
+                    <div>
+                      <h3 className="text-sm font-bold text-white mb-1">{item.title}</h3>
+                      <p className="text-xs leading-relaxed text-[#666]">{item.desc}</p>
                     </div>
-                  ))}
-                </div>
+                  </div>
+                ))}
               </div>
             </div>
           </FadeInView>
