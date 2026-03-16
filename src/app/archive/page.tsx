@@ -31,16 +31,6 @@ export default function ArchivePage() {
 
       {/* Stacked rows — alternating bg, no cards */}
       <div className="section-inner pb-20">
-        {foundation.length > 0 && (
-          <a href="/archive/foundation" className="flex items-center justify-between py-5 px-6 transition-colors hover:bg-[#151515]" style={{ background: "var(--accent-soft)", borderLeft: "3px solid var(--accent)" }}>
-            <div>
-              <span className="text-base font-bold text-white">Foundation</span>
-              <span className="ml-3 text-sm text-[#666]">The reference library</span>
-            </div>
-            <span className="text-sm font-bold" style={{ color: "var(--accent)" }}>{foundation.length}</span>
-          </a>
-        )}
-
         {sortedDates.map((date, i) => {
           const count = grouped.get(date)?.length || 0;
           return (
@@ -55,6 +45,16 @@ export default function ArchivePage() {
             </a>
           );
         })}
+
+        {foundation.length > 0 && (
+          <a href="/archive/foundation" className="flex items-center justify-between py-5 px-6 transition-colors hover:bg-[#151515]" style={{ background: "var(--accent-soft)", borderLeft: "3px solid var(--accent)" }}>
+            <div>
+              <span className="text-base font-bold text-white">Foundation</span>
+              <span className="ml-3 text-sm text-[#666]">The reference library</span>
+            </div>
+            <span className="text-sm font-bold" style={{ color: "var(--accent)" }}>{foundation.length}</span>
+          </a>
+        )}
       </div>
     </div>
   );
