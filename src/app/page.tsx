@@ -100,7 +100,7 @@ export default function Home() {
       <div className="section-full py-16" style={{ background: "#0e0e0e" }}>
         <div className="section-inner">
           <FadeInView>
-            <div className="mx-auto max-w-4xl p-7 sm:p-8 lg:p-10" style={{ background: "#1a1a1a" }}>
+            <div className="w-full p-7 sm:p-8 lg:p-10" style={{ background: "#1a1a1a" }}>
               <div className="mb-7">
                 <p className="text-[11px] font-bold uppercase tracking-[0.18em]" style={{ color: "var(--accent)" }}>
                   Pipeline
