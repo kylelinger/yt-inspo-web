@@ -63,17 +63,17 @@ export default async function Home() {
                 <h2 className="display-md text-white">{latestDate}</h2>
                 <p className="mt-2 text-sm text-[#444]">{latestVideos.length} {tr(lang, "videos curated", "条已精选")}</p>
               </div>
-              <div className="hidden sm:flex items-center gap-5">
+              <div className="flex items-center gap-3 sm:gap-5 flex-wrap">
                 {[
                   { tag: "B1", label: tr(lang, "Direct rivals", "直接竞品"), color: "#f59e0b" },
                   { tag: "B2", label: tr(lang, "Finance brands", "金融品牌"), color: "#3b82f6" },
                   { tag: "A",  label: tr(lang, "Aesthetic benchmark", "审美标杆"), color: "#a855f7" },
                   { tag: "C",  label: tr(lang, "Culture reference", "文化参考"), color: "#555" },
                 ].map((t) => (
-                  <div key={t.tag} className="flex items-center gap-2">
-                    <div className="h-2.5 w-2.5" style={{ background: t.color }} />
-                    <span className="text-[11px] font-bold text-[#555]">{t.tag}</span>
-                    <span className="text-[11px] text-[#333]">{t.label}</span>
+                  <div key={t.tag} className="flex items-center gap-1.5 sm:gap-2">
+                    <div className="h-2 w-2 sm:h-2.5 sm:w-2.5" style={{ background: t.color }} />
+                    <span className="text-[10px] sm:text-[11px] font-bold text-[#555]">{t.tag}</span>
+                    <span className="hidden sm:inline text-[11px] text-[#333]">{t.label}</span>
                   </div>
                 ))}
               </div>

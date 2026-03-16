@@ -119,8 +119,8 @@ export default function ShortlistCarousel({ allVideos, lang = "us" }: { allVideo
             </div>
           </div>
 
-          {/* Play */}
-          <div className="absolute right-8 bottom-8 flex h-14 w-14 items-center justify-center bg-[var(--accent)] text-white transition-transform group-hover:scale-110">
+          {/* Play — desktop only */}
+          <div className="absolute right-8 bottom-8 hidden sm:flex h-14 w-14 items-center justify-center bg-[var(--accent)] text-white transition-transform group-hover:scale-110">
             <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
               <path d="M8 5v14l11-7z" />
             </svg>
