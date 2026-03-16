@@ -36,7 +36,7 @@ export default function FooterStats({ initialLang = "us" }: { initialLang?: Lang
 
   return (
     <div className="text-[11px] sm:text-xs font-semibold text-white/70 text-center sm:text-right leading-relaxed">
-      {tr(lang, "Visits", "访问量")} {visits} · <span className="inline-block" style={{ filter: "grayscale(1) brightness(10)" }}>👍</span> {tr(lang, "Total", "总量")} {up} · <span className="inline-block" style={{ filter: "grayscale(1) brightness(10)" }}>👎</span> {tr(lang, "Total", "总量")} {down}
+      {visits} {tr(lang, "views", "次浏览")} · <span className="inline-block" style={{ filter: "grayscale(1) brightness(10)" }}>👍</span> {up} · <span className="inline-block" style={{ filter: "grayscale(1) brightness(10)" }}>👎</span> {down}
     </div>
   );
 }
