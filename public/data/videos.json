@@ -281,7 +281,8 @@
       ],
       "brand_platform": "✓ 强对齐——批判'黑箱/不透明/中间商'正好对应 intelligence→confidence→trust 路径；让用户感到'看清楚了''可以更聪明地选择'；anti-喊单 ✓，anti-黑箱 ✓。"
     },
-    "tag": "B2"
+    "tag": "B2",
+    "custom_thumbnail": true
   },
   {
     "id": "fjf7c-O5GyQ",
@@ -1352,7 +1353,8 @@
       ]
     },
     "duration": "60s",
-    "tag": "B2"
+    "tag": "B2",
+    "custom_thumbnail": true
   },
   {
     "id": "NMicBnXPHqE",
@@ -1611,7 +1613,8 @@
       ]
     },
     "duration": "30s",
-    "tag": "C"
+    "tag": "C",
+    "custom_thumbnail": true
   },
   {
     "id": "c84RHTQ7JyI",
@@ -1672,7 +1675,8 @@
       ]
     },
     "duration": "113s",
-    "tag": "B1"
+    "tag": "B1",
+    "custom_thumbnail": true
   },
   {
     "id": "BLvZYIiCAak",
@@ -1956,7 +1960,8 @@
       ],
       "brand_platform": "△ 部分对齐——Cash App 的 confidence 路径是通过文化资本建立的；M公司的 intelligence→confidence 路径更理性，但'用年轻人仰望的文化人物'背书可以迁移（前提：不能变成纯明星广告，要保持内容感）。"
     },
-    "tag": "B1"
+    "tag": "B1",
+    "custom_thumbnail": true
   },
   {
     "id": "md1DUNLRzAM",
@@ -2187,7 +2192,8 @@
       ],
       "brand_platform": "△ 弱对齐——品类差距大，但'拥抱不完美'与 anti-黑箱（坦诚面对局限）的品牌哲学一致。"
     },
-    "tag": "C"
+    "tag": "C",
+    "custom_thumbnail": true
   },
   {
     "id": "iw4NobfELVU",
@@ -2610,7 +2616,8 @@
       "brand_platform": "结构上与 M公司 兼容 — 先展示美好生活（投资的目的），再给具体功能（intelligence），最后用视觉隐喻拔高。但月球隐喻偏激进，M公司 应该找更「calm confidence」的替代隐喻。"
     },
     "duration": "18s",
-    "tag": "B1"
+    "tag": "B1",
+    "custom_thumbnail": true
   },
   {
     "id": "RtExfsDJecw",
@@ -2743,7 +2750,8 @@
     "source": "daily_prep_2026-03-13",
     "status": "sent",
     "collection": null,
-    "feedback": null
+    "feedback": null,
+    "custom_thumbnail": true
   },
   {
     "id": "XOBE3FCyaqU",
@@ -2788,7 +2796,8 @@
     "source": "daily_prep_2026-03-13",
     "status": "sent",
     "collection": null,
-    "feedback": null
+    "feedback": null,
+    "custom_thumbnail": true
   },
   {
     "id": "reIQAmmpbO8",
@@ -3035,7 +3044,8 @@
       ]
     },
     "duration": "60s",
-    "tag": "B2"
+    "tag": "B2",
+    "custom_thumbnail": true
   },
   {
     "id": "qdLknNkQeLA",
