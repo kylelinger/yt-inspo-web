@@ -41,9 +41,9 @@ export default function NavBar({ initialLang = "us" }: { initialLang?: Lang }) {
       style={{ borderColor: "var(--nav-border)", background: "var(--nav-bg)", backdropFilter: "blur(20px)" }}
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between px-8 h-20">
-        <a href="/" className="flex items-center gap-2">
-          <img src="/logo.png" alt="Claw Pips" className="h-8" />
-          <span className="text-[18px] font-bold tracking-tight text-white">Claw Pips</span>
+        <a href="/" className="flex items-center gap-2 min-w-0">
+          <img src="/logo.png" alt="Claw Pips" className="h-8 shrink-0" />
+          <span className="text-[16px] sm:text-[18px] font-bold tracking-tight text-white whitespace-nowrap">Claw Pips</span>
         </a>
         <div className="flex items-center gap-4 sm:gap-6 text-[14px] sm:text-[15px] font-medium text-[#666]">
           {links.map((link) => (
