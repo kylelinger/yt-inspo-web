@@ -166,20 +166,33 @@ export default function VideoDetailPage() {
             {tr(lang, "Back", "返回")}
           </button>
 
+          {/* Desktop: iframe embed */}
+          <div className="mb-6 hidden sm:block overflow-hidden rounded-xl">
+            <div className="relative aspect-video w-full" style={{ background: "var(--border)" }}>
+              <iframe
+                src={`https://www.youtube.com/embed/${video.id}`}
+                className="absolute inset-0 h-full w-full"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              />
+            </div>
+          </div>
+
+          {/* Mobile: thumbnail + link to YouTube */}
           <a
             href={`https://www.youtube.com/watch?v=${video.id}`}
             target="_blank"
             rel="noopener noreferrer"
-            className="group mb-6 block overflow-hidden rounded-xl"
+            className="group mb-6 block sm:hidden overflow-hidden rounded-xl"
           >
             <div className="relative aspect-video w-full" style={{ background: "var(--border)" }}>
               <img
                 src={`https://img.youtube.com/vi/${video.id}/maxresdefault.jpg`}
                 alt=""
-                className="absolute inset-0 h-full w-full object-cover transition-transform duration-300 group-hover:scale-[1.02]"
+                className="absolute inset-0 h-full w-full object-cover"
               />
-              <div className="absolute inset-0 flex items-center justify-center bg-black/30 transition-colors group-hover:bg-black/40">
-                <div className="flex h-16 w-16 items-center justify-center rounded-full bg-[var(--accent)] text-white shadow-lg transition-transform group-hover:scale-110">
+              <div className="absolute inset-0 flex items-center justify-center bg-black/30">
+                <div className="flex h-16 w-16 items-center justify-center rounded-full bg-[var(--accent)] text-white shadow-lg">
                   <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z" /></svg>
                 </div>
               </div>
