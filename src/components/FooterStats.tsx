@@ -4,10 +4,16 @@ import { useEffect, useMemo, useState } from "react";
 
 type FeedbackCounts = Record<string, { thumbsup?: number; thumbsdown?: number }>;
 
-export default function FooterStats({ visits }: { visits: number }) {
+export default function FooterStats() {
+  const [visits, setVisits] = useState(0);
   const [counts, setCounts] = useState<FeedbackCounts>({});
 
   useEffect(() => {
+    fetch(`/api/site-stats`, { method: "POST", cache: "no-store" })
+      .then((r) => r.json())
+      .then((data) => setVisits(Number(data.visits || 0)))
+      .catch(() => setVisits(0));
+
     fetch(`/api/feedback?_t=${Date.now()}`, { cache: "no-store" })
       .then((r) => r.json())
       .then((data) => setCounts(data.feedbackCounts || {}))
