@@ -135,6 +135,9 @@ export default function VideoDetailPage() {
   const c = counts[video.id] || { thumbsup: 0, thumbsdown: 0, score: 0 };
   const isShortlisted = sl.has(video.id);
   const displayTitle = video.title || video.brand || video.id;
+  const thumbnailUrl = video.custom_thumbnail 
+    ? `/thumbnails/${video.id}.jpg`
+    : `https://img.youtube.com/vi/${video.id}/maxresdefault.jpg`;
 
   const pop = (kind: "up" | "down" | "star") => {
     setBurst(kind);
@@ -187,7 +190,7 @@ export default function VideoDetailPage() {
           >
             <div className="relative aspect-video w-full" style={{ background: "var(--border)" }}>
               <img
-                src={`https://img.youtube.com/vi/${video.id}/maxresdefault.jpg`}
+                src={thumbnailUrl}
                 alt=""
                 className="absolute inset-0 h-full w-full object-cover"
               />

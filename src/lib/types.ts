@@ -24,6 +24,7 @@ export interface Video {
   duration_s?: number;
   breakdown?: VideoBreakdown;
   tag?: 'B1' | 'B2' | 'A' | 'C';
+  custom_thumbnail?: boolean;
 }
 
 export interface FeedbackEntry {

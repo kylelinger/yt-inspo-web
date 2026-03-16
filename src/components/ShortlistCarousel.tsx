@@ -69,6 +69,9 @@ export default function ShortlistCarousel({ allVideos, lang = "us" }: { allVideo
   }
 
   const video = saved[current];
+  const thumbnailUrl = video.custom_thumbnail 
+    ? `/thumbnails/${video.id}.jpg`
+    : `https://img.youtube.com/vi/${video.id}/maxresdefault.jpg`;
 
   return (
     <div className="relative group">
@@ -76,7 +79,7 @@ export default function ShortlistCarousel({ allVideos, lang = "us" }: { allVideo
         <div className="relative overflow-hidden aspect-video sm:aspect-auto sm:h-[800px]" style={{ background: "#000" }}>
           <div className="w-full h-full overflow-hidden">
             <img
-              src={`https://img.youtube.com/vi/${video.id}/maxresdefault.jpg`}
+              src={thumbnailUrl}
               alt=""
               className="h-full w-full object-cover opacity-80 transition-transform duration-500 group-hover:scale-[1.02]"
             />
