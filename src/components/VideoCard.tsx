@@ -112,7 +112,7 @@ export default function VideoCard({
         <a href={`/video/${video.id}`} className="block">
           <h3 className="text-[15px] font-bold leading-snug text-white line-clamp-2 transition-colors group-hover:text-[var(--accent)]">
             {video.status === "playback_risky" && <span className="mr-1 text-xs opacity-50">⚠️</span>}
-            {mounted ? <TranslatedText text={displayTitle} lang={lang} /> : displayTitle}
+            {displayTitle}
           </h3>
         </a>
 

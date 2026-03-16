@@ -4,6 +4,16 @@ import { useState, useEffect, useCallback } from "react";
 import type { Video } from "@/lib/types";
 import { getShortlist } from "@/lib/feedback";
 import { tr, type Lang } from "@/lib/language";
+import { useTranslatedText } from "@/lib/translate-client";
+
+function CarouselSummary({ text, lang }: { text: string; lang: Lang }) {
+  const translated = useTranslatedText(text, lang);
+  return (
+    <p className="mt-3 max-w-2xl text-sm leading-relaxed text-white/60 line-clamp-2">
+      {translated}
+    </p>
+  );
+}
 
 export default function ShortlistCarousel({ allVideos, lang = "us" }: { allVideos: Video[]; lang?: Lang }) {
   const [shortlistIds, setShortlistIds] = useState<Set<string>>(new Set());
@@ -92,9 +102,7 @@ export default function ShortlistCarousel({ allVideos, lang = "us" }: { allVideo
               {video.title}
             </h2>
             {video.breakdown?.summary && (
-              <p className="mt-3 max-w-2xl text-sm leading-relaxed text-white/60 line-clamp-2">
-                {video.breakdown.summary}
-              </p>
+              <CarouselSummary text={video.breakdown.summary} lang={lang} />
             )}
           </div>
 
