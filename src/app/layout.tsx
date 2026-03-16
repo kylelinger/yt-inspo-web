@@ -4,6 +4,8 @@ import "./globals.css";
 import { HydrateProvider } from "@/components/HydrateProvider";
 import { AuthProvider } from "@/components/AuthProvider";
 import NavBar from "@/components/NavBar";
+import FooterStats from "@/components/FooterStats";
+import videosData from "@/../public/data/videos.json";
 
 const brHendrix = localFont({
   src: [
@@ -32,6 +34,8 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const visits = (videosData as Array<{ id: string }>).length;
+
   return (
     <html lang="zh" className="dark">
       <body className={`${brHendrix.className} ${brHendrix.variable} antialiased`}>
@@ -64,9 +68,7 @@ export default function RootLayout({
           <div className="section-full section-accent min-h-14">
             <div className="section-inner h-full flex flex-col sm:flex-row items-center justify-between gap-3 sm:gap-0 py-3 sm:py-0 sm:h-14">
               <h2 className="text-sm sm:text-2xl font-black tracking-tight text-black text-center sm:text-left leading-tight">Build taste, not just campaigns.</h2>
-              <a href="/about" className="bg-black px-6 py-2 text-sm font-bold text-white transition-transform hover:scale-105 shrink-0">
-                Learn more
-              </a>
+              <FooterStats visits={visits} />
             </div>
           </div>
         </footer>
