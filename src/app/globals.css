@@ -30,11 +30,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-:lang(zh),
-:lang(zh-CN),
-:lang(zh-Hans) {
-  font-family: "MiSans", "PingFang SC", "Hiragino Sans GB", "Noto Sans SC", "Microsoft YaHei", sans-serif;
-}
 
 html { scroll-behavior: smooth; }
 
