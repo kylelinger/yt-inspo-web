@@ -131,7 +131,7 @@ export default async function Home() {
       <div className="section-full py-5" style={{ background: "#080808" }}>
         <div className="section-inner">
           <p className="mb-3 text-center text-[11px] font-bold uppercase tracking-[0.25em]" style={{ color: "#555" }}>
-            Brand Pips
+            Claw Pips
           </p>
           <div className="flex flex-wrap items-center justify-center gap-6">
             {[tr(lang, "Smarter your money", "更聪明地管理钱"), tr(lang, "Intelligence > Advice", "认知 > 建议"), tr(lang, "No shaming", "不羞辱用户"), tr(lang, "Trust lift", "提升信任")].map((tag) => (
