@@ -129,14 +129,19 @@ export default function Home() {
         </div>
       </div>
 
-      {/* ═══ BRAND TAGS strip ═══ */}
-      <div className="section-full py-4" style={{ background: "#080808" }}>
-        <div className="section-inner flex flex-wrap items-center justify-center gap-6">
-          {["Smarter your money", "Intelligence > Advice", "No shaming", "Trust lift"].map((tag) => (
-            <span key={tag} className="text-xs font-bold uppercase tracking-widest text-[#333]">
-              {tag}
-            </span>
-          ))}
+      {/* ═══ BRAND PIPS strip ═══ */}
+      <div className="section-full py-5" style={{ background: "#080808" }}>
+        <div className="section-inner">
+          <p className="mb-3 text-center text-[11px] font-bold uppercase tracking-[0.25em]" style={{ color: "#555" }}>
+            Brand Pips
+          </p>
+          <div className="flex flex-wrap items-center justify-center gap-6">
+            {["Smarter your money", "Intelligence > Advice", "No shaming", "Trust lift"].map((tag) => (
+              <span key={tag} className="text-xs font-bold uppercase tracking-widest text-[#333]">
+                {tag}
+              </span>
+            ))}
+          </div>
         </div>
       </div>
 

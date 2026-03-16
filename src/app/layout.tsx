@@ -37,7 +37,7 @@ export default function RootLayout({
       <body className={`${brHendrix.className} ${brHendrix.variable} antialiased`}>
         <AuthProvider>
           <NavBar />
-          <div className="h-14" />
+          <div className="h-16" />
           <HydrateProvider>
             <main>{children}</main>
           </HydrateProvider>

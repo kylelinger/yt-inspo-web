@@ -23,7 +23,7 @@ export default function NavBar() {
       className="fixed top-0 left-0 right-0 z-50 border-b"
       style={{ borderColor: "var(--nav-border)", background: "var(--nav-bg)", backdropFilter: "blur(20px)" }}
     >
-      <div className="mx-auto flex max-w-7xl items-center justify-between px-8 h-14">
+      <div className="mx-auto flex max-w-7xl items-center justify-between px-8 h-16">
         <a href="/" className="flex items-center gap-2">
           <img src="/logo.png" alt="BrandCut" className="h-6" />
           <span className="text-[15px] font-bold tracking-tight text-white">BrandCut</span>
