@@ -76,16 +76,13 @@ export default function VideoCard({
   const tagColor = TAG_COLORS[video.tag || ""] || "#555";
   const c = counts[video.id] || { thumbsup: 0, thumbsdown: 0, score: 0 };
   const summary = video.breakdown?.summary || "";
-  const thumbnailUrl = video.custom_thumbnail 
-    ? `/thumbnails/${video.id}.jpg`
-    : `https://img.youtube.com/vi/${video.id}/mqdefault.jpg`;
 
   return (
     <div className="group overflow-hidden" style={{ background: "var(--card)" }}>
       <a href={`/video/${video.id}`} className="block">
         <div className="relative aspect-video w-full overflow-hidden" style={{ background: "#080808" }}>
           <img
-            src={thumbnailUrl}
+            src={`https://img.youtube.com/vi/${video.id}/mqdefault.jpg`}
             alt=""
             className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
             loading="lazy"

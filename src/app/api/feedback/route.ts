@@ -132,6 +132,27 @@ export async function POST(req: NextRequest) {
         INSERT INTO shortlist (video_id) VALUES (${videoId})
         ON CONFLICT (video_id) DO NOTHING
       `;
+      
+      // 加入封面提取队列
+      try {
+        await sql`
+          CREATE TABLE IF NOT EXISTS thumbnail_queue (
+            video_id TEXT PRIMARY KEY,
+            queued_at TIMESTAMPTZ DEFAULT NOW(),
+            status TEXT DEFAULT 'pending'
+          )
+        `;
+        
+        await sql`
+          INSERT INTO thumbnail_queue (video_id, status)
+          VALUES (${videoId}, 'pending')
+          ON CONFLICT (video_id)
+          DO UPDATE SET status = 'pending', queued_at = NOW()
+        `;
+      } catch (queueError) {
+        console.error("Failed to queue thumbnail extraction:", queueError);
+        // 不阻塞主流程
+      }
     } else if (action === "remove_shortlist") {
       await sql`DELETE FROM shortlist WHERE video_id = ${videoId}`;
     } else if (action === "clear") {
