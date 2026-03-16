@@ -16,5 +16,5 @@ export function clearAdminKey(): void {
 }
 
 export function isAdmin(): boolean {
-  return !!getAdminKey();
+  return getAdminKey() === "slime";
 }

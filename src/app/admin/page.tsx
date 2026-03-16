@@ -427,7 +427,7 @@ export default function AdminPage() {
 function VideoTable({ videos }: { videos: Video[] }) {
   const [sortBy, setSortBy] = useState<"date" | "brand" | "tag">("date");
   const [filterTag, setFilterTag] = useState<string>("all");
-  const [feedback, setFeedback] = useState<Record<string, 'thumbsup' | 'thumbsdown'>>({});
+  const [feedbackCounts, setFeedbackCounts] = useState<Record<string, { thumbsup: number; thumbsdown: number }>>({});
 
   // Fetch feedback from KV on mount (force fresh data)
   useEffect(() => {
@@ -435,8 +435,8 @@ function VideoTable({ videos }: { videos: Video[] }) {
       try {
         const res = await fetch('/api/feedback', { cache: 'no-store' });
         const data = await res.json();
-        if (data.kv && data.feedback) {
-          setFeedback(data.feedback);
+        if (data.kv && data.feedbackCounts) {
+          setFeedbackCounts(data.feedbackCounts);
         }
       } catch (err) {
         console.error('Failed to load feedback:', err);
@@ -555,15 +555,19 @@ function VideoTable({ videos }: { videos: Video[] }) {
                     )}
                   </td>
                   <td className="px-3 py-2 text-center">
-                    {feedback[v.id] === 'thumbsup' && (
-                      <span style={{ color: "var(--green, #22c55e)" }}>👍</span>
-                    )}
-                    {feedback[v.id] === 'thumbsdown' && (
-                      <span style={{ color: "var(--red, #ef4444)" }}>👎</span>
-                    )}
-                    {!feedback[v.id] && (
-                      <span style={{ color: "var(--text-muted)" }}>—</span>
-                    )}
+                    {(() => {
+                      const c = feedbackCounts[v.id] || { thumbsup: 0, thumbsdown: 0 };
+                      if (!c.thumbsup && !c.thumbsdown) {
+                        return <span style={{ color: "var(--text-muted)" }}>—</span>;
+                      }
+                      return (
+                        <span>
+                          <span style={{ color: "var(--green, #22c55e)" }}>👍{c.thumbsup}</span>
+                          <span style={{ color: "var(--text-muted)" }}> / </span>
+                          <span style={{ color: "var(--red, #ef4444)" }}>👎{c.thumbsdown}</span>
+                        </span>
+                      );
+                    })()}
                   </td>
                 </tr>
               );

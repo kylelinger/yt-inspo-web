@@ -1,16 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { sql } from "@vercel/postgres";
 
-/**
- * Feedback API with Vercel Postgres (Neon) persistence.
- *
- * Tables:
- *   feedback (video_id TEXT PK, action TEXT, updated_at TIMESTAMPTZ)
- *   shortlist (video_id TEXT PK, created_at TIMESTAMPTZ)
- *
- * Auto-creates tables on first request.
- */
-
 const NO_CACHE = {
   "Cache-Control": "no-store, no-cache, must-revalidate, max-age=0",
   Pragma: "no-cache",
@@ -20,44 +10,77 @@ let tablesReady = false;
 
 async function ensureTables() {
   if (tablesReady) return;
+
   await sql`
     CREATE TABLE IF NOT EXISTS feedback (
       video_id TEXT PRIMARY KEY,
-      action TEXT NOT NULL CHECK (action IN ('thumbsup', 'thumbsdown')),
+      action TEXT,
       updated_at TIMESTAMPTZ DEFAULT NOW()
     )
   `;
+
+  await sql`ALTER TABLE feedback ADD COLUMN IF NOT EXISTS thumbsup_count INTEGER DEFAULT 0`;
+  await sql`ALTER TABLE feedback ADD COLUMN IF NOT EXISTS thumbsdown_count INTEGER DEFAULT 0`;
+
+  // Backfill old single-action rows once for compatibility.
+  await sql`
+    UPDATE feedback
+    SET
+      thumbsup_count = CASE WHEN action = 'thumbsup' THEN 1 ELSE thumbsup_count END,
+      thumbsdown_count = CASE WHEN action = 'thumbsdown' THEN 1 ELSE thumbsdown_count END
+    WHERE COALESCE(thumbsup_count, 0) = 0 AND COALESCE(thumbsdown_count, 0) = 0 AND action IS NOT NULL
+  `;
+
   await sql`
     CREATE TABLE IF NOT EXISTS shortlist (
       video_id TEXT PRIMARY KEY,
       created_at TIMESTAMPTZ DEFAULT NOW()
     )
   `;
+
   tablesReady = true;
 }
 
+type Counts = { thumbsup: number; thumbsdown: number; score: number };
+
 async function getState(): Promise<{
+  feedbackCounts: Record<string, Counts>;
   feedback: Record<string, "thumbsup" | "thumbsdown">;
   shortlist: string[];
 }> {
   await ensureTables();
 
   const [fbRows, slRows] = await Promise.all([
-    sql`SELECT video_id, action FROM feedback`,
+    sql`
+      SELECT video_id,
+             COALESCE(thumbsup_count, 0) AS thumbsup_count,
+             COALESCE(thumbsdown_count, 0) AS thumbsdown_count
+      FROM feedback
+    `,
     sql`SELECT video_id FROM shortlist ORDER BY created_at`,
   ]);
 
+  const feedbackCounts: Record<string, Counts> = {};
   const feedback: Record<string, "thumbsup" | "thumbsdown"> = {};
+
   for (const row of fbRows.rows) {
-    feedback[row.video_id] = row.action as "thumbsup" | "thumbsdown";
+    const up = Number(row.thumbsup_count || 0);
+    const down = Number(row.thumbsdown_count || 0);
+    feedbackCounts[row.video_id] = { thumbsup: up, thumbsdown: down, score: up - down };
+    if (up > down) feedback[row.video_id] = "thumbsup";
+    if (down > up) feedback[row.video_id] = "thumbsdown";
   }
 
   const shortlist = slRows.rows.map((r) => r.video_id);
 
-  return { feedback, shortlist };
+  return { feedbackCounts, feedback, shortlist };
 }
 
-// ─── GET /api/feedback ──────────────────────────────────────────────────────
+function isAdmin(req: NextRequest) {
+  const adminKey = process.env.ADMIN_KEY?.trim() || "slime";
+  const authHeader = req.headers.get("x-admin-key");
+  return authHeader === adminKey;
+}
 
 export async function GET() {
   try {
@@ -66,68 +89,57 @@ export async function GET() {
   } catch (e) {
     console.error("GET /api/feedback error:", e);
     return NextResponse.json(
-      { feedback: {}, shortlist: [], kv: false, error: String(e) },
+      { feedbackCounts: {}, feedback: {}, shortlist: [], kv: false, error: String(e) },
       { headers: NO_CACHE }
     );
   }
 }
 
-// ─── POST /api/feedback ─────────────────────────────────────────────────────
-
 export async function POST(req: NextRequest) {
-  // Auth check
-  const adminKey = process.env.ADMIN_KEY?.trim();
-  const authHeader = req.headers.get("x-admin-key");
-  if (adminKey && authHeader !== adminKey) {
-    return NextResponse.json(
-      { ok: false, error: "Unauthorized" },
-      { status: 403 }
-    );
-  }
-
   try {
     await ensureTables();
 
     const { videoId, action } = await req.json();
     if (!videoId || !action) {
-      return NextResponse.json(
-        { ok: false, error: "missing fields" },
-        { status: 400 }
-      );
+      return NextResponse.json({ ok: false, error: "missing fields" }, { status: 400 });
     }
 
-    if (action === "shortlist") {
+    const adminOnly = ["shortlist", "remove_shortlist", "clear"];
+    if (adminOnly.includes(action) && !isAdmin(req)) {
+      return NextResponse.json({ ok: false, error: "Unauthorized" }, { status: 403 });
+    }
+
+    if (action === "thumbsup") {
+      await sql`
+        INSERT INTO feedback (video_id, thumbsup_count, thumbsdown_count, updated_at)
+        VALUES (${videoId}, 1, 0, NOW())
+        ON CONFLICT (video_id)
+        DO UPDATE SET thumbsup_count = COALESCE(feedback.thumbsup_count, 0) + 1,
+                      updated_at = NOW()
+      `;
+    } else if (action === "thumbsdown") {
+      await sql`
+        INSERT INTO feedback (video_id, thumbsup_count, thumbsdown_count, updated_at)
+        VALUES (${videoId}, 0, 1, NOW())
+        ON CONFLICT (video_id)
+        DO UPDATE SET thumbsdown_count = COALESCE(feedback.thumbsdown_count, 0) + 1,
+                      updated_at = NOW()
+      `;
+    } else if (action === "shortlist") {
       await sql`
         INSERT INTO shortlist (video_id) VALUES (${videoId})
         ON CONFLICT (video_id) DO NOTHING
       `;
     } else if (action === "remove_shortlist") {
       await sql`DELETE FROM shortlist WHERE video_id = ${videoId}`;
-    } else if (action === "thumbsup" || action === "thumbsdown") {
-      // Toggle: if same action exists, remove it; otherwise upsert
-      const existing =
-        await sql`SELECT action FROM feedback WHERE video_id = ${videoId}`;
-      if (existing.rows.length > 0 && existing.rows[0].action === action) {
-        await sql`DELETE FROM feedback WHERE video_id = ${videoId}`;
-      } else {
-        await sql`
-          INSERT INTO feedback (video_id, action, updated_at)
-          VALUES (${videoId}, ${action}, NOW())
-          ON CONFLICT (video_id) DO UPDATE SET action = ${action}, updated_at = NOW()
-        `;
-      }
     } else if (action === "clear") {
       await sql`DELETE FROM feedback WHERE video_id = ${videoId}`;
     }
 
-    // Return fresh state
     const state = await getState();
     return NextResponse.json({ ok: true, kv: true, state });
   } catch (e) {
     console.error("POST /api/feedback error:", e);
-    return NextResponse.json(
-      { ok: false, kv: false, error: String(e) },
-      { status: 500 }
-    );
+    return NextResponse.json({ ok: false, kv: false, error: String(e) }, { status: 500 });
   }
 }

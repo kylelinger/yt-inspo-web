@@ -46,8 +46,10 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
     return <>{children}</>;
   }
 
+  const isAdmin = adminKey === "slime";
+
   return (
-    <AuthContext.Provider value={{ isAdmin: !!adminKey, adminKey }}>
+    <AuthContext.Provider value={{ isAdmin, adminKey }}>
       {children}
     </AuthContext.Provider>
   );
