@@ -67,7 +67,7 @@ export default async function RootLayout({
           </div>
           <div className="section-full section-accent min-h-14">
             <div className="section-inner h-full flex flex-col sm:flex-row items-center justify-between gap-3 sm:gap-0 py-3 sm:py-0 sm:h-14">
-              <h2 className="text-sm sm:text-2xl font-black tracking-tight text-black text-center sm:text-left leading-tight">
+              <h2 className="text-sm sm:text-2xl font-black tracking-tight text-white text-center sm:text-left leading-tight">
                 Build taste, not just campaigns.
               </h2>
               <FooterStats initialLang={lang} />

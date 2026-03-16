@@ -39,9 +39,9 @@ export default async function Home() {
               { num: "10:00", label: tr(lang, "Daily", "日更") },
               { num: "4", label: tr(lang, "Lanes", "赛道") },
             ].map((stat, i) => (
-              <div key={stat.label} className="flex items-center gap-1.5 sm:gap-2" style={{ borderLeft: i > 0 ? "1px solid rgba(0,0,0,0.15)" : "none", paddingLeft: i > 0 ? "0.75rem" : "0" }}>
-                <span className="text-base font-black text-black sm:text-lg">{stat.num}</span>
-                <span className="text-xs font-bold uppercase tracking-wider text-black/50 sm:text-sm">{stat.label}</span>
+              <div key={stat.label} className="flex items-center gap-1.5 sm:gap-2" style={{ borderLeft: i > 0 ? "1px solid rgba(255,255,255,0.2)" : "none", paddingLeft: i > 0 ? "0.75rem" : "0" }}>
+                <span className="text-base font-black text-white sm:text-lg">{stat.num}</span>
+                <span className="text-xs font-bold uppercase tracking-wider text-white/60 sm:text-sm">{stat.label}</span>
               </div>
             ))}
           </div>
