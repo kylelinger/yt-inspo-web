@@ -5,19 +5,23 @@ import { motion, AnimatePresence } from "framer-motion";
 import type { Video } from "@/lib/types";
 import VideoCard from "./VideoCard";
 import { getFeedback } from "@/lib/feedback";
+import { tr, type Lang } from "@/lib/language";
 
-const TAG_FILTERS = [
-  { value: "all", label: "\u5168\u90E8", emoji: "\u{1F4FA}" },
-  { value: "B1", label: "\u76F4\u63A5\u7ADE\u54C1", emoji: "\u{1F3AF}" },
-  { value: "B2", label: "\u91D1\u878D\u54C1\u724C", emoji: "\u{1F4B0}" },
-  { value: "A", label: "\u5BA1\u7F8E\u6807\u6746", emoji: "\u2728" },
-  { value: "C", label: "\u6587\u5316\u53C2\u8003", emoji: "\u{1F3A8}" },
-] as const;
+function getTagFilters(lang: Lang) {
+  return [
+    { value: "all", label: tr(lang, "All", "全部") },
+    { value: "B1", label: tr(lang, "Direct rivals", "直接竞品") },
+    { value: "B2", label: tr(lang, "Finance brands", "金融品牌") },
+    { value: "A", label: tr(lang, "Aesthetic benchmark", "审美标杆") },
+    { value: "C", label: tr(lang, "Culture reference", "文化参考") },
+  ] as const;
+}
 
-export default function SortedVideoGrid({ videos, showFilter = false }: { videos: Video[]; showFilter?: boolean }) {
+export default function SortedVideoGrid({ videos, showFilter = false, lang = "us" }: { videos: Video[]; showFilter?: boolean; lang?: Lang }) {
   const [fb, setFb] = useState<Record<string, "thumbsup" | "thumbsdown">>({});
   const [mounted, setMounted] = useState(false);
   const [tagFilter, setTagFilter] = useState<string>("all");
+  const TAG_FILTERS = getTagFilters(lang);
 
   useEffect(() => {
     setFb(getFeedback());
@@ -74,7 +78,6 @@ export default function SortedVideoGrid({ videos, showFilter = false }: { videos
         </div>
       )}
 
-      {/* Grid with visible gap lines */}
       <div className="grid gap-[2px] sm:grid-cols-2" style={{ background: "#000000" }}>
         <AnimatePresence mode="popLayout">
           {sorted.map((v) => (
@@ -94,7 +97,7 @@ export default function SortedVideoGrid({ videos, showFilter = false }: { videos
 
       {sorted.length === 0 && (
         <div className="py-16 text-center" style={{ background: "var(--bg-alt)", color: "#444" }}>
-          该分类下暂无视频
+          {tr(lang, "No videos in this lane", "该分类下暂无视频")}
         </div>
       )}
     </div>

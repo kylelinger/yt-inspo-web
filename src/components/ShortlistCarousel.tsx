@@ -3,8 +3,9 @@
 import { useState, useEffect, useCallback } from "react";
 import type { Video } from "@/lib/types";
 import { getShortlist } from "@/lib/feedback";
+import { tr, type Lang } from "@/lib/language";
 
-export default function ShortlistCarousel({ allVideos }: { allVideos: Video[] }) {
+export default function ShortlistCarousel({ allVideos, lang = "us" }: { allVideos: Video[]; lang?: Lang }) {
   const [shortlistIds, setShortlistIds] = useState<Set<string>>(new Set());
   const [current, setCurrent] = useState(0);
   const [mounted, setMounted] = useState(false);
@@ -50,8 +51,8 @@ export default function ShortlistCarousel({ allVideos }: { allVideos: Video[] })
       <div className="h-[800px] flex items-center justify-center" style={{ background: "#080808" }}>
         <div className="text-center">
           <p className="text-3xl mb-3">⭐</p>
-          <p className="text-sm font-bold text-[#666]">Your saved collection</p>
-          <p className="text-xs mt-2 text-[#444]">Star videos to see them here</p>
+          <p className="text-sm font-bold text-[#666]">{tr(lang, "Your saved collection", "你的收藏夹")}</p>
+          <p className="text-xs mt-2 text-[#444]">{tr(lang, "Star videos to see them here", "点星标后会出现在这里")}</p>
         </div>
       </div>
     );

@@ -1,10 +1,12 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
+import { cookies } from "next/headers";
 import "./globals.css";
 import { HydrateProvider } from "@/components/HydrateProvider";
 import { AuthProvider } from "@/components/AuthProvider";
 import NavBar from "@/components/NavBar";
 import FooterStats from "@/components/FooterStats";
+import { normalizeLang, tr } from "@/lib/language";
 
 const brHendrix = localFont({
   src: [
@@ -28,23 +30,24 @@ export const metadata: Metadata = {
   description: "AI-curated brand ad inspiration",
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const lang = normalizeLang((await cookies()).get("bp_lang")?.value);
+
   return (
-    <html lang="zh" className="dark">
+    <html lang={lang === "cn" ? "zh" : "en"} className="dark">
       <body className={`${brHendrix.className} ${brHendrix.variable} antialiased`}>
         <AuthProvider>
-          <NavBar />
+          <NavBar initialLang={lang} />
           <div className="h-20" />
           <HydrateProvider>
             <main>{children}</main>
           </HydrateProvider>
         </AuthProvider>
 
-        {/* ─── Footer: dark bottom + accent band ─── */}
         <footer>
           <div className="section-full" style={{ background: "#000000" }}>
             <div className="section-inner py-10">
@@ -64,8 +67,10 @@ export default function RootLayout({
           </div>
           <div className="section-full section-accent min-h-14">
             <div className="section-inner h-full flex flex-col sm:flex-row items-center justify-between gap-3 sm:gap-0 py-3 sm:py-0 sm:h-14">
-              <h2 className="text-sm sm:text-2xl font-black tracking-tight text-black text-center sm:text-left leading-tight">Build taste, not just campaigns.</h2>
-              <FooterStats />
+              <h2 className="text-sm sm:text-2xl font-black tracking-tight text-black text-center sm:text-left leading-tight">
+                {tr(lang, "Craft taste. Ship signal.", "打磨品味，输出信号。")}
+              </h2>
+              <FooterStats initialLang={lang} />
             </div>
           </div>
         </footer>
