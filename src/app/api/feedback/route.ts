@@ -111,18 +111,20 @@ export async function POST(req: NextRequest) {
 
     if (action === "thumbsup") {
       await sql`
-        INSERT INTO feedback (video_id, thumbsup_count, thumbsdown_count, updated_at)
-        VALUES (${videoId}, 1, 0, NOW())
+        INSERT INTO feedback (video_id, action, thumbsup_count, thumbsdown_count, updated_at)
+        VALUES (${videoId}, 'thumbsup', 1, 0, NOW())
         ON CONFLICT (video_id)
-        DO UPDATE SET thumbsup_count = COALESCE(feedback.thumbsup_count, 0) + 1,
+        DO UPDATE SET action = 'thumbsup',
+                      thumbsup_count = COALESCE(feedback.thumbsup_count, 0) + 1,
                       updated_at = NOW()
       `;
     } else if (action === "thumbsdown") {
       await sql`
-        INSERT INTO feedback (video_id, thumbsup_count, thumbsdown_count, updated_at)
-        VALUES (${videoId}, 0, 1, NOW())
+        INSERT INTO feedback (video_id, action, thumbsup_count, thumbsdown_count, updated_at)
+        VALUES (${videoId}, 'thumbsdown', 0, 1, NOW())
         ON CONFLICT (video_id)
-        DO UPDATE SET thumbsdown_count = COALESCE(feedback.thumbsdown_count, 0) + 1,
+        DO UPDATE SET action = 'thumbsdown',
+                      thumbsdown_count = COALESCE(feedback.thumbsdown_count, 0) + 1,
                       updated_at = NOW()
       `;
     } else if (action === "shortlist") {
