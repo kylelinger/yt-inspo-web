@@ -1,7 +1,7 @@
 "use client";
 
 import { createContext, useContext, useEffect, useState } from "react";
-import { getAdminKey, setAdminKey } from "@/lib/auth";
+import { clearAdminKey, getAdminKey, setAdminKey } from "@/lib/auth";
 
 interface AuthContextType {
   isAdmin: boolean;
@@ -22,23 +22,34 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
-    // Check URL param ?key=xxx
     const params = new URLSearchParams(window.location.search);
-    const keyParam = params.get('key');
-    
+    const keyParam = params.get("key");
+    const logoutParam = params.get("logout");
+
+    // Support ?logout=1 to drop admin privilege quickly for testing.
+    if (logoutParam === "1" || logoutParam === "true") {
+      clearAdminKey();
+      setKey(null);
+
+      const url = new URL(window.location.href);
+      url.searchParams.delete("logout");
+      window.history.replaceState({}, "", url.toString());
+      setMounted(true);
+      return;
+    }
+
     if (keyParam) {
       setAdminKey(keyParam);
       setKey(keyParam);
-      // Clean URL without reload
+
       const url = new URL(window.location.href);
-      url.searchParams.delete('key');
-      window.history.replaceState({}, '', url.toString());
+      url.searchParams.delete("key");
+      window.history.replaceState({}, "", url.toString());
     } else {
-      // Check localStorage
       const stored = getAdminKey();
       setKey(stored);
     }
-    
+
     setMounted(true);
   }, []);
 
