@@ -83,27 +83,40 @@ export default function ShortlistCarousel({ allVideos, lang = "us" }: { allVideo
             <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent" />
           </div>
 
-          <div className="absolute bottom-0 left-0 right-0 p-8 sm:p-12">
-            <div className="mb-3 flex items-center gap-3">
-              <span className="bg-[var(--accent)] px-3 py-1 text-[11px] font-bold text-white">
-                ⭐ SAVED
-              </span>
-              {video.tag && (
-                <span className="text-[11px] font-bold uppercase text-white/50">
-                  {video.tag}
-                </span>
+          <div className="absolute bottom-0 left-0 right-0 p-5 sm:p-12">
+            {/* Mobile: brand + title only */}
+            <div className="sm:hidden">
+              {video.brand && (
+                <span className="text-xs font-bold text-white/50">{video.brand}</span>
               )}
-              <span className="text-xs text-white/40">
-                {video.brand}
-                {video.duration_s && ` \u00B7 ${Math.floor(video.duration_s / 60)}:${String(video.duration_s % 60).padStart(2, "0")}`}
-              </span>
+              <h2 className="text-lg font-black leading-tight text-white mt-1">
+                {video.title}
+              </h2>
             </div>
-            <h2 className="text-2xl font-black leading-tight text-white sm:text-3xl lg:text-4xl">
-              {video.title}
-            </h2>
-            {video.breakdown?.summary && (
-              <CarouselSummary text={video.breakdown.summary} lang={lang} />
-            )}
+
+            {/* Desktop: full info */}
+            <div className="hidden sm:block">
+              <div className="mb-3 flex items-center gap-3">
+                <span className="bg-[var(--accent)] px-3 py-1 text-[11px] font-bold text-white">
+                  ⭐ SAVED
+                </span>
+                {video.tag && (
+                  <span className="text-[11px] font-bold uppercase text-white/50">
+                    {video.tag}
+                  </span>
+                )}
+                <span className="text-xs text-white/40">
+                  {video.brand}
+                  {video.duration_s && ` \u00B7 ${Math.floor(video.duration_s / 60)}:${String(video.duration_s % 60).padStart(2, "0")}`}
+                </span>
+              </div>
+              <h2 className="text-3xl font-black leading-tight text-white lg:text-4xl">
+                {video.title}
+              </h2>
+              {video.breakdown?.summary && (
+                <CarouselSummary text={video.breakdown.summary} lang={lang} />
+              )}
+            </div>
           </div>
 
           {/* Play */}
