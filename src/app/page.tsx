@@ -80,7 +80,7 @@ export default async function Home() {
             </div>
 
             {/* Mobile tag legend */}
-            <div className="sm:hidden grid grid-cols-2 gap-x-4 gap-y-2 mt-6">
+            <div className="sm:hidden grid grid-cols-2 gap-x-4 gap-y-2 mt-6 mb-4">
               {[
                 { tag: "B1", label: tr(lang, "Direct rivals", "直接竞品"), color: "#f59e0b" },
                 { tag: "B2", label: tr(lang, "Finance brands", "金融品牌"), color: "#3b82f6" },
