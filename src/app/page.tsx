@@ -23,6 +23,7 @@ export default function Home() {
   const latestVideos = grouped.get(latestDate) || [];
   const olderDates = sortedDates.slice(1);
   const totalVideos = allVideos.length;
+  const totalBrands = new Set(allVideos.map((v) => (v.brand || "").trim()).filter(Boolean)).size;
 
   return (
     <div>
@@ -32,8 +33,8 @@ export default function Home() {
           <div className="flex items-center justify-center h-14 gap-3 sm:gap-8">
             {[
               { num: totalVideos.toString(), label: "Videos" },
-              { num: "20+", label: "Frames" },
-              { num: "10:00", label: "Daily BJT" },
+              { num: totalBrands.toString(), label: "Brands" },
+              { num: "10:00", label: "Daily" },
               { num: "4", label: "Tags" },
             ].map((stat, i) => (
               <div key={stat.label} className="flex items-center gap-1.5 sm:gap-2" style={{ borderLeft: i > 0 ? "1px solid rgba(0,0,0,0.15)" : "none", paddingLeft: i > 0 ? "0.75rem" : "0" }}>
