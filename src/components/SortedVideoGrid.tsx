@@ -4,7 +4,6 @@ import { useState, useEffect, useMemo } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import type { Video } from "@/lib/types";
 import VideoCard from "./VideoCard";
-import { getFeedback } from "@/lib/feedback";
 import { tr, type Lang } from "@/lib/language";
 
 function getTagFilters(lang: Lang) {
@@ -18,18 +17,10 @@ function getTagFilters(lang: Lang) {
 }
 
 export default function SortedVideoGrid({ videos, showFilter = false, lang = "us" }: { videos: Video[]; showFilter?: boolean; lang?: Lang }) {
-  const [fb, setFb] = useState<Record<string, "thumbsup" | "thumbsdown">>({});
-  const [mounted, setMounted] = useState(false);
   const [tagFilter, setTagFilter] = useState<string>("all");
   const TAG_FILTERS = getTagFilters(lang);
 
-  useEffect(() => {
-    setFb(getFeedback());
-    setMounted(true);
-    const handler = () => setFb(getFeedback());
-    window.addEventListener("feedback-changed", handler);
-    return () => window.removeEventListener("feedback-changed", handler);
-  }, []);
+  const TAG_ORDER: Record<string, number> = { B1: 0, B2: 1, A: 2, C: 3 };
 
   const filtered = useMemo(() => {
     if (tagFilter === "all") return videos;
@@ -37,13 +28,12 @@ export default function SortedVideoGrid({ videos, showFilter = false, lang = "us
   }, [videos, tagFilter]);
 
   const sorted = useMemo(() => {
-    if (!mounted) return filtered;
     return [...filtered].sort((a, b) => {
-      const scoreA = fb[a.id] === "thumbsup" ? 1 : fb[a.id] === "thumbsdown" ? -1 : 0;
-      const scoreB = fb[b.id] === "thumbsup" ? 1 : fb[b.id] === "thumbsdown" ? -1 : 0;
-      return scoreB - scoreA;
+      const orderA = TAG_ORDER[a.tag || ""] ?? 4;
+      const orderB = TAG_ORDER[b.tag || ""] ?? 4;
+      return orderA - orderB;
     });
-  }, [filtered, fb, mounted]);
+  }, [filtered]);
 
   const tagCounts = useMemo(() => {
     const counts: Record<string, number> = { all: videos.length };
@@ -89,7 +79,7 @@ export default function SortedVideoGrid({ videos, showFilter = false, lang = "us
               exit={{ opacity: 0 }}
               transition={{ duration: 0.3 }}
             >
-              <VideoCard video={v} onFeedbackChange={() => setFb(getFeedback())} />
+              <VideoCard video={v} />
             </motion.div>
           ))}
         </AnimatePresence>
