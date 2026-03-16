@@ -21,7 +21,6 @@ export default function Home() {
   const sortedDates = [...grouped.keys()].sort((a, b) => b.localeCompare(a));
   const latestDate = sortedDates[0];
   const latestVideos = grouped.get(latestDate) || [];
-  const foundationCount = allVideos.filter((v) => v.collection === "foundation").length;
   const olderDates = sortedDates.slice(1);
   const totalVideos = allVideos.length;
 
@@ -158,18 +157,6 @@ export default function Home() {
 
             {/* Archive blocks — 2px gap, #0e0e0e cards on #000 */}
             <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-[2px]" style={{ background: "var(--bg)" }}>
-              <a 
-                href="/archive/foundation" 
-                className="group flex items-start justify-between p-6 transition-colors hover:bg-[#1a1a1a]"
-                style={{ background: "#0e0e0e" }}
-              >
-                <div>
-                  <div className="text-base font-bold text-white">Foundation</div>
-                  <div className="mt-1 text-sm text-[#555]">{foundationCount} videos</div>
-                </div>
-                <div className="text-2xl">📐</div>
-              </a>
-
               {olderDates.map((date) => {
                 const count = grouped.get(date)?.length || 0;
                 return (
