@@ -18,12 +18,14 @@ function TrText({ text, lang }: { text: string; lang: Lang }) {
 function BreakdownSection({ breakdown, lang, tr: tFn }: { breakdown: NonNullable<Video["breakdown"]>; lang: Lang; tr: (l: Lang, en: string, cn: string) => string }) {
   return (
     <>
+      {/* Summary */}
       <div className="rounded-lg border p-4" style={{ borderColor: "var(--border)", background: "var(--card)" }}>
         <p className="text-sm font-medium leading-relaxed" style={{ color: "var(--text)" }}>
           <TrText text={breakdown.summary} lang={lang} />
         </p>
       </div>
 
+      {/* Structure timeline */}
       {breakdown.structure && breakdown.structure.length > 0 && (
         <div className="rounded-lg border p-4" style={{ borderColor: "var(--border)", background: "var(--card)" }}>
           <h3 className="mb-3 text-xs font-semibold uppercase tracking-wide" style={{ color: "var(--text-muted)" }}>{tFn(lang, "Narrative map", "叙事结构")}</h3>
@@ -38,9 +40,10 @@ function BreakdownSection({ breakdown, lang, tr: tFn }: { breakdown: NonNullable
         </div>
       )}
 
+      {/* VO quotes */}
       {breakdown.vo_quotes && breakdown.vo_quotes.length > 0 && (
         <div className="rounded-lg border p-4" style={{ borderColor: "var(--border)", background: "var(--card)" }}>
-          <h3 className="mb-3 text-xs font-semibold uppercase tracking-wide" style={{ color: "var(--text-muted)" }}>{tFn(lang, "VO lines", "VO 金句")}</h3>
+          <h3 className="mb-3 text-xs font-semibold uppercase tracking-wide" style={{ color: "var(--text-muted)" }}>{tFn(lang, "VO lines", "VO / 台词金句")}</h3>
           <div className="space-y-2">
             {breakdown.vo_quotes.map((q, i) => (
               <p key={i} className="border-l-2 pl-3 text-sm italic" style={{ borderColor: "var(--accent)", color: "var(--text)" }}>
@@ -48,6 +51,57 @@ function BreakdownSection({ breakdown, lang, tr: tFn }: { breakdown: NonNullable
               </p>
             ))}
           </div>
+        </div>
+      )}
+
+      {/* Strengths & Risks — side by side */}
+      <div className="grid gap-4 sm:grid-cols-2">
+        {breakdown.strengths && breakdown.strengths.length > 0 && (
+          <div className="rounded-lg border p-4" style={{ borderColor: "var(--border)", background: "var(--card)" }}>
+            <h3 className="mb-3 text-xs font-semibold uppercase tracking-wide" style={{ color: "var(--green, #22c55e)" }}>
+              ✓ {tFn(lang, "Strengths", "好点")}
+            </h3>
+            <ul className="space-y-2 text-sm" style={{ color: "var(--text)" }}>
+              {breakdown.strengths.map((s, i) => (
+                <li key={i} className="flex gap-2">
+                  <span className="mt-0.5 shrink-0 text-xs" style={{ color: "var(--green, #22c55e)" }}>●</span>
+                  <TrText text={String(s)} lang={lang} />
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
+        {breakdown.risks && breakdown.risks.length > 0 && (
+          <div className="rounded-lg border p-4" style={{ borderColor: "var(--border)", background: "var(--card)" }}>
+            <h3 className="mb-3 text-xs font-semibold uppercase tracking-wide" style={{ color: "var(--red, #ef4444)" }}>
+              ✗ {tFn(lang, "Risks", "风险 / 不适配")}
+            </h3>
+            <ul className="space-y-2 text-sm" style={{ color: "var(--text)" }}>
+              {breakdown.risks.map((r, i) => (
+                <li key={i} className="flex gap-2">
+                  <span className="mt-0.5 shrink-0 text-xs" style={{ color: "var(--red, #ef4444)" }}>●</span>
+                  <TrText text={String(r)} lang={lang} />
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
+      </div>
+
+      {/* Transferable */}
+      {breakdown.transferable && breakdown.transferable.length > 0 && (
+        <div className="rounded-lg border p-4" style={{ borderColor: "var(--accent)", background: "color-mix(in srgb, var(--accent) 5%, var(--card))" }}>
+          <h3 className="mb-3 text-xs font-semibold uppercase tracking-wide" style={{ color: "var(--accent)" }}>
+            🔄 {tFn(lang, "Transferable", "可迁移方法论")}
+          </h3>
+          <ul className="space-y-2 text-sm" style={{ color: "var(--text)" }}>
+            {breakdown.transferable.map((t, i) => (
+              <li key={i} className="flex gap-2">
+                <span className="mt-0.5 shrink-0">→</span>
+                <TrText text={String(t)} lang={lang} />
+              </li>
+            ))}
+          </ul>
         </div>
       )}
     </>
