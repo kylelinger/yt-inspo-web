@@ -23,7 +23,7 @@ export interface Video {
   duration?: string;
   duration_s?: number;
   breakdown?: VideoBreakdown;
-  tag?: 'B1' | 'B2' | 'A' | 'C';
+  tag?: 'B1' | 'B2' | 'A' | 'C' | 'S';
 }
 
 export interface FeedbackEntry {

@@ -12,6 +12,7 @@ const TAG_COLORS: Record<string, { bg: string; fg: string; label: string }> = {
   B2: { bg: "#3b82f622", fg: "#3b82f6", label: "B2 💰 金融品牌" },
   A:  { bg: "#a855f722", fg: "#a855f7", label: "A ✨ 审美标杆" },
   C:  { bg: "#9ca3af22", fg: "#9ca3af", label: "C 🎨 文化参考" },
+  S:  { bg: "#10b98122", fg: "#10b981", label: "S 🤝 赞助/联名" },
 };
 
 /* ── Brand Platform rules ── */
@@ -489,6 +490,7 @@ function VideoTable({ videos }: { videos: Video[] }) {
           <option value="B2">B2 金融品牌</option>
           <option value="A">A 审美标杆</option>
           <option value="C">C 文化参考</option>
+          <option value="S">S 赞助/联名</option>
         </select>
 
         <span className="self-center text-xs" style={{ color: "var(--text-muted)" }}>

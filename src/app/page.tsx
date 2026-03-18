@@ -69,6 +69,7 @@ export default async function Home() {
                   { tag: "B2", label: tr(lang, "Finance brands", "金融品牌"), color: "#3b82f6" },
                   { tag: "A",  label: tr(lang, "Aesthetic benchmark", "审美标杆"), color: "#a855f7" },
                   { tag: "C",  label: tr(lang, "Culture reference", "文化参考"), color: "#555" },
+                  { tag: "S",  label: tr(lang, "Sponsorship / collab", "赞助 / 联名"), color: "#10b981" },
                 ].map((t) => (
                   <div key={t.tag} className="flex items-center gap-2">
                     <div className="h-2.5 w-2.5" style={{ background: t.color }} />
@@ -86,6 +87,7 @@ export default async function Home() {
                 { tag: "B2", label: tr(lang, "Finance brands", "金融品牌"), color: "#3b82f6" },
                 { tag: "A",  label: tr(lang, "Aesthetic benchmark", "审美标杆"), color: "#a855f7" },
                 { tag: "C",  label: tr(lang, "Culture reference", "文化参考"), color: "#555" },
+                { tag: "S",  label: tr(lang, "Sponsorship / collab", "赞助 / 联名"), color: "#10b981" },
               ].map((t) => (
                 <div key={t.tag} className="flex items-center gap-1.5">
                   <div className="h-2 w-2 shrink-0" style={{ background: t.color }} />

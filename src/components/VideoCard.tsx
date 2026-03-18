@@ -13,6 +13,7 @@ const TAG_COLORS: Record<string, string> = {
   B2: "#3b82f6",
   A: "#a855f7",
   C: "#555",
+  S: "#10b981",
 };
 
 function formatDuration(s: number | undefined): string | null {

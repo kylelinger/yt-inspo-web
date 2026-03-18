@@ -13,6 +13,7 @@ function getTagFilters(lang: Lang) {
     { value: "B2", label: tr(lang, "Finance brands", "金融品牌") },
     { value: "A", label: tr(lang, "Aesthetic benchmark", "审美标杆") },
     { value: "C", label: tr(lang, "Culture reference", "文化参考") },
+    { value: "S", label: tr(lang, "Sponsorship / collab", "赞助 / 联名") },
   ] as const;
 }
 
@@ -20,7 +21,7 @@ export default function SortedVideoGrid({ videos, showFilter = false, lang = "us
   const [tagFilter, setTagFilter] = useState<string>("all");
   const TAG_FILTERS = getTagFilters(lang);
 
-  const TAG_ORDER: Record<string, number> = { B1: 0, B2: 1, A: 2, C: 3 };
+  const TAG_ORDER: Record<string, number> = { B1: 0, B2: 1, A: 2, C: 3, S: 4 };
 
   const filtered = useMemo(() => {
     if (tagFilter === "all") return videos;

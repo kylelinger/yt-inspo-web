@@ -164,6 +164,7 @@ export default function AboutPage() {
                 { tag: "B2", label: "金融品牌", color: "#3b82f6", desc: "Fintech ecosystem—payments, crypto, banking. Trust-building reference." },
                 { tag: "A", label: "审美标杆", color: "#a855f7", desc: "Global elite brands—craft, storytelling, and emotional connection benchmarks." },
                 { tag: "C", label: "文化参考", color: "#555", desc: "Non-finance but valuable creative techniques and cultural insights." },
+                { tag: "S", label: "赞助/联名", color: "#10b981", desc: "Co-branded, sponsored, or partnership-led campaigns where the collaboration itself is the idea." },
               ].map((t) => (
                 <div key={t.tag} className="p-6" style={{ background: "var(--card)", border: "1px solid var(--border)" }}>
                   <div className="flex items-center gap-3 mb-3">
