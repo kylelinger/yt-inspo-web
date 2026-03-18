@@ -3972,5 +3972,303 @@
     "tag": "B1",
     "brand": "Webull",
     "priority": 10
+  },
+  {
+    "id": "oO7WYrekjKk",
+    "url": "https://www.youtube.com/watch?v=oO7WYrekjKk",
+    "platform": "youtube",
+    "date_added": "2026-03-18",
+    "breakdown": {
+      "summary": "这支由加密货币交易平台 Coinbase 推出的视频广告，通过强烈的视觉对比，生动地传达了比特币作为“价值存储”的优越性。广告将抽象的通货膨胀和美联储印钞概念，具象化为堆积如山的美钞和无边无际的集装箱。随后，画面画风一转，引入数量极其有限的比特币，以此突出传统法币的无限增发与比特币绝对稀缺性之间的矛盾，最终确立比特币为“未来的金钱”（The future of money）的核心信息。",
+      "structure": [
+        {
+          "time": "0:00-0:03",
+          "desc": "具象化印钞：漫天飞舞的百元美钞落下，画面迅速拉远，显示这些钞票被打包进一个个绿色的集装箱中。"
+        },
+        {
+          "time": "0:03-0:14",
+          "desc": "展现通胀规模：镜头跟随吊车移动，展现出海量且一眼望不到头的集装箱阵列。旁白用具体的数据（每天4.65亿美元，每年2.6万个集装箱）来强化法币增发的夸张程度。"
+        },
+        {
+          "time": "0:14-0:21",
+          "desc": "引入转折点：镜头从拥挤的绿色集装箱群中迅速拉出，转场至一个黑暗、空旷的场地，中央只有一个发着白光的独立集装箱。"
+        },
+        {
+          "time": "0:21-0:25",
+          "desc": "揭示稀缺性：发光集装箱内部展示了排列整齐、数量固定的一面“比特币”墙，旁白强调这是永远无法超发的资产。"
+        },
+        {
+          "time": "0:25-0:27",
+          "desc": "核心灵魂拷问：一枚比特币在黑暗中旋转，旁白抛出关于“价值存储”的反思。"
+        },
+        {
+          "time": "0:27-0:30",
+          "desc": "品牌落版：黑底白字出现 “The future of money is here”，随后淡入 Coinbase 的品牌 Logo。"
+        }
+      ],
+      "strengths": [
+        "极佳的数据视觉化转换（Data Visualization）：将“每天印发4.65亿美元”这一普通人难以感知的宏观经济数据，巧妙地转换为“每年26,000个集装箱”的视觉奇观。用物理空间的拥挤感来隐喻通货膨胀带来的压迫感，极其直观。",
+        "极致的视觉与情绪对比（Visual Contrast）：前半段法币世界是混乱的、无边无际的、色调暗沉的（绿色集装箱）；后半段比特币世界则是极简的、边界清晰的、充满科技感且被高光照亮的。这种从“无限泛滥”到“绝对稀缺”的视觉过渡，极大地增强了说服力。"
+      ],
+      "risks": [
+        "强烈的受众极化风险（Polarization Risk）：广告文案直接且尖锐地批评了美联储（Fed）和美元体系（\"Created out of thin air\", \"loses value over time\"）。这种反法币（Anti-fiat）的激进叙事虽然能精准击中加密货币受众的痛点，但可能会引起传统投资者、保守派消费者或监管机构的反感与警惕。"
+      ],
+      "transferable": [
+        "宏大概念的“物理降维”手法：在推广具有抽象优势（如数据安全、云存储空间、金融抗通胀）的产品时，可以学习这种将无形数据转化为有形大体积物体的技巧，让消费者能够“看见”痛点。",
+        "“问题放大-单一解药”结构：视频前70%的时间都在用压倒性的画面去放大用户的焦虑（无限印钞），后30%则提供了一个极其简单、干净的“唯一解药”（比特币）。这种强对比的叙事节奏非常适合用来推广具有颠覆性概念的新产品。"
+      ],
+      "vo_quotes": [
+        "Every day the Fed prints an average of $465 million. That's 26,000 shipping containers a year. Created out of thin air.",
+        "But there's one thing they can never print more of. Bitcoin.",
+        "Shouldn't a store of value hold its value?"
+      ],
+      "ending": "收尾方式：采用纯文字愿景陈述与品牌Logo结合的极简收尾。"
+    },
+    "title": "All the bitcoin there will ever be…",
+    "uploader": "Coinbase",
+    "duration": 31,
+    "view_count": 56193,
+    "tag": "B2",
+    "brand": "Coinbase",
+    "priority": 10
+  },
+  {
+    "id": "g4knXwkfpQ0",
+    "url": "https://www.youtube.com/watch?v=g4knXwkfpQ0",
+    "platform": "youtube",
+    "date_added": "2026-03-18",
+    "breakdown": {
+      "summary": "这支由加密货币交易平台 Coinbase 推出的定格动画（黏土/木偶风格）广告，以极具幽默感和隐喻性的方式探讨了普通人面临的财务困境。视频通过城市鸟巢中几只拟人化鸟类的对话，生动刻画了现代人对延迟退休、物价上涨、以及财务状况起伏不定的焦虑。品牌并未在视频中直接推销加密货币产品，而是通过引发受众对传统金融体系（The System）失效的共鸣，在结尾自然引出 Coinbase 作为“更新金融系统”的破局者形象，传递其颠覆传统、提供新财务规划方案的品牌核心信息。",
+      "structure": [
+        {
+          "time": "0:00-0:10",
+          "desc": "引入痛点：主角鸟抱怨本该几年前退休，但为了钱现在还要再干三年，并将生活比作“过山车”。"
+        },
+        {
+          "time": "0:10-0:20",
+          "desc": "具象化焦虑：主角鸟用手里绿色的虫子（隐喻钞票/财富）快速演示“有钱、没钱、又有钱、又没钱”的财务循环，身边的同伴发出惊叹。"
+        },
+        {
+          "time": "0:20-0:36",
+          "desc": "情感升华：主角鸟吐露心声，表达对未来的担忧——想要照顾孩子，但自己正在老去，不知道还能撑多久。"
+        },
+        {
+          "time": "0:36-0:51",
+          "desc": "归因环境：点出物价飞涨（通货膨胀）的社会现实，无奈地表示虽然发现做计划没用，但仍得硬着头皮去规划。同伴被其无奈的坚持逗笑。"
+        },
+        {
+          "time": "0:52-0:59",
+          "desc": "品牌点题：黑屏切入白底黑字文案“当系统让计划变得困难时，是时候更新系统了”，最后定格在 Coinbase 的蓝色 Logo 上。"
+        }
+      ],
+      "strengths": [
+        "高超的拟人化与隐喻手法（Anthropomorphism & Metaphor）：通过会说话的鸟和具有钞票绿色的“虫子”，将沉重、枯燥的“通货膨胀”、“养老规划”话题变得轻松、接地气。这种反差感极大地降低了观众的防备心，增加了视频的完播率。",
+        "独特的视觉表现力：定格动画/黏土动画的质感在充斥着高科技、光鲜亮丽的金融科技（Fintech）广告圈中显得非常罕见且引人注目，形成了强烈的视觉记忆点（Visual Hook）。",
+        "洞察精准，情绪共鸣强烈：剧本没有一句废话，完全捕捉到了当代工薪阶层最真实的焦虑（延迟退休、生活成本激增、财务缺乏安全感），建立起了极强的同理心。"
+      ],
+      "risks": [
+        "产品关联度较弱（Disconnect from Product）：整个剧情全靠最后两句字幕与品牌强行绑定。对于不熟悉 Coinbase 或加密货币的用户来说，他们可能完全不知道这个平台具体能提供什么服务，容易看完就忘。",
+        "潜在的基调反噬风险：广告抱怨传统金融的钱像“过山车”一样极不稳定，但加密货币本身的波动性往往比传统资产更大。对于持怀疑态度的受众，这种抱怨可能会引发反讽感（即：买加密货币难道不更是过山车吗？）。"
+      ],
+      "transferable": [
+        "“重话题轻表达”的创意包装：在处理宏观经济、保险、养老金等容易让人产生压力的话题时，可以复用“动物拟人化”或“微缩模型喜剧”的手段，将宏观痛点微观化、生活化，让受众在笑声中接收信息。",
+        "反传统的品类视觉差异化：如果竞品都在使用“穿西装的专业人士”或“炫酷的APP界面动态”，品牌可以尝试采用完全脱离该品类固有审美的艺术形式（如本片的定格动画、复古风等）来抢夺注意力。",
+        "纯粹的情绪铺垫式 PAS 模型（Problem-Agitation-Solution）：前 90% 的时间只负责提出问题（Problem）和放大焦虑（Agitation），最后 10% 仅用一句话抛出品牌作为理念上的解决方案（Solution），这种克制的做法适合用于品牌形象战役（Brand Campaign）。"
+      ],
+      "vo_quotes": [
+        "Life is kind of like the rollercoaster ride. Sometimes you don't have money, you have money... and you don't have money.",
+        "Plus everything's so much more expensive. This is the way the world has changed.",
+        "When the system makes it hard to plan, it's time to update the system."
+      ],
+      "ending": "收尾方式：极其简洁的文字过渡后，仅展示品牌 Logo。"
+    },
+    "title": "Hard time planning for retirement? You’re not alone.",
+    "uploader": "Coinbase",
+    "duration": 60,
+    "view_count": 10420,
+    "tag": "B2",
+    "brand": "Coinbase",
+    "priority": 10
+  },
+  {
+    "id": "PKRQluDmQ60",
+    "url": "https://www.youtube.com/watch?v=PKRQluDmQ60",
+    "platform": "youtube",
+    "date_added": "2026-03-18",
+    "breakdown": {
+      "summary": "这支视频广告是 PayPal 为推广其 \"Pay in 4\"（分期四期付款）服务而打造的一支喜剧短片。视频由著名喜剧演员威尔·法瑞尔（Will Ferrell）主演，通过在一个荒诞、紧张的场景中（飞机机舱内抢夺乘务员广播）进行硬核的“重要通知”，强行植入产品核心卖点。整体风格幽默无厘头，通过戏剧冲突有效吸引注意力，突出了该服务“无利息、无滞纳金”的核心优势。",
+      "structure": [
+        {
+          "time": "0:00-0:02",
+          "desc": "冲突开场：画面一上来就是激烈的肢体动作，威尔·法瑞尔在机舱内与乘务员争夺广播话筒，声称要进行一个“非常重要的广播”，迅速抓住观众眼球。"
+        },
+        {
+          "time": "0:03-0:05",
+          "desc": "核心信息植入：威尔通过机舱广播，强行播报 PayPal \"Pay in 4\" 服务的核心卖点：“无利息、无滞纳金”。镜头穿插乘客们困惑的表情。"
+        },
+        {
+          "time": "0:06-0:10",
+          "desc": "喜剧反转与互动：一名乘客顺势询问是否能赶上转机，威尔给出搞笑又扎心的回复（“你能赶上，但你的行李赶不上”），随后在一片尴尬的掌声中退入驾驶舱区域。"
+        },
+        {
+          "time": "0:10-0:15",
+          "desc": "产品展示与结尾：画面切至清晰的手机屏幕UI界面，展示 PayPal 分期付款的操作进度环。同时配有旁白强化记忆，展示品牌 Logo 和使用场景口号，并在底部附带合规免责条款。"
+        }
+      ],
+      "strengths": [
+        "强烈的反差与注意力劫持：将“推销分期付款”这一极其商业化的行为，放置在“飞机机舱紧急广播”这一通常严肃、甚至关乎安全的场景中。这种巨大的违和感与知名演员自带的喜剧属性完美结合，有效打破了观众对金融广告的防备心理。",
+        "卖点传达极度直接高效：没有冗长平庸的生活痛点铺垫，在视频的第3秒到第5秒，直接通过“机舱大喇叭”将“无利息、无滞纳金”这两个消费者最关心的痛点解决方案大声念出，记忆点极深。"
+      ],
+      "risks": [
+        "场景与产品的逻辑断裂：飞机机舱与 PayPal \"Pay in 4\" 的网购分期付款场景之间缺乏内在的逻辑联系。这完全是一次依赖演员喜剧表演的强行植入，如果不熟悉美式无厘头幽默（或 Will Ferrell 个人风格）的受众，可能会觉得突兀、不知所云，甚至对抢夺机舱广播的行为产生反感。"
+      ],
+      "transferable": [
+        "“劫持”严肃场景以制造幽默：打破观众对特定场景（如新闻播报、法庭、紧急广播等）的固有期待，将枯燥的产品卖点包装成“突发新闻”或“严肃声明”。这种反差手法可以有效提升广告的完播率。",
+        "“黄金5秒”的直球式营销：在信息爆炸的短视频时代，利用前3秒的戏剧冲突或大动作留住观众，紧接着在随后的几秒内以最直接的语言打出产品核心 USP（独特销售主张），最后再用一个梗或 UI 动画收尾。这是一种非常标准且适合社媒传播的短平快广告结构。"
+      ],
+      "vo_quotes": [
+        "Excuse me, I just want to make a quick announcement. It's a very important announcement.",
+        "Pay in 4 with no interest and no late fees with PayPal.",
+        "Pay later with no interest and no late fees."
+      ],
+      "ending": "结尾呈现：视频以清晰的智能手机 UI 动画、显眼的 PayPal Logo 收尾。"
+    },
+    "title": "PayPal Pay in 4 - Will Ferrell 15'",
+    "uploader": "PayPal Australia",
+    "duration": 15,
+    "view_count": 10524048,
+    "tag": "B2",
+    "brand": "PayPal",
+    "priority": 10
+  },
+  {
+    "id": "dKxNfk9X794",
+    "url": "https://www.youtube.com/watch?v=dKxNfk9X794",
+    "platform": "youtube",
+    "date_added": "2026-03-18",
+    "breakdown": {
+      "summary": "这是一支由 PayPal 推出的假日营销喜剧广告，由著名喜剧演员 Will Ferrell 主演。视频展示了戴着粉色卷发筒的他在铺满泡泡和蜡烛的豪华浴缸里享受“专属时间”，同时使用 PayPal App 购买昂贵的古董烛台。广告巧妙地将假期的家庭压力与夸张的个人放松场景相结合，在幽默的氛围中清晰传达了 PayPal “分期付款（Pay in 4）”、“零手续费/零利息”以及“假日 5% 现金返还”的核心产品利益点。",
+      "structure": [],
+      "strengths": [
+        "强烈的视觉与情绪反差：一个中年硬汉戴着粉色卷发筒泡泡泡浴，这种视觉设定本身就极具抓人眼球的能力。前一秒还在得意地享受购物，后一秒对家人暴躁大吼，情绪的反差极大地增强了喜剧效果。",
+        "卖点植入极其自然：枯燥的金融产品条款（分期、免息、返现）没有采用生硬的口播，而是被包装成了主角在“犒劳自己”时的炫耀资本，既符合情境又容易被记住。",
+        "精准的消费者洞察：广告精准捕捉了“假日季购物压力大、家庭环境嘈杂，每个人都渴望逃离并拥有 Me Time”的普遍心理，让受众在发笑的同时产生深度共鸣。"
+      ],
+      "risks": [
+        "对演员个人魅力的强依赖：这种“无理取闹但搞笑”的风格高度依赖 Will Ferrell 标志性的喜剧人设。如果不喜欢这位演员或不熟悉其表演风格的受众，可能会觉得主角的行为有些吵闹或莫名其妙。",
+        "结尾音频可能分散注意力：在 0:23 之后，虽然画面是重要的转化引导（CTA），但背景中持续的大声争吵可能会分散观众对屏幕文字信息的注意力。"
+      ],
+      "transferable": [
+        "“夸张避风港”的场景构建法：在进行视频创作时，可以通过搭建一个极具仪式感、与日常繁杂隔绝的夸张环境（如本片中的烛光浴缸），来快速确立视频的情感基调，随后再通过外界的干扰（敲门）来打破它，形成天然的戏剧冲突。",
+        "用反常规语调处理“无聊信息”：当剧本中需要传达干瘪的数据或功能说明时，可以尝试让人物用哼唱、极其随意的闲聊或甚至反讽的语气来说出这些台词，这能有效降低观众对广告信息的排斥感。",
+        "音画分离的收尾技巧：在视频结尾展示 Call to Action 时，不必让全片静音或只播放纯音乐。保留画面上的重点信息，同时让背景音频继续推进一段未完的喜剧剧情（如持续的争吵声），能把观众的注意力一直锁定到最后一秒。"
+      ],
+      "vo_quotes": [
+        "Pay for your gifts later. No fees. No interest.",
+        "And get 5% cash back all holiday long.",
+        "I don't care if this is the only bathroom in the house. This is my time!"
+      ],
+      "ending": "收尾方式：画面居中出现 \"Make the most of your money this holiday\" 的标语以及巨大的 PayPal 蓝色按钮。"
+    },
+    "title": "Pay with PayPal",
+    "uploader": "PayPal",
+    "duration": 31,
+    "view_count": 4532,
+    "tag": "B2",
+    "brand": "PayPal",
+    "priority": 10
+  },
+  {
+    "id": "n-Fm2FbBvsQ",
+    "url": "https://www.youtube.com/watch?v=n-Fm2FbBvsQ",
+    "platform": "youtube",
+    "date_added": "2026-03-18",
+    "breakdown": {
+      "summary": "这支由 Robinhood 推出的 30 秒视频广告旨在宣传其全新的体育赛事交易功能（Event Contracts Trading）。广告通过将紧张刺激的真实体育竞技场景（涵盖网球、橄榄球、足球、篮球和棒球）与 Robinhood App 的实时交易界面及动态数据图表相融合，生动地传达了“Trade Every Play”的核心理念。品牌明确传递的信息是：用户可以利用自己的体育知识，在比赛进行中进行实时预测买卖，主打“没有庄家赔率，只有你与市场的对决”，试图将体育博彩的概念转化为金融市场的交易行为。",
+      "structure": [
+        {
+          "time": "0:00-0:03",
+          "desc": "开场场景：极简的暗黑背景下，灯光聚焦网球发球瞬间。画面带有类似赛点比分的 UI 悬浮提示，奠定紧张的竞技基调。"
+        },
+        {
+          "time": "0:03-0:06",
+          "desc": "产品引入：镜头切至真实的手机 App 界面，展示红蓝双线交织的实时概率走势图，旁白引入“实时买卖”的概念。"
+        },
+        {
+          "time": "0:06-0:17",
+          "desc": "核心机制展示：快速混剪多项体育赛事（橄榄球争球、足球扑救、篮球投篮）。动作采用高对比度打光和慢镜头，背景叠加红蓝动态数据折线图，将“体育动作”与“金融市场走势”视觉化挂钩。"
+        },
+        {
+          "time": "0:17-0:24",
+          "desc": "智力博弈强调：展示棒球滑垒与网球跑动特写，运动员的运动轨迹旁跟随实时变化的概率百分比，配合旁白强调“发挥你的体育智商”。"
+        },
+        {
+          "time": "0:24-0:26",
+          "desc": "差异化打击：远景展示足球守门员扑救，配合旁白抛出核心差异化卖点：“No house odds”（没有庄家赔率）。"
+        },
+        {
+          "time": "0:26-0:30",
+          "desc": "结尾定帧：黑屏白字打出核心口号/CTA “Trade EveryPlay”，随后渐变为 Robinhood 品牌 Logo。屏幕底部出现大面积的法律及合规免责声明。"
+        }
+      ],
+      "strengths": [
+        "极佳的视觉隐喻（Visual Metaphor）：将体育场上的动态轨迹与金融市场的红蓝数据走势图完美重叠。这种 AR 式的视觉处理极大地增强了“实时交易”的沉浸感，成功将抽象的“事件合约”具象化、刺激化。",
+        "出色的声音与节奏控制（Sound & Pacing）：摒弃了喧闹的体育场背景音，采用类似于心跳的重低音鼓点和紧张的电子音效，配合慢动作镜头，营造出金融交易员在关键时刻盯盘的紧迫感和专注感。",
+        "直击痛点的差异化定位：文案极其精炼，“No house odds. Just you versus the market” 直接拉开了与传统体育博彩公司（Sportsbooks）的差距，利用目标受众对“庄家优势”的反感来确立 Robinhood 作为“自由交易市场”的定位。"
+      ],
+      "risks": [
+        "受众认知与品牌形象混淆风险：尽管品牌试图通过“Event contracts”（事件合约）和“Trading”（交易）的字眼来包装，但该功能在本质和感官上与传统的 In-play Sports Betting（滚球体育博彩）极为相似。这可能会让反感博彩的传统金融投资者对 Robinhood 的品牌严谨性产生质疑。",
+        "机制理解的门槛较高：广告节奏快速，高度聚焦于情绪渲染。对于不熟悉期权或事件合约的普通观众来说，仅凭 30 秒的视频可能很难弄懂它具体的运作和结算机制。"
+      ],
+      "transferable": [
+        "数据元素实景化（Data Overlay Technique）：在推广金融科技、数据监测或软件产品时，不要只录制无聊的屏幕操作。可以提取产品 UI 中的核心视觉元素（如折线、雷达图、百分比进度条），将其作为光影或 AR 效果叠加在真实的生活或工作场景中，让无形的数据产生有形的张力。",
+        "降维打击句式（Contrast Messaging）：提炼行业传统巨头的最大痛点（如：庄家抽水、手续费高、流程繁琐），使用“No [痛点]. Just [你的核心优势]”的句式。这种二元对立的文案结构极具煽动性，可以直接复用于挑战者品牌的营销中。"
+      ],
+      "vo_quotes": [
+        "When the game moves, move with it. Buy or sell your predictions live.",
+        "Put your sports IQ to work. No house odds. Just you versus the market."
+      ],
+      "ending": "结尾方式：以纯文本“Trade EveryPlay”作为收尾，既是产品功能的总结，也是一个轻量级的 CTA（行动号召）。\n\n优惠/门槛：视频结尾没有提供任何新人注册优惠、免费资金或促销代码。\n\n合规条件：画面底部占据了近四分之一屏幕的细小文字，展示了严格的免责声明（注明了 Event contracts trading 涉及重大风险，由 Robinhood Derivatives, LLC 提供等），体现了金融衍生品广告的高合规门槛。"
+    },
+    "title": "Robinhood Financial Commercial 2026 - (USA)",
+    "uploader": "BBC TV 3",
+    "duration": 31,
+    "view_count": 92,
+    "tag": "B1",
+    "brand": "Robinhood",
+    "priority": 5
+  },
+  {
+    "id": "zdyx2qyXzGM",
+    "url": "https://www.youtube.com/watch?v=zdyx2qyXzGM",
+    "platform": "youtube",
+    "date_added": "2026-03-18",
+    "breakdown": {
+      "summary": "这是一个为在线投资交易平台 Robinhood（罗宾汉）制作的品牌视频广告。广告通过极具视觉反差的隐喻手法，讲述了一个普通散户投资者在自己的车库里，借助 Robinhood 平台，瞬间化身为拥有专业级交易大厅的“金融大佬”。视频的核心信息在于强调 Robinhood 赋予了个人投资者强大的工具与掌控力，传达了“散户也能像专业机构一样轻松管理股票、加密货币和退休金”的产品价值，以及“你自己才是最可靠的财富管理者”的品牌理念。",
+      "structure": [],
+      "strengths": [
+        "极具张力的视觉转场：广告巧妙利用“推开一扇门”的动作，将“简陋的个人车库”与“高阶的华尔街交易大厅”连接起来。这种物理空间的瞬间置换，将抽象的“散户获得专业级赋能”这一卖点进行了非常直观且震撼的具象化表达。",
+        "打破刻板印象的幽默细节：视频没有完全将主角刻画成严肃的华尔街精英。开场的橘猫在结尾的专业办公室里再次出现，以及主角在交易大厅打室内高尔夫的设定，既暗示了这本质上依然是他轻松自在的私人空间，又给金融广告注入了反差萌和幽默感。"
+      ],
+      "risks": [
+        "过度承诺与合规风险：视频在视觉和旁白上将散户交易描绘得如同机构般专业且充满掌控感。在实际充满波动的金融市场中，这种过度自信的叙事可能在市场下行周期引起亏损用户的反感，也可能面临监管机构关于“游戏化交易（Gamification）”或“过度诱导投资”的审查压力（尽管视频底部配有免责声明）。"
+      ],
+      "transferable": [
+        "“一人成军”的夸张叙事法：在推广SaaS软件、效率工具或金融科技产品时，可复用此策略。通过展示一个人（A whole investment firm of one）轻松完成以往需要整个团队才能做到的事情，来凸显产品的易用性、集成度和功能强大。",
+        "空间置换隐喻法（Spatial Substitution）：当需要表现产品带来的“身份地位提升”或“能力越级”时，可以摒弃枯燥的UI展示，转而采用场景的瞬间切换（如从卧室一步跨入专业演播厅/赛车场/高级餐厅），用空间的高级感来映射产品的高级感。"
+      ],
+      "vo_quotes": [
+        "Look at you, investing like you run the joint.",
+        "You do it all. A whole investment firm of one.",
+        "Because no one runs your money like you."
+      ]
+    },
+    "title": "Robinhood Run Your Money 2",
+    "uploader": "Commercial Archiver",
+    "duration": 16,
+    "view_count": 376,
+    "tag": "B1",
+    "brand": "Robinhood",
+    "priority": 5
   }
 ]
