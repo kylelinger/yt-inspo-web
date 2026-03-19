@@ -103,44 +103,43 @@ export default function VideoCard({
 
   if (isAdmin) {
     return (
-      <div className="group overflow-hidden border" style={{ background: "#fff", borderColor: "var(--border)" }}>
-        <div className="grid md:grid-cols-[36%_1fr]">
+      <article className="group overflow-hidden border" style={{ background: "#fff", borderColor: "var(--border)" }}>
+        <a href={`/video/${video.id}`} className="block">
+          <div className="relative aspect-[16/9] w-full overflow-hidden" style={{ background: "#f5f5f5" }}>
+            <img
+              src={`https://img.youtube.com/vi/${video.id}/mqdefault.jpg`}
+              alt=""
+              className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-[1.03]"
+              loading="lazy"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/35 via-transparent to-transparent" />
+            {duration && <div className="absolute bottom-0 right-0 bg-black/75 px-2 py-1 text-[11px] font-bold text-white">{duration}</div>}
+          </div>
+        </a>
+
+        <div className="px-6 py-6 sm:px-8 sm:py-7">
+          <div className="mb-4 flex items-center gap-3">
+            {video.brand && <span className="text-[11px] font-black uppercase tracking-[0.16em]" style={{ color: "var(--accent)" }}>{video.brand}</span>}
+            {video.tag && <span className="text-[11px] font-bold uppercase tracking-[0.14em]" style={{ color: tagColor }}>{video.tag}</span>}
+            <span className="ml-auto text-[11px] font-medium text-[#777]">{video.date_added}</span>
+          </div>
+
           <a href={`/video/${video.id}`} className="block">
-            <div className="relative aspect-video md:h-full md:aspect-auto w-full overflow-hidden" style={{ background: "#f5f5f5" }}>
-              <img
-                src={`https://img.youtube.com/vi/${video.id}/mqdefault.jpg`}
-                alt=""
-                className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
-                loading="lazy"
-              />
-              {duration && <div className="absolute bottom-0 right-0 bg-black/75 px-2 py-1 text-[11px] font-bold text-white">{duration}</div>}
-            </div>
+            <h3 className="text-[28px] sm:text-[34px] leading-[1.02] font-black text-[#111] tracking-[-0.02em] transition-colors group-hover:text-[var(--accent)]">
+              {video.status === "playback_risky" && <span className="mr-1 text-xs opacity-50">⚠️</span>}
+              {displayTitle}
+            </h3>
           </a>
 
-          <div className="p-5 sm:p-6 md:p-7">
-            <div className="mb-3 flex items-center gap-3">
-              {video.brand && <span className="text-[11px] font-black uppercase tracking-[0.16em]" style={{ color: "var(--accent)" }}>{video.brand}</span>}
-              {video.tag && <span className="text-[11px] font-bold uppercase tracking-[0.14em]" style={{ color: tagColor }}>{video.tag}</span>}
-              <span className="ml-auto text-[11px] font-medium text-[#777]">{video.date_added}</span>
-            </div>
+          {!compact && summary && (
+            <p className="mt-4 max-w-4xl text-[15px] leading-relaxed text-[#666] line-clamp-3">
+              {mounted ? <TranslatedText text={summary} lang={lang} /> : summary}
+            </p>
+          )}
 
-            <a href={`/video/${video.id}`} className="block">
-              <h3 className="text-[21px] leading-[1.1] font-black text-[#111] tracking-[-0.01em] transition-colors group-hover:text-[var(--accent)]">
-                {video.status === "playback_risky" && <span className="mr-1 text-xs opacity-50">⚠️</span>}
-                {displayTitle}
-              </h3>
-            </a>
-
-            {!compact && summary && (
-              <p className="mt-3 text-[14px] leading-relaxed text-[#666] line-clamp-3">
-                {mounted ? <TranslatedText text={summary} lang={lang} /> : summary}
-              </p>
-            )}
-
-            {mounted && <div className="mt-5 border-t pt-4" style={{ borderColor: "var(--border)" }}>{feedbackBar}</div>}
-          </div>
+          {mounted && <div className="mt-6 border-t pt-4" style={{ borderColor: "var(--border)" }}>{feedbackBar}</div>}
         </div>
-      </div>
+      </article>
     );
   }
 
