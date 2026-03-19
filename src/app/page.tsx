@@ -107,17 +107,17 @@ export default async function Home() {
           <div className="section-inner pb-24">
             <div className="py-24 text-center" style={{ background: "var(--bg-alt)" }}>
               <p className="text-5xl mb-4">🎬</p>
-              <p className="text-lg font-bold text-white">{tr(lang, "Today’s drop is still cooking", "今日更新还在制作中")}</p>
-              <p className="text-sm mt-2 text-[#444]">{tr(lang, "Check back at 10:00", "10:00 回来刷新")}</p>
+              <p className="text-lg font-bold" style={{ color: "var(--text)" }}>{tr(lang, "Today’s drop is still cooking", "今日更新还在制作中")}</p>
+              <p className="text-sm mt-2" style={{ color: "var(--text-muted)" }}>{tr(lang, "Check back at 10:00", "10:00 回来刷新")}</p>
             </div>
           </div>
         )}
       </div>
 
-      <div className="section-full py-16" style={{ background: "#0e0e0e" }}>
+      <div className="section-full py-16" style={{ background: "var(--bg-alt)" }}>
         <div className="section-inner">
           <FadeInView>
-            <div className="w-full p-7 sm:p-8 lg:p-10" style={{ background: "#1a1a1a" }}>
+            <div className="w-full p-7 sm:p-8 lg:p-10" style={{ background: "var(--card)", border: "1px solid var(--border)" }}>
               <div className="mb-7">
                 <p className="text-[11px] font-bold uppercase tracking-[0.18em]" style={{ color: "var(--accent)" }}>
                   Pipeline
@@ -136,7 +136,7 @@ export default async function Home() {
                     <div className="text-2xl flex-shrink-0">{item.icon}</div>
                     <div>
                       <h3 className="text-sm font-bold text-white mb-1">{item.title}</h3>
-                      <p className="text-xs leading-relaxed text-[#666]">{item.desc}</p>
+                      <p className="text-xs leading-relaxed" style={{ color: "var(--text-secondary)" }}>{item.desc}</p>
                     </div>
                   </div>
                 ))}
@@ -146,14 +146,14 @@ export default async function Home() {
         </div>
       </div>
 
-      <div className="section-full py-5" style={{ background: "#080808" }}>
+      <div className="section-full py-5" style={{ background: "var(--bg-section)", borderTop: "1px solid var(--border)" }}>
         <div className="section-inner">
           <p className="mb-3 text-center text-[11px] font-bold uppercase tracking-[0.25em]" style={{ color: "#555" }}>
             Claw Pips
           </p>
           <div className="flex flex-wrap items-center justify-center gap-6">
             {[tr(lang, "Smarter your money", "你的钱变得更聪明"), tr(lang, "Intelligence > Advice", "认知 > 建议"), tr(lang, "No shaming", "不羞辱用户"), tr(lang, "Trust lift", "提升信任")].map((tag) => (
-              <span key={tag} className="text-xs font-bold uppercase tracking-widest text-[#333]">
+              <span key={tag} className="text-xs font-bold uppercase tracking-widest" style={{ color: "var(--text-muted)" }}>
                 {tag}
               </span>
             ))}
@@ -183,10 +183,10 @@ export default async function Home() {
                   <a
                     key={date}
                     href={`/archive/${date}`}
-                    className="group block p-6 transition-colors hover:bg-[#1a1a1a]"
-                    style={{ background: "#0e0e0e" }}
+                    className="group block p-6 transition-colors hover:bg-[var(--accent-soft)]"
+                    style={{ background: "var(--bg-alt)" }}
                   >
-                    <div className="text-base font-bold text-white">{date}</div>
+                    <div className="text-base font-bold" style={{ color: "var(--text)" }}>{date}</div>
                     <div className="mt-1 text-sm text-[#555]">{count} {tr(lang, "videos", "条视频")}</div>
                   </a>
                 );
