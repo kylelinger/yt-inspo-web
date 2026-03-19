@@ -25,7 +25,7 @@ export default function NavBar({ initialLang = "us" }: { initialLang?: Lang }) {
           ]
         : [
             { href: "/", label: tr(lang, "Today", "今日") },
-            { href: "/videos", label: tr(lang, "All Videos", "全部视频") },
+            { href: "/videos", label: tr(lang, "All", "全部") },
             { href: "/archive", label: tr(lang, "Archive", "往期") },
           ],
     [isAdmin, lang]
