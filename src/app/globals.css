@@ -4,130 +4,392 @@
   --bg: #000000;
   --bg-alt: #0e0e0e;
   --bg-section: #111111;
-  --bg-elevated: #191919;
-  --card: #1a1a1a;
-  --border: #1a1a1a;
   --text: #ffffff;
-  --text-secondary: #a0a0a0;
-  --text-muted: #555555;
+  --text-muted: #888888;
+  --border: #1a1a1a;
   --accent: #FF5A00;
-  --accent-hover: #ff7a33;
-  --accent-soft: rgba(255, 90, 0, 0.08);
-  --green: #34d399;
-  --red: #ff6b35;
-  --yellow: #fbbf24;
-  --nav-bg: rgba(0, 0, 0, 0.9);
-  --nav-border: #111;
 }
 
 * { box-sizing: border-box; }
 
+html { 
+  scroll-behavior: smooth;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
 body {
   background: var(--bg);
   color: var(--text);
-  font-family: var(--font-brand-en), Inter, "Helvetica Neue", Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-
-html { scroll-behavior: smooth; }
-
 ::-webkit-scrollbar { width: 5px; }
 ::-webkit-scrollbar-track { background: transparent; }
-::-webkit-scrollbar-thumb { background: #222; border-radius: 0; }
+::-webkit-scrollbar-thumb { background: #222; }
 
 ::selection { background: var(--accent); color: #fff; }
 
-:focus-visible {
-  outline: 2px solid var(--accent);
-  outline-offset: 0;
+:focus-visible { outline: 1px solid var(--accent); }
+
+/* ───────────────────────────
+   ADMIN THEME — AKQA INSPIRED
+   ─────────────────────────── */
+body.admin-theme {
+  --bg: #ffffff;
+  --bg-alt: #fafafa;
+  --bg-section: #f5f5f5;
+  --text: #000000;
+  --text-muted: #666666;
+  --border: #e0e0e0;
+  --accent: #FF5A00;
 }
 
-/* ─── Full-bleed blocks ─── */
+body.admin-theme {
+  background: var(--bg);
+  color: var(--text);
+}
+
+body.admin-theme ::-webkit-scrollbar-thumb { background: #c0c0c0; }
+
+/* ─── Full-bleed sections ─── */
 .section-full {
   width: 100vw;
   margin-left: calc(-50vw + 50%);
 }
+
 .section-dark { background: var(--bg); }
 .section-alt { background: var(--bg-alt); }
-.section-mid { background: var(--bg-section); }
-.section-accent { background: var(--accent); }
 
 .section-inner {
-  max-width: 72rem;
+  max-width: 84rem;
   margin: 0 auto;
   padding: 0 2rem;
 }
 
+body.admin-theme .section-inner {
+  max-width: 80rem;
+  padding: 0 4rem;
+}
+
 /* ─── Typography ─── */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+}
+
 .display-xl {
-  font-size: clamp(2.5rem, 6vw, 5rem);
-  font-weight: 900;
-  line-height: 1.02;
-  letter-spacing: -0.035em;
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
 }
+
 .display-lg {
-  font-size: clamp(2rem, 4.5vw, 3.5rem);
-  font-weight: 900;
-  line-height: 1.08;
-  letter-spacing: -0.03em;
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: -0.015em;
 }
+
 .display-md {
   font-size: clamp(1.5rem, 3vw, 2.25rem);
-  font-weight: 800;
-  line-height: 1.12;
-  letter-spacing: -0.02em;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
 }
 
-/* Admin-only preview theme: AKQA-inspired light (white + orange)
-   Public visitors keep the default dark theme. */
-body.admin-theme {
-  --bg: #fffaf5;
-  --bg-alt: #fff3e8;
-  --bg-section: #fff8f0;
-  --bg-elevated: #ffffff;
-  --card: #ffffff;
-  --border: #f3d7bf;
-  --text: #151515;
-  --text-secondary: #505050;
-  --text-muted: #7a7a7a;
-  --accent: #ff6a00;
-  --accent-hover: #ff8533;
-  --accent-soft: rgba(255, 106, 0, 0.1);
-  --nav-bg: rgba(255, 250, 245, 0.92);
-  --nav-border: #f3d7bf;
-}
-
-body.admin-theme .section-dark,
-body.admin-theme .section-alt,
-body.admin-theme .section-mid {
-  background: var(--bg);
-}
-
-body.admin-theme .text-white { color: #111 !important; }
-body.admin-theme .section-accent .text-white { color: #fff !important; }
-body.admin-theme ::-webkit-scrollbar-thumb { background: #ffb27d; }
-
-body.admin-theme .section-inner {
-  max-width: 86rem;
-}
-
-body.admin-theme .display-md,
+body.admin-theme h1,
+body.admin-theme h2,
+body.admin-theme h3,
+body.admin-theme .display-xl,
 body.admin-theme .display-lg,
-body.admin-theme .display-xl {
-  text-transform: uppercase;
+body.admin-theme .display-md {
   letter-spacing: -0.02em;
 }
 
-body.admin-theme .section-full {
-  border-top: 1px solid var(--border);
+/* ─── Links ─── */
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 200ms ease;
 }
+
+a:hover { color: var(--accent); }
 
 body.admin-theme a {
-  transition: color 180ms ease;
+  color: var(--text);
+  transition: color 150ms ease;
 }
 
-body.admin-theme .group:hover h3 {
+body.admin-theme a:hover {
   color: var(--accent);
+}
+
+/* ─── Buttons ─── */
+button {
+  font-family: inherit;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  transition: all 150ms ease;
+}
+
+body.admin-theme button {
+  border: 1px solid var(--border);
+  background: transparent;
+  color: var(--text);
+}
+
+body.admin-theme button:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+/* ─── Cards & Borders ─── */
+body.admin-theme .card,
+body.admin-theme article {
+  background: var(--bg);
+  border: 1px solid var(--border);
+}
+
+body.admin-theme .border-t { border-top: 1px solid var(--border); }
+body.admin-theme .border-b { border-bottom: 1px solid var(--border); }
+body.admin-theme .border-l { border-left: 1px solid var(--border); }
+
+/* ─── Grid System ─── */
+body.admin-theme {
+  --grid-cols: 12;
+}
+
+/* ─── Utility: Hide non-essential elements in admin ─── */
+body.admin-theme .emoji { display: none; }
+body.admin-theme .chip { padding: 0.25rem 0.75rem; border: 1px solid var(--border); border-radius: 0; font-size: 0.75rem; font-weight: 600; letter-spacing: 0.05em; }
+body.admin-theme .chip:hover { border-color: var(--accent); color: var(--accent); }
+
+/* ─── Admin-only spacing ─── */
+body.admin-theme .pt-8 { padding-top: 3rem; }
+body.admin-theme .pb-8 { padding-bottom: 3rem; }
+body.admin-theme .py-12 { padding-top: 4rem; padding-bottom: 4rem; }
+body.admin-theme .px-8 { padding-left: 3rem; padding-right: 3rem; }
+
+/* ─── Hero block ─── */
+body.admin-theme .hero {
+  position: relative;
+  height: 60vh;
+  overflow: hidden;
+  background: #000;
+  display: flex;
+  align-items: flex-end;
+}
+
+body.admin-theme .hero img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+body.admin-theme .hero::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, transparent 40%, rgba(0,0,0,0.7) 100%);
+  z-index: 1;
+}
+
+body.admin-theme .hero-content {
+  position: relative;
+  z-index: 2;
+  color: white;
+  padding: 3rem 4rem;
+  width: 100%;
+}
+
+body.admin-theme .hero-content h1 {
+  color: white;
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  margin: 0;
+  font-weight: 700;
+}
+
+/* ─── Video Grid ─── */
+body.admin-theme .video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+body.admin-theme .video-grid.featured {
+  grid-template-columns: repeat(12, 1fr);
+}
+
+body.admin-theme .video-card {
+  position: relative;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  overflow: hidden;
+  transition: all 200ms ease;
+}
+
+body.admin-theme .video-card:hover {
+  border-color: var(--text);
+}
+
+body.admin-theme .video-card.featured {
+  grid-column: span 6;
+}
+
+body.admin-theme .video-card.featured:first-child {
+  grid-column: span 12;
+}
+
+body.admin-theme .video-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+body.admin-theme .video-card-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 2rem;
+  background: linear-gradient(180deg, transparent, rgba(0,0,0,0.8));
+  color: white;
+}
+
+body.admin-theme .video-card h3 {
+  color: white;
+  font-size: 1.25rem;
+  margin: 0.5rem 0 0 0;
+  font-weight: 700;
+}
+
+body.admin-theme .video-card-meta {
+  font-size: 0.75rem;
+  color: rgba(255,255,255,0.7);
+  margin-top: 0.5rem;
+}
+
+/* ─── Navigation ─── */
+body.admin-theme nav {
+  background: var(--bg);
+  border-bottom: 1px solid var(--border);
+  padding: 1.5rem 4rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+body.admin-theme nav ul {
+  display: flex;
+  gap: 3rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  max-width: 80rem;
+  margin: 0 auto;
+}
+
+body.admin-theme nav li {
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+}
+
+body.admin-theme nav a {
+  color: var(--text);
+  transition: color 150ms ease;
+}
+
+body.admin-theme nav a:hover {
+  color: var(--accent);
+}
+
+/* ─── Accent color for highlights ─── */
+body.admin-theme .accent { color: var(--accent); }
+body.admin-theme .accent-bg { background: var(--accent); color: white; }
+
+/* ─── Archive Link ─── */
+.archive-link {
+  display: inline-block;
+  padding: 1rem 2rem;
+  border: 1px solid var(--border);
+  color: var(--text);
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 200ms ease;
+  text-decoration: none;
+}
+
+.archive-link:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
+/* ─── Home Hero (shared) ─── */
+#home-hero {
+  background: #000;
+  position: relative;
+  overflow: hidden;
+}
+
+body.admin-theme #home-hero {
+  height: 40vh;
+  display: flex;
+  align-items: flex-end;
+}
+
+body.admin-theme #home-hero::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, transparent 50%, rgba(0,0,0,0.8) 100%);
+  z-index: 1;
+}
+
+body.admin-theme #home-hero-content {
+  position: relative;
+  z-index: 2;
+  padding: 3rem 4rem;
+  color: white;
+}
+
+/* ─── Responsive ─── */
+@media (max-width: 768px) {
+  body.admin-theme .section-inner {
+    padding: 0 2rem;
+    max-width: 100%;
+  }
+
+  body.admin-theme nav {
+    padding: 1rem 2rem;
+  }
+
+  body.admin-theme nav ul {
+    gap: 1.5rem;
+  }
+
+  body.admin-theme .video-grid {
+    gap: 1.5rem;
+  }
+
+  body.admin-theme .hero-content {
+    padding: 2rem;
+  }
+
+  body.admin-theme .hero-content h1 {
+    font-size: 1.75rem;
+  }
+
+  body.admin-theme #home-hero-content {
+    padding: 2rem;
+  }
 }

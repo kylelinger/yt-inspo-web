@@ -1,248 +1,269 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { useParams, useRouter } from "next/navigation";
-import { AnimatePresence, motion } from "framer-motion";
+import { useParams } from "next/navigation";
 import videosData from "@/../public/data/videos.json";
 import type { Video } from "@/lib/types";
-import { getFeedbackCounts, setFeedback, getShortlist, toggleShortlist, type FeedbackCounts } from "@/lib/feedback";
 import { useAuth } from "@/components/AuthProvider";
 import { getClientLang, tr, type Lang } from "@/lib/language";
-import { useTranslatedText } from "@/lib/translate-client";
-
-function TrText({ text, lang }: { text: string; lang: Lang }) {
-  const value = useTranslatedText(text, lang);
-  return <>{value}</>;
-}
-
-function BreakdownSection({ breakdown, lang, tr: tFn }: { breakdown: NonNullable<Video["breakdown"]>; lang: Lang; tr: (l: Lang, en: string, cn: string) => string }) {
-  return (
-    <>
-      {/* Summary */}
-      <div className="rounded-lg border p-4" style={{ borderColor: "var(--border)", background: "var(--card)" }}>
-        <p className="text-sm font-medium leading-relaxed" style={{ color: "var(--text)" }}>
-          <TrText text={breakdown.summary} lang={lang} />
-        </p>
-      </div>
-
-      {/* Structure timeline */}
-      {breakdown.structure && breakdown.structure.length > 0 && (
-        <div className="rounded-lg border p-4" style={{ borderColor: "var(--border)", background: "var(--card)" }}>
-          <h3 className="mb-3 text-xs font-semibold uppercase tracking-wide" style={{ color: "var(--text-muted)" }}>{tFn(lang, "Narrative map", "叙事结构")}</h3>
-          <div className="space-y-2">
-            {breakdown.structure.map((s, i) => (
-              <div key={i} className="flex gap-3 text-sm">
-                <span className="shrink-0 rounded px-2 py-0.5 text-xs font-semibold" style={{ background: "color-mix(in srgb, var(--accent) 10%, transparent)", color: "var(--accent)" }}>{s.time}</span>
-                <span style={{ color: "var(--text)" }}><TrText text={s.desc || s.content || ""} lang={lang} /></span>
-              </div>
-            ))}
-          </div>
-        </div>
-      )}
-
-      {/* VO quotes */}
-      {breakdown.vo_quotes && breakdown.vo_quotes.length > 0 && (
-        <div className="rounded-lg border p-4" style={{ borderColor: "var(--border)", background: "var(--card)" }}>
-          <h3 className="mb-3 text-xs font-semibold uppercase tracking-wide" style={{ color: "var(--text-muted)" }}>{tFn(lang, "VO lines", "VO / 台词金句")}</h3>
-          <div className="space-y-2">
-            {breakdown.vo_quotes.map((q, i) => (
-              <p key={i} className="border-l-2 pl-3 text-sm italic" style={{ borderColor: "var(--accent)", color: "var(--text)" }}>
-                &ldquo;<TrText text={String(q)} lang={lang} />&rdquo;
-              </p>
-            ))}
-          </div>
-        </div>
-      )}
-
-      {/* Strengths & Risks — side by side */}
-      <div className="grid gap-4 sm:grid-cols-2">
-        {breakdown.strengths && breakdown.strengths.length > 0 && (
-          <div className="rounded-lg border p-4" style={{ borderColor: "var(--border)", background: "var(--card)" }}>
-            <h3 className="mb-3 text-xs font-semibold uppercase tracking-wide" style={{ color: "var(--green, #22c55e)" }}>
-              ✓ {tFn(lang, "Strengths", "好点")}
-            </h3>
-            <ul className="space-y-2 text-sm" style={{ color: "var(--text)" }}>
-              {breakdown.strengths.map((s, i) => (
-                <li key={i} className="flex gap-2">
-                  <span className="mt-0.5 shrink-0 text-xs" style={{ color: "var(--green, #22c55e)" }}>●</span>
-                  <TrText text={String(s)} lang={lang} />
-                </li>
-              ))}
-            </ul>
-          </div>
-        )}
-        {breakdown.risks && breakdown.risks.length > 0 && (
-          <div className="rounded-lg border p-4" style={{ borderColor: "var(--border)", background: "var(--card)" }}>
-            <h3 className="mb-3 text-xs font-semibold uppercase tracking-wide" style={{ color: "var(--red, #ef4444)" }}>
-              ✗ {tFn(lang, "Risks", "风险 / 不适配")}
-            </h3>
-            <ul className="space-y-2 text-sm" style={{ color: "var(--text)" }}>
-              {breakdown.risks.map((r, i) => (
-                <li key={i} className="flex gap-2">
-                  <span className="mt-0.5 shrink-0 text-xs" style={{ color: "var(--red, #ef4444)" }}>●</span>
-                  <TrText text={String(r)} lang={lang} />
-                </li>
-              ))}
-            </ul>
-          </div>
-        )}
-      </div>
-
-      {/* Transferable */}
-      {breakdown.transferable && breakdown.transferable.length > 0 && (
-        <div className="rounded-lg border p-4" style={{ borderColor: "var(--accent)", background: "color-mix(in srgb, var(--accent) 5%, var(--card))" }}>
-          <h3 className="mb-3 text-xs font-semibold uppercase tracking-wide" style={{ color: "var(--accent)" }}>
-            🔄 {tFn(lang, "Transferable", "可迁移方法论")}
-          </h3>
-          <ul className="space-y-2 text-sm" style={{ color: "var(--text)" }}>
-            {breakdown.transferable.map((t, i) => (
-              <li key={i} className="flex gap-2">
-                <span className="mt-0.5 shrink-0">→</span>
-                <TrText text={String(t)} lang={lang} />
-              </li>
-            ))}
-          </ul>
-        </div>
-      )}
-    </>
-  );
-}
 
 export default function VideoDetailPage() {
   const params = useParams();
-  const router = useRouter();
   const { isAdmin } = useAuth();
   const id = params.id as string;
   const video = (videosData as Video[]).find((v) => v.id === id);
-
   const [lang, setLang] = useState<Lang>("us");
-  const [counts, setCounts] = useState<FeedbackCounts>({});
-  const [sl, setSl] = useState<Set<string>>(new Set());
-  const [mounted, setMounted] = useState(false);
-  const [burst, setBurst] = useState<"up" | "down" | "star" | null>(null);
 
   useEffect(() => {
     setLang(getClientLang());
-    setCounts(getFeedbackCounts());
-    setSl(getShortlist());
-    setMounted(true);
   }, []);
 
   if (!video) {
-    return <div className="py-20 text-center" style={{ color: "var(--text-muted)" }}>{tr(lang, "Video not found", "视频不存在")}: {id}</div>;
+    return (
+      <div style={{ padding: "4rem 2rem", textAlign: "center", color: "var(--text-muted)" }}>
+        {tr(lang, "Video not found", "视频不存在")}: {id}
+      </div>
+    );
   }
 
-  const c = counts[video.id] || { thumbsup: 0, thumbsdown: 0, score: 0 };
-  const isShortlisted = sl.has(video.id);
   const displayTitle = video.title || video.brand || video.id;
 
-  const pop = (kind: "up" | "down" | "star") => {
-    setBurst(kind);
-    setTimeout(() => setBurst(null), 500);
-  };
+  /* ─── ADMIN: AKQA STYLE ─── */
+  if (isAdmin) {
+    return (
+      <div style={{ background: "#fff", minHeight: "100vh" }}>
+        {/* Hero: Full-width video thumbnail */}
+        <div style={{ position: "relative", width: "100%", paddingBottom: "56.25%", background: "#000", overflow: "hidden" }}>
+          <img
+            src={`https://img.youtube.com/vi/${video.id}/maxresdefault.jpg`}
+            alt=""
+            style={{
+              position: "absolute",
+              top: 0,
+              left: 0,
+              width: "100%",
+              height: "100%",
+              objectFit: "cover",
+            }}
+          />
+          <div style={{ position: "absolute", inset: "0", background: "linear-gradient(180deg, transparent 50%, rgba(0,0,0,0.9) 100%)" }} />
 
-  const handleFeedback = async (action: "thumbsup" | "thumbsdown") => {
-    const newCounts = await setFeedback(video.id, action);
-    setCounts({ ...newCounts });
-    pop(action === "thumbsup" ? "up" : "down");
-  };
-
-  const handleShortlist = async () => {
-    const newSl = await toggleShortlist(video.id);
-    setSl(new Set(newSl));
-    pop("star");
-  };
-
-  return (
-    <div className="section-full section-dark">
-      <div className="section-inner pt-20 pb-20">
-        <div className="mx-auto max-w-2xl">
-          <button
-            onClick={() => router.back()}
-            className="mb-6 inline-flex items-center gap-1.5 text-[13px] font-medium transition-colors hover:text-[var(--accent)] cursor-pointer bg-transparent border-none p-0"
-            style={{ color: "var(--text-muted)" }}
-          >
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
-            {tr(lang, "Back", "返回")}
-          </button>
-
-          {/* Desktop: iframe embed */}
-          <div className="mb-6 hidden sm:block overflow-hidden rounded-xl">
-            <div className="relative aspect-video w-full" style={{ background: "var(--border)" }}>
-              <iframe
-                src={`https://www.youtube.com/embed/${video.id}`}
-                className="absolute inset-0 h-full w-full"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-              />
+          {/* Title overlay */}
+          <div style={{ position: "absolute", bottom: 0, left: 0, right: 0, padding: "3rem 4rem", zIndex: 2, color: "white" }}>
+            <h1 style={{ fontSize: "clamp(2rem, 5vw, 3rem)", fontWeight: 700, margin: "1rem 0 0 0", lineHeight: "1.2" }}>
+              {displayTitle}
+            </h1>
+            <div style={{ marginTop: "0.75rem", fontSize: "0.875rem", color: "rgba(255,255,255,0.6)" }}>
+              {video.date_added}
+              {video.brand && ` • ${video.brand}`}
             </div>
           </div>
 
-          {/* Mobile: thumbnail + link to YouTube */}
+          {/* Back button */}
           <a
-            href={`https://www.youtube.com/watch?v=${video.id}`}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="group mb-6 block sm:hidden overflow-hidden rounded-xl"
+            href="/"
+            style={{
+              position: "absolute",
+              top: "2rem",
+              left: "2rem",
+              color: "white",
+              zIndex: 3,
+              fontSize: "0.75rem",
+              fontWeight: 600,
+              letterSpacing: "0.1em",
+              textTransform: "uppercase",
+              transition: "opacity 200ms ease",
+            }}
+            onMouseEnter={(e) => (e.currentTarget.style.opacity = "0.6")}
+            onMouseLeave={(e) => (e.currentTarget.style.opacity = "1")}
           >
-            <div className="relative aspect-video w-full" style={{ background: "var(--border)" }}>
-              <img
-                src={`https://img.youtube.com/vi/${video.id}/maxresdefault.jpg`}
-                alt=""
-                className="absolute inset-0 h-full w-full object-cover"
-              />
-              <div className="absolute inset-0 flex items-center justify-center bg-black/30">
-                <div className="flex h-16 w-16 items-center justify-center rounded-full bg-[var(--accent)] text-white shadow-lg">
-                  <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z" /></svg>
-                </div>
-              </div>
-            </div>
-          </a>
-
-          <div className="mb-4">
-            <h1 className="text-xl font-bold" style={{ color: "var(--text)" }}>{displayTitle}</h1>
-            <div className="mt-2 flex items-center gap-3">
-              {video.brand && <span className="rounded-full px-2.5 py-0.5 text-xs font-medium" style={{ background: "color-mix(in srgb, var(--accent) 15%, transparent)", color: "var(--accent)" }}>{video.brand}</span>}
-              {video.duration_s && <span className="rounded px-1.5 py-0.5 text-xs font-medium" style={{ background: "var(--border)", color: "var(--text-muted)" }}>{video.duration_s >= 60 ? `${Math.floor(video.duration_s / 60)}:${String(video.duration_s % 60).padStart(2, "0")}` : `${video.duration_s}s`}</span>}
-              <span className="text-xs" style={{ color: "var(--text-muted)" }}>{video.date_added}</span>
-            </div>
-          </div>
-
-          {mounted && (
-            <div className="relative mb-8 flex gap-3">
-              <button onClick={() => handleFeedback("thumbsup")} className="flex items-center gap-2 rounded-lg border px-4 py-2.5 text-sm font-medium transition-all hover:scale-[1.02]" style={{ borderColor: "#1f3b33", background: "#34d39914", color: "var(--text)" }}>
-                👍 {tr(lang, "Like", "喜欢")} <span style={{ color: "var(--green)" }}>{c.thumbsup}</span>
-              </button>
-              <button onClick={() => handleFeedback("thumbsdown")} className="flex items-center gap-2 rounded-lg border px-4 py-2.5 text-sm font-medium transition-all hover:scale-[1.02]" style={{ borderColor: "#4a2a22", background: "#ff6b3512", color: "var(--text)" }}>
-                👎 {tr(lang, "Pass", "不喜欢")} <span style={{ color: "var(--red)" }}>{c.thumbsdown}</span>
-              </button>
-              {isAdmin && (
-                <button onClick={handleShortlist} className="flex items-center gap-2 rounded-lg border px-4 py-2.5 text-sm font-medium transition-all hover:scale-[1.02]" style={{ borderColor: isShortlisted ? "var(--yellow)" : "var(--border)", background: isShortlisted ? "color-mix(in srgb, var(--yellow) 15%, transparent)" : "var(--card)", color: isShortlisted ? "var(--yellow)" : "var(--text)" }}>
-                  ⭐ {isShortlisted ? tr(lang, "Saved", "已收藏") : tr(lang, "Save", "收藏")}
-                </button>
-              )}
-
-              <AnimatePresence>
-                {burst && (
-                  <motion.span key={burst} initial={{ opacity: 0, y: 4, scale: 0.8 }} animate={{ opacity: 1, y: -10, scale: 1.1 }} exit={{ opacity: 0, y: -18, scale: 0.9 }} transition={{ duration: 0.35 }} className="pointer-events-none absolute left-2 -top-2 text-xs" style={{ color: "var(--accent)" }}>
-                    {burst === "up" ? "+1 👍" : burst === "down" ? "+1 👎" : "★"}
-                  </motion.span>
-                )}
-              </AnimatePresence>
-            </div>
-          )}
-
-          {video.breakdown && (
-            <div className="mb-8 space-y-4">
-              <h2 className="text-lg font-bold" style={{ color: "var(--text)" }}>📐 {tr(lang, "Structure", "结构拆解")}</h2>
-              <BreakdownSection breakdown={video.breakdown} lang={lang} tr={tr} />
-            </div>
-          )}
-
-          <a href={video.url} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 text-sm font-medium transition-opacity hover:opacity-70" style={{ color: "var(--accent)" }}>
-            {tr(lang, "Open on YouTube", "在 YouTube 打开")} ↗
+            ← {tr(lang, "Back", "返回")}
           </a>
         </div>
+
+        {/* Content */}
+        <div style={{ maxWidth: "80rem", margin: "0 auto", padding: "4rem" }}>
+          {/* Watch button */}
+          <div style={{ marginBottom: "4rem" }}>
+            <a
+              href={video.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{
+                display: "inline-block",
+                padding: "1rem 2.5rem",
+                border: "1px solid #000",
+                color: "#fff",
+                background: "#000",
+                fontSize: "0.875rem",
+                fontWeight: 600,
+                letterSpacing: "0.05em",
+                textTransform: "uppercase",
+                transition: "all 200ms ease",
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.background = "#FF5A00";
+                e.currentTarget.style.borderColor = "#FF5A00";
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.background = "#000";
+                e.currentTarget.style.borderColor = "#000";
+              }}
+            >
+              {tr(lang, "Watch on YouTube", "YouTube 观看")} ↗
+            </a>
+          </div>
+
+          {/* Breakdown */}
+          {video.breakdown && (
+            <div>
+              <div style={{ marginBottom: "4rem", paddingBottom: "2rem", borderBottom: "1px solid #e0e0e0" }}>
+                <p style={{ fontSize: "0.75rem", fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", color: "#888", marginBottom: "1.5rem" }}>
+                  {tr(lang, "Summary", "概述")}
+                </p>
+                <p style={{ fontSize: "1.25rem", lineHeight: "1.6", color: "#111", fontWeight: 400 }}>
+                  {video.breakdown.summary}
+                </p>
+              </div>
+
+              {/* Structure */}
+              {video.breakdown.structure && video.breakdown.structure.length > 0 && (
+                <div style={{ marginBottom: "4rem", paddingBottom: "2rem", borderBottom: "1px solid #e0e0e0" }}>
+                  <p style={{ fontSize: "0.75rem", fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", color: "#888", marginBottom: "2rem" }}>
+                    {tr(lang, "Structure", "结构")}
+                  </p>
+                  <div style={{ display: "grid", gridTemplateColumns: "200px 1fr", gap: "2rem" }}>
+                    <div />
+                    <div style={{ display: "flex", flexDirection: "column", gap: "2rem" }}>
+                      {video.breakdown.structure.map((s, i) => (
+                        <div key={i}>
+                          <div style={{ fontSize: "0.875rem", fontWeight: 600, color: "#FF5A00", marginBottom: "0.5rem" }}>
+                            {s.time}
+                          </div>
+                          <p style={{ fontSize: "0.95rem", lineHeight: "1.5", color: "#333", margin: 0 }}>
+                            {s.desc || s.content}
+                          </p>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              )}
+
+              {/* VO Quotes */}
+              {video.breakdown.vo_quotes && video.breakdown.vo_quotes.length > 0 && (
+                <div style={{ marginBottom: "4rem", paddingBottom: "2rem", borderBottom: "1px solid #e0e0e0" }}>
+                  <p style={{ fontSize: "0.75rem", fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", color: "#888", marginBottom: "2rem" }}>
+                    {tr(lang, "Key Lines", "金句")}
+                  </p>
+                  <div style={{ display: "flex", flexDirection: "column", gap: "2rem" }}>
+                    {video.breakdown.vo_quotes.map((q, i) => (
+                      <p key={i} style={{ fontSize: "1.125rem", lineHeight: "1.6", color: "#111", fontStyle: "italic", margin: 0 }}>
+                        "{String(q)}"
+                      </p>
+                    ))}
+                  </div>
+                </div>
+              )}
+
+              {/* Strengths & Risks */}
+              {(video.breakdown.strengths || video.breakdown.risks) && (
+                <div style={{ marginBottom: "4rem", paddingBottom: "2rem", borderBottom: "1px solid #e0e0e0", display: "grid", gridTemplateColumns: "1fr 1fr", gap: "4rem" }}>
+                  {video.breakdown.strengths && video.breakdown.strengths.length > 0 && (
+                    <div>
+                      <p style={{ fontSize: "0.75rem", fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", color: "#888", marginBottom: "1.5rem" }}>
+                        {tr(lang, "What Works", "好点")}
+                      </p>
+                      <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "flex", flexDirection: "column", gap: "1rem" }}>
+                        {video.breakdown.strengths.map((s, i) => (
+                          <li key={i} style={{ fontSize: "0.95rem", lineHeight: "1.5", color: "#333" }}>
+                            <strong style={{ color: "#FF5A00" }}>0{i + 1}</strong> — {String(s)}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  )}
+                  {video.breakdown.risks && video.breakdown.risks.length > 0 && (
+                    <div>
+                      <p style={{ fontSize: "0.75rem", fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", color: "#888", marginBottom: "1.5rem" }}>
+                        {tr(lang, "Watch For", "风险")}
+                      </p>
+                      <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "flex", flexDirection: "column", gap: "1rem" }}>
+                        {video.breakdown.risks.map((r, i) => (
+                          <li key={i} style={{ fontSize: "0.95rem", lineHeight: "1.5", color: "#333" }}>
+                            <strong style={{ color: "#888" }}>0{i + 1}</strong> — {String(r)}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  )}
+                </div>
+              )}
+
+              {/* Transferable */}
+              {video.breakdown.transferable && video.breakdown.transferable.length > 0 && (
+                <div>
+                  <p style={{ fontSize: "0.75rem", fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", color: "#888", marginBottom: "2rem" }}>
+                    {tr(lang, "Takeaway", "方法论")}
+                  </p>
+                  <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "flex", flexDirection: "column", gap: "1.5rem" }}>
+                    {video.breakdown.transferable.map((t, i) => (
+                      <li key={i} style={{ fontSize: "0.95rem", lineHeight: "1.5", color: "#333" }}>
+                        <span style={{ color: "#FF5A00", marginRight: "0.75rem" }}>→</span>
+                        {String(t)}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+            </div>
+          )}
+        </div>
+      </div>
+    );
+  }
+
+  /* ─── VISITOR: Dark theme (minimal) ─── */
+  return (
+    <div style={{ background: "#000", minHeight: "100vh", padding: "2rem" }}>
+      <div style={{ maxWidth: "42rem", margin: "0 auto" }}>
+        <a href="/" style={{ color: "#666", fontSize: "0.875rem", marginBottom: "1rem", display: "block" }}>
+          ← {tr(lang, "Back", "返回")}
+        </a>
+
+        <div style={{ position: "relative", paddingBottom: "56.25%", width: "100%", background: "#111", marginBottom: "2rem" }}>
+          <iframe
+            src={`https://www.youtube.com/embed/${video.id}`}
+            style={{
+              position: "absolute",
+              top: 0,
+              left: 0,
+              width: "100%",
+              height: "100%",
+            }}
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          />
+        </div>
+
+        <h1 style={{ fontSize: "1.5rem", fontWeight: 700, color: "#fff", margin: "1.5rem 0 0.5rem 0" }}>
+          {displayTitle}
+        </h1>
+
+        <p style={{ fontSize: "0.875rem", color: "#666", margin: "1rem 0" }}>
+          {video.date_added}
+          {video.brand && ` • ${video.brand}`}
+        </p>
+
+        <a href={video.url} target="_blank" rel="noopener noreferrer" style={{ color: "#FF5A00", fontSize: "0.875rem", textDecoration: "none" }}>
+          {tr(lang, "Watch on YouTube", "YouTube 观看")} ↗
+        </a>
+
+        {video.breakdown?.summary && (
+          <div style={{ marginTop: "2rem", padding: "1.5rem", background: "#111", color: "#aaa", fontSize: "0.875rem", lineHeight: "1.6" }}>
+            {video.breakdown.summary}
+          </div>
+        )}
       </div>
     </div>
   );

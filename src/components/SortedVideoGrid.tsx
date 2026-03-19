@@ -48,11 +48,8 @@ export default function SortedVideoGrid({ videos, showFilter = false, lang = "us
 
   return (
     <div>
-      {showFilter && (
-        <div
-          className={`mb-8 flex flex-wrap ${isAdmin ? "gap-2" : "gap-[2px]"}`}
-          style={{ background: isAdmin ? "transparent" : "#000000" }}
-        >
+      {showFilter && isAdmin && (
+        <div className="mb-12 flex flex-wrap gap-6 pb-8 border-b" style={{ borderColor: "var(--border)" }}>
           {TAG_FILTERS.map((tf) => {
             const count = tagCounts[tf.value] || 0;
             if (tf.value !== "all" && count === 0) return null;
@@ -61,11 +58,32 @@ export default function SortedVideoGrid({ videos, showFilter = false, lang = "us
               <button
                 key={tf.value}
                 onClick={() => setTagFilter(tf.value)}
-                className={`cursor-pointer px-6 py-3 text-xs font-bold uppercase tracking-[0.12em] transition-colors ${isAdmin ? "border" : ""}`}
+                className="text-[0.875rem] font-medium transition-colors cursor-pointer"
                 style={{
-                  background: active ? "var(--accent)" : isAdmin ? "#fff" : "var(--bg)",
-                  color: active ? "#fff" : isAdmin ? "#666" : "#555",
-                  borderColor: isAdmin ? (active ? "var(--accent)" : "var(--border)") : undefined,
+                  color: active ? "var(--accent)" : "var(--text-muted)",
+                }}
+              >
+                {tf.label} ({count})
+              </button>
+            );
+          })}
+        </div>
+      )}
+
+      {showFilter && !isAdmin && (
+        <div className="mb-8 flex flex-wrap gap-[2px]" style={{ background: "#000000" }}>
+          {TAG_FILTERS.map((tf) => {
+            const count = tagCounts[tf.value] || 0;
+            if (tf.value !== "all" && count === 0) return null;
+            const active = tagFilter === tf.value;
+            return (
+              <button
+                key={tf.value}
+                onClick={() => setTagFilter(tf.value)}
+                className="cursor-pointer px-6 py-3 text-xs font-bold uppercase tracking-[0.12em] transition-colors"
+                style={{
+                  background: active ? "var(--accent)" : "var(--bg)",
+                  color: active ? "#fff" : "#555",
                 }}
               >
                 {tf.label} ({count})
@@ -76,22 +94,26 @@ export default function SortedVideoGrid({ videos, showFilter = false, lang = "us
       )}
 
       <div
-        className={`grid ${isAdmin ? "gap-4" : "gap-[2px] sm:grid-cols-2"}`}
+        className={`grid ${isAdmin ? "grid-cols-1 sm:grid-cols-12 gap-6" : "gap-[2px] sm:grid-cols-2"}`}
         style={{ background: isAdmin ? "transparent" : "#000000" }}
       >
         <AnimatePresence mode="popLayout">
-          {sorted.map((v) => (
-            <motion.div
-              key={v.id}
-              layout
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
-              transition={{ duration: 0.3 }}
-            >
-              <VideoCard video={v} />
-            </motion.div>
-          ))}
+          {sorted.map((v, i) => {
+            const span = isAdmin ? (i === 0 ? "sm:col-span-12" : "sm:col-span-6") : "";
+            return (
+              <motion.div
+                key={v.id}
+                layout
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+                transition={{ duration: 0.3 }}
+                className={span}
+              >
+                <VideoCard video={v} />
+              </motion.div>
+            );
+          })}
         </AnimatePresence>
       </div>
 

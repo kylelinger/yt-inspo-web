@@ -10,17 +10,19 @@ export default async function AllVideosPage() {
 
   return (
     <div className="section-full section-dark">
-      <div className="section-inner pt-20 pb-8">
-        <p className="text-[11px] font-bold uppercase tracking-[0.25em] mb-3" style={{ color: "var(--accent)" }}>
-          {tr(lang, "Collection", "合集")}
-        </p>
-        <h1 className="display-md text-white mb-2">{tr(lang, "All Videos", "全部视频")}</h1>
-        <p className="text-sm text-[#555]">
-          {videos.length} {tr(lang, "videos including foundation", "条视频（含 foundation）")}
-        </p>
-      </div>
+      <div className="section-inner py-16">
+        <div style={{ marginBottom: "3rem", paddingBottom: "2rem", borderBottom: "1px solid var(--border)" }}>
+          <p style={{ fontSize: "0.75rem", fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", color: "var(--text-muted)", marginBottom: "1rem" }}>
+            {tr(lang, "All Videos", "全部视频")}
+          </p>
+          <h1 style={{ fontSize: "clamp(1.5rem, 4vw, 2.5rem)", fontWeight: 700, margin: "0 0 1rem 0", color: "var(--text)" }}>
+            {tr(lang, "Complete Library", "完整库")}
+          </h1>
+          <p style={{ fontSize: "0.875rem", color: "var(--text-muted)", margin: 0 }}>
+            {videos.length} {tr(lang, "videos available", "条视频")}
+          </p>
+        </div>
 
-      <div className="section-inner pb-20">
         <AllVideosExplorer videos={videos} lang={lang} />
       </div>
     </div>
