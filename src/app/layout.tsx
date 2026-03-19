@@ -6,6 +6,7 @@ import { HydrateProvider } from "@/components/HydrateProvider";
 import { AuthProvider } from "@/components/AuthProvider";
 import NavBar from "@/components/NavBar";
 import FooterStats from "@/components/FooterStats";
+import AdminThemeGate from "@/components/AdminThemeGate";
 import { normalizeLang } from "@/lib/language";
 
 const brHendrix = localFont({
@@ -41,6 +42,7 @@ export default async function RootLayout({
     <html lang={lang === "cn" ? "zh" : "en"} className="dark">
       <body className={`${brHendrix.className} ${brHendrix.variable} antialiased`}>
         <AuthProvider>
+          <AdminThemeGate />
           <NavBar initialLang={lang} />
           <div className="h-20" />
           <HydrateProvider>

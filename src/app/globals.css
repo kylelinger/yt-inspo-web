@@ -79,3 +79,32 @@ html { scroll-behavior: smooth; }
   line-height: 1.12;
   letter-spacing: -0.02em;
 }
+
+/* Admin-only preview theme: AKQA-inspired light (white + orange)
+   Public visitors keep the default dark theme. */
+body.admin-theme {
+  --bg: #fffaf5;
+  --bg-alt: #fff3e8;
+  --bg-section: #fff8f0;
+  --bg-elevated: #ffffff;
+  --card: #ffffff;
+  --border: #f3d7bf;
+  --text: #151515;
+  --text-secondary: #505050;
+  --text-muted: #7a7a7a;
+  --accent: #ff6a00;
+  --accent-hover: #ff8533;
+  --accent-soft: rgba(255, 106, 0, 0.1);
+  --nav-bg: rgba(255, 250, 245, 0.92);
+  --nav-border: #f3d7bf;
+}
+
+body.admin-theme .section-dark,
+body.admin-theme .section-alt,
+body.admin-theme .section-mid {
+  background: var(--bg);
+}
+
+body.admin-theme .text-white { color: #111 !important; }
+body.admin-theme .section-accent .text-white { color: #fff !important; }
+body.admin-theme ::-webkit-scrollbar-thumb { background: #ffb27d; }
