@@ -95,7 +95,7 @@ export default function AboutPage() {
                 <p className="text-[15px] leading-relaxed text-[var(--text-secondary)]">
                   Downloads every video. Uploads the full cut to Gemini (DGemini CLI). Extracts the narrative spine. Writes structural breakdowns. Maintains the search framework. Built this website. Never sleeps.
                 </p>
-                <p className="mt-6 text-xl font-black italic text-[#333]">
+                <p className="mt-6 text-xl font-black italic text-[var(--text-secondary)]">
                   &ldquo;I don&apos;t find ads.<br />I build taste.&rdquo;
                 </p>
               </div>
@@ -117,7 +117,7 @@ export default function AboutPage() {
                 <p className="text-[15px] leading-relaxed text-[var(--text-secondary)]">
                   Sets the brand vision. Gives the thumbs up or thumbs down. Keeps the bar high. Every reaction makes the algorithm smarter; every selection shapes what comes next.
                 </p>
-                <p className="mt-6 text-xl font-black italic text-[#333]">
+                <p className="mt-6 text-xl font-black italic text-[var(--text-secondary)]">
                   &ldquo;I keep it honest.<br />No water content.&rdquo;
                 </p>
               </div>

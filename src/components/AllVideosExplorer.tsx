@@ -82,11 +82,11 @@ export default function AllVideosExplorer({ videos, lang = "us" }: { videos: Vid
 
   return (
     <div>
-      <div className="mb-10 border p-5 sm:p-6" style={{ borderColor: "var(--border)", background: "#fff" }}>
+      <div className="mb-10 border p-5 sm:p-6" style={{ borderColor: "var(--border)", background: "var(--card)" }}>
         <div className="mb-4 grid gap-3 sm:grid-cols-[1fr_auto] sm:items-center">
-          <input value={query} onChange={(e) => setQuery(e.target.value)} placeholder={tr(lang, "Search title / brand / channel / video ID", "搜索 标题 / 品牌 / 频道 / 视频ID")} className="w-full border px-4 py-3 text-sm outline-none transition-colors focus:border-[var(--accent)]" style={{ borderColor: "var(--border)", background: "#fff", color: "#111" }} />
+          <input value={query} onChange={(e) => setQuery(e.target.value)} placeholder={tr(lang, "Search title / brand / channel / video ID", "搜索 标题 / 品牌 / 频道 / 视频ID")} className="w-full border px-4 py-3 text-sm outline-none transition-colors focus:border-[var(--accent)]" style={{ borderColor: "var(--border)", background: "var(--card)", color: "#111" }} />
 
-          <select value={sortKey} onChange={(e) => setSortKey(e.target.value as SortKey)} className="border px-4 py-3 text-sm outline-none" style={{ borderColor: "var(--border)", background: "#fff", color: "#111" }}>
+          <select value={sortKey} onChange={(e) => setSortKey(e.target.value as SortKey)} className="border px-4 py-3 text-sm outline-none" style={{ borderColor: "var(--border)", background: "var(--card)", color: "#111" }}>
             <option value="latest">{tr(lang, "Latest first", "最新优先")}</option>
             <option value="most_up">{tr(lang, "Most liked", "高赞优先")}</option>
             <option value="most_down">{tr(lang, "Most disputed", "高反对优先")}</option>

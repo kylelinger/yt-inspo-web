@@ -46,7 +46,7 @@ export default function ShortlistCarousel({ allVideos, lang = "us" }: { allVideo
         <div className="text-center">
           <p className="text-3xl mb-3">⭐</p>
           <p className="text-sm font-bold text-[#444]">{tr(lang, "Your saved collection", "你的收藏夹")}</p>
-          <p className="text-xs mt-2 text-[#777]">{tr(lang, "Star videos to see them here", "点星标后会出现在这里")}</p>
+          <p className="text-xs mt-2 text-[var(--text-muted)]">{tr(lang, "Star videos to see them here", "点星标后会出现在这里")}</p>
         </div>
       </div>
     );
@@ -57,7 +57,7 @@ export default function ShortlistCarousel({ allVideos, lang = "us" }: { allVideo
   return (
     <div className="relative group">
       <a href={`/video/${video.id}`} className="block">
-        <div className="relative overflow-hidden aspect-video sm:aspect-auto sm:h-[800px]" style={{ background: "#f5ede5", border: "1px solid var(--border)" }}>
+        <div className="relative overflow-hidden aspect-video sm:aspect-auto sm:h-[800px]" style={{ background: "var(--bg-alt)", border: "1px solid var(--border)" }}>
           <div className="w-full h-full overflow-hidden">
             <img src={`https://img.youtube.com/vi/${video.id}/maxresdefault.jpg`} alt="" className="h-full w-full object-cover opacity-90 transition-transform duration-500 group-hover:scale-[1.02]" />
             <div className="absolute inset-0 bg-gradient-to-t from-[#fffaf5]/96 via-[#fffaf5]/68 to-transparent" />
@@ -65,17 +65,17 @@ export default function ShortlistCarousel({ allVideos, lang = "us" }: { allVideo
 
           <div className="absolute bottom-0 left-0 right-0 p-5 sm:p-12">
             <div className="sm:hidden">
-              {video.brand && <span className="text-xs font-bold text-[#666]">{video.brand}</span>}
+              {video.brand && <span className="text-xs font-bold text-[var(--text-secondary)]">{video.brand}</span>}
               <h2 className="mt-1 text-lg font-black leading-tight text-[#121212]">{video.title}</h2>
             </div>
 
             <div className="hidden sm:block">
               <div className="mb-3 flex items-center gap-3">
                 <span className="bg-[var(--accent)] px-3 py-1 text-[11px] font-bold text-white">⭐ SAVED</span>
-                {video.tag && <span className="text-[11px] font-bold uppercase text-[#666]">{video.tag}</span>}
-                <span className="text-xs text-[#666]">{video.brand}{video.duration_s && ` · ${Math.floor(video.duration_s / 60)}:${String(video.duration_s % 60).padStart(2, "0")}`}</span>
+                {video.tag && <span className="text-[11px] font-bold uppercase text-[var(--text-secondary)]">{video.tag}</span>}
+                <span className="text-xs text-[var(--text-secondary)]">{video.brand}{video.duration_s && ` · ${Math.floor(video.duration_s / 60)}:${String(video.duration_s % 60).padStart(2, "0")}`}</span>
               </div>
-              <h2 className="text-3xl lg:text-4xl font-black leading-tight text-[#111]">{video.title}</h2>
+              <h2 className="text-3xl lg:text-4xl font-black leading-tight text-[var(--text)]">{video.title}</h2>
               {video.breakdown?.summary && <CarouselSummary text={video.breakdown.summary} lang={lang} />}
             </div>
           </div>
@@ -88,8 +88,8 @@ export default function ShortlistCarousel({ allVideos, lang = "us" }: { allVideo
 
       {saved.length > 1 && (
         <>
-          <button onClick={(e) => { e.preventDefault(); prev(); }} className="absolute left-4 top-1/2 -translate-y-1/2 flex h-10 w-10 items-center justify-center opacity-0 transition-opacity group-hover:opacity-100 cursor-pointer bg-white/90 text-[#333] hover:bg-white"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><path d="M15 18l-6-6 6-6" /></svg></button>
-          <button onClick={(e) => { e.preventDefault(); next(); }} className="absolute right-24 top-1/2 -translate-y-1/2 flex h-10 w-10 items-center justify-center opacity-0 transition-opacity group-hover:opacity-100 cursor-pointer bg-white/90 text-[#333] hover:bg-white"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><path d="M9 18l6-6-6-6" /></svg></button>
+          <button onClick={(e) => { e.preventDefault(); prev(); }} className="absolute left-4 top-1/2 -translate-y-1/2 flex h-10 w-10 items-center justify-center opacity-0 transition-opacity group-hover:opacity-100 cursor-pointer bg-[var(--card)]/90 text-[var(--text-secondary)] hover:bg-[var(--card)]"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><path d="M15 18l-6-6 6-6" /></svg></button>
+          <button onClick={(e) => { e.preventDefault(); next(); }} className="absolute right-24 top-1/2 -translate-y-1/2 flex h-10 w-10 items-center justify-center opacity-0 transition-opacity group-hover:opacity-100 cursor-pointer bg-[var(--card)]/90 text-[var(--text-secondary)] hover:bg-[var(--card)]"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><path d="M9 18l6-6-6-6" /></svg></button>
 
           <div className="absolute bottom-3 left-1/2 -translate-x-1/2 flex gap-1">
             {saved.map((_, i) => (

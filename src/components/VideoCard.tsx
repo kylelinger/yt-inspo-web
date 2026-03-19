@@ -63,9 +63,9 @@ export default function VideoCard({ video, compact = false, onFeedbackChange, la
   const summary = video.breakdown?.summary || "";
 
   return (
-    <article className="group overflow-hidden border" style={{ background: "#fff", borderColor: "var(--border)" }}>
+    <article className="group overflow-hidden border" style={{ background: "var(--card)", borderColor: "var(--border)" }}>
       <a href={`/video/${video.id}`} className="block">
-        <div className="relative aspect-[16/9] w-full overflow-hidden" style={{ background: "#f5f5f5" }}>
+        <div className="relative aspect-[16/9] w-full overflow-hidden" style={{ background: "var(--bg-elevated)" }}>
           <img src={`https://img.youtube.com/vi/${video.id}/mqdefault.jpg`} alt="" className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-[1.03]" loading="lazy" />
           <div className="absolute inset-0 bg-gradient-to-t from-black/35 via-transparent to-transparent" />
           {duration && <div className="absolute bottom-0 right-0 bg-black/75 px-2 py-1 text-[11px] font-bold text-white">{duration}</div>}
@@ -76,18 +76,18 @@ export default function VideoCard({ video, compact = false, onFeedbackChange, la
         <div className="mb-4 flex items-center gap-3">
           {video.brand && <span className="text-[11px] font-black uppercase tracking-[0.16em]" style={{ color: "var(--accent)" }}>{video.brand}</span>}
           {video.tag && <span className="text-[11px] font-bold uppercase tracking-[0.14em]" style={{ color: tagColor }}>{video.tag}</span>}
-          <span className="ml-auto text-[11px] font-medium text-[#777]">{video.date_added}</span>
+          <span className="ml-auto text-[11px] font-medium text-[var(--text-muted)]">{video.date_added}</span>
         </div>
 
         <a href={`/video/${video.id}`} className="block">
-          <h3 className="text-[28px] sm:text-[34px] leading-[1.02] font-black text-[#111] tracking-[-0.02em] transition-colors group-hover:text-[var(--accent)]">
+          <h3 className="text-[28px] sm:text-[34px] leading-[1.02] font-black text-[var(--text)] tracking-[-0.02em] transition-colors group-hover:text-[var(--accent)]">
             {video.status === "playback_risky" && <span className="mr-1 text-xs opacity-50">⚠️</span>}
             {displayTitle}
           </h3>
         </a>
 
         {!compact && summary && (
-          <p className="mt-4 max-w-4xl text-[15px] leading-relaxed text-[#666] line-clamp-3">
+          <p className="mt-4 max-w-4xl text-[15px] leading-relaxed text-[var(--text-secondary)] line-clamp-3">
             {mounted ? <TranslatedText text={summary} lang={lang} /> : summary}
           </p>
         )}
@@ -95,8 +95,8 @@ export default function VideoCard({ video, compact = false, onFeedbackChange, la
         {mounted && (
           <div className="mt-6 border-t pt-4" style={{ borderColor: "var(--border)" }}>
             <div className="relative flex items-center gap-1">
-              <motion.button onClick={(e) => { e.preventDefault(); handleFeedback("thumbsup"); }} className="px-2 py-1 text-sm cursor-pointer transition-all rounded border" style={{ borderColor: "#d7d7d7", background: "#fff" }} whileTap={{ scale: 1.18 }}>👍 <span className="text-[10px] text-[#888]">{c.thumbsup}</span></motion.button>
-              <motion.button onClick={(e) => { e.preventDefault(); handleFeedback("thumbsdown"); }} className="px-2 py-1 text-sm cursor-pointer transition-all rounded border" style={{ borderColor: "#d7d7d7", background: "#fff" }} whileTap={{ scale: 1.18 }}>👎 <span className="text-[10px] text-[#888]">{c.thumbsdown}</span></motion.button>
+              <motion.button onClick={(e) => { e.preventDefault(); handleFeedback("thumbsup"); }} className="px-2 py-1 text-sm cursor-pointer transition-all rounded border" style={{ borderColor: "var(--border)", background: "var(--card)" }} whileTap={{ scale: 1.18 }}>👍 <span className="text-[10px] text-[var(--text-muted)]">{c.thumbsup}</span></motion.button>
+              <motion.button onClick={(e) => { e.preventDefault(); handleFeedback("thumbsdown"); }} className="px-2 py-1 text-sm cursor-pointer transition-all rounded border" style={{ borderColor: "var(--border)", background: "var(--card)" }} whileTap={{ scale: 1.18 }}>👎 <span className="text-[10px] text-[var(--text-muted)]">{c.thumbsdown}</span></motion.button>
               {isAdmin && (
                 <motion.button onClick={(e) => { e.preventDefault(); handleShortlist(); }} className="px-2 py-1 text-sm cursor-pointer transition-all rounded border" style={{ background: isShortlisted ? "#fff2e8" : "#fff", borderColor: isShortlisted ? "var(--accent)" : "#d7d7d7", color: isShortlisted ? "var(--accent)" : "#666" }} whileTap={{ scale: 1.25 }}>{isShortlisted ? "★" : "☆"}</motion.button>
               )}

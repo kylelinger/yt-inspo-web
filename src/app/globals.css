@@ -1,23 +1,23 @@
 @import "tailwindcss";
 
 :root {
-  --bg: #fffaf5;
-  --bg-alt: #fff3e8;
-  --bg-section: #fff8f0;
-  --bg-elevated: #ffffff;
-  --card: #ffffff;
-  --border: #f3d7bf;
-  --text: #151515;
-  --text-secondary: #505050;
-  --text-muted: #7a7a7a;
+  --bg: #000000;
+  --bg-alt: #0e0e0e;
+  --bg-section: #111111;
+  --bg-elevated: #191919;
+  --card: #1a1a1a;
+  --border: #1a1a1a;
+  --text: #ffffff;
+  --text-secondary: #a0a0a0;
+  --text-muted: #555555;
   --accent: #FF5A00;
   --accent-hover: #ff7a33;
   --accent-soft: rgba(255, 90, 0, 0.08);
   --green: #34d399;
   --red: #ff6b35;
   --yellow: #fbbf24;
-  --nav-bg: rgba(255, 250, 245, 0.92);
-  --nav-border: #f3d7bf;
+  --nav-bg: rgba(0, 0, 0, 0.9);
+  --nav-border: #111;
 }
 
 * { box-sizing: border-box; }
@@ -92,8 +92,8 @@ body.admin-theme {
   --text: #151515;
   --text-secondary: #505050;
   --text-muted: #7a7a7a;
-  --accent: #ff6a00;
-  --accent-hover: #ff8533;
+  --accent: #FF5A00;
+  --accent-hover: #ff7a33;
   --accent-soft: rgba(255, 106, 0, 0.1);
   --nav-bg: rgba(255, 250, 245, 0.92);
   --nav-border: #f3d7bf;
