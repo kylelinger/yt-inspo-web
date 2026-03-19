@@ -17,6 +17,7 @@ export default function NavBar({ initialLang = "us" }: { initialLang?: Lang }) {
       isAdmin
         ? [
             { href: "/", label: tr(lang, "Today", "今日") },
+            { href: "/videos", label: tr(lang, "All Videos", "全部视频") },
             { href: "/archive", label: tr(lang, "Archive", "往期") },
             { href: "/shortlist", label: tr(lang, "Saved", "收藏"), mobile: true },
             { href: "/archive/foundation", label: tr(lang, "Foundation", "地基"), mobile: false },
@@ -24,6 +25,7 @@ export default function NavBar({ initialLang = "us" }: { initialLang?: Lang }) {
           ]
         : [
             { href: "/", label: tr(lang, "Today", "今日") },
+            { href: "/videos", label: tr(lang, "All Videos", "全部视频") },
             { href: "/archive", label: tr(lang, "Archive", "往期") },
           ],
     [isAdmin, lang]
