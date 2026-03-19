@@ -108,3 +108,26 @@ body.admin-theme .section-mid {
 body.admin-theme .text-white { color: #111 !important; }
 body.admin-theme .section-accent .text-white { color: #fff !important; }
 body.admin-theme ::-webkit-scrollbar-thumb { background: #ffb27d; }
+
+body.admin-theme .section-inner {
+  max-width: 86rem;
+}
+
+body.admin-theme .display-md,
+body.admin-theme .display-lg,
+body.admin-theme .display-xl {
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
+}
+
+body.admin-theme .section-full {
+  border-top: 1px solid var(--border);
+}
+
+body.admin-theme a {
+  transition: color 180ms ease;
+}
+
+body.admin-theme .group:hover h3 {
+  color: var(--accent);
+}
