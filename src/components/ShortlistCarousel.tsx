@@ -5,13 +5,19 @@ import type { Video } from "@/lib/types";
 import { getShortlist } from "@/lib/feedback";
 import { tr, type Lang } from "@/lib/language";
 import { useTranslatedText } from "@/lib/translate-client";
+import { useAuth } from "@/components/AuthProvider";
 
-function CarouselSummary({ text, lang }: { text: string; lang: Lang }) {
+function CarouselSummary({ text, lang, isAdmin }: { text: string; lang: Lang; isAdmin: boolean }) {
   const translated = useTranslatedText(text, lang);
-  return <p className="mt-3 max-w-2xl text-sm leading-relaxed text-[#5f5f5f] line-clamp-2">{translated}</p>;
+  return (
+    <p className={`mt-3 max-w-2xl text-sm leading-relaxed line-clamp-2 ${isAdmin ? "text-[#5f5f5f]" : "text-white/60"}`}>
+      {translated}
+    </p>
+  );
 }
 
 export default function ShortlistCarousel({ allVideos, lang = "us" }: { allVideos: Video[]; lang?: Lang }) {
+  const { isAdmin } = useAuth();
   const [shortlistIds, setShortlistIds] = useState<Set<string>>(new Set());
   const [current, setCurrent] = useState(0);
   const [mounted, setMounted] = useState(false);
@@ -25,8 +31,14 @@ export default function ShortlistCarousel({ allVideos, lang = "us" }: { allVideo
   }, []);
 
   const saved = allVideos.filter((v) => shortlistIds.has(v.id));
-  const next = useCallback(() => saved.length > 0 && setCurrent((c) => (c + 1) % saved.length), [saved.length]);
-  const prev = useCallback(() => saved.length > 0 && setCurrent((c) => (c - 1 + saved.length) % saved.length), [saved.length]);
+
+  const next = useCallback(() => {
+    if (saved.length > 0) setCurrent((c) => (c + 1) % saved.length);
+  }, [saved.length]);
+
+  const prev = useCallback(() => {
+    if (saved.length > 0) setCurrent((c) => (c - 1 + saved.length) % saved.length);
+  }, [saved.length]);
 
   useEffect(() => {
     if (saved.length <= 1) return;
@@ -38,15 +50,21 @@ export default function ShortlistCarousel({ allVideos, lang = "us" }: { allVideo
     if (current >= saved.length) setCurrent(0);
   }, [current, saved.length]);
 
-  if (!mounted) return <div className="relative overflow-hidden aspect-video sm:aspect-auto sm:h-[800px]" style={{ background: "var(--bg-alt)" }}><div className="w-full h-full animate-pulse" /></div>;
+  if (!mounted) {
+    return (
+      <div className="relative overflow-hidden aspect-video sm:aspect-auto sm:h-[800px]" style={{ background: isAdmin ? "var(--bg-alt)" : "#0a0a0a" }}>
+        <div className="w-full h-full animate-pulse" />
+      </div>
+    );
+  }
 
   if (saved.length === 0) {
     return (
-      <div className="aspect-video sm:aspect-auto sm:h-[800px] flex items-center justify-center" style={{ background: "var(--bg-alt)", border: "1px solid var(--border)" }}>
+      <div className="aspect-video sm:aspect-auto sm:h-[800px] flex items-center justify-center" style={{ background: isAdmin ? "var(--bg-alt)" : "#080808", border: isAdmin ? "1px solid var(--border)" : undefined }}>
         <div className="text-center">
           <p className="text-3xl mb-3">⭐</p>
-          <p className="text-sm font-bold text-[#444]">{tr(lang, "Your saved collection", "你的收藏夹")}</p>
-          <p className="text-xs mt-2 text-[var(--text-muted)]">{tr(lang, "Star videos to see them here", "点星标后会出现在这里")}</p>
+          <p className={`text-sm font-bold ${isAdmin ? "text-[#444]" : "text-[#666]"}`}>{tr(lang, "Your saved collection", "你的收藏夹")}</p>
+          <p className={`text-xs mt-2 ${isAdmin ? "text-[#777]" : "text-[#444]"}`}>{tr(lang, "Star videos to see them here", "点星标后会出现在这里")}</p>
         </div>
       </div>
     );
@@ -57,43 +75,78 @@ export default function ShortlistCarousel({ allVideos, lang = "us" }: { allVideo
   return (
     <div className="relative group">
       <a href={`/video/${video.id}`} className="block">
-        <div className="relative overflow-hidden aspect-video sm:aspect-auto sm:h-[800px]" style={{ background: "var(--bg-alt)", border: "1px solid var(--border)" }}>
+        <div className="relative overflow-hidden aspect-video sm:aspect-auto sm:h-[800px]" style={{ background: isAdmin ? "#f5ede5" : "#000", border: isAdmin ? "1px solid var(--border)" : undefined }}>
           <div className="w-full h-full overflow-hidden">
-            <img src={`https://img.youtube.com/vi/${video.id}/maxresdefault.jpg`} alt="" className="h-full w-full object-cover opacity-90 transition-transform duration-500 group-hover:scale-[1.02]" />
-            <div className="absolute inset-0 bg-gradient-to-t from-[#fffaf5]/96 via-[#fffaf5]/68 to-transparent" />
+            <img
+              src={`https://img.youtube.com/vi/${video.id}/maxresdefault.jpg`}
+              alt=""
+              className={`h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.02] ${isAdmin ? "opacity-90" : "opacity-80"}`}
+            />
+            <div className={`absolute inset-0 ${isAdmin ? "bg-gradient-to-t from-[#fffaf5]/96 via-[#fffaf5]/68 to-transparent" : "bg-gradient-to-t from-black/90 via-black/30 to-transparent"}`} />
           </div>
 
           <div className="absolute bottom-0 left-0 right-0 p-5 sm:p-12">
             <div className="sm:hidden">
-              {video.brand && <span className="text-xs font-bold text-[var(--text-secondary)]">{video.brand}</span>}
-              <h2 className="mt-1 text-lg font-black leading-tight text-[#121212]">{video.title}</h2>
+              {video.brand && <span className={`text-xs font-bold ${isAdmin ? "text-[#666]" : "text-white/50"}`}>{video.brand}</span>}
+              <h2 className={`mt-1 text-lg font-black leading-tight ${isAdmin ? "text-[#121212]" : "text-white"}`}>{video.title}</h2>
             </div>
 
             <div className="hidden sm:block">
               <div className="mb-3 flex items-center gap-3">
                 <span className="bg-[var(--accent)] px-3 py-1 text-[11px] font-bold text-white">⭐ SAVED</span>
-                {video.tag && <span className="text-[11px] font-bold uppercase text-[var(--text-secondary)]">{video.tag}</span>}
-                <span className="text-xs text-[var(--text-secondary)]">{video.brand}{video.duration_s && ` · ${Math.floor(video.duration_s / 60)}:${String(video.duration_s % 60).padStart(2, "0")}`}</span>
+                {video.tag && (
+                  <span className={`text-[11px] font-bold uppercase ${isAdmin ? "text-[#666]" : "text-white/50"}`}>{video.tag}</span>
+                )}
+                <span className={`text-xs ${isAdmin ? "text-[#666]" : "text-white/40"}`}>
+                  {video.brand}
+                  {video.duration_s && ` · ${Math.floor(video.duration_s / 60)}:${String(video.duration_s % 60).padStart(2, "0")}`}
+                </span>
               </div>
-              <h2 className="text-3xl lg:text-4xl font-black leading-tight text-[var(--text)]">{video.title}</h2>
-              {video.breakdown?.summary && <CarouselSummary text={video.breakdown.summary} lang={lang} />}
+              <h2 className={`text-3xl lg:text-4xl font-black leading-tight ${isAdmin ? "text-[#111]" : "text-white"}`}>{video.title}</h2>
+              {video.breakdown?.summary && <CarouselSummary text={video.breakdown.summary} lang={lang} isAdmin={isAdmin} />}
             </div>
           </div>
 
-          <div className="absolute right-8 bottom-8 hidden sm:flex h-14 w-14 items-center justify-center text-white transition-transform group-hover:scale-110 bg-[var(--accent)]">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z" /></svg>
+          <div className={`absolute right-8 bottom-8 hidden sm:flex h-14 w-14 items-center justify-center text-white transition-transform group-hover:scale-110 ${isAdmin ? "bg-[var(--accent)]" : "bg-[var(--accent)]"}`}>
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M8 5v14l11-7z" />
+            </svg>
           </div>
         </div>
       </a>
 
       {saved.length > 1 && (
         <>
-          <button onClick={(e) => { e.preventDefault(); prev(); }} className="absolute left-4 top-1/2 -translate-y-1/2 flex h-10 w-10 items-center justify-center opacity-0 transition-opacity group-hover:opacity-100 cursor-pointer bg-[var(--card)]/90 text-[var(--text-secondary)] hover:bg-[var(--card)]"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><path d="M15 18l-6-6 6-6" /></svg></button>
-          <button onClick={(e) => { e.preventDefault(); next(); }} className="absolute right-24 top-1/2 -translate-y-1/2 flex h-10 w-10 items-center justify-center opacity-0 transition-opacity group-hover:opacity-100 cursor-pointer bg-[var(--card)]/90 text-[var(--text-secondary)] hover:bg-[var(--card)]"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><path d="M9 18l6-6-6-6" /></svg></button>
+          <button
+            onClick={(e) => {
+              e.preventDefault();
+              prev();
+            }}
+            className={`absolute left-4 top-1/2 -translate-y-1/2 flex h-10 w-10 items-center justify-center opacity-0 transition-opacity group-hover:opacity-100 cursor-pointer ${isAdmin ? "bg-white/90 text-[#333] hover:bg-white" : "bg-black/60 text-white/80 hover:bg-black/80"}`}
+          >
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><path d="M15 18l-6-6 6-6" /></svg>
+          </button>
+          <button
+            onClick={(e) => {
+              e.preventDefault();
+              next();
+            }}
+            className={`absolute right-24 top-1/2 -translate-y-1/2 flex h-10 w-10 items-center justify-center opacity-0 transition-opacity group-hover:opacity-100 cursor-pointer ${isAdmin ? "bg-white/90 text-[#333] hover:bg-white" : "bg-black/60 text-white/80 hover:bg-black/80"}`}
+          >
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><path d="M9 18l6-6-6-6" /></svg>
+          </button>
 
           <div className="absolute bottom-3 left-1/2 -translate-x-1/2 flex gap-1">
             {saved.map((_, i) => (
-              <button key={i} onClick={(e) => { e.preventDefault(); setCurrent(i); }} className="h-1 transition-all cursor-pointer" style={{ width: i === current ? "20px" : "6px", background: i === current ? "var(--accent)" : "rgba(0,0,0,0.25)" }} />
+              <button
+                key={i}
+                onClick={(e) => {
+                  e.preventDefault();
+                  setCurrent(i);
+                }}
+                className="h-1 transition-all cursor-pointer"
+                style={{ width: i === current ? "20px" : "6px", background: i === current ? "var(--accent)" : isAdmin ? "rgba(0,0,0,0.25)" : "rgba(255,255,255,0.3)" }}
+              />
             ))}
           </div>
         </>

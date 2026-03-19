@@ -5,6 +5,7 @@ import type { Video } from "@/lib/types";
 import VideoCard from "@/components/VideoCard";
 import { getFeedbackCounts, hydrateFromRemote, type FeedbackCounts } from "@/lib/feedback";
 import { tr, type Lang } from "@/lib/language";
+import { useAuth } from "@/components/AuthProvider";
 
 type SortKey = "latest" | "most_up" | "most_down";
 
@@ -32,11 +33,15 @@ function downCount(v: Video, counts: FeedbackCounts): number {
 function includesQuery(video: Video, q: string) {
   if (!q) return true;
   const query = q.toLowerCase();
-  const hay = [video.title, video.brand, video.id, video.tag, video.date_added, video.url].filter(Boolean).join(" ").toLowerCase();
+  const hay = [video.title, video.brand, video.id, video.tag, video.date_added, video.url]
+    .filter(Boolean)
+    .join(" ")
+    .toLowerCase();
   return hay.includes(query);
 }
 
 export default function AllVideosExplorer({ videos, lang = "us" }: { videos: Video[]; lang?: Lang }) {
+  const { isAdmin } = useAuth();
   const [query, setQuery] = useState("");
   const [activeTags, setActiveTags] = useState<Set<string>>(new Set());
   const [sortKey, setSortKey] = useState<SortKey>("latest");
@@ -82,11 +87,22 @@ export default function AllVideosExplorer({ videos, lang = "us" }: { videos: Vid
 
   return (
     <div>
-      <div className="mb-10 border p-5 sm:p-6" style={{ borderColor: "var(--border)", background: "var(--card)" }}>
+      <div className={`mb-10 border ${isAdmin ? "p-5 sm:p-6" : "p-0 border-transparent"}`} style={{ borderColor: isAdmin ? "var(--border)" : "transparent", background: isAdmin ? "#fff" : "transparent" }}>
         <div className="mb-4 grid gap-3 sm:grid-cols-[1fr_auto] sm:items-center">
-          <input value={query} onChange={(e) => setQuery(e.target.value)} placeholder={tr(lang, "Search title / brand / channel / video ID", "搜索 标题 / 品牌 / 频道 / 视频ID")} className="w-full border px-4 py-3 text-sm outline-none transition-colors focus:border-[var(--accent)]" style={{ borderColor: "var(--border)", background: "var(--card)", color: "#111" }} />
+          <input
+            value={query}
+            onChange={(e) => setQuery(e.target.value)}
+            placeholder={tr(lang, "Search title / brand / channel / video ID", "搜索 标题 / 品牌 / 频道 / 视频ID")}
+            className="w-full border px-4 py-3 text-sm outline-none transition-colors focus:border-[var(--accent)]"
+            style={{ borderColor: "var(--border)", background: isAdmin ? "#fff" : "#0f0f0f", color: isAdmin ? "#111" : "#fff" }}
+          />
 
-          <select value={sortKey} onChange={(e) => setSortKey(e.target.value as SortKey)} className="border px-4 py-3 text-sm outline-none" style={{ borderColor: "var(--border)", background: "var(--card)", color: "#111" }}>
+          <select
+            value={sortKey}
+            onChange={(e) => setSortKey(e.target.value as SortKey)}
+            className="border px-4 py-3 text-sm outline-none"
+            style={{ borderColor: "var(--border)", background: isAdmin ? "#fff" : "#0f0f0f", color: isAdmin ? "#111" : "#fff" }}
+          >
             <option value="latest">{tr(lang, "Latest first", "最新优先")}</option>
             <option value="most_up">{tr(lang, "Most liked", "高赞优先")}</option>
             <option value="most_down">{tr(lang, "Most disputed", "高反对优先")}</option>
@@ -95,21 +111,29 @@ export default function AllVideosExplorer({ videos, lang = "us" }: { videos: Vid
 
         <div className="flex flex-wrap items-center gap-4 sm:gap-5">
           {TAGS.map((t) => (
-            <button key={t.value} onClick={() => toggleTag(t.value)} className="flex items-center gap-2 border px-3 py-1.5 text-xs font-bold uppercase tracking-[0.12em] transition-colors" style={{ borderColor: activeTags.has(t.value) ? "var(--accent)" : "var(--border)", color: activeTags.has(t.value) ? "var(--accent)" : "#666", background: activeTags.has(t.value) ? "var(--accent-soft)" : "transparent" }}>
+            <button key={t.value} onClick={() => toggleTag(t.value)} className="flex items-center gap-2 border px-3 py-1.5 text-xs font-bold uppercase tracking-[0.12em] transition-colors" style={{ borderColor: activeTags.has(t.value) ? "var(--accent)" : "var(--border)", color: activeTags.has(t.value) ? "var(--accent)" : isAdmin ? "#666" : "#aaa", background: activeTags.has(t.value) ? "var(--accent-soft)" : "transparent" }}>
               <span className="inline-block h-2 w-2" style={{ background: t.color }} />
               {t.value}
               <span className="font-medium normal-case tracking-normal opacity-80">{tagCounts[t.value] || 0}</span>
             </button>
           ))}
-          {activeTags.size > 0 && <button onClick={() => setActiveTags(new Set())} className="text-xs font-bold uppercase tracking-[0.12em] text-[var(--accent)]">{tr(lang, "Clear filters", "清空筛选")}</button>}
+          {activeTags.size > 0 && (
+            <button onClick={() => setActiveTags(new Set())} className="text-xs font-bold uppercase tracking-[0.12em] text-[var(--accent)]">
+              {tr(lang, "Clear filters", "清空筛选")}
+            </button>
+          )}
         </div>
       </div>
 
       {filtered.length === 0 ? (
-        <div className="py-16 text-center" style={{ background: "var(--bg-alt)", color: "#666", border: "1px solid var(--border)" }}>{tr(lang, "No videos matched your filters", "没有匹配的视频")}</div>
+        <div className="py-16 text-center" style={{ background: "var(--bg-alt)", color: "#666", border: "1px solid var(--border)" }}>
+          {tr(lang, "No videos matched your filters", "没有匹配的视频")}
+        </div>
       ) : (
-        <div className="grid gap-4" style={{ background: "transparent" }}>
-          {filtered.map((v) => <VideoCard key={v.id} video={v} />)}
+        <div className="grid gap-3 sm:gap-4" style={{ background: "transparent" }}>
+          {filtered.map((v) => (
+            <VideoCard key={v.id} video={v} />
+          ))}
         </div>
       )}
     </div>

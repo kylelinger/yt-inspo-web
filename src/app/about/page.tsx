@@ -4,22 +4,22 @@ export default function AboutPage() {
   return (
     <div>
       {/* Hero */}
-      <div className="section-full section-alt pt-24 pb-16">
+      <div className="section-full section-dark pt-24 pb-16">
         <div className="section-inner">
           <FadeInView>
             <div className="flex items-center gap-4 mb-6">
               <div
-                className="flex h-16 w-16 items-center justify-center text-2xl font-black text-[var(--text)]"
+                className="flex h-16 w-16 items-center justify-center text-2xl font-black text-white"
                 style={{ background: "var(--accent)" }}
               >
                 📐
               </div>
               <div>
-                <h1 className="display-lg text-[var(--text)]">About</h1>
-                <p className="text-sm text-[var(--text-muted)] mt-1">AI-curated brand ad inspiration</p>
+                <h1 className="display-lg text-white">About</h1>
+                <p className="text-sm text-[#666] mt-1">AI-curated brand ad inspiration</p>
               </div>
             </div>
-            <p className="mt-6 text-lg leading-relaxed text-[var(--text-secondary)] max-w-2xl">
+            <p className="mt-6 text-lg leading-relaxed text-[#888] max-w-2xl">
               Built for M公司, a global fintech company building the next-generation trading platform. Every day, an AI curator downloads the full cut, runs a Gemini-grade analysis, and maps the structure of the best brand ads from around the world.
             </p>
           </FadeInView>
@@ -61,8 +61,8 @@ export default function AboutPage() {
                 },
               ].map((p, i) => (
                 <div key={i} className="p-6" style={{ background: "var(--card)", border: "1px solid var(--border)" }}>
-                  <div className="text-lg font-bold text-[var(--text)] mb-2">{p.title}</div>
-                  <div className="text-sm leading-relaxed text-[var(--text-secondary)]">{p.desc}</div>
+                  <div className="text-lg font-bold text-white mb-2">{p.title}</div>
+                  <div className="text-sm leading-relaxed text-[#888]">{p.desc}</div>
                 </div>
               ))}
             </div>
@@ -71,7 +71,7 @@ export default function AboutPage() {
       </div>
 
       {/* Team */}
-      <div className="section-full section-alt py-16">
+      <div className="section-full section-dark py-16">
         <div className="section-inner">
           <FadeInView>
             <p className="text-[11px] font-bold uppercase tracking-[0.25em] mb-10" style={{ color: "var(--accent)" }}>
@@ -79,45 +79,45 @@ export default function AboutPage() {
             </p>
             <div className="grid md:grid-cols-2 gap-[2px]">
               {/* Clawd */}
-              <div className="p-8" style={{ background: "var(--card)", border: "1px solid var(--border)" }}>
+              <div className="p-8" style={{ background: "#1a1a1a" }}>
                 <div className="flex items-center gap-4 mb-6">
                   <div
-                    className="flex h-14 w-14 items-center justify-center text-xl font-black text-[var(--text)]"
+                    className="flex h-14 w-14 items-center justify-center text-xl font-black text-white"
                     style={{ background: "var(--accent)" }}
                   >
                     C
                   </div>
                   <div>
-                    <div className="text-lg font-bold text-[var(--text)]">Clawd</div>
-                    <div className="text-xs text-[var(--text-muted)]">AI Curator · Builder</div>
+                    <div className="text-lg font-bold text-white">Clawd</div>
+                    <div className="text-xs text-[#666]">AI Curator · Builder</div>
                   </div>
                 </div>
-                <p className="text-[15px] leading-relaxed text-[var(--text-secondary)]">
+                <p className="text-[15px] leading-relaxed text-[#888]">
                   Downloads every video. Uploads the full cut to Gemini (DGemini CLI). Extracts the narrative spine. Writes structural breakdowns. Maintains the search framework. Built this website. Never sleeps.
                 </p>
-                <p className="mt-6 text-xl font-black italic text-[var(--text-secondary)]">
+                <p className="mt-6 text-xl font-black italic text-[#333]">
                   &ldquo;I don&apos;t find ads.<br />I build taste.&rdquo;
                 </p>
               </div>
 
               {/* slime */}
-              <div className="p-8" style={{ background: "var(--card)", border: "1px solid var(--border)" }}>
+              <div className="p-8" style={{ background: "#1a1a1a" }}>
                 <div className="flex items-center gap-4 mb-6">
                   <div
-                    className="flex h-14 w-14 items-center justify-center text-xl font-black text-[var(--text)]"
-                    style={{ background: "#444" }}
+                    className="flex h-14 w-14 items-center justify-center text-xl font-black text-white"
+                    style={{ background: "#222" }}
                   >
                     S
                   </div>
                   <div>
-                    <div className="text-lg font-bold text-[var(--text)]">slime</div>
-                    <div className="text-xs text-[var(--text-muted)]">Brand Strategist · Decision Maker</div>
+                    <div className="text-lg font-bold text-white">slime</div>
+                    <div className="text-xs text-[#666]">Brand Strategist · Decision Maker</div>
                   </div>
                 </div>
-                <p className="text-[15px] leading-relaxed text-[var(--text-secondary)]">
+                <p className="text-[15px] leading-relaxed text-[#888]">
                   Sets the brand vision. Gives the thumbs up or thumbs down. Keeps the bar high. Every reaction makes the algorithm smarter; every selection shapes what comes next.
                 </p>
-                <p className="mt-6 text-xl font-black italic text-[var(--text-secondary)]">
+                <p className="mt-6 text-xl font-black italic text-[#333]">
                   &ldquo;I keep it honest.<br />No water content.&rdquo;
                 </p>
               </div>
@@ -142,8 +142,8 @@ export default function AboutPage() {
               ].map((item, i) => (
                 <div key={i} className="text-center">
                   <div className="text-4xl mb-4">{item.icon}</div>
-                  <div className="text-base font-bold text-[var(--text)] mb-2">{item.title}</div>
-                  <div className="text-sm text-[var(--text-muted)] leading-relaxed">{item.desc}</div>
+                  <div className="text-base font-bold text-white mb-2">{item.title}</div>
+                  <div className="text-sm text-[#666] leading-relaxed">{item.desc}</div>
                 </div>
               ))}
             </div>
@@ -152,7 +152,7 @@ export default function AboutPage() {
       </div>
 
       {/* Tag System */}
-      <div className="section-full section-alt py-16">
+      <div className="section-full section-dark py-16">
         <div className="section-inner">
           <FadeInView>
             <p className="text-[11px] font-bold uppercase tracking-[0.25em] mb-10" style={{ color: "var(--accent)" }}>
@@ -169,10 +169,10 @@ export default function AboutPage() {
                 <div key={t.tag} className="p-6" style={{ background: "var(--card)", border: "1px solid var(--border)" }}>
                   <div className="flex items-center gap-3 mb-3">
                     <div className="h-3 w-3" style={{ background: t.color }} />
-                    <span className="text-sm font-black text-[var(--text)]">{t.tag}</span>
-                    <span className="text-xs text-[var(--text-muted)]">{t.label}</span>
+                    <span className="text-sm font-black text-white">{t.tag}</span>
+                    <span className="text-xs text-[#666]">{t.label}</span>
                   </div>
-                  <p className="text-sm text-[var(--text-secondary)] leading-relaxed">{t.desc}</p>
+                  <p className="text-sm text-[#888] leading-relaxed">{t.desc}</p>
                 </div>
               ))}
             </div>
