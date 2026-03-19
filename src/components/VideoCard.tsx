@@ -79,9 +79,9 @@ export default function VideoCard({
   const summary = video.breakdown?.summary || "";
 
   return (
-    <div className="group overflow-hidden border" style={{ background: "var(--card)", borderColor: "var(--border)" }}>
+    <div className="group overflow-hidden" style={{ background: "var(--card)" }}>
       <a href={`/video/${video.id}`} className="block">
-        <div className="relative aspect-video w-full overflow-hidden" style={{ background: "#fff1e5" }}>
+        <div className="relative aspect-video w-full overflow-hidden" style={{ background: "#080808" }}>
           <img
             src={`https://img.youtube.com/vi/${video.id}/mqdefault.jpg`}
             alt=""
@@ -111,19 +111,19 @@ export default function VideoCard({
         </div>
 
         <a href={`/video/${video.id}`} className="block">
-          <h3 className="text-[15px] font-bold leading-snug text-[#111] line-clamp-2 transition-colors group-hover:text-[var(--accent)]">
+          <h3 className="text-[15px] font-bold leading-snug text-white line-clamp-2 transition-colors group-hover:text-[var(--accent)]">
             {video.status === "playback_risky" && <span className="mr-1 text-xs opacity-50">⚠️</span>}
             {displayTitle}
           </h3>
         </a>
 
         {!compact && summary && (
-          <p className="mt-2 text-[13px] leading-relaxed text-[#555] line-clamp-2">
+          <p className="mt-2 text-[13px] leading-relaxed text-[#666] line-clamp-2">
             {mounted ? <TranslatedText text={summary} lang={lang} /> : summary}
           </p>
         )}
 
-        <div className="mt-5 flex items-center justify-between border-t pt-4" style={{ borderColor: "#f3d7bf" }}>
+        <div className="mt-5 flex items-center justify-between border-t pt-4" style={{ borderColor: "#1a1a1a" }}>
           <span className="text-[11px] font-medium text-[#444]">{video.date_added}</span>
           {mounted && (
             <div className="relative flex items-center gap-1">

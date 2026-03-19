@@ -6,6 +6,7 @@ import { HydrateProvider } from "@/components/HydrateProvider";
 import { AuthProvider } from "@/components/AuthProvider";
 import NavBar from "@/components/NavBar";
 import FooterStats from "@/components/FooterStats";
+import AdminThemeGate from "@/components/AdminThemeGate";
 import { normalizeLang } from "@/lib/language";
 
 const brHendrix = localFont({
@@ -41,6 +42,7 @@ export default async function RootLayout({
     <html lang={lang === "cn" ? "zh" : "en"} className="dark">
       <body className={`${brHendrix.className} ${brHendrix.variable} antialiased`}>
         <AuthProvider>
+          <AdminThemeGate />
           <NavBar initialLang={lang} />
           <div className="h-20" />
           <HydrateProvider>
@@ -49,7 +51,7 @@ export default async function RootLayout({
         </AuthProvider>
 
         <footer>
-          <div className="section-full" style={{ background: "#fff3e8" }}>
+          <div className="section-full" style={{ background: "#000000" }}>
             <div className="section-inner py-10">
               <div
                 className="mt-8 select-none overflow-hidden"
@@ -58,7 +60,7 @@ export default async function RootLayout({
                   fontWeight: 900,
                   lineHeight: 0.82,
                   letterSpacing: "-0.05em",
-                  color: "#ffd3b3",
+                  color: "#000000",
                 }}
               >
                 Claw Pips

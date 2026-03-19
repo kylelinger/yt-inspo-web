@@ -96,13 +96,13 @@ export default function AllVideosExplorer({ videos, lang = "us" }: { videos: Vid
           value={query}
           onChange={(e) => setQuery(e.target.value)}
           placeholder={tr(lang, "Search title / brand / channel / video ID", "搜索 标题 / 品牌 / 频道 / 视频ID")}
-          className="w-full border border-[var(--border)] bg-white px-4 py-3 text-sm text-[#111] outline-none transition-colors focus:border-[var(--accent)]"
+          className="w-full border border-[#2a2a2a] bg-[#0f0f0f] px-4 py-3 text-sm text-white outline-none transition-colors focus:border-[var(--accent)]"
         />
 
         <select
           value={sortKey}
           onChange={(e) => setSortKey(e.target.value as SortKey)}
-          className="border border-[var(--border)] bg-white px-4 py-3 text-sm text-[#111] outline-none"
+          className="border border-[#2a2a2a] bg-[#0f0f0f] px-4 py-3 text-sm text-white outline-none"
         >
           <option value="latest">{tr(lang, "Latest first", "最新优先")}</option>
           <option value="most_up">{tr(lang, "Most liked", "高赞优先")}</option>
@@ -138,7 +138,7 @@ export default function AllVideosExplorer({ videos, lang = "us" }: { videos: Vid
           {tr(lang, "No videos matched your filters", "没有匹配的视频")}
         </div>
       ) : (
-        <div className="grid gap-[2px] sm:grid-cols-2" style={{ background: "#ffe6d1" }}>
+        <div className="grid gap-[2px] sm:grid-cols-2" style={{ background: "#000000" }}>
           {filtered.map((v) => (
             <VideoCard key={v.id} video={v} />
           ))}

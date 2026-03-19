@@ -114,10 +114,10 @@ export default async function Home() {
         )}
       </div>
 
-      <div className="section-full py-16" style={{ background: "#fff3e8" }}>
+      <div className="section-full py-16" style={{ background: "#0e0e0e" }}>
         <div className="section-inner">
           <FadeInView>
-            <div className="w-full p-7 sm:p-8 lg:p-10 border" style={{ background: "#ffffff", borderColor: "var(--border)" }}>
+            <div className="w-full p-7 sm:p-8 lg:p-10" style={{ background: "#1a1a1a" }}>
               <div className="mb-7">
                 <p className="text-[11px] font-bold uppercase tracking-[0.18em]" style={{ color: "var(--accent)" }}>
                   Pipeline
@@ -146,7 +146,7 @@ export default async function Home() {
         </div>
       </div>
 
-      <div className="section-full py-5" style={{ background: "#fff8f0" }}>
+      <div className="section-full py-5" style={{ background: "#080808" }}>
         <div className="section-inner">
           <p className="mb-3 text-center text-[11px] font-bold uppercase tracking-[0.25em]" style={{ color: "#555" }}>
             Claw Pips
