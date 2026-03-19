@@ -40,8 +40,8 @@ export default async function Home() {
               { num: "4", label: tr(lang, "Lanes", "赛道") },
             ].map((stat, i) => (
               <div key={stat.label} className="flex items-center gap-1.5 sm:gap-2" style={{ borderLeft: i > 0 ? "1px solid rgba(255,255,255,0.2)" : "none", paddingLeft: i > 0 ? "0.75rem" : "0" }}>
-                <span className="text-base font-black text-white sm:text-lg">{stat.num}</span>
-                <span className="text-xs font-bold uppercase tracking-wider text-white/60 sm:text-sm">{stat.label}</span>
+                <span className="text-base font-black text-[var(--text)] sm:text-lg">{stat.num}</span>
+                <span className="text-xs font-bold uppercase tracking-wider text-[var(--text)]/60 sm:text-sm">{stat.label}</span>
               </div>
             ))}
           </div>
@@ -60,8 +60,8 @@ export default async function Home() {
             <div className="flex items-end justify-between mb-10">
               <div>
                 <p className="text-[11px] font-bold uppercase tracking-[0.25em] mb-3" style={{ color: "var(--accent)" }}>{tr(lang, "Today", "今日")}</p>
-                <h2 className="display-md text-white">{latestDate}</h2>
-                <p className="mt-2 text-sm text-[#444]">{latestVideos.length} {tr(lang, "videos curated", "条已精选")}</p>
+                <h2 className="display-md text-[var(--text)]">{latestDate}</h2>
+                <p className="mt-2 text-sm text-[var(--text-muted)]">{latestVideos.length} {tr(lang, "videos curated", "条已精选")}</p>
               </div>
               <div className="hidden sm:flex items-center gap-5">
                 {[
@@ -73,8 +73,8 @@ export default async function Home() {
                 ].map((t) => (
                   <div key={t.tag} className="flex items-center gap-2">
                     <div className="h-2.5 w-2.5" style={{ background: t.color }} />
-                    <span className="text-[11px] font-bold text-[#555]">{t.tag}</span>
-                    <span className="text-[11px] text-[#333]">{t.label}</span>
+                    <span className="text-[11px] font-bold text-[var(--text-muted)]">{t.tag}</span>
+                    <span className="text-[11px] text-[var(--text-secondary)]">{t.label}</span>
                   </div>
                 ))}
               </div>
@@ -91,8 +91,8 @@ export default async function Home() {
               ].map((t) => (
                 <div key={t.tag} className="flex items-center gap-1.5">
                   <div className="h-2 w-2 shrink-0" style={{ background: t.color }} />
-                  <span className="text-[10px] font-bold text-[#555]">{t.tag}</span>
-                  <span className="text-[10px] text-[#333]">{t.label}</span>
+                  <span className="text-[10px] font-bold text-[var(--text-muted)]">{t.tag}</span>
+                  <span className="text-[10px] text-[var(--text-secondary)]">{t.label}</span>
                 </div>
               ))}
             </div>
@@ -105,7 +105,7 @@ export default async function Home() {
           </div>
         ) : (
           <div className="section-inner pb-24">
-            <div className="py-24 text-center" style={{ background: "var(--bg-alt)" }}>
+            <div className="py-24 text-center" style={{ background: "var(--bg-alt)", border: "1px solid var(--border)" }}>
               <p className="text-5xl mb-4">🎬</p>
               <p className="text-lg font-bold" style={{ color: "var(--text)" }}>{tr(lang, "Today’s drop is still cooking", "今日更新还在制作中")}</p>
               <p className="text-sm mt-2" style={{ color: "var(--text-muted)" }}>{tr(lang, "Check back at 10:00", "10:00 回来刷新")}</p>
@@ -114,7 +114,7 @@ export default async function Home() {
         )}
       </div>
 
-      <div className="section-full py-16" style={{ background: "var(--bg-alt)" }}>
+      <div className="section-full py-16" style={{ background: "var(--bg-alt)", border: "1px solid var(--border)" }}>
         <div className="section-inner">
           <FadeInView>
             <div className="w-full p-7 sm:p-8 lg:p-10" style={{ background: "var(--card)", border: "1px solid var(--border)" }}>
@@ -122,7 +122,7 @@ export default async function Home() {
                 <p className="text-[11px] font-bold uppercase tracking-[0.18em]" style={{ color: "var(--accent)" }}>
                   Pipeline
                 </p>
-                <h3 className="mt-2 text-xl sm:text-2xl font-bold text-white">{tr(lang, "How this cut gets made", "这条日更如何出片")}</h3>
+                <h3 className="mt-2 text-xl sm:text-2xl font-bold text-[var(--text)]">{tr(lang, "How this cut gets made", "这条日更如何出片")}</h3>
               </div>
 
               <div className="grid gap-6 sm:grid-cols-2">
@@ -135,7 +135,7 @@ export default async function Home() {
                   <div key={i} className="flex gap-4">
                     <div className="text-2xl flex-shrink-0">{item.icon}</div>
                     <div>
-                      <h3 className="text-sm font-bold text-white mb-1">{item.title}</h3>
+                      <h3 className="text-sm font-bold text-[var(--text)] mb-1">{item.title}</h3>
                       <p className="text-xs leading-relaxed" style={{ color: "var(--text-secondary)" }}>{item.desc}</p>
                     </div>
                   </div>
@@ -168,7 +168,7 @@ export default async function Home() {
               <div className="flex items-end justify-between mb-10">
                 <div>
                   <p className="text-[11px] font-bold uppercase tracking-[0.25em] mb-3" style={{ color: "var(--accent)" }}>{tr(lang, "Archive", "归档")}</p>
-                  <h2 className="display-md text-white">{tr(lang, "Previous drops", "往期内容")}</h2>
+                  <h2 className="display-md text-[var(--text)]">{tr(lang, "Previous drops", "往期内容")}</h2>
                 </div>
                 <a href="/archive" className="text-sm font-bold transition-colors hover:text-white" style={{ color: "var(--accent)" }}>
                   {tr(lang, "View all", "查看全部")} &rarr;
@@ -176,7 +176,7 @@ export default async function Home() {
               </div>
             </FadeInView>
 
-            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-[2px]" style={{ background: "var(--bg)" }}>
+            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-[2px]" style={{ background: "transparent" }}>
               {olderDates.map((date) => {
                 const count = grouped.get(date)?.length || 0;
                 return (
@@ -184,10 +184,10 @@ export default async function Home() {
                     key={date}
                     href={`/archive/${date}`}
                     className="group block p-6 transition-colors hover:bg-[var(--accent-soft)]"
-                    style={{ background: "var(--bg-alt)" }}
+                    style={{ background: "var(--bg-alt)", border: "1px solid var(--border)" }}
                   >
                     <div className="text-base font-bold" style={{ color: "var(--text)" }}>{date}</div>
-                    <div className="mt-1 text-sm text-[#555]">{count} {tr(lang, "videos", "条视频")}</div>
+                    <div className="mt-1 text-sm text-[var(--text-muted)]">{count} {tr(lang, "videos", "条视频")}</div>
                   </a>
                 );
               })}

@@ -5,7 +5,6 @@ import { motion, AnimatePresence } from "framer-motion";
 import type { Video } from "@/lib/types";
 import VideoCard from "./VideoCard";
 import { tr, type Lang } from "@/lib/language";
-import { useAuth } from "./AuthProvider";
 
 function getTagFilters(lang: Lang) {
   return [
@@ -19,55 +18,30 @@ function getTagFilters(lang: Lang) {
 }
 
 export default function SortedVideoGrid({ videos, showFilter = false, lang = "us" }: { videos: Video[]; showFilter?: boolean; lang?: Lang }) {
-  const { isAdmin } = useAuth();
   const [tagFilter, setTagFilter] = useState<string>("all");
   const TAG_FILTERS = getTagFilters(lang);
 
   const TAG_ORDER: Record<string, number> = { B1: 0, B2: 1, A: 2, C: 3, S: 4 };
 
-  const filtered = useMemo(() => {
-    if (tagFilter === "all") return videos;
-    return videos.filter((v) => v.tag === tagFilter);
-  }, [videos, tagFilter]);
-
-  const sorted = useMemo(() => {
-    return [...filtered].sort((a, b) => {
-      const orderA = TAG_ORDER[a.tag || ""] ?? 4;
-      const orderB = TAG_ORDER[b.tag || ""] ?? 4;
-      return orderA - orderB;
-    });
-  }, [filtered]);
+  const filtered = useMemo(() => (tagFilter === "all" ? videos : videos.filter((v) => v.tag === tagFilter)), [videos, tagFilter]);
+  const sorted = useMemo(() => [...filtered].sort((a, b) => (TAG_ORDER[a.tag || ""] ?? 4) - (TAG_ORDER[b.tag || ""] ?? 4)), [filtered]);
 
   const tagCounts = useMemo(() => {
     const counts: Record<string, number> = { all: videos.length };
-    for (const v of videos) {
-      if (v.tag) counts[v.tag] = (counts[v.tag] || 0) + 1;
-    }
+    for (const v of videos) if (v.tag) counts[v.tag] = (counts[v.tag] || 0) + 1;
     return counts;
   }, [videos]);
 
   return (
     <div>
       {showFilter && (
-        <div
-          className={`mb-8 flex flex-wrap ${isAdmin ? "gap-2" : "gap-[2px]"}`}
-          style={{ background: isAdmin ? "transparent" : "#000000" }}
-        >
+        <div className="mb-8 flex flex-wrap gap-2" style={{ background: "transparent" }}>
           {TAG_FILTERS.map((tf) => {
             const count = tagCounts[tf.value] || 0;
             if (tf.value !== "all" && count === 0) return null;
             const active = tagFilter === tf.value;
             return (
-              <button
-                key={tf.value}
-                onClick={() => setTagFilter(tf.value)}
-                className={`cursor-pointer px-6 py-3 text-xs font-bold uppercase tracking-[0.12em] transition-colors ${isAdmin ? "border" : ""}`}
-                style={{
-                  background: active ? "var(--accent)" : isAdmin ? "#fff" : "var(--bg)",
-                  color: active ? "#fff" : isAdmin ? "#666" : "#555",
-                  borderColor: isAdmin ? (active ? "var(--accent)" : "var(--border)") : undefined,
-                }}
-              >
+              <button key={tf.value} onClick={() => setTagFilter(tf.value)} className="cursor-pointer border px-6 py-3 text-xs font-bold uppercase tracking-[0.12em] transition-colors" style={{ background: active ? "var(--accent)" : "#fff", color: active ? "#fff" : "#666", borderColor: active ? "var(--accent)" : "var(--border)" }}>
                 {tf.label} ({count})
               </button>
             );
@@ -75,31 +49,17 @@ export default function SortedVideoGrid({ videos, showFilter = false, lang = "us
         </div>
       )}
 
-      <div
-        className={`grid ${isAdmin ? "gap-4" : "gap-[2px] sm:grid-cols-2"}`}
-        style={{ background: isAdmin ? "transparent" : "#000000" }}
-      >
+      <div className="grid gap-4" style={{ background: "transparent" }}>
         <AnimatePresence mode="popLayout">
           {sorted.map((v) => (
-            <motion.div
-              key={v.id}
-              layout
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
-              transition={{ duration: 0.3 }}
-            >
+            <motion.div key={v.id} layout initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.3 }}>
               <VideoCard video={v} />
             </motion.div>
           ))}
         </AnimatePresence>
       </div>
 
-      {sorted.length === 0 && (
-        <div className="py-16 text-center" style={{ background: "var(--bg-alt)", color: "#666", border: isAdmin ? "1px solid var(--border)" : undefined }}>
-          {tr(lang, "No videos in this lane", "该分类下暂无视频")}
-        </div>
-      )}
+      {sorted.length === 0 && <div className="py-16 text-center" style={{ background: "var(--bg-alt)", color: "#666", border: "1px solid var(--border)" }}>{tr(lang, "No videos in this lane", "该分类下暂无视频")}</div>}
     </div>
   );
 }

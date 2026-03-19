@@ -8,9 +8,7 @@ export default function NavBar({ initialLang = "us" }: { initialLang?: Lang }) {
   const { isAdmin } = useAuth();
   const [lang, setLang] = useState<Lang>(initialLang);
 
-  useEffect(() => {
-    setLang(getClientLang());
-  }, []);
+  useEffect(() => setLang(getClientLang()), []);
 
   const links = useMemo(
     () =>
@@ -37,37 +35,25 @@ export default function NavBar({ initialLang = "us" }: { initialLang?: Lang }) {
     window.location.reload();
   };
 
-  const navTextClass = isAdmin
-    ? "text-[13px] sm:text-[14px] font-semibold uppercase tracking-[0.12em] text-[#6a6a6a]"
-    : "text-[14px] sm:text-[15px] font-medium text-[#666]";
-
   return (
-    <nav
-      className="fixed top-0 left-0 right-0 z-50 border-b"
-      style={{ borderColor: "var(--nav-border)", background: "var(--nav-bg)", backdropFilter: "blur(20px)" }}
-    >
+    <nav className="fixed top-0 left-0 right-0 z-50 border-b" style={{ borderColor: "var(--nav-border)", background: "var(--nav-bg)", backdropFilter: "blur(20px)" }}>
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 sm:px-8 h-20">
         <a href="/" className="flex items-center gap-2 min-w-0">
           <img src="/logo.png" alt="Claw Pips" className="h-8 shrink-0" />
-          <span className={`whitespace-nowrap ${isAdmin ? "text-[17px] font-black tracking-[-0.01em] text-[#111]" : "text-[16px] sm:text-[18px] font-bold tracking-tight text-white"}`}>
-            Claw Pips
-          </span>
+          <span className="whitespace-nowrap text-[17px] font-black tracking-[-0.01em] text-[#111]">Claw Pips</span>
         </a>
 
-        <div className={`flex items-center gap-4 sm:gap-6 ${navTextClass}`}>
+        <div className="flex items-center gap-4 sm:gap-6 text-[13px] sm:text-[14px] font-semibold uppercase tracking-[0.12em] text-[#6a6a6a]">
           {links.map((link) => (
-            <a
-              key={link.href}
-              href={link.href}
-              className={`transition-colors hover:text-[var(--accent)] ${link.mobile === false ? "hidden sm:inline" : ""}`}
-            >
+            <a key={link.href} href={link.href} className={`transition-colors hover:text-[var(--accent)] ${link.mobile === false ? "hidden sm:inline" : ""}`}>
               {link.label}
             </a>
           ))}
 
           <button
             onClick={toggleLang}
-            className="rounded border border-[#2a2a2a] px-2.5 py-1 text-[11px] font-bold tracking-wider text-[#888] transition-colors hover:border-[var(--accent)] hover:text-[var(--accent)]"
+            className="rounded border px-2.5 py-1 text-[11px] font-bold tracking-wider text-[#888] transition-colors hover:border-[var(--accent)] hover:text-[var(--accent)]"
+            style={{ borderColor: "var(--border)" }}
             title={tr(lang, "Switch language", "切换语言")}
           >
             {lang === "us" ? "CN" : "US"}
