@@ -1,17 +1,14 @@
 "use client";
 
 import { useEffect } from "react";
-import { useAuth } from "@/components/AuthProvider";
 
 export default function AdminThemeGate() {
-  const { isAdmin } = useAuth();
-
+  // This deployment is the ADMIN branch.
+  // Always apply admin-theme styling.
   useEffect(() => {
-    if (isAdmin) document.body.classList.add("admin-theme");
-    else document.body.classList.remove("admin-theme");
-
+    document.body.classList.add("admin-theme");
     return () => document.body.classList.remove("admin-theme");
-  }, [isAdmin]);
+  }, []);
 
   return null;
 }

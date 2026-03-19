@@ -1,20 +1,20 @@
 "use client";
 
-const AUTH_KEY = "yt_inspo_admin_key";
+// This is the ADMIN branch deployment.
+// Always return "admin" token so the API knows this is an admin request.
 
-export function getAdminKey(): string | null {
-  if (typeof window === 'undefined') return null;
-  return localStorage.getItem(AUTH_KEY);
+export function getAdminKey(): string {
+  return "admin";
 }
 
 export function setAdminKey(key: string): void {
-  localStorage.setItem(AUTH_KEY, key);
+  // No-op on admin branch
 }
 
 export function clearAdminKey(): void {
-  localStorage.removeItem(AUTH_KEY);
+  // No-op on admin branch
 }
 
 export function isAdmin(): boolean {
-  return getAdminKey() === "slime";
+  return true;
 }
