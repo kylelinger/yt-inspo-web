@@ -49,7 +49,7 @@ export default async function RootLayout({
         </AuthProvider>
 
         <footer>
-          <div className="section-full" style={{ background: "#000000" }}>
+          <div className="section-full" style={{ background: "#fff3e8" }}>
             <div className="section-inner py-10">
               <div
                 className="mt-8 select-none overflow-hidden"
@@ -58,7 +58,7 @@ export default async function RootLayout({
                   fontWeight: 900,
                   lineHeight: 0.82,
                   letterSpacing: "-0.05em",
-                  color: "#000000",
+                  color: "#ffd3b3",
                 }}
               >
                 Claw Pips

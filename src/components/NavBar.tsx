@@ -45,14 +45,14 @@ export default function NavBar({ initialLang = "us" }: { initialLang?: Lang }) {
       <div className="mx-auto flex max-w-7xl items-center justify-between px-8 h-20">
         <a href="/" className="flex items-center gap-2 min-w-0">
           <img src="/logo.png" alt="Claw Pips" className="h-8 shrink-0" />
-          <span className="text-[16px] sm:text-[18px] font-bold tracking-tight text-white whitespace-nowrap">Claw Pips</span>
+          <span className="text-[16px] sm:text-[18px] font-bold tracking-tight text-[#111] whitespace-nowrap">Claw Pips</span>
         </a>
-        <div className="flex items-center gap-4 sm:gap-6 text-[14px] sm:text-[15px] font-medium text-[#666]">
+        <div className="flex items-center gap-4 sm:gap-6 text-[14px] sm:text-[15px] font-medium text-[#7a7a7a]">
           {links.map((link) => (
             <a
               key={link.href}
               href={link.href}
-              className={`transition-colors hover:text-white ${link.mobile === false ? "hidden sm:inline" : ""}`}
+              className={`transition-colors hover:text-[var(--accent)] ${link.mobile === false ? "hidden sm:inline" : ""}`}
             >
               {link.label}
             </a>
@@ -67,7 +67,7 @@ export default function NavBar({ initialLang = "us" }: { initialLang?: Lang }) {
           </button>
 
           {isAdmin && (
-            <a href="/admin" className="hidden sm:inline text-[#444] transition-colors hover:text-white" title="Admin">
+            <a href="/admin" className="hidden sm:inline text-[#666] transition-colors hover:text-[var(--accent)]" title="Admin">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                 <circle cx="12" cy="12" r="3" />
                 <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z" />
