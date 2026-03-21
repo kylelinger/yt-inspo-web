@@ -22,9 +22,14 @@ export default async function Home() {
     grouped.get(date)!.push(v);
   }
   const sortedDates = [...grouped.keys()].sort((a, b) => b.localeCompare(a));
-  const latestDate = sortedDates[0];
-  const latestVideos = grouped.get(latestDate) || [];
-  const olderDates = sortedDates.slice(1);
+
+  // "Today" uses real date (UTC+8), not latest data date
+  const now = new Date();
+  const utc8 = new Date(now.getTime() + 8 * 60 * 60 * 1000);
+  const todayStr = utc8.toISOString().slice(0, 10); // "YYYY-MM-DD"
+  const latestDate = todayStr;
+  const latestVideos = grouped.get(todayStr) || [];
+  const olderDates = sortedDates.filter((d) => d !== todayStr);
   const totalVideos = allVideos.length;
   const totalBrands = new Set(allVideos.map((v) => (v.brand || "").trim()).filter(Boolean)).size;
 
