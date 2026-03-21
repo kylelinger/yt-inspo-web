@@ -5,7 +5,7 @@
 | 环境 | 域名 | 分支 | 本地目录 | Vercel 项目 |
 |---|---|---|---|---|
 | **Prod** | clawpips.vercel.app | `main` | `yt_inspo_web_repo/` | yt_inspo_web_repo |
-| **Dev** | clawpips-dev.vercel.app | `dev` | `yt_inspo_web_dev/` (worktree) | yt_inspo_web_dev |
+| **Dev** | ytinspowebdev.vercel.app | `dev` | `yt_inspo_web_dev/` (worktree) | yt_inspo_web_dev |
 
 > `admin` 分支已归档为 `archive/admin`，不再使用。
 
@@ -39,7 +39,7 @@ cd yt_inspo_web_dev/           # dev worktree
 git add -A
 git commit -m "feat: description"
 git push origin dev
-npx vercel --prod              # 部署到 clawpips-dev.vercel.app 预览
+npx vercel --prod              # 部署到 ytinspowebdev.vercel.app 预览
 ```
 
 ### 2. dev 同步最新数据（可选）
@@ -76,13 +76,7 @@ npx vercel --prod
 
 ## Vercel 域名别名
 
-dev 环境的 `clawpips-dev.vercel.app` 是别名，每次 `vercel --prod` 后需要重新绑定：
-
-```bash
-npx vercel alias <deployment-url> clawpips-dev.vercel.app
-```
-
-或者在 Vercel Dashboard 中将 `clawpips-dev.vercel.app` 添加为项目的自定义域名（一次性配置，之后自动生效）。
+dev 环境使用 Vercel 自动分配的域名 `ytinspowebdev.vercel.app`，每次 `vercel --prod` 后自动生效，无需额外配置。
 
 ---
 
