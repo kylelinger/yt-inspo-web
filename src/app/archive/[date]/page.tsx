@@ -5,20 +5,17 @@ import type { Video } from "@/lib/types";
 import SortedVideoGrid from "@/components/SortedVideoGrid";
 import { normalizeLang, tr } from "@/lib/language";
 
-function getLatestDate(): string {
-  const allVideos = videosData as Array<{ date_added?: string; collection?: string }>;
-  const dates = allVideos
-    .filter((v) => v.collection !== "foundation" && v.date_added)
-    .map((v) => v.date_added!)
-    .sort((a, b) => b.localeCompare(a));
-  return dates[0] || "";
+function getTodayUTC8(): string {
+  const now = new Date();
+  const utc8 = new Date(now.getTime() + 8 * 60 * 60 * 1000);
+  return utc8.toISOString().slice(0, 10);
 }
 
 export default async function ArchiveDatePage({ params }: { params: Promise<{ date: string }> }) {
   const lang = normalizeLang((await cookies()).get("bp_lang")?.value);
   const { date } = await params;
 
-  if (date === getLatestDate()) redirect("/");
+  if (date === getTodayUTC8()) redirect("/");
 
   if (date === "foundation") {
     const videos = (videosData as Video[]).filter((v) => v.collection === "foundation");
