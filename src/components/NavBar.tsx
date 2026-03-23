@@ -13,21 +13,21 @@ export default function NavBar({ initialLang = "us" }: { initialLang?: Lang }) {
   }, []);
 
   const links = useMemo(
-    () =>
-      isAdmin
-        ? [
-            { href: "/", label: tr(lang, "Today", "今日") },
-            { href: "/videos", label: tr(lang, "All Videos", "全部视频") },
-            { href: "/archive", label: tr(lang, "Archive", "往期") },
-            { href: "/shortlist", label: tr(lang, "Saved", "收藏"), mobile: true },
-            { href: "/archive/foundation", label: tr(lang, "Foundation", "地基"), mobile: false },
-            { href: "/about", label: tr(lang, "About", "关于"), mobile: false },
-          ]
-        : [
-            { href: "/", label: tr(lang, "Today", "今日") },
-            { href: "/videos", label: tr(lang, "All Videos", "全部视频") },
-            { href: "/archive", label: tr(lang, "Archive", "往期") },
-          ],
+    () => {
+      const base = [
+        { href: "/", label: tr(lang, "Today", "今日") },
+        { href: "/videos", label: tr(lang, "All Videos", "全部视频") },
+        { href: "/archive", label: tr(lang, "Archive", "往期") },
+      ];
+      if (isAdmin) {
+        base.push(
+          { href: "/shortlist", label: tr(lang, "Saved", "收藏") },
+          { href: "/archive/foundation", label: tr(lang, "Foundation", "地基") },
+          { href: "/about", label: tr(lang, "About", "关于") },
+        );
+      }
+      return base;
+    },
     [isAdmin, lang]
   );
 
@@ -37,10 +37,6 @@ export default function NavBar({ initialLang = "us" }: { initialLang?: Lang }) {
     window.location.reload();
   };
 
-  const navTextClass = isAdmin
-    ? "text-[13px] sm:text-[14px] font-semibold uppercase tracking-[0.12em] text-[#6a6a6a]"
-    : "text-[14px] sm:text-[15px] font-medium text-[#666]";
-
   return (
     <nav
       className="fixed top-0 left-0 right-0 z-50 border-b"
@@ -49,17 +45,17 @@ export default function NavBar({ initialLang = "us" }: { initialLang?: Lang }) {
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 sm:px-8 h-20">
         <a href="/" className="flex items-center gap-2 min-w-0">
           <img src="/logo.png" alt="Claw Pips" className="h-8 shrink-0" />
-          <span className={`whitespace-nowrap ${isAdmin ? "text-[17px] font-black tracking-[-0.01em] text-[#111]" : "text-[16px] sm:text-[18px] font-bold tracking-tight text-white"}`}>
+          <span className="whitespace-nowrap text-[16px] sm:text-[18px] font-bold tracking-tight text-white">
             Claw Pips
           </span>
         </a>
 
-        <div className={`flex items-center gap-4 sm:gap-6 ${navTextClass}`}>
+        <div className="flex items-center gap-4 sm:gap-6 text-[14px] sm:text-[15px] font-medium text-[#666]">
           {links.map((link) => (
             <a
               key={link.href}
               href={link.href}
-              className={`transition-colors hover:text-[var(--accent)] ${link.mobile === false ? "hidden sm:inline" : ""}`}
+              className="transition-colors hover:text-[var(--accent)]"
             >
               {link.label}
             </a>

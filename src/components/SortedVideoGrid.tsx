@@ -5,7 +5,6 @@ import { motion, AnimatePresence } from "framer-motion";
 import type { Video } from "@/lib/types";
 import VideoCard from "./VideoCard";
 import { tr, type Lang } from "@/lib/language";
-import { useAuth } from "./AuthProvider";
 
 function getTagFilters(lang: Lang) {
   return [
@@ -19,7 +18,6 @@ function getTagFilters(lang: Lang) {
 }
 
 export default function SortedVideoGrid({ videos, showFilter = false, lang = "us" }: { videos: Video[]; showFilter?: boolean; lang?: Lang }) {
-  const { isAdmin } = useAuth();
   const [tagFilter, setTagFilter] = useState<string>("all");
   const TAG_FILTERS = getTagFilters(lang);
 
@@ -50,8 +48,8 @@ export default function SortedVideoGrid({ videos, showFilter = false, lang = "us
     <div>
       {showFilter && (
         <div
-          className={`mb-8 flex flex-wrap ${isAdmin ? "gap-2" : "gap-[2px]"}`}
-          style={{ background: isAdmin ? "transparent" : "#000000" }}
+          className="mb-8 flex flex-wrap gap-[2px]"
+          style={{ background: "#000000" }}
         >
           {TAG_FILTERS.map((tf) => {
             const count = tagCounts[tf.value] || 0;
@@ -61,11 +59,10 @@ export default function SortedVideoGrid({ videos, showFilter = false, lang = "us
               <button
                 key={tf.value}
                 onClick={() => setTagFilter(tf.value)}
-                className={`cursor-pointer px-6 py-3 text-xs font-bold uppercase tracking-[0.12em] transition-colors ${isAdmin ? "border" : ""}`}
+                className="cursor-pointer px-6 py-3 text-xs font-bold uppercase tracking-[0.12em] transition-colors"
                 style={{
-                  background: active ? "var(--accent)" : isAdmin ? "#fff" : "var(--bg)",
-                  color: active ? "#fff" : isAdmin ? "#666" : "#555",
-                  borderColor: isAdmin ? (active ? "var(--accent)" : "var(--border)") : undefined,
+                  background: active ? "var(--accent)" : "var(--bg)",
+                  color: active ? "#fff" : "#555",
                 }}
               >
                 {tf.label} ({count})
@@ -76,8 +73,8 @@ export default function SortedVideoGrid({ videos, showFilter = false, lang = "us
       )}
 
       <div
-        className={`grid ${isAdmin ? "gap-4" : "gap-[2px] sm:grid-cols-2"}`}
-        style={{ background: isAdmin ? "transparent" : "#000000" }}
+        className="grid gap-[2px] sm:grid-cols-2"
+        style={{ background: "#000000" }}
       >
         <AnimatePresence mode="popLayout">
           {sorted.map((v) => (
@@ -96,7 +93,7 @@ export default function SortedVideoGrid({ videos, showFilter = false, lang = "us
       </div>
 
       {sorted.length === 0 && (
-        <div className="py-16 text-center" style={{ background: "var(--bg-alt)", color: "#666", border: isAdmin ? "1px solid var(--border)" : undefined }}>
+        <div className="py-16 text-center" style={{ background: "var(--bg-alt)", color: "#666" }}>
           {tr(lang, "No videos in this lane", "该分类下暂无视频")}
         </div>
       )}
