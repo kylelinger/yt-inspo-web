@@ -128,7 +128,7 @@ export default function AllVideosExplorer({ videos, lang = "us" }: { videos: Vid
           {tr(lang, "No videos matched your filters", "没有匹配的视频")}
         </div>
       ) : (
-        <div className="grid gap-3 sm:gap-4" style={{ background: "transparent" }}>
+        <div className="grid gap-[2px] sm:grid-cols-2" style={{ background: "#000000" }}>
           {filtered.map((v) => (
             <VideoCard key={v.id} video={v} />
           ))}
