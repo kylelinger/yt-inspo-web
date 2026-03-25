@@ -9257,5 +9257,483 @@
     "brand": "Coinbase",
     "priority": 12,
     "source": "official_channel"
+  },
+  {
+    "id": "ma26URxPgS4",
+    "url": "https://www.youtube.com/watch?v=ma26URxPgS4",
+    "platform": "youtube",
+    "date_added": "2026-03-25",
+    "breakdown": {
+      "summary": "本视频是 MAD Collective App（隶属于 MAD Sports Management）的发布预热广告。视频主要面向运动员和品牌方，核心诉求是推广其作为一个连接运动员与品牌进行商业合作、赞助匹配的平台。视频采用“受众呼唤 + 核心价值主张 + 产品 UI 展示 + 愿景描绘 + 明确 CTA”的经典短视频营销结构。画面穿插了运动员奔跑的运动场景、商务人士握手的合作场景、以及团队庆祝的成功场景，并结合智能手机端的 App 界面演示和 Instagram 主页展示，直观呈现产品形态。整体节奏紧凑，辅以高对比度的大字号醒目字幕和全程旁白，旨在快速抓住目标受众注意力，并引导其通过社媒私信获取内测资格。",
+      "structure": [
+        {
+          "time": "0:00-0:02",
+          "desc": "画面（运动员在公路上奔跑，居中大字字幕 \"ATHLETES AND BRANDS, THIS IS FOR YOU\"）。信息：开门见山框定目标受众，用奔跑画面营造运动属性与力量感。"
+        },
+        {
+          "time": "0:03-0:08",
+          "desc": "画面（手机屏幕亮起展示 MAD 标志，随后切入两位西装男士在写字楼前握手）。信息：正式引出产品名称，并具象化其核心价值——撮合运动员与品牌方达成商业合作。"
+        },
+        {
+          "time": "0:09-0:13",
+          "desc": "画面（动态展示手机内的 App UI，包含 \"Matching Gigs\"、\"Applied Gigs\" 等功能区块，随后切至办公室团队撒纸片庆祝）。信息：直观展示产品功能（商业机会匹配与追踪），用庆祝画面暗示使用该产品能带来职业成功和商业变现。"
+        },
+        {
+          "time": "0:14-0:20",
+          "desc": "画面（黑底手机展示 MAD 标志，随后滑入其官方 Instagram 主页）。信息：为即将到来的产品发布预热，并提供明确的转化路径（通过 IG 私信获取抢先体验资格）。"
+        }
+      ],
+      "strengths": [
+        "视觉文本与旁白高度同步：全程使用居中、高对比度（红/白/黑）的大字号动态字幕，且与配音完全一致，确保在移动端静音播放或短视频信息流中也能 100% 传递核心信息。",
+        "具象化功能展示降低理解门槛：在 0:09 处直接嵌入了高保真 App UI 界面（清晰展示了匹配数量和投递状态），比单纯用文案描述“我们能帮你找赞助”更具说服力，增加了产品的真实感。",
+        "精准的视觉蒙太奇筛选受众：前 8 秒内通过“运动员单人奔跑”与“商务人士握手”的直接剪辑碰撞，不仅在视觉上解释了“Athletes meet Brands”的概念，也快速锚定了两端目标用户群体。"
+      ],
+      "risks": [
+        "画面素材同质化较高：除手机 UI 和社媒主页外，奔跑、握手、办公室欢呼等画面具有明显的通用素材（Stock Footage）痕迹，缺乏真实的品牌原生案例或知名运动员背书，可能削弱初创平台的信任感。",
+        "核心差异化优势展示不足：文案停留在“boost career or secure sponsorships”的宏观层面，未明确说明平台是如何实现匹配的（例如其 IG 截图小字中提到的 AI 匹配技术并未在视频中放大强调），在竞品环境中缺乏锐度。"
+      ],
+      "transferable": [
+        "开篇 3 秒精准受众呼唤：在广告开头，直接用显眼文本和语音点名目标人群（如 \"Athletes and brands, this is for you\"），替代冗长的背景铺垫，有效提升核心受众的完播率。",
+        "虚实结合的 UI 演示法：在推介未上线的 App 或软件时，将核心功能的 UI 界面直接嵌入真实手机模型中进行动态展示，能快速建立用户对产品形态的认知。",
+        "内测期私域引流前置：在产品正式发布前，将 CTA 指向具体的社媒互动动作（如 \"Message us for early access details\" 并展示 IG 主页），利用私信建立种子用户池，为后续正式上线蓄水。"
+      ],
+      "vo_quotes": [
+        "Athletes and brands, this is for you. We're excited to launch MAD Collective app, where athletes meet brands for incredible collaborations. Whether you're looking to boost your career or secure sponsorships, this app is your key to success. Stay tuned for the launch and be part of the movement. Message us for early access details."
+      ],
+      "ending": "结尾通过展示官方 Instagram 主页并配合口播，明确呼吁用户发送私信以获取早期访问权限（Message us for early access details），随后切入 YouTube 订阅引导动画强化厂牌记忆。",
+      "analyzed_brand": "MAD Collective, MAD Sports Management"
+    },
+    "title": "Athletes & Brands, This Is for YOU!",
+    "uploader": "MAD Sports Management ",
+    "duration": 30,
+    "view_count": 1,
+    "tag": "S",
+    "brand": "partner",
+    "priority": 5
+  },
+  {
+    "id": "12gqnbZ7u2k",
+    "url": "https://www.youtube.com/watch?v=12gqnbZ7u2k",
+    "platform": "youtube",
+    "date_added": "2026-03-25",
+    "breakdown": {
+      "summary": "这支由加拿大金融投资品牌 Wealthsimple 推出的系列访谈式短片（Part 3: The Dancer），以伪纪录片的形式，邀请一位脱衣舞娘探讨“未来的金钱与支付方式”。视频从脑洞大开的“二维码纹身”支付切入，逐渐过渡到无现金社会、赛博格（半机器人）舞者以及 AI 客户等科幻且略带荒诞的话题，最终落脚于核心品牌信息：“无论你认为未来是什么样，投资未来（Invest in the future）”。",
+      "structure": [
+        {
+          "time": "0:00-0:07",
+          "desc": "开场脑洞：受访者（舞娘）以轻松幽默的口吻提出“二维码纹身（QR code tramp stamp）”扫码支付的玩笑，迅速抓住观众注意力。"
+        },
+        {
+          "time": "0:08-0:13",
+          "desc": "品牌与主题引出：复古风格标题卡出现，明确品牌 Wealthsimple 及本集主题 \"Predicting the Future of Money (And Other Things) Part 3 The Dancer\"。"
+        },
+        {
+          "time": "0:14-0:33",
+          "desc": "无现金社会探讨：受访者谈论未来俱乐部将如何实现无现金化（形容其像成人的迪士尼乐园），画面穿插俱乐部监控屏幕、禁止手机提示牌和点钞机等空镜头。"
+        },
+        {
+          "time": "0:34-0:53",
+          "desc": "百年后的畅想：访谈者提问100年后的场景。受访者认为“性感的赛博格（Cyborgs）”可能取代部分人类工作，但强调真实人类的“真实感（Authenticity）”仍有不可替代的市场。画面展示带有生活气息的更衣室储物柜。"
+        },
+        {
+          "time": "0:54-1:26",
+          "desc": "AI 客户与职业危机：被问及是否会为机器人顾客跳舞时，受访者表示只要给钱就行，并联想到科幻电影《人工智能》（A.I.）中的机器牛郎，最后突然惊觉并反问：“AI 会抢走我的工作吗？”形成幽默反转。"
+        },
+        {
+          "time": "1:27-1:33",
+          "desc": "结尾升华：画面定格在散落的加元现金和亮片乳贴上，出现核心文案，最终落出 Wealthsimple 品牌 Logo 结束。"
+        }
+      ],
+      "strengths": [
+        "反差感强烈的场景与话题选择：金融投资通常给人严肃、理性的印象，而这支广告选择在昏暗的脱衣舞俱乐部探讨这一话题。场景的边缘化与话题的宏大性形成了极强的戏剧张力，这种“反直觉”的设定能有效打破观众对金融广告的心理防线。",
+        "真实的受访者状态与幽默感：视频摒弃了生硬的品牌背书，受访者的回答极其自然、即兴且接地气。结尾处她突然意识到“AI 可能抢饭碗”的真实错愕反应，自带天然的喜剧效果，拉近了品牌与年轻、非传统投资群体的距离。"
+      ],
+      "risks": [
+        "文化与受众接受度限制：以脱衣舞娘和成人娱乐场所作为切入口，虽然非常吸睛，但在部分保守文化语境或面向追求绝对稳健的传统投资者时，可能会引发争议，甚至被认为品牌形象过于轻佻。"
+      ],
+      "transferable": [
+        "“降维/跨界”探讨宏大命题：在探讨“未来金钱”或“AI 趋势”等宏大、科幻的命题时，不一定要局限于专家访谈或冷冰冰的科技元素。可以尝试将其置于最接地气、最意想不到的垂直职业场景中，通过普通人的视角和具体生活细节来具象化抽象概念。这种手法在你构思科幻背景的短剧脚本时非常实用，能极大增加设定的真实感和趣味性。",
+        "品牌作为“发问者”而非“说教者”：全片没有任何一句口播推销理财产品，而是将品牌化身为一个提出有趣问题的人。这种内容营销手法，通过输出价值观（拥抱不确定的未来）来建立品牌认同，比直接卖点宣发更高级。"
+      ],
+      "vo_quotes": [
+        "That would actually be so funny if someone had like a little QR code tramp stamp... Someone could do that right now and probably make a killing.",
+        "Oh my god, are AIs coming for my job?",
+        "Invest in the future. Whatever you think it is."
+      ],
+      "ending": "结尾没有任何具体的促销优惠、开户门槛或条件说明。\n它采用纯粹的品牌价值传递方式收尾：通过黑底黄字的屏幕文案打出行动呼吁（CTA）“Invest in the future. Whatever you think it is.”，随后简单利落地展示 Wealthsimple 的品牌标识。",
+      "analyzed_brand": "Wealthsimple"
+    },
+    "title": "The Futurists ",
+    "uploader": " The Dancer (Extended) ",
+    "duration": 0,
+    "view_count": 0,
+    "tag": "B1",
+    "brand": "Wealthsimple",
+    "priority": 12,
+    "source": "official_channel"
+  },
+  {
+    "id": "B2R4jCN3UqE",
+    "url": "https://www.youtube.com/watch?v=B2R4jCN3UqE",
+    "platform": "youtube",
+    "date_added": "2026-03-25",
+    "breakdown": {
+      "summary": "这支广告是加拿大金融投资平台 Wealthsimple 推出的系列广告“预测金钱的未来”第四集（末日准备者篇）。视频通过伪纪录片的采访形式，展示了一位“末日准备者”（Prepper）在地下室囤积食物、水净化设备和应急物资的场景。受访者认为未来法定货币将失去价值，只有贵金属和硬核实物资产才有意义。广告的核心信息是包容各种对未来的预测，传达出“无论你认为未来是什么样，都应该为之投资”的品牌理念，从而软性且巧妙地引出 Wealthsimple 的理财与投资服务。",
+      "structure": [
+        {
+          "time": "0:00-0:09",
+          "desc": "引入主题：开场展示堆满物资的地下室，屏幕打出系列主题“预测金钱（及其他事物）的未来：第四部分 末日准备者”。"
+        },
+        {
+          "time": "0:10-0:22",
+          "desc": "阐述危机：讲述者阐述她准备应对的各种潜在危机（系统全面崩溃、第三次世界大战、AI 威胁、网络攻击、大停电等）。"
+        },
+        {
+          "time": "0:23-0:41",
+          "desc": "展示物资：采访者询问食物储备，镜头展示典型的“末日准备”物资，如大量的豆类、大米、冻干食品和罐头。"
+        },
+        {
+          "time": "0:42-1:16",
+          "desc": "探讨财富未来：核心对白出现。讲述者认为现金将毫无价值，未来的交易将依赖贵金属和高价值的实物资产（如发电机、净水器系统等）。"
+        },
+        {
+          "time": "1:17-1:36",
+          "desc": "幽默反差：讨论极端的求生方式（提及电影《水世界》），并展示即便在地下室防空洞里，受访者依然保留了过圣诞节的传统（画面出现圣诞老人装饰和相关书籍），制造喜剧效果。"
+        },
+        {
+          "time": "1:37-1:42",
+          "desc": "结尾收势：受访者在地下室挥手告别，画面浮现核心文案“投资未来。无论你认为它是什么。”最后定格在品牌 Logo。"
+        }
+      ],
+      "strengths": [
+        "幽默反差消解严肃感：将沉重的“末日求生”、“资产清零”话题与轻松的日常细节（比如满架子的酸黄瓜、末日里依然要坚持的圣诞节列车玩具）结合，制造了强烈的黑色幽默效果，打破了传统金融理财广告西装革履的枯燥感。",
+        "绝佳的受众包容性与心理洞察：品牌没有去评判极端投资理念或生活方式的对错，而是巧妙地将“末日准备”升华并转化为广义上的“为未来投资”。这极大地拓宽了品牌理念的适用范围，让保守派、激进派或有不同焦虑情绪的受众都能产生共鸣。"
+      ],
+      "risks": [
+        "产品关联度与转化路径较长：视频全程没有展示 Wealthsimple 的具体产品界面、功能优势或服务门槛。如果观众对该品牌不熟悉，可能会在看完后只记住了有趣的设定，但不清楚这到底是一个提供什么具体服务的平台（是买股票的？买加密货币的？还是买黄金的？），缺乏直接的转化刺激。"
+      ],
+      "transferable": [
+        "伪纪录片视角的创意包装：采用手持摄影、画外音提问的采访形式，极大增加了内容的真实感和可信度，让观众更容易代入情境。这种手法非常适合用于讲述用户故事或生硬概念的软性普及。",
+        "从极端场景推导普适痛点：通过刻画极端的边缘群体（末日准备者）来放大所有人对“未来不确定性”的普遍焦虑，最后用一个包容性的核心标语将特殊场景拉回到通用的大众产品服务上。"
+      ],
+      "vo_quotes": [
+        "I don't think there's a world in which gold has no value, but there's definitely a world where cash and our current currency has no value.",
+        "Invest in the future. Whatever you think it is."
+      ],
+      "ending": "结尾没有任何具体的促销优惠、折扣码或注册门槛。文案打出宏观品牌主张“Invest in the future. Whatever you think it is.”后，直接展示 Wealthsimple 的纯文字品牌标志。属于纯粹的品牌形象塑造和价值观心智植入（Brand Awareness）。",
+      "analyzed_brand": "Wealthsimple"
+    },
+    "title": "The Futurists ",
+    "uploader": " The Prepper (Extended) ",
+    "duration": 0,
+    "view_count": 0,
+    "tag": "B1",
+    "brand": "Wealthsimple",
+    "priority": 12,
+    "source": "official_channel"
+  },
+  {
+    "id": "9llKVdig2Tw",
+    "url": "https://www.youtube.com/watch?v=9llKVdig2Tw",
+    "platform": "youtube",
+    "date_added": "2026-03-25",
+    "breakdown": {
+      "summary": "这支视频是一则以客户证言（Customer Testimonial）为核心的 B2B 金融服务广告。视频通过 Planted Places 创始人兼 CEO Christy Ross 的亲身讲述，展示了其季节性电商业务在淡季备货时面临的现金流痛点。核心信息在于传递 PayPal 提供的小企业营运资金（Working Capital）服务如何帮助商家度过资金紧缺期，强调了 PayPal 对小微企业成长的实质性支持。",
+      "structure": [
+        {
+          "time": "0:00-0:02",
+          "desc": "品牌开场：PayPal Logo 动画简短展示。"
+        },
+        {
+          "time": "0:03-0:27",
+          "desc": "客户背景与业务介绍：创始人 Christy 出镜，介绍创立 Planted Places 的初衷，并展示其电商网站与绿植墙产品，点出电商模式带来的灵活性。"
+        },
+        {
+          "time": "0:28-0:42",
+          "desc": "引入解决方案：切入正题，提到 PayPal 为小企业提供了传统渠道难以获取的金融服务（营运资金），画面穿插其他小微企业主（花店/绿植店）的工作空镜（B-roll）。"
+        },
+        {
+          "time": "0:43-0:56",
+          "desc": "痛点可视化展示：讲述季节性业务的特征。使用动态折线图直观演示旺季（订单多、现金流充足）与淡季（订单下降）的对比。"
+        },
+        {
+          "time": "0:57-1:13",
+          "desc": "业务挑战与产品契合：解释淡季恰好是制造和采购库存的时期，资金需求大。明确点出 PayPal 的营运资金产品如何帮助企业度过这种“干旱期”。"
+        },
+        {
+          "time": "1:14-1:22",
+          "desc": "总结背书与结尾：创始人表达对 PayPal 关注和支持小企业的感谢。画面定格在“PayPal Open”的品牌标识上。"
+        }
+      ],
+      "strengths": [
+        "具象化抽象痛点：视频在 0:47 处使用了一个非常简洁的动态折线图动画，将“季节性业务现金流波动”这个相对枯燥的财务概念瞬间视觉化，大幅降低了观众的理解门槛。",
+        "极具说服力的真实视角：选用与产品高度匹配的真实电商创业者（季节性、需实体备货），从创始人第一人称视角讲述创业初衷和实操困难，比官方自吹自擂更有信任感和同理心。",
+        "受众精准的情绪共鸣：文案中提到“传统金融不提供给小企业的服务，PayPal 提供了”，精准击中了中小微企业在传统融资渠道中屡屡碰壁的情绪痛点。"
+      ],
+      "risks": [
+        "视觉呈现略显单一：视频主要采用了“Talking Head（对着镜头讲话）”的采访形式，虽然穿插了少量网站截图和 B-roll，但在前 30 秒的视觉刺激较弱。如果在短视频平台或信息流中投放，前三秒未能迅速抓住眼球，存在较高的跳出/流失风险。",
+        "前奏铺垫过长：视频直到第 28 秒才首次提及 PayPal 品牌及金融服务，前面的个人背景介绍略显冗长，核心卖点后置可能导致部分缺乏耐心的受众错过关键信息。"
+      ],
+      "transferable": [
+        "经典客户成功故事框架（Case Study Structure）：可以复用这种结构来制作 B2B 广告：“人物介绍/业务背景 -> 业务痛点（利用图表放大痛点） -> 引入产品作为解药 -> 实际获益与情感感谢”。",
+        "数据/图表辅助叙事（Visualizing Concepts）：在推广金融、SaaS 或数据类等无形产品时，学习该视频的做法，在人物讲述时叠加极简的动态图表（如上升/下降曲线），让观众“看懂”而非仅仅“听懂”。"
+      ],
+      "vo_quotes": [
+        "PayPal provides a lot of great financial services for merchants and small businesses that... are not available when you're a small business.",
+        "So PayPal provides a working capital product. So it really helps me through those kind of dry periods where cash is a little bit more constrained for my business."
+      ],
+      "ending": "视频结尾没有强烈的直接行动号召（No direct CTA，例如“点击申请”或优惠码），而是以感性的品牌背书（赞赏 PayPal 对小企业的支持）自然过渡到 \"PayPal Open\" 的蓝底白字 Logo 画面收尾，主要起到品牌形象建设（Brand Branding）的作用。\n注：视频中部（0:38左右）有出现关于贷款需经过申请和贷款人批准的法律免责声明小字。",
+      "analyzed_brand": "PayPal"
+    },
+    "title": "Planted Places x PayPal Working Capital",
+    "uploader": "NA",
+    "duration": 84,
+    "view_count": 389,
+    "tag": "B2",
+    "brand": "PayPal",
+    "priority": 12,
+    "source": "official_channel"
+  },
+  {
+    "id": "Quv6B_1VKWk",
+    "url": "https://www.youtube.com/watch?v=Quv6B_1VKWk",
+    "platform": "youtube",
+    "date_added": "2026-03-25",
+    "breakdown": {
+      "summary": "这支视频是 Coinbase 的 B2B 产品推介演讲，由其基础设施产品主管 Alec Lovett 主讲。视频向企业级受众（银行、券商和金融科技公司）隆重推出了“Crypto-as-a-Service（加密即服务）”的核心概念。通过展示加密市场的宏观数据、合作企业背书以及详细的产品技术栈（包括稳定币支付、底层区块链和交易API等），传递了 Coinbase 是安全、合规、可扩展的行业基石这一核心信息。",
+      "structure": [
+        {
+          "time": "0:00-0:20",
+          "desc": "开场场景。Alec Lovett 登台，进行自我介绍并引出本次演讲的核心主题——Coinbase 的基础设施产品。"
+        },
+        {
+          "time": "0:21-0:44",
+          "desc": "概念引出。正式提出“Crypto-as-a-Service”概念，明确目标受众为银行、券商和金融科技公司。"
+        },
+        {
+          "time": "0:45-1:24",
+          "desc": "市场背景与社会认同（Social Proof）。展示庞大的加密市场数据（7亿全球加密用户等），并展示使用其基础设施的全球知名企业 Logo 墙。"
+        },
+        {
+          "time": "1:25-1:50",
+          "desc": "核心价值主张。强调 Coinbase 在信任、规模、创新以及安全合规方面的“黄金标准”地位。"
+        },
+        {
+          "time": "1:51-3:15",
+          "desc": "深挖支付产品栈。详细拆解 Coinbase Payments，分为稳定币、底层区块链和产品基础设施三个维度进行讲解。"
+        },
+        {
+          "time": "3:16-3:58",
+          "desc": "深挖交易产品栈。介绍针对银行和券商的交易API，强调其白标（White-labeled）属性和强大的交易深度。"
+        },
+        {
+          "time": "3:59-4:14",
+          "desc": "总结收尾。重申产品价值，强调让客户专注于业务增长，将底层技术交由 Coinbase 处理。"
+        }
+      ],
+      "strengths": [
+        "强有力的数据与背书（Social Proof）：在讲解具体功能前，先通过宏观市场数据（如每年9万亿稳定币交易量）和满屏的顶级企业Logo（如 JPMorgan、Shopify）建立起极强的行业权威感和信任度，这是B2B营销的有效利器。",
+        "复杂信息的结构化视觉呈现：将庞杂的底层技术转化为清晰的“三明治”式技术栈图表（如稳定币、区块链、API 三大支柱），配合演讲者的层层递进，有效降低了受众的认知门槛。"
+      ],
+      "risks": [
+        "形式单一导致的注意力流失风险：由于是纯会议现场的录播视角，缺乏视觉上的动态转场和强刺激元素，如果作为线上信息流广告投放，很难在前3秒抓住泛受众的注意力，完播率高度依赖受众对该话题的预设兴趣。",
+        "专业术语的理解门槛：视频中密集使用了“API”、“高吞吐量区块链”、“多场地算法经纪”等专业词汇，如果未能精准定向到具备技术背景的决策者，容易产生理解障碍。"
+      ],
+      "transferable": [
+        "“Zooming out（放大视角）”的开场技巧：在推介具体产品前，先跳出产品本身，描述整个行业的宏观趋势和巨大增量空间。这种“先造势，后卖水”的逻辑非常适合B2B服务类产品的营销。",
+        "“底层基建+白标（White-label）”的话术包装：将复杂的后台技术包装成“你只需专注前端业务，脏活累活我来干”的解决方案，并强调不抢占客户品牌的“白标”属性，精准切中企业级客户的痛点。"
+      ],
+      "vo_quotes": [
+        "We've made the underlying capabilities available as infrastructure and APIs in a product that we call Crypto-as-a-Service.",
+        "All of this comes together so you can focus on growing your business while we handle the tech behind the scenes."
+      ],
+      "ending": "视频以一句话总结收尾，强调该产品能为客户的起步和规模化扩张提供坚实的基础设施和信心。由于是大会演讲截取，结尾没有典型的促销优惠（Offer）或硬性的互动行动号召（CTA，如点击链接、扫码等）。",
+      "analyzed_brand": "Coinbase"
+    },
+    "title": "CaaS: The Infrastructure Layer",
+    "uploader": "NA",
+    "duration": 254,
+    "view_count": 595,
+    "tag": "B2",
+    "brand": "Coinbase",
+    "priority": 12,
+    "source": "official_channel"
+  },
+  {
+    "id": "HbA6qwjJkD0",
+    "url": "https://www.youtube.com/watch?v=HbA6qwjJkD0",
+    "platform": "youtube",
+    "date_added": "2026-03-25",
+    "breakdown": {
+      "summary": "这支视频是一条详尽的、教程风格的品牌广告，主要推广国际汇款平台 Wise。视频由一位名为 Tom 的主持人出镜，通过“人声讲解+高质量UI界面演示”的方式，手把手教用户如何通过 Wise 的移动端 App 和网页端进行国际转账。核心信息强调了 Wise 平台的安全性、易用性以及透明的“市场中间汇率”（无隐藏费用），旨在通过直接展示产品流畅的交互体验来建立信任，并降低新用户的操作门槛。",
+      "structure": [
+        {
+          "time": "0:00-0:34",
+          "desc": "开场与信任背书：以庞大的交易数据（每月120亿英镑、支持40多种货币）开场，迅速建立品牌信任感，并引出本期教程主题。"
+        },
+        {
+          "time": "0:35-1:18",
+          "desc": "账号注册与首页引导：展示如何通过描述链接下载App并注册，介绍App首页的基本布局和“发送（Send）”按钮的位置。"
+        },
+        {
+          "time": "1:19-2:31",
+          "desc": "核心流程演示（发送金额）：详细演示汇款的第一步，包括选择收款人所在地、设置汇款货币与金额。着重强调了 Wise 的费用透明度和市场中间汇率。"
+        },
+        {
+          "time": "2:32-3:42",
+          "desc": "核心流程演示（添加收款人）：展示如何添加新的收款人，并区分了“转给 Wise 内部用户”和“转给外部银行账户”的不同操作路径及便捷付款方式（如 Apple Pay、银行转账等）。"
+        },
+        {
+          "time": "3:43-4:51",
+          "desc": "网页端演示与多路径操作：画面切至网页端，演示相同的操作流程。同时补充了除了首页外，还可以从特定货币账户或“Jars（资金罐）”直接发起汇款的多种路径。"
+        },
+        {
+          "time": "4:52-5:12",
+          "desc": "结尾与互动呼吁：主持人做总结，引导观众在评论区提问或点击屏幕观看更多功能介绍。最后以品牌 Logo 和 Slogan 定格。"
+        }
+      ],
+      "strengths": [
+        "产品即内容（Product-Led Storytelling）：没有过多花哨的剧情，而是直接将高清的、带有动态交互效果的 UI 界面作为视觉核心。这对于金融科技（Fintech）产品非常有效，直接“Show, don't tell”，让“操作简单”这个卖点变得真实可信。",
+        "前置建立信任锚点：在进入枯燥的教程前，先用“12 billion pounds every single month”这样的硬核数据打底，将单纯的“交易量”升华为“全球用户的信任”，为后续的转化提供了强大的心理支撑。",
+        "主动处理用户异议（Objection Handling）：在演示过程中，脚本自然地解答了用户可能存在的疑虑，例如“如果我的首页和你的长得不一样怎么办？”或者“汇率里有隐藏费用吗？”，极大地降低了用户的流失率。"
+      ],
+      "risks": [
+        "完播率与漏斗层级局限：视频长达 5 分钟，且内容高度垂直于操作步骤。这种形式对于处于漏斗顶部（Top-of-funnel）泛人群来说过于冗长，容易导致早期跳出。它更适合用作 Retargeting（再营销）素材，或放在官网/帮助中心，针对已经有高意向但卡在注册/转账第一步的用户。"
+      ],
+      "transferable": [
+        "高质量的 UI 动效包装：对于 App/SaaS 类产品的广告，不要直接生硬地录屏。可以学习本视频的做法，将 UI 界面剥离出来，配合干净的背景、平滑的过渡动画和放大的光标/点击提示，提升广告的质感和专业度。",
+        "拆解复杂流程：如果你的产品具有一定的操作门槛，可以将其拆解为 1-2-3 的明确步骤，并由一个具有亲和力的人物进行“面对面”讲解，这能有效消除用户对新工具的恐惧感。"
+      ],
+      "vo_quotes": [
+        "A number like that isn't just about volume. It's about trust.",
+        "And remember, the rate we offer is the mid-market exchange rate. That means there are no hidden markups."
+      ],
+      "ending": "视频结尾，主持人进行口播收尾，引导观众在评论区留言互动，并指向屏幕上的相关视频链接。最后画面以深绿色为背景，出现 Wise 的 Logo、品牌 Slogan \"Money Without Borders\" 以及纯文字的 CTA \"Open your account today\"（立即开设你的账户）。无任何限时优惠、折扣码或门槛条件提示。",
+      "analyzed_brand": "Wise"
+    },
+    "title": "How to Send Money With Wise: New Step-by-Step Guide (2026)",
+    "uploader": "NA",
+    "duration": 313,
+    "view_count": 47818,
+    "tag": "B2",
+    "brand": "Wise",
+    "priority": 12,
+    "source": "official_channel"
+  },
+  {
+    "id": "o5zA1ZtGp-I",
+    "url": "https://www.youtube.com/watch?v=o5zA1ZtGp-I",
+    "platform": "youtube",
+    "date_added": "2026-03-25",
+    "breakdown": {
+      "summary": "这支视频是加拿大在线经纪平台 Qtrade Direct Investing 的产品介绍与功能导览广告。视频以“书写你自己的未来”为核心理念，全面展示了该平台的用户界面及核心投资工具（包括投资组合评分、模拟器和创建器）。广告旨在向投资者传递一个信息：无论是在网页端还是移动端，Qtrade 都能提供专业的市场研究、实时数据、高级图表以及极具竞争力的费率（如免佣金 ETF），从而帮助投资者建立信心并轻松执行交易。",
+      "structure": [
+        {
+          "time": "0:00-0:10",
+          "desc": "开场与品牌定位。提出“帮助加拿大投资者书写自己的未来”的核心主张，并展示获奖背书。"
+        },
+        {
+          "time": "0:10-0:38",
+          "desc": "平台概览。展示跨平台（网页与移动端）的交易便捷性，强调界面直观，涵盖股票、期权、ETF、债券和共同基金等多种投资品种。"
+        },
+        {
+          "time": "0:38-1:13",
+          "desc": "核心分析工具演示。详细录屏展示独家的投资组合分析套件：Portfolio Score（评分）、Simulator（模拟器）和 Creator（创建器）。"
+        },
+        {
+          "time": "1:13-1:55",
+          "desc": "研究与图表功能。展示专业分析师评级、市场新闻、实时报价、订单类型（市价、限价、止损）以及包含多种技术指标的高级图表工具。"
+        },
+        {
+          "time": "1:55-2:15",
+          "desc": "竞争优势与转化引导。强调具有竞争力的交易费用（无 ECN 费用，超 100 种免佣金 ETF），并展示快速便捷的在线开户流程。"
+        },
+        {
+          "time": "2:15-2:34",
+          "desc": "结尾与行动呼吁 (CTA)。提供客服联系方式（邮箱与电话），重申品牌标语，并展示法律免责声明。"
+        }
+      ],
+      "strengths": [
+        "视觉隐喻与品牌标语的高度统一：视频巧妙地使用了一根连续不断的动态线条来勾勒奖杯、使用电脑的人和手机等元素。这种“画线”的视觉表现手法与品牌口号“Write your own future（书写你自己的未来）”完美契合，不仅丰富了画面，还增强了品牌记忆点。",
+        "清晰直观的 UI 演示：对于金融类 SaaS/平台产品，功能往往相对抽象。该广告通过高质量的 UI 界面录屏，配合光标高亮、局部放大和流畅的过渡动画，将复杂的“投资组合模拟”或“高级图表”功能具象化，让潜在用户能够直观感受到平台的操作体验。"
+      ],
+      "risks": [
+        "信息密度过高导致认知过载：在短短两分半钟内，视频密集展示了大量专业金融术语（如 ECN 费、止损单、各种图表指标）和复杂的系统界面。虽然证明了平台的专业性，但对于完全没有经验的新手投资者来说，可能会感到门槛过高或难以消化。"
+      ],
+      "transferable": [
+        "产品导览的逻辑递进结构：视频的内容编排极具逻辑性，从“宏观分析”（投资组合健康度）到“微观研究”（个股新闻与评级），再到“具体执行”（下单与图表），最后落脚于“低成本与开户”。这种由浅入深、符合用户实际操作链路的叙事结构，非常适合复用于其他复杂软件或 B2B/B2C 平台的产品介绍视频中。",
+        "将功能点转化为用户利益点：视频在介绍功能时，不仅仅是说明“我们有什么”（例如 Portfolio Simulator），而是立刻跟进说明“这能给你带来什么”（so you can be confident in your decision / 让您在决策时充满信心）。这种 Feature-Benefit 的文案句式是产品广告中屡试不爽的技巧。"
+      ],
+      "vo_quotes": [
+        "Qtrade Direct Investing has been helping Canadian investors write their own future for over two decades with our award-winning platform.",
+        "With Qtrade Direct Investing, you get an intuitive experience that arms you with the information you need to realize opportunities and execute with ease."
+      ],
+      "ending": "广告以一个静态的联系信息面板收尾，列出了咨询邮箱（directinvesting@qtrade.ca）和联系电话，引导有疑问的用户进行咨询。最后定格在品牌 Logo 和核心标语 \"Write Your Own Future\" 上，底部配有较长的金融服务法律免责声明。结尾没有提供具体的限时优惠、折扣码或开户奖励门槛，属于纯粹的品牌展示与常规的引导咨询。",
+      "analyzed_brand": "Qtrade Direct Investing"
+    },
+    "title": "Introduction to Qtrade Direct Investing platform",
+    "uploader": "Qtrade",
+    "duration": 154,
+    "view_count": 5925,
+    "tag": "B1",
+    "brand": "Qtrade",
+    "priority": 10
+  },
+  {
+    "id": "sw8el4Zypt4",
+    "url": "https://www.youtube.com/watch?v=sw8el4Zypt4",
+    "platform": "youtube",
+    "date_added": "2026-03-25",
+    "breakdown": {
+      "summary": "这支视频前半部分（0:00-0:28）是金融服务机构 Charles Schwab（嘉信理财）的品牌形象广告，主打温情叙事。它以纪录片的形式，通过记录 Oxley 家族祖孙三代作为真实客户的财富传承历程，展现了品牌在长期投资和家庭财务规划中的陪伴作用。视频穿插了大量真实的家庭老录像，传递了“长期信赖”的核心资产。然而，视频在最后几秒（0:29-0:31）突兀地拼接了一段 Stake.us 在线博彩平台的促销短片。",
+      "structure": [
+        {
+          "time": "0:00-0:03",
+          "desc": "引入场景：女儿（第三代客户）在客厅向父亲（第二代客户）提问，引出关于祖父最初投资的话题，自然开启回忆。"
+        },
+        {
+          "time": "0:03-0:14",
+          "desc": "历史回溯：父亲讲述祖父白手起家的故事。画面切换为复古家庭录像带（VHS/胶片质感），展示祖父年轻时的生活片段，建立情感共鸣和历史厚度。"
+        },
+        {
+          "time": "0:14-0:24",
+          "desc": "现实服务展示：视线拉回当下，父亲提到“火炬传给了我”。画面展示父亲与孙辈互动的温馨场景，同时旁白植入具体的理财服务点（遗产分配、孙辈的大学教育基金），并提及专属理财顾问 Jennifer 的陪伴。"
+        },
+        {
+          "time": "0:24-0:28",
+          "desc": "品牌信任状与收尾：画面定格在父女拥抱，屏幕出现强大的数据信任背书（每天有 2500 万客户将 10 万亿美元资产托付给 Schwab），随后展示品牌 Logo 和 Slogan。"
+        },
+        {
+          "time": "0:29-0:31",
+          "desc": "拼接广告：画面骤变，快速切入 Stake.us 的轮盘赌获胜画面和主播庆祝镜头。"
+        }
+      ],
+      "strengths": [
+        "极致的真实感与信任背书：直接使用真实的客户家族（甚至标注了第几代客户）以及真实的家庭私影素材。在金融理财这种极度依赖“信任”的行业，真实故事的杀伤力远胜过虚构的剧情演绎。",
+        "服务卖点的无缝融合：没有生硬地罗列金融产品，而是将“遗产分配 (estate distribution)”、“教育基金 (college educations)”以及“专属顾问服务”这些枯燥的业务词汇，自然地编织进一个祖父爱孙子的家庭故事中，做到了“润物细无声”。"
+      ],
+      "risks": [
+        "社交媒体环境下的“黄金三秒”抓力不足：这种纪录片式的娓娓道来节奏偏慢，如果是投放于 TikTok、Reels 等短视频平台，前三秒缺乏强烈的视觉冲击或悬念钩子，容易被快速划走。它更适合作为不可跳过的贴片广告（Pre-roll）或传统电视广告。",
+        "拼接内容造成严重的品牌调性冲突：视频尾部强行拼接的 Stake.us 赌场广告在视觉、听觉和价值观上与前半段 Charles Schwab 苦心营造的“稳健、长期、家庭责任”的调性完全割裂，这在实际的媒体采买或内容发布中是需要极力避免的播出事故。"
+      ],
+      "transferable": [
+        "“跨时代”视觉对比手法（复古与高清的穿插）：在进行视频创作或剪辑时，可以借鉴这种手法。当需要表现“历史”、“传承”或“时间跨度”时，交替使用低画质的复古滤镜素材与现代 4K 高清素材，能在视觉上自动形成叙事张力。",
+        "“顾问/产品”的拟人化陪伴定位：在撰写 B2C 服务类视频脚本时，不要将服务人员描写成推销员。借鉴本片中“She's with me, with the journey”的句式，将产品或服务定位为客户人生旅途中的“同行者”，能有效提升观众的好感度。"
+      ],
+      "vo_quotes": [
+        "Granddad had an account with Schwab before there were branches in the area. He really started with nothing.",
+        "The torch has been passed to me, and my advisor Jennifer, she's with me, with the journey.",
+        "Helping with the estate distribution, the two grandchildren planning for their college educations... Someday it'll be their turn."
+      ],
+      "ending": "Charles Schwab 部分：以宏大的信任数据（25 million clients, $10 trillion in assets）和 Slogan \"Own your tomorrow.\" 进行情感收尾。底部附带了常规的金融免责声明。无直接优惠或促销门槛。\n\nStake.us 部分：以强硬的 CTA（行动呼吁）收尾，屏幕正中央展示了明确的优惠引导语：USE CODE: VEMTERS（使用代码：VEMTERS）。",
+      "analyzed_brand": "Charles Schwab, Stake.us"
+    },
+    "title": "charles SCHWAB (April 2025)",
+    "uploader": "Ads Inside  ",
+    "duration": 33,
+    "view_count": 0,
+    "tag": "B1",
+    "brand": "Charles Schwab",
+    "priority": 5
   }
 ]
