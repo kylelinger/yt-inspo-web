@@ -109,6 +109,11 @@ export default function VideoCard({
           {video.tag && (
             <span className="text-[10px] font-bold uppercase tracking-wider" style={{ color: tagColor }}>{video.tag}</span>
           )}
+          {video.breakdown?.inspiration_score != null && (
+            <span className="text-[10px] font-bold" style={{
+              color: video.breakdown.inspiration_score >= 8 ? "var(--green, #22c55e)" : video.breakdown.inspiration_score >= 5 ? "var(--accent)" : "var(--text-muted)"
+            }}>★ {video.breakdown.inspiration_score}</span>
+          )}
         </div>
 
         <a href={`/video/${video.id}`} className="block">

@@ -5,6 +5,8 @@ export interface VideoBreakdown {
   strengths: string[];
   risks: string[];
   transferable: string[];
+  inspiration_score?: number;
+  inspiration_reason?: string;
 }
 
 export interface Video {
