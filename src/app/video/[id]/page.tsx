@@ -9,6 +9,7 @@ import { getFeedbackCounts, setFeedback, getShortlist, toggleShortlist, type Fee
 import { useAuth } from "@/components/AuthProvider";
 import { getClientLang, tr, type Lang } from "@/lib/language";
 import { useTranslatedText } from "@/lib/translate-client";
+import { getEmbedUrl, getThumbnailUrl, getWatchUrl } from "@/lib/video-utils";
 
 function TrText({ text, lang }: { text: string; lang: Lang }) {
   const value = useTranslatedText(text, lang);
@@ -170,9 +171,9 @@ export default function VideoDetailPage() {
           <div className="mb-6 hidden sm:block overflow-hidden rounded-xl">
             <div className="relative aspect-video w-full" style={{ background: "var(--border)" }}>
               <iframe
-                src={`https://www.youtube.com/embed/${video.id}`}
+                src={getEmbedUrl(video)}
                 className="absolute inset-0 h-full w-full"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen"
                 allowFullScreen
               />
             </div>
@@ -180,14 +181,14 @@ export default function VideoDetailPage() {
 
           {/* Mobile: thumbnail + link to YouTube */}
           <a
-            href={`https://www.youtube.com/watch?v=${video.id}`}
+            href={getWatchUrl(video)}
             target="_blank"
             rel="noopener noreferrer"
             className="group mb-6 block sm:hidden overflow-hidden rounded-xl"
           >
             <div className="relative aspect-video w-full" style={{ background: "var(--border)" }}>
               <img
-                src={`https://img.youtube.com/vi/${video.id}/maxresdefault.jpg`}
+                src={getThumbnailUrl(video, "max")}
                 alt=""
                 className="absolute inset-0 h-full w-full object-cover"
               />

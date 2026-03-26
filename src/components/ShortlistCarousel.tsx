@@ -5,6 +5,7 @@ import type { Video } from "@/lib/types";
 import { getShortlist } from "@/lib/feedback";
 import { tr, type Lang } from "@/lib/language";
 import { useTranslatedText } from "@/lib/translate-client";
+import { getThumbnailUrl } from "@/lib/video-utils";
 
 function CarouselSummary({ text, lang }: { text: string; lang: Lang }) {
   const translated = useTranslatedText(text, lang);
@@ -76,7 +77,7 @@ export default function ShortlistCarousel({ allVideos, lang = "us" }: { allVideo
         <div className="relative overflow-hidden aspect-video sm:aspect-auto sm:h-[800px]" style={{ background: "#000" }}>
           <div className="w-full h-full overflow-hidden">
             <img
-              src={`https://img.youtube.com/vi/${video.id}/maxresdefault.jpg`}
+              src={getThumbnailUrl(video, "max")}
               alt=""
               className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.02] opacity-80"
             />
