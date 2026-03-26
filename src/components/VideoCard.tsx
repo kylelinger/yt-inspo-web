@@ -7,6 +7,7 @@ import { getFeedbackCounts, setFeedback, getShortlist, toggleShortlist, type Fee
 import { useAuth } from "./AuthProvider";
 import { getClientLang, type Lang } from "@/lib/language";
 import { useTranslatedText } from "@/lib/translate-client";
+import { getThumbnailUrl } from "@/lib/video-utils";
 
 const TAG_COLORS: Record<string, string> = {
   B1: "#f59e0b",
@@ -83,7 +84,7 @@ export default function VideoCard({
       <a href={`/video/${video.id}`} className="block">
         <div className="relative aspect-video w-full overflow-hidden" style={{ background: "#080808" }}>
           <img
-            src={`https://img.youtube.com/vi/${video.id}/mqdefault.jpg`}
+            src={getThumbnailUrl(video, "mq")}
             alt=""
             className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
             loading="lazy"
