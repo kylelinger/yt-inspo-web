@@ -26,6 +26,31 @@ function BreakdownSection({ breakdown, lang, tr: tFn }: { breakdown: NonNullable
         </p>
       </div>
 
+      {/* Inspiration Score */}
+      {breakdown.inspiration_score != null && (
+        <div className="rounded-lg border p-4 flex items-center gap-4" style={{
+          borderColor: breakdown.inspiration_score >= 8 ? "var(--green, #22c55e)" : breakdown.inspiration_score >= 5 ? "var(--accent)" : "var(--red, #ef4444)",
+          background: "var(--card)"
+        }}>
+          <div className="flex flex-col items-center justify-center min-w-[56px]">
+            <span className="text-2xl font-bold" style={{
+              color: breakdown.inspiration_score >= 8 ? "var(--green, #22c55e)" : breakdown.inspiration_score >= 5 ? "var(--accent)" : "var(--red, #ef4444)"
+            }}>{breakdown.inspiration_score}</span>
+            <span className="text-[10px] uppercase tracking-wide" style={{ color: "var(--text-muted)" }}>/10</span>
+          </div>
+          <div className="flex-1">
+            <h3 className="text-xs font-semibold uppercase tracking-wide mb-1" style={{ color: "var(--text-muted)" }}>
+              {tFn(lang, "Inspiration Score", "灵感评分")}
+            </h3>
+            {breakdown.inspiration_reason && (
+              <p className="text-sm" style={{ color: "var(--text)" }}>
+                <TrText text={breakdown.inspiration_reason} lang={lang} />
+              </p>
+            )}
+          </div>
+        </div>
+      )}
+
       {/* Structure timeline */}
       {breakdown.structure && breakdown.structure.length > 0 && (
         <div className="rounded-lg border p-4" style={{ borderColor: "var(--border)", background: "var(--card)" }}>
