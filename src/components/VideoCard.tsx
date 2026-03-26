@@ -111,7 +111,7 @@ export default function VideoCard({
           )}
           {video.breakdown?.inspiration_score != null && (
             <span className="text-[10px] font-bold" style={{
-              color: video.breakdown.inspiration_score >= 8 ? "var(--green, #22c55e)" : video.breakdown.inspiration_score >= 5 ? "var(--accent)" : "var(--text-muted)"
+              color: video.breakdown.inspiration_score >= 8 ? "var(--green, #22c55e)" : video.breakdown.inspiration_score >= 6 ? "var(--accent)" : "var(--red, #ef4444)"
             }}>★ {video.breakdown.inspiration_score}</span>
           )}
         </div>
