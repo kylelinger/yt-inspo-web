@@ -9735,5 +9735,910 @@
     "tag": "B1",
     "brand": "Charles Schwab",
     "priority": 5
+  },
+  {
+    "id": "kMiN9KXlUsE",
+    "url": "https://www.youtube.com/watch?v=kMiN9KXlUsE",
+    "platform": "youtube",
+    "date_added": "2026-03-26",
+    "breakdown": {
+      "summary": "这支视频广告是金融科技品牌 Wealthsimple 的品牌宣传片。视频采用极简的单人单镜口述形式，通过一位女性视角的真实表达，直击传统金融投资（如“五大银行”）选择少、门槛高的痛点。她犀利地指出“老牌”往往意味着“缓慢衰退”，并呼吁将资金投给改变世界的“叛逆者和颠覆者”。整体传达了 Wealthsimple 作为金融行业颠覆者的品牌定位，鼓励用户打破传统束缚，选择更现代、平民化的投资理财平台。",
+      "structure": [
+        {
+          "time": "0:00-0:10",
+          "desc": "痛点引入：受访者指出目前缺乏真正负担得起的投资选择，人们大多只能被困在传统的“五大银行”中。"
+        },
+        {
+          "time": "0:10-0:19",
+          "desc": "观念挑战：质疑“老牌（established）”的吸引力，配合向下的手势，比喻“老牌”实际上正处于缓慢衰退的通道中。"
+        },
+        {
+          "time": "0:19-0:26",
+          "desc": "提出主张：点明“叛逆者和颠覆者才是改变世界的人”，并得出结论“这就是你应该投资的地方”。"
+        },
+        {
+          "time": "0:27-0:30",
+          "desc": "品牌与产品露出：画面干净利落地切至“Wealthsimple”品牌文字，随后展示手机端 App 的操作界面，突出“Invest in Future You（投资未来的你）”及直观的收益图表。"
+        }
+      ],
+      "strengths": [
+        "反向思维的文案逻辑：巧妙地将传统金融引以为豪的“历史悠久/老牌（established）”重新定义为负面标签（slow decline down），从而顺理成章地引出“颠覆者”的价值，逻辑犀利且令人印象深刻。",
+        "极简主义的视觉聚焦：摒弃了复杂的场景、转场和特效，采用干净的纯色背景和单人直面镜头的独白形式。这种质朴的呈现方式让观众的注意力高度集中在文案逻辑和人物情绪上，极具真实感。",
+        "情绪共鸣与痛点精准打击：开篇直接点名受众的普遍困境（被传统大银行绑架、缺乏低门槛选择），利用打破常规的洞察，成功塑造了品牌作为“用户利益捍卫者”的正面形象。"
+      ],
+      "risks": [
+        "缺乏产品细节铺垫：前26秒全靠理念输出，产品 App 仅在最后几秒闪现。对于完全不了解该品牌的新受众来说，可能无法立刻明白产品的具体运作机制、费率优势或资金安全背书。",
+        "受众圈层局限：这种略带“叛逆”和“挑战传统”色彩的沟通策略更适合年轻一代或对传统银行有不满情绪的人群，可能较难打动极其保守、看重绝对资产历史沉淀的传统高净值投资者。"
+      ],
+      "transferable": [
+        "重构行业标签法（Reframe the narrative）：在挑战行业巨头时，可以将竞品的核心防守点（如“规模大”、“历史久”）进行视角的负面重构（如“官僚”、“陈旧衰退”），从而突出自身作为“破局者”的核心优势。这种文案技巧可广泛复用于其他新消费或科技品牌的挑战者营销中。",
+        "伪纪录片/访谈式素人背书：不使用光鲜亮丽的明星或明显的广告腔调，而是采用类似素人真实想法表达的质感。这能极大降低观众对广告的防御心理，提升信息的信任度。"
+      ],
+      "vo_quotes": [
+        "There's really very few choices for investing that is affordable. Most of the time you're just stuck with five banks, the big five.",
+        "Why would being established ever be attractive to somebody? Being established, that means that you're on the... slow decline down.",
+        "Rebels and disruptors are the ones that change the world. So... that's where you put your money, right?"
+      ],
+      "ending": "视频结尾没有使用口播形式的行动呼吁（CTA），也没有提供具体的优惠码、折扣或注册门槛信息。而是以一种克制、品牌化的方式收尾：全屏展示品牌名称后，切换到一只手操作手机 App 的特写。界面清晰显示“Invest in Future You”，并展示了直观的复利增长曲线和投资金额设置，暗示用户可以通过该工具轻松开启未来的财富增长。",
+      "analyzed_brand": "Wealthsimple"
+    },
+    "title": "Anna — Rebels — Wealthsimple",
+    "uploader": "Wealthsimple",
+    "duration": 31,
+    "view_count": 64346,
+    "tag": "B1",
+    "brand": "Wealthsimple",
+    "priority": 12
+  },
+  {
+    "id": "Gxr-ViBuHB8",
+    "url": "https://www.youtube.com/watch?v=Gxr-ViBuHB8",
+    "platform": "youtube",
+    "date_added": "2026-03-26",
+    "breakdown": {
+      "summary": "这支视频是为加密货币交易平台 Coinbase 打造的品牌形象广告。它采用极具辨识度的复古计算机终端风格（蓝屏背景与 ASCII 字符画），巧妙地将传统金融体系比作一个“急需更新的旧系统”。广告通过模拟代码编译和系统升级的视觉过程，传递出加密货币（Crypto）作为“货币的未来”，具有更快速（Faster）、更直接（Direct）、更安全（Secure）和更透明（Transparent）的核心优势。",
+      "structure": [
+        {
+          "time": "0:00-0:05",
+          "desc": "开场场景（提出问题）：纯蓝屏背景出现类似旧计算机终端的打字机光标，机械女声反复播报“An update is required（需要更新）”，暗示传统金融系统的滞后与崩溃边缘。"
+        },
+        {
+          "time": "0:05-0:11",
+          "desc": "更新启动（过渡阶段）：屏幕快速滚动代码日志和系统诊断信息，提示正在启动直接支付和移除中间商，视觉节奏加快，模拟系统正在强行重启并升级。"
+        },
+        {
+          "time": "0:11-0:36",
+          "desc": "核心功能展示（产品优势）：运用由金融符号（$、€等）组成的动态 ASCII 字符画（如奔跑的人、旋转的硬币、地球、锁头），配合快节奏的电子音效，依次打出 Crypto 的四大核心痛点解决方案：Faster（更快）、Direct（直接）、Secure（安全）、Transparent（透明）。"
+        },
+        {
+          "time": "0:36-0:48",
+          "desc": "结尾场景（品牌揭晓）：系统显示“Updated（已更新）”，列出刚才提及的四大优势，随后屏幕清空，打出核心标语“The future of money is here”，最后出现 Coinbase 品牌名收尾。"
+        }
+      ],
+      "strengths": [
+        "极具反差的视觉风格：在金融广告普遍追求高端真人实拍或华丽 3D 包装的当下，完全使用极简的单色“蓝屏代码”和 ASCII 艺术，视觉冲击力极强，能瞬间抓住科技人群和年轻世代的眼球。",
+        "精准且绝妙的隐喻：将行业变革（从法币转向加密货币）包装成一次“软件系统更新”。这是一个普通人都能秒懂的日常概念，巧妙地将加密货币去中心化的复杂技术特征转化为通俗的“修复旧系统 bug”。",
+        "视听节奏的高度统一：滚动的代码、闪烁的字符与紧凑的电子合成器节拍完美契合，营造出一种黑客帝国式的“极客酷感”，让原本枯燥的文字信息变得极具动感。"
+      ],
+      "risks": [
+        "受众门槛与圈层局限：这种“极客/程序员”风格过于垂直，对于年龄较大或对计算机文化不感冒的传统投资者来说，可能会显得过于冷门甚至产生“不靠谱、缺乏人情味”的距离感。",
+        "情感信任背书较弱：金融产品高度依赖信任感。全篇没有出现真人面孔或实际使用场景，纯粹依赖概念输出，在建立品牌安全感和亲和力方面略显不足。"
+      ],
+      "transferable": [
+        "熟悉的超级符号借用：可以将其他行业难以解释的“颠覆性创新”，包装成大众极其熟悉的日常交互行为（如：系统升级、加载进度条、解压缩等），降低认知门槛。",
+        "Typography（文字排版）的视觉化潜力：当预算有限或受制于拍摄条件时，纯文字、字符、代码块本身也可以作为强大的视觉元素。通过节奏剪辑和动态排版，纯文字广告依然能产生极高的质感。"
+      ],
+      "vo_quotes": [
+        "An update is required.",
+        "Crypto is... Faster... Direct... Secure... Transparent.",
+        "The future of money is here."
+      ],
+      "ending": "广告以品牌宣言式的陈述句（The future of money is here）配合纯文字的品牌名（Coinbase）以及一句轻松的语音 \"feels good\" 结尾。没有任何优惠（Offer）、条件或明确的行动号召（CTA）（如：立即下载、注册领取等）。这完全是一支定调和抢占心智的品牌形象（Brand Awareness）广告。",
+      "analyzed_brand": "Coinbase"
+    },
+    "title": "The financial system is out of date.",
+    "uploader": "Coinbase",
+    "duration": 49,
+    "view_count": 23757,
+    "tag": "B2",
+    "brand": "Coinbase",
+    "priority": 12
+  },
+  {
+    "id": "AxHXEPwPsZY",
+    "url": "https://www.youtube.com/watch?v=AxHXEPwPsZY",
+    "platform": "youtube",
+    "date_added": "2026-03-26",
+    "breakdown": {
+      "summary": "这支视频广告是 Google 发布的品牌宣言与形象大片。视频以“帮助 (Helpful)”为核心线索，回顾了品牌从早期搜索起步，逐步通过地图、翻译、相册等基础功能解决用户日常问题的历程。随后半段画风一转，密集展示了 Google 在医疗影像分析、AI 音乐生成、智能办公、环境监测等生成式人工智能（AI）领域的最新突破，向大众传达了品牌在迈入 AI 新时代时的核心愿景：以负责任的态度，让 AI 技术真正惠及每一个人、企业和整个社会。",
+      "structure": [
+        {
+          "time": "0:00-0:27",
+          "desc": "初心与日常微光。从充满年代感的早期办公室画面引入，伴随旁白，画面切入 Google 搜索、地图路线指引、Gmail 邮件自动补全、拼写纠错等帮助人们解决微小但重要问题的场景，奠定温馨、贴近生活的基调。"
+        },
+        {
+          "time": "0:28-0:47",
+          "desc": "跨越障碍与探索未知。展示 Google Lens 识花、相册魔术橡皮擦修复孩童照片、Google 翻译打破语言壁垒等功能，强调产品在连接不同人群中的作用。随后通过 YouTube 搜索框自然过渡到人类宏大的太空探索画面。"
+        },
+        {
+          "time": "0:48-1:19",
+          "desc": "AI 新纪元的能力爆发。旁白宣告进入新时代，画面节奏加快，密集展示前沿 AI 的硬核应用场景：Med-PaLM 2 分析手部 X 光片、生成式 AI 制定旅行行程、Music LM 音乐生成、AI 自动生成宣讲幻灯片、Google Meet 智能提取会议纪要、AI 航线天气预测以及海洋珊瑚礁生态识别。"
+        },
+        {
+          "time": "1:20-1:47",
+          "desc": "品牌升华与责任承诺。视觉落脚于宏观的地球视角和 Google 护盾图标，强调“负责任的 AI”。画面快剪各行各业、不同群体的笑脸，屏幕中央逐一浮现核心宣言，最后以品牌 Logo 收尾。"
+        }
+      ],
+      "strengths": [
+        "UI 实景化的卓越视觉执行：视频没有采用枯燥的软件录屏，而是将搜索框、翻译对话框、生成进度条等经典 UI 元素，以干净、极简的 AR 形式直接叠加在充满情感张力的实拍画面或历史影像上。这种处理不仅极具电影感，还强化了“科技无缝融入并赋能现实生活”的品牌印象。",
+        "情感递进的“以小见大”结构：视频在叙事上克制且精准。前半段用极具共鸣的个人微小需求（向妈妈报平安、拼对一个单词、翻译一句问候）建立情感羁绊，后半段才抛出硬核的宏观科技（医学影像、地球生态、自动化企服），让冷冰冰的前沿 AI 技术有了坚实的人文底色，大幅降低了大众对未知 AI 技术的防备感。",
+        "克制的技术表达：面对繁杂的 AI 产品线，广告没有堆砌任何晦涩的技术名词（如大语言模型参数、算力等），而是全部转化为直观的用户收益，将“能力”具象化为清晰的“场景”。"
+      ],
+      "risks": [
+        "信息密度过高导致记忆点稀释：在短短 1 分钟的 AI 展示环节内，塞入了超过 7 个不同的 AI 产品线和功能演示。对于普通观众而言，视觉和信息的接收负荷较大，很容易在看完后只留下“Google AI 很厉害”的模糊印象，而无法记住任何一个可以立即去使用的具体功能。",
+        "落地互动的缺失：虽然是一支绝佳的品牌形象大片，但缺乏明确的锚点。视频并未提供让观众体验这些“改变生活”的 AI 技术的入口或引导，容易让受众产生“这只是一支昂贵的高概念宣传片，与我当下无关”的距离感。"
+      ],
+      "transferable": [
+        "复杂技术的“痛点前置”法则：在制作科技类、自动化工具或 AI 产品的展示视频时，永远不要先讲底层架构。可以复用本片的策略：先用前 1/3 的篇幅展示受众最熟悉、最容易产生挫败感的日常痛点，建立“我懂你”的语境后，再切入你强大的自动化解决方案，转化效果会好得多。",
+        "无缝场景转场技巧：在多场景、多情节的系列视频创作中，可以学习片中利用“视觉匹配”或“UI 框”作为转场媒介（例如通过一个搜索框的输入，直接将画面从学校体育馆拉升到宇宙飞船发射）。这种技巧能让跨度极大的碎片化素材在逻辑上保持高度连贯。"
+      ],
+      "vo_quotes": [
+        "Since day one, we set out to significantly improve the lives of as many people as possible.",
+        "So as we stand on the cusp of a new era, new breakthroughs in AI will reimagine the ways we can help.",
+        "Because our goal is to make AI helpful for everyone."
+      ],
+      "ending": "收尾方式：视频结尾采用快剪镜头配合不断递进的屏幕中心大字号文案（Making AI helpful for people -> businesses -> communities -> everyone），将情绪推向最高潮。最终画面淡出，屏幕中央定格在 Google 的彩色标志上，标志周围环绕着代表其生成式 AI （Gemini）的标志性星芒动画。",
+      "analyzed_brand": "Google"
+    },
+    "title": "Google I/O ‘23 Opening Film",
+    "uploader": "Google",
+    "duration": 109,
+    "view_count": 115050,
+    "tag": "A",
+    "brand": "Google",
+    "priority": 14
+  },
+  {
+    "id": "Q1h9fRZ3mCk",
+    "url": "https://www.youtube.com/watch?v=Q1h9fRZ3mCk",
+    "platform": "youtube",
+    "date_added": "2026-03-26",
+    "breakdown": {
+      "summary": "这是一支由塞浦路斯银行（Bank of Cyprus）推出的15秒短视频广告，核心推广其手机银行App中的“QuickPay”（快捷支付/转账）功能。视频通过朋友聚餐分披萨的常见生活场景切入，将“分享美好时光”与“轻松解决账单”联系起来，传达了使用该App可以消除社交聚会后分摊费用的繁琐，主打便捷无缝的移动金融体验。",
+      "structure": [
+        {
+          "time": "0:00-0:01",
+          "desc": "开场场景：多只手共同分享一块披萨，画面出现大字文案“SHARE YOUR MOMENTS”。"
+        },
+        {
+          "time": "0:02-0:05",
+          "desc": "情绪过渡：快速剪辑多位不同背景人物的开心笑脸与生活状态，配合文案“& DON'T LET THE BILL GET IN THE WAY”。"
+        },
+        {
+          "time": "0:06-0:09",
+          "desc": "产品演示：特写镜头展示手机屏幕，用户正在使用App内的QuickPay功能输入金额并点击发送，文案提示“MAKE A QuickPay”。"
+        },
+        {
+          "time": "0:10-0:14",
+          "desc": "结尾定帧：展示带有品牌Logo的App登录界面，搭配核心Slogan“YOUR BANK IN AN APP”以及应用商店下载徽标。"
+        }
+      ],
+      "strengths": [
+        "生活化场景的精准隐喻：开篇仅用1秒的“众人分披萨”动作，就巧妙隐喻了社交聚会中“分摊账单（Split the bill）”的核心痛点，极具视觉共鸣感。",
+        "大字报式（Kinetic Typography）排版：在极短的广告时长内，利用占据画面视觉中心的粗体动画文字配合节奏剪辑，确保了核心卖点传递的强制性。",
+        "直接的UI视觉证明：直接插入真实的产品操作界面（输入金额、点击发送），比任何概念性的包装都能更直观地向用户证明“操作极简”，有效降低了认知门槛。"
+      ],
+      "risks": [
+        "过度依赖视觉注意力：整支广告没有配音（Voiceover）引导，纯靠BGM和屏幕文字传达信息。如果用户在信息流中处于“听视频”状态或视线短暂移开，就会完全错过广告的核心诉求。",
+        "情绪到产品的过渡略速：从聚会社交的情绪价值瞬间切入硬核的转账UI界面，转折稍显生硬，虽然在15秒广告中这是向效率妥协的结果。"
+      ],
+      "transferable": [
+        "“痛点前置+场景具象化”法则：推广工具类或金融类无形服务时，不要一上来就展示功能，而是找到该功能在现实生活中对应的具象化动作（如用“分披萨”指代“分账”），快速抓取注意力。",
+        "15秒信息流黄金三段式：前5秒负责带入情绪和场景（抛出隐性问题），中间4秒展示产品UI（提供解决方案），最后4秒留给品牌定帧（促转化）。这种时间轴分配非常适合短视频平台的快速传播。"
+      ],
+      "vo_quotes": [
+        "SHARE YOUR MOMENTS & DON'T LET THE BILL GET IN THE WAY.",
+        "MAKE A QuickPay."
+      ],
+      "ending": "广告采用标准的品牌定帧画面（End Card）收尾。展示了Bank of Cyprus的App界面，明确指向了应用商店下载途径（Get it on Google Play / Download on the App Store）。结尾没有提供任何具体的限时优惠、新客注册奖励或使用门槛，属于纯粹的品牌功能曝光和常规转化引导。",
+      "analyzed_brand": "Bank of Cyprus"
+    },
+    "title": "Your Bank In An APP",
+    "uploader": "Bank of Cyprus Official",
+    "duration": 15,
+    "view_count": 2467769,
+    "tag": "C",
+    "brand": "spec",
+    "priority": 14
+  },
+  {
+    "id": "GAoeGC-eL4I",
+    "url": "https://www.youtube.com/watch?v=GAoeGC-eL4I",
+    "platform": "youtube",
+    "date_added": "2026-03-26",
+    "breakdown": {
+      "summary": "这支 Stella Artois 的商业广告采用了一种极具喜剧色彩的叙事手法。前英格兰球星大卫·贝克汉姆（David Beckham）从父母那里得知自己在美国还有一个失散多年的双胞胎兄弟，而这位名为“戴夫·贝克汉姆”的兄弟竟是由好莱坞影星马特·达蒙（Matt Damon）扮演的。广告利用了名人的明星效应、冷幽默以及两人之间关于文化差异的诙谐对话（如关于水牛城辣鸡翅的讨论），最终引出核心信息：尽管他们背景悬殊、性格迥异，但他们在选择啤酒上都拥有同样的“高端品味”—— Stella Artois。整体传递了品牌连接彼此、共享高品质时光的理念。",
+      "structure": [
+        {
+          "time": "0:00-0:16",
+          "desc": "悬念开场：在一家昏暗的英式酒吧里，大卫·贝克汉姆的父母向他透露了一个秘密：他在美国还有一个名叫“另一个大卫（Other David）”的双胞胎兄弟。"
+        },
+        {
+          "time": "0:16-0:24",
+          "desc": "兄弟相认：大卫来到美国一处郊区住宅按响门铃，前来开门的“双胞胎兄弟”是马特·达蒙。两人略显错愕地互相介绍自己是贝克汉姆。"
+        },
+        {
+          "time": "0:24-0:42",
+          "desc": "派对互动：在后院的烧烤派对上，两人因为“水牛城辣鸡翅（Buffalo wing）”到底是什么动物的肉展开了尴尬又搞笑的跨文化讨论。"
+        },
+        {
+          "time": "0:42-0:50",
+          "desc": "品牌高潮：两人碰巧发现对方手里都拿着 Stella Artois 啤酒。两人默契碰杯，引出品牌核心标语 \"For Moments WORTH MORE\"（致更具价值的时刻）。"
+        },
+        {
+          "time": "0:51-1:00",
+          "desc": "彩蛋结尾：两人讨论大卫在英国的知名度，马特问他是否有“马特·达蒙那么出名”，大卫幽默地回击“大概是本·阿弗莱克（Ben Affleck）那种出名程度”，画面定格在 Stella Artois 品牌 Logo。"
+        }
+      ],
+      "strengths": [
+        "巧妙的名人效应与自嘲式幽默：广告没有生硬地让明星念口播，而是利用极具反差感的选角（贝克汉姆和达蒙演双胞胎）以及好莱坞的流行文化梗（马特·达蒙与本·阿弗莱克的好友/竞争关系）制造笑点，极具病毒传播潜力。",
+        "无缝的产品植入：产品直到后半段才作为“打破僵局的共同语言”出现。它并不突兀，反而成为了两人身份认同的粘合剂，借角色的口吻自然地传达了“喝 Stella 代表有品味”的品牌心智。",
+        "视觉对比强化文化冲突：开场英式酒吧的复古低调与美国郊区后院烧烤的明亮喧闹形成了鲜明的视觉与文化对比，为后续美式英语与英式英语的碰撞铺垫了很好的氛围。"
+      ],
+      "risks": [
+        "文化门槛限制：结尾处最核心的笑点完全依赖于观众是否了解“马特·达蒙和本·阿弗莱克”的好莱坞内部梗。对于不熟悉欧美流行文化或不认识这两位演员的受众来说，这个包袱会完全失效。",
+        "产品露出较晚：前 40 秒的铺垫较长。在当今短视频时代，如果直接投放于非强制观看的流媒体渠道，可能在啤酒出现前就会流失部分缺乏耐心的观众。"
+      ],
+      "transferable": [
+        "“荒诞设定”抓手：在开头抛出一个违背常理但又一本正经的设定（如两个长相截然不同、口音不同的人是双胞胎），可以迅速打破观众的心理预期，激发好奇心看完整个故事。",
+        "产品作为“求同存异”的桥梁：当需要在广告中展现两种不同的人群、文化或生活方式时，可以将品牌产品设定为两者唯一的共同点，从而拔高产品的普适性和高端属性，暗示“好品味是共通的”。"
+      ],
+      "vo_quotes": [
+        "If there's two Davids, one has to be Other David.",
+        "You drink Stella? / I have taste, David.",
+        "So how famous are you? Like Matt Damon famous? / Maybe Ben Affleck famous."
+      ],
+      "ending": "视频结尾以全屏文字 \"For Moments WORTH MORE\" 作为情感升华，随后切入一段幽默对话作为片尾彩蛋。最终画面定格在品牌 Logo、产品展示和 \"Always Enjoy Responsibly\" 等常规法律免责声明上。\n该广告没有设置任何直接的行动呼吁（CTA）、促销优惠、折扣码或购买门槛。 它是一支纯粹的品牌形象（Branding）和提升好感度的广告片。",
+      "analyzed_brand": "Stella Artois"
+    },
+    "title": "\"David and Dave\"",
+    "uploader": "Stella Artois",
+    "duration": 0,
+    "view_count": 0,
+    "tag": "A",
+    "brand": "Stella Artois",
+    "priority": 11,
+    "source": "admeter",
+    "admeter_rank": 4,
+    "admeter_rating": 3.51,
+    "admeter_year": 2025
+  },
+  {
+    "id": "W5VzQ8OV3X0",
+    "url": "https://www.youtube.com/watch?v=W5VzQ8OV3X0",
+    "platform": "youtube",
+    "date_added": "2026-03-26",
+    "breakdown": {
+      "summary": "这支视频展示了在一个名为“Java Jam”的咖啡品牌乐队挑战赛上，由好莱坞明星本·阿弗莱克领衔的“DunKings”组合与其他代表复杂精品咖啡的虚构乐队（如“Barista Buds”）之间的喜剧对决。广告通过荒诞的幽默感、密集的台词交锋和明星客串，讽刺了繁琐的咖啡点单文化，从而突出了 Dunkin' 简单、日常、亲民的品牌调性，强化了“America Runs on Dunkin'”的核心信息。",
+      "structure": [
+        {
+          "time": "0:00-0:04",
+          "desc": "背景引入：镜头扫过拥挤的会场，旁白介绍“Java Jam”咖啡品牌乐队挑战赛，各路奇装异服的咖啡代表队亮相。"
+        },
+        {
+          "time": "0:04-0:20",
+          "desc": "团队互动与造梗：镜头切向穿着标志性橙色运动服的 DunKings 团队。小男孩质问核心成员（Matt 和 Tom）的缺席，本·阿弗莱克迅速用荒诞的借口搪塞，并引出新一季的“DunKings Sequel”口号。"
+        },
+        {
+          "time": "0:21-0:33",
+          "desc": "荒诞插曲：场景切换到后台，团队发现一个全身被咖啡豆覆盖的怪人，通过无厘头的视觉效果增加喜剧荒诞感。"
+        },
+        {
+          "time": "0:34-0:53",
+          "desc": "阵营对峙与吐槽：DunKings 与穿着刻板绿色西装的竞争对手“Barista Buds”正面对峙。通过高语速的群口相声式台词，直接吐槽对方复杂的点单术语（如“goat milk double half-calf soy milk cap”）。"
+        },
+        {
+          "time": "0:54-0:59",
+          "desc": "品牌共识与收尾：大团圆结局。阵营对立被打破，所有人都在欢乐地分享 Dunkin' 的咖啡和食物。画面定格在品牌经典 Slogan。"
+        }
+      ],
+      "strengths": [
+        "具象化的冲突对比：广告将“大众连锁咖啡”与“精品手冲咖啡”的品类差异，巧妙地转化为两支乐队的冲突。亮橙色运动服代表随性亲民，严丝合缝的绿色西装代表刻板繁琐，视觉符号极为鲜明。",
+        "打破第四面墙的自黑幽默：本·阿弗莱克等一线明星完全抛弃偶像包袱，以一种略带滑稽、用力过猛的姿态表演，这种身份上的强烈反差萌极大地增加了视频的传播度。",
+        "构建品牌内容宇宙：广告自然地衔接了 Dunkin' 之前的超级碗广告剧情（提及未到场的明星），这种连载式的彩蛋设计能有效提升核心受众的观看黏性和讨论热度。"
+      ],
+      "risks": [
+        "文化与语境壁垒：广告的笑点极度依赖美国本土流行文化、明星八卦（如本·阿弗莱克的波士顿老乡梗）以及对当地咖啡鄙视链的了解。对于非英语母语或不熟悉这些背景的受众，可能会觉得剧情吵闹且莫名其妙。",
+        "信息密度过高：场景切换迅速，人物众多且台词呈现群口相声式的密集输出，容易让观众的注意力分散，导致部分受众可能忽略了实际想要展示的产品本身。"
+      ],
+      "transferable": [
+        "利用阵营对立推进短剧冲突：在构思多集短剧或叙事型短视频脚本时，可以借鉴这种“群像对立”的设定。为正反两方赋予极具反差的视觉符号和语言风格，通过高频、密集的台词对撞来迅速建立戏剧张力，这比平铺直叙的旁白更能抓住观众眼球。",
+        "痛点拟人化与场景化表达：不要干巴巴地陈述“竞品太复杂”，而是将抽象的痛点（如复杂的咖啡点单术语）包装成具体的人物形象或戏剧桥段去直接进行“Roast（吐槽）”。在分镜头设计中，将劣势具象化、荒诞化，能让表达更具娱乐性和说服力。"
+      ],
+      "vo_quotes": [
+        "Welcome to Java Jam. Battle of the coffee brand bands.",
+        "Nobody wants a goat milk double half-calf soy milk cap. You can just brew it. It's beans and water.",
+        "America runs on Dunkin'."
+      ],
+      "ending": "视频以一场欢乐的室内派对收尾，所有角色（包括此前的竞争对手）都在一起畅饮 Dunkin' 咖啡并分享甜甜圈。画面最终定格在品牌的经典标语“AMERICA RUNS ON DUNKIN'”。结尾没有提供任何促销代码、折扣信息或购买门槛，纯粹以品牌形象和情绪价值落地。",
+      "analyzed_brand": "Dunkin'"
+    },
+    "title": "\"DunKings 2\"",
+    "uploader": "Dunkin'",
+    "duration": 0,
+    "view_count": 0,
+    "tag": "A",
+    "brand": "Dunkin'",
+    "priority": 8,
+    "source": "admeter",
+    "admeter_rank": 34,
+    "admeter_rating": 2.79,
+    "admeter_year": 2025
+  },
+  {
+    "id": "laBjQ9uJDg8",
+    "url": "https://www.youtube.com/watch?v=laBjQ9uJDg8",
+    "platform": "youtube",
+    "date_added": "2026-03-26",
+    "breakdown": {
+      "summary": "这支视频广告由 Booking.com 推出，采用连贯的第一人称视角（POV）与著名的《布偶历险记》（The Muppets）角色以及不同的人类旅客进行互动。广告通过快速且极具戏剧性的场景切换，生动展示了不同旅客群体对住宿的差异化需求——从海滩休闲、奢华精品、家庭水上乐园到拉斯维加斯单身派对。其核心信息是：无论旅客的需求多么独特或多变，Booking.com 都能提供精准匹配的住宿选择，并以“免费取消”政策作为打消预订顾虑的终极保障。",
+      "structure": [
+        {
+          "time": "0:00-0:04",
+          "desc": "开场与定调。海滩场景，画外音介绍 Booking.com 提供适合所有人的选择，科米蛙（Kermit）在海滩弹唱。"
+        },
+        {
+          "time": "0:04-0:10",
+          "desc": "需求抛出与转场一。猪小妹（Miss Piggy）在海滩抱怨，要求更“精品（boutique）”的住宿。镜头顺着画外音的引导，无缝转接至粉色的精品酒店走廊。"
+        },
+        {
+          "time": "0:10-0:14",
+          "desc": "冲突点与转场二。场景切至一个待在狂野豹纹主题房间的家庭，显得格格不入，他们提出需要“更适合家庭（family-friendly）”的地方。"
+        },
+        {
+          "time": "0:14-0:18",
+          "desc": "视觉高潮与转场三。场景瞬间转至带有水上滑梯的度假村泳池，一个男孩滑下水槽，巨大的水花直接溅到了旁边另一组准备举办单身派对的准新娘和伴娘团身上。"
+        },
+        {
+          "time": "0:18-0:22",
+          "desc": "需求反转。浑身湿透的准新娘立刻要求“没那么适合家庭（less family-friendly）”的住宿，镜头迅速切入热闹的拉斯维加斯酒店大堂，伴娘团开始狂欢。"
+        },
+        {
+          "time": "0:22-0:25",
+          "desc": "痛点解答。布偶大爷 Statler 和 Waldorf 提出终极质疑：“如果我们要讨厌这一切怎么办？”画外音展示手机 App 界面，给出“免费取消（free cancellation）”的解决方案。"
+        },
+        {
+          "time": "0:25-0:30",
+          "desc": "结尾定格。Gonzo 在拉斯维加斯夜景中穿着特技服飞驰，引出品牌标语定版。"
+        }
+      ],
+      "strengths": [
+        "极具创意的因果转场设计：广告没有使用生硬的切镜，而是利用前一个场景的“冲突”或“不满”作为动机（例如水上滑梯的水花溅到单身派对人群），顺理成章地引出下一个截然不同的住宿场景，视觉节奏紧凑且逻辑自洽。",
+        "经典 IP 与受众标签的精准匹配：利用大众熟知的布偶角色（Muppets）的夸张性格来具象化不同类型的旅行需求（如猪小妹代表奢华挑剔，两位大爷代表极度保守和抱怨）。这种角色化标签让枯燥的“房源多样性”卖点变得生动幽默。",
+        "沉浸式的第一人称视角（POV）：镜头本身扮演了 Booking.com 的“向导”角色，与画面中的人物直接对话。这种打破第四面墙的运镜方式增强了代入感，让观众感觉平台是在为自己提供专属定制服务。"
+      ],
+      "risks": [
+        "IP 文化壁垒与共鸣折损：《布偶历险记》在北美及部分欧洲地区拥有极高的国民度，但在亚洲或其他非英语文化圈，观众可能不熟悉这些角色的特定人设（比如不明白 Statler 和 Waldorf 为什么总是持否定态度）。这会导致部分幽默感流失，降低广告在跨文化传播时的感染力。"
+      ],
+      "transferable": [
+        "“需求反转”驱动的场景串联法则：在撰写多场景切换的短视频脚本时，可以复用这种技巧。不要平行罗列产品功能，而是通过在 A 场景制造一个小麻烦或极端痛点，直接呼唤出 B 场景的解决方案，使视频具有极强的连贯性和爽感。",
+        "将“售后服务”包装为“终极绝招”：在展示完所有华丽的产品卖点后，用一个最基础但也最能打消消费者顾虑的保障条款（如本片中的“免费取消”）作为压轴。这在转化漏斗中是非常有效的促单手段，可以学习将其放置在情绪最高涨或质疑最强烈的情节点出现。"
+      ],
+      "vo_quotes": [
+        "With hotels and vacation rentals, Booking.com has something for everyone.",
+        "What if we hate everything? We have free cancellation.",
+        "Find exactly what you're booking for."
+      ],
+      "ending": "视频结尾未提供具体的促销折扣码或限时优惠（无硬性门槛），而是以炫酷的夜景特效配合品牌定版语 \"Booking.com, Booking.yeah\" 收尾。真正的“Offer”其实在结尾前已经给出——即明确承诺的 \"Free cancellation\"（免费取消），以此作为降低用户下载和预订决策门槛的核心行动号召（CTA）。",
+      "analyzed_brand": "Booking.com"
+    },
+    "title": "\"Get Your Stay Ridiculously Right\"",
+    "uploader": "Booking.com",
+    "duration": 0,
+    "view_count": 0,
+    "tag": "A",
+    "brand": "Booking.com",
+    "priority": 8,
+    "source": "admeter",
+    "admeter_rank": 25,
+    "admeter_rating": 2.92,
+    "admeter_year": 2025
+  },
+  {
+    "id": "s83EB_OtaEo",
+    "url": "https://www.youtube.com/watch?v=s83EB_OtaEo",
+    "platform": "youtube",
+    "date_added": "2026-03-26",
+    "breakdown": {
+      "summary": "这支由 Matthew McConaughey 主演的 Uber Eats 广告采用了一种荒诞幽默的“阴谋论”叙事。视频中，他扮演一个充满激情的推销员，试图证明美国职业橄榄球（NFL）从诞生之初就是一个为了推销食物而精心策划的巨大阴谋。通过一系列历史闪回和现代场景，广告巧妙地将橄榄球术语（如“星期日”比赛、“超级碗”、布法罗水牛城、绿湾包装工等）与各类美食进行谐音梗和字面意义上的强行关联。最终场景反转，揭示这其实是他向高管（Greta Lee 饰）推销的剧本，自然过渡到 Uber Eats “看球饿了就点外卖”的核心品牌诉求。",
+      "structure": [
+        {
+          "time": "0:00-0:09",
+          "desc": "开场场景：McConaughey 在会议室提出“国家食品联盟（National Food-ball League）”的阴谋论。"
+        },
+        {
+          "time": "0:10-0:15",
+          "desc": "历史闪回：将橄榄球命名为“猪皮（Pigskin）”以唤起人们对培根（Bacon）的渴望，并由知名演员 Kevin Bacon 本色客串。"
+        },
+        {
+          "time": "0:16-0:23",
+          "desc": "历史闪回：解释只在“星期日（Sundays）”比赛，是因为冰淇淋“圣代（Sundaes）”不能在周六吃。"
+        },
+        {
+          "time": "0:24-0:30",
+          "desc": "场景转换：解释绿湾包装工队（Packers）与肉类加工的联系，以及著名的“奶酪头（Cheeseheads）”粉丝饰品。"
+        },
+        {
+          "time": "0:31-0:40",
+          "desc": "餐厅场景：因为布法罗鸡翅（Buffalo Wings）太好吃，而给布法罗（Buffalo）分配一支球队。"
+        },
+        {
+          "time": "0:41-0:53",
+          "desc": "会议室与历史场景：将冠军赛命名为“超级碗（Super Bowl）”，因为用碗吃东西比杯子方便；著名球员“电冰箱”佩里（Refrigerator Perry）登场。"
+        },
+        {
+          "time": "0:54-1:02",
+          "desc": "赛场场景：调侃传奇四分卫 Peyton Manning 赛场上大喊“Omaha（奥马哈）”其实是在推销著名的奥马哈牛排。"
+        },
+        {
+          "time": "1:03-1:19",
+          "desc": "现代会议：用超级碗罗马数字 LIX 谐音“舔（Licks）”，以及将凯撒超级巨蛋（Caesars Superdome）与凯撒沙拉联系起来。"
+        },
+        {
+          "time": "1:20-1:34",
+          "desc": "现实反转：镜头拉回现实，原来 McConaughey 正在向高管 Greta Lee 推销这部“阴谋论”电影，被无情吐槽并拒绝。"
+        },
+        {
+          "time": "1:35-1:37",
+          "desc": "结尾定帧：展示满桌典型比赛日美食与 Uber Eats 纸袋，点出最终品牌诉求。"
+        }
+      ],
+      "strengths": [
+        "高密度的文化谐音梗（Puns）：广告极其巧妙地挖掘了美国橄榄球文化中自带的食物相关词汇（Bowl, Buffalo, Sunday, Cheesehead, Omaha），将其逻辑重构，打造出连珠炮般的笑点，趣味性极强。",
+        "现象级的明星客串矩阵：除了影帝担纲主讲，还精准穿插了 Kevin Bacon（呼应培根梗）、Peyton Manning 和“电冰箱”等体育界传奇，以及 Greta Lee。每个客串都完美服务于剧情逻辑，而非单纯露脸。",
+        "出色的视觉执行与节奏控制：在短短一分半内切换了十几个不同的时代和场景（黑白默片、20年代老球场、现代会议室等），服化道精良，视觉风格多变，让观众的注意力始终保持高度集中。"
+      ],
+      "risks": [
+        "极高的跨文化传播壁垒：这支广告的受众门槛极高，完全依赖于观众对美国 NFL 历史、球队名称、球员俚语以及英语谐音的深度了解。对于非北美文化圈、非英语母语或不看橄榄球的受众来说，几乎无法理解其中的笑点，难以在国际市场复用。"
+      ],
+      "transferable": [
+        "“一本正经胡说八道”的阴谋论框架：将大众熟知的宏大事物（如某项国民运动、传统节日），用荒诞的逻辑强行与品牌或产品特性绑定。这种巨大的反差感是制造喜剧效果和强记忆点的有效手法。",
+        "词源/谐音的场景化演绎：不让文案停留在纸面上的谐音梗，而是像这支广告一样，把谐音直接拍成具体的历史或现实场景（比如真的拿出碗、吃圣代），能大幅提升创意的具象化程度和幽默感。"
+      ],
+      "vo_quotes": [
+        "From the very beginning, football has been a conspiracy to make us hungry.",
+        "No one believes that football is just some conspiracy to sell food.",
+        "When football makes you hungry, order Uber Eats."
+      ],
+      "ending": "视频最后画面切至 Uber Eats 标志性的绿色背景，画面中央醒目地放置着 Uber Eats 的外卖袋，周围铺满了披萨、热狗、鸡翅、甜甜圈等典型的看球聚会美食。配合充满激情的旁白 \"When football makes you hungry, order Uber Eats.\" 作为强有力的品牌行动呼吁（CTA）。画面中没有展示具体的折扣优惠码或门槛条件，而是纯粹以“看球场景 = 饥饿 = 点 Uber Eats”的心智绑定作为收尾。",
+      "analyzed_brand": "Uber Eats, NFL"
+    },
+    "title": "Uber Eats Super Bowl Commercial (2025) Featuring Matthew McConaughey",
+    "uploader": "ZHENG WEN",
+    "duration": 98,
+    "view_count": 62394,
+    "tag": "S",
+    "brand": "partner",
+    "priority": 7
+  },
+  {
+    "id": "UKES85mvE4o",
+    "url": "https://www.youtube.com/watch?v=UKES85mvE4o",
+    "platform": "youtube",
+    "date_added": "2026-03-26",
+    "breakdown": {
+      "summary": "这支具有黑色幽默色彩的商业广告巧妙地揭露了传统金融咨询行业中隐藏的利益冲突。通过将“take it with a grain of salt（半信半疑/持保留态度）”这一习语具象化为一个巨大的盐块道具，广告生动地展现了某些理财顾问如何将个人佣金和回扣置于客户利益之上。视频最终引出 Interactive Brokers（盈透证券）的 Investors' Marketplace，将其定位为一个能让投资者寻找真正独立、透明的理财顾问的可靠平台。",
+      "structure": [
+        {
+          "time": "0:00-0:07",
+          "desc": "场景设定与悬念：两位西装革履的男士在办公楼大堂交谈。理财顾问在递交资料的同时，塞给客户一个极其违和的巨大“盐块”，引发视觉好奇。"
+        },
+        {
+          "time": "0:08-0:19",
+          "desc": "核心冲突（荒诞自白）：理财顾问以一种极其理所当然的语气，坦白了自己靠推销产品拿佣金、为了高额回扣出卖客户订单等不道德的行业内幕。"
+        },
+        {
+          "time": "0:20-0:27",
+          "desc": "情绪推向高潮：客户惊呼“这应该是违法的”，顾问却轻描淡写地认同并离开，留下抱着巨大盐块、满脸怀疑的客户。"
+        },
+        {
+          "time": "0:28-0:36",
+          "desc": "品牌介入与解决方案：画面切至客户在家中查阅资料，旁白切入痛点（“他们在管理谁的财富？”），顺势引出品牌平台作为解决方案。"
+        },
+        {
+          "time": "0:37-0:44",
+          "desc": "幽默回马枪（结尾）：闪回镜头补充了一个细节——顾问名片上的“理财顾问”加了引号，用一个令人啼笑皆非的借口（“这只是个绰号”）完成最后的讽刺。"
+        }
+      ],
+      "strengths": [
+        "具象化的视觉隐喻：将抽象的俗语（a grain of salt）转化为一个夸张的实体道具。这种强烈的视觉反差不仅在第一秒就抓住了观众眼球，还让“保持怀疑”这个核心信息变得极具记忆点。",
+        "“反向推销”的脚本策略：没有选择让受害者控诉，而是让反面角色（传统顾问）兴高采烈、毫无防备地暴露自己的底牌。这种荒诞的坦诚极大地增强了喜剧效果，同时也让枯燥的金融避坑指南变得生动有趣。"
+      ],
+      "risks": [
+        "受众心理误判的风险：广告对传统理财顾问的刻画极其负面和讽刺。虽然幽默，但对于那些目前与自己的理财顾问关系良好、高度信任的投资者来说，这种“一竿子打翻一船人”的表达可能会引起反感或被认为过于夸张。"
+      ],
+      "transferable": [
+        "“特洛伊木马”式道具运用：在日常、严肃的场景（如高端写字楼）中引入一个体积庞大或属性完全不符的道具。这种反差感是极佳的视觉停留点，非常适合在短视频前三秒用来建立悬念。",
+        "闪回式 Punchline (笑点设计)：在正片看似已经结束（品牌信息露出后），利用简短的闪回镜头补充一个荒诞细节（带引号的头衔）。这种结构能在不干扰核心主张传达的前提下，拉升完播率并强化观众的正面情绪体验。"
+      ],
+      "vo_quotes": [
+        "Remember I get paid based upon how much of this stuff I sell you.",
+        "Wondering whose wealth they're really managing? Find independent financial advisors on the Investors' Marketplace."
+      ],
+      "ending": "广告以轻松幽默的闪回桥段收尾，画面定格在品牌的 Logo、网址以及平台名称。结尾主要以 Implicit CTA (隐性行动呼吁) 为主，引导观众前往其在线市场寻找独立顾问。视频中没有提供任何具体的限时优惠、折扣代码或注册门槛。",
+      "analyzed_brand": "Interactive Brokers"
+    },
+    "title": "Interactive Brokers Commercial",
+    "uploader": "Ryan Larson",
+    "duration": 46,
+    "view_count": 13188,
+    "tag": "B1",
+    "brand": "Interactive Brokers",
+    "priority": 7
+  },
+  {
+    "id": "eVobfsGNI-g",
+    "url": "https://www.youtube.com/watch?v=eVobfsGNI-g",
+    "platform": "youtube",
+    "date_added": "2026-03-26",
+    "breakdown": {
+      "summary": "这支视频是一条具有教育性质的软件操作教程广告，由 Questrade 和 TradingView 联合呈现。视频针对外汇交易者，详细演示了如何在 TradingView 平台上使用和自定义绘图工具。核心信息在于展示该平台强大的技术分析辅助功能，包括工具的查找与收藏、多时间级别的可见性设置、跨图表同步以及磁吸模式，旨在突出平台为交易者带来的高效与精准。",
+      "structure": [
+        {
+          "time": "0:00-0:05",
+          "desc": "开场标题画面（\"How to Use Drawing Tools on TradingView\"）及品牌联合 Logo 展示。"
+        },
+        {
+          "time": "0:05-0:36",
+          "desc": "整体概览：引导观众注意屏幕左侧的绘图工具主菜单。"
+        },
+        {
+          "time": "0:36-1:25",
+          "desc": "分类探索：展示不同类别的绘图工具（如趋势线、几何图形），并演示如何展开子菜单。"
+        },
+        {
+          "time": "1:25-2:25",
+          "desc": "基础操作演示：在 GBP/USD 图表上绘制水平支撑线，并展示如何使用悬浮工具栏更改颜色、粗细及添加警报。"
+        },
+        {
+          "time": "2:25-3:16",
+          "desc": "高级设置：演示双击工具调出高级面板，重点讲解在不同时间周期（日线、周线等）下的可见性（Visibility）设置。"
+        },
+        {
+          "time": "3:16-3:50",
+          "desc": "效率优化：展示如何将常用工具添加至“收藏夹”，从而创建一个可自由拖动的快捷悬浮工具栏。"
+        },
+        {
+          "time": "3:50-5:09",
+          "desc": "高阶功能（多图表同步）：在双图表布局（日线与小时线）下，演示如何开启全局同步，使一侧画的图形自动显示在另一侧。"
+        },
+        {
+          "time": "5:09-5:53",
+          "desc": "精度提升（磁吸模式）：演示 Magnet Mode，展示光标如何自动精准吸附到 K 线的开盘、最高、最低或收盘价（OHLC）。"
+        },
+        {
+          "time": "5:53-6:06",
+          "desc": "结尾收尾与 Questrade 品牌 Logo、Slogan 及网址展示。"
+        }
+      ],
+      "strengths": [
+        "逻辑递进的教学结构：视频从最基础的“工具在哪里”讲起，逐步深入到快捷键设置、多时间周期可见性，最后落脚于多图表同步和磁吸模式等高阶功能。这种由浅入深的结构能有效照顾到不同水平的用户，降低了学习门槛。",
+        "结合实际交易场景：旁白没有干巴巴地念说明书，而是在演示画线时结合了简单的交易逻辑（例如：“我们认为这里可能是一个支撑区，因此在此处画一条水平线”），增加了实操代入感。",
+        "视觉焦点引导明确：作为纯屏幕录制视频，旁白与鼠标的动作配合得非常紧密。每当提及一个新功能时，鼠标都会有明确的悬停和点击动作，帮助观众在复杂的交易软件界面中快速定位。"
+      ],
+      "risks": [
+        "节奏对纯新手较快：在演示“跨图表同步”和“高级可见性设置”等复杂界面时，操作和语速较快，不熟悉软件的新手可能需要频繁暂停才能跟上操作步骤。",
+        "缺乏人像互动：全程为纯屏录（Screencast）+ 旁白，缺乏真人出镜或动态图形（Motion Graphics）的辅助。在长达 6 分钟的纯软件界面展示中，可能会导致部分观众的注意力流失。"
+      ],
+      "transferable": [
+        "“Show, Don't Just Tell”（展示而非单纯讲述）的 SaaS 演示法则：对于软件/SaaS 产品的推广，直接录屏展示“用户遇到了什么问题（如找支撑位） -> 使用什么功能 -> 得到什么结果”是最有说服力的形式。这种手法可广泛复用于任何工具类产品的演示视频中。",
+        "自定义与快捷操作的重点展示：教程不仅展示了工具本身，还花费大量时间展示“如何让工具更好用”（如收藏夹悬浮窗、一键同步）。在推广复杂软件时，强调“效率优化”往往比单纯罗列功能更能打动专业用户。"
+      ],
+      "vo_quotes": [
+        "Welcome forex traders to a TradingView tutorial. Today we are going to be covering drawing tools.",
+        "For every drawing tool that you add to the chart, you can also double click that drawing tool to see some more advanced settings.",
+        "The magnet mode drawing tool allows you to precisely connect your drawing tools to the nearest open, high, low, close value."
+      ],
+      "ending": "视频最后由旁白进行简单的口头致谢收尾（\"Thanks so much for watching...\"），画面淡出至黑屏，随后居中展示 Questrade 的 Logo、品牌 Slogan（\"Keep more of your money\"）以及官方网址（Questrade.com）。此结尾为纯品牌曝光，无具体的优惠代码、促销活动或门槛条件等直接响应（Direct Response）元素。",
+      "analyzed_brand": "Questrade, TradingView"
+    },
+    "title": "How to Use Drawing Tools on TradingView",
+    "uploader": "NA",
+    "duration": 367,
+    "view_count": 1156,
+    "tag": "B1",
+    "brand": "Questrade",
+    "priority": 12,
+    "source": "official_channel"
+  },
+  {
+    "id": "TC-R-PuNcdQ",
+    "url": "https://www.youtube.com/watch?v=TC-R-PuNcdQ",
+    "platform": "youtube",
+    "date_added": "2026-03-26",
+    "breakdown": {
+      "summary": "这支兰蔻（LANCÔME）的品牌形象广告巧妙地将法式优雅与中国传统文化元素相融合。视频以一位身穿一袭鲜亮红裙的女性为视觉中心，带领观众从云雾缭绕的壮丽山水、翠绿梯田，一路穿梭至繁华的现代都市（上海）夜景。广告在开篇短暂展示了核心产品兰蔻“小黑瓶”（Advanced Génifique），随后重点通过红绸、繁花、金龙等极具东方色彩的宏大视觉意象，营造出充满生机与生命力的庆典氛围（推测为中国新年/春节节点广告），旨在传递品牌的高端质感与对本土文化的致敬。",
+      "structure": [
+        {
+          "time": "0:00-0:06",
+          "desc": "开场与产品露出：在云雾缭绕的青绿山水间，红衣女子优雅走过水面石桥。穿插兰蔻小黑瓶（Advanced Génifique）的特写镜头与女主角精致的红唇面部特写。"
+        },
+        {
+          "time": "0:07-0:13",
+          "desc": "自然奇观与色彩冲击：航拍视角的广阔梯田，红衣女子在田埂上挥舞极长的红绸，大面积的红与绿、天与水形成强烈的视觉对比。"
+        },
+        {
+          "time": "0:14-0:19",
+          "desc": "视觉意象转换：女子在红裙中如玫瑰般旋转绽放，裙摆随之化作飘扬在天空中的带有金龙与繁花图腾的华丽飘带。"
+        },
+        {
+          "time": "0:20-0:24",
+          "desc": "情绪升华与群像：场景转为梦幻的夜晚，女子被萤火虫般的点点星光包围。她与另外两位红衣女性并肩微笑，伸手传递温暖与喜悦的节日情绪。"
+        },
+        {
+          "time": "0:25-0:29",
+          "desc": "高潮与品牌落版：镜头切至现代都市（上海陆家嘴）的璀璨夜景，天空中由光影和花瓣汇聚成一条绚丽的巨型金龙，画面定格于漫天落花中的 LANCÔME 品牌 Logo。"
+        }
+      ],
+      "strengths": [
+        "极致的色彩美学与符号运用：将代表品牌与节日氛围的“中国红”作为核心视觉锚点，在青绿山水的大背景下极其抢眼。繁花与金龙元素的融合既契合了本土传统节日（如龙年春节），又保持了国际美妆品牌应有的奢华与高级感，本土化审美表达非常高级。",
+        "流畅的空间调度与虚实结合：从具象的红裙到抽象的满屏红绸，再从自然山野无缝过渡到现代都市天际线，转场如行云流水。不仅拉升了视觉的宏大叙事感，也隐喻了品牌连接传统自然之美与现代摩登之美的桥梁作用。"
+      ],
+      "risks": [
+        "产品记忆点被宏大视觉稀释：作为一支带有产品露出的广告，核心产品“小黑瓶”仅在第4秒出现了一个短暂的特写，缺乏对其功效、质地或使用场景的具体交代。观众看完后容易记住华丽的红裙、金龙和上海夜景，却可能忽略了具体在推广哪款单品。"
+      ],
+      "transferable": [
+        "打造高饱和度的“视觉引导线”：在广阔或复杂的场景中拍摄时，可以学习本片利用一抹高饱和度色彩（如本片中的超长红裙/红绸）作为视觉核心。这不仅能迅速抓住观众眼球，还能作为不同场景转场、串联画面的绝佳道具。",
+        "“自然溯源+现代落版”的叙事结构：在制作高端品牌大片时，可以复用这种结构——前半段深入大自然或传统意境中建立高级感与神秘感，后半段回到繁华都市落地，以此来拔高品牌调性，展现品牌的跨界张力与时代感。"
+      ],
+      "vo_quotes": [
+        "we choose what matters... raise up and dance with me... now and forever..."
+      ],
+      "ending": "结尾画面是一条由璀璨光影与繁花组成的金龙盘旋在现代都市夜空之上，随后淡入“LANCÔME”品牌标志。\n无 CTA (Call to Action)，没有设置任何引导购买的字幕、优惠信息或门槛条件，属于纯粹的品牌形象/节日庆典式收尾。",
+      "analyzed_brand": "LANCÔME PARIS"
+    },
+    "title": "Lancôme X Jacky Tsai - Art collaboration – Chinese New Year 2024 - Ni Ni Movie",
+    "uploader": "Somexing Artistic.",
+    "duration": 31,
+    "view_count": 3483,
+    "tag": "S",
+    "brand": "partner",
+    "priority": 5
+  },
+  {
+    "id": "HQJMzTpckPo",
+    "url": "https://www.youtube.com/watch?v=HQJMzTpckPo",
+    "platform": "youtube",
+    "date_added": "2026-03-26",
+    "breakdown": {
+      "summary": "这支视频是为加密货币平台 Coinbase 打造的品牌态度广告。视频采用了一个绝妙的视觉隐喻，前半段使用低多边形（Low-poly）、类似早期《侠盗猎车手》（GTA）风格的粗糙游戏画面，将传统金融系统描绘成一个僵化、重复、充斥着无脑 NPC 的世界。主角“玩家 3984”在一家名为“受信机构”的地方打破常规，脱离漫长的队伍并开始奔跑。随着他撞碎玻璃，画面瞬间过渡到高质量的真人镜头，象征着走向自由。广告的核心信息是：Coinbase 是你逃离陈旧、死板的传统金融“系统”的出路。",
+      "structure": [
+        {
+          "time": "0:00-0:06",
+          "desc": "角色选择界面，选定了一位手提公文包的普通上班族“Player 3984”。"
+        },
+        {
+          "time": "0:06-0:32",
+          "desc": "角色在僵化、低清的游戏城市中穿梭，与其他 NPC 发生机械的碰撞。"
+        },
+        {
+          "time": "0:32-0:50",
+          "desc": "角色进入“Trusted Institution”（受信机构），加入了一条压抑且仿佛没有尽头的长队。"
+        },
+        {
+          "time": "0:50-1:24",
+          "desc": "角色决定离开队伍，开始逆着人流奔跑，无视了游戏内的“经理”和“董事会”的警告。"
+        },
+        {
+          "time": "1:24-1:31",
+          "desc": "角色跑向一面玻璃，在倒影中看到了更真实的自己，随后撞碎玻璃冲出。"
+        },
+        {
+          "time": "1:31-2:01",
+          "desc": "视觉风格突变，从复古游戏画面转换为流畅清晰的真人/CGI 镜头。主角在城市、森林甚至天空中自由奔跑，表情充满喜悦。"
+        },
+        {
+          "time": "2:02-2:08",
+          "desc": "画面转暗，出现核心文案“Your way out of their system”，最后定格在 Coinbase 的品牌 Logo。"
+        }
+      ],
+      "strengths": [
+        "极强的视觉隐喻与对比：通过将“传统金融/官僚主义”具象化为画质粗糙、动作僵硬的早期 3D 游戏，并将“加密货币/新选择”表现为高清、自由的真实世界，形成了极具冲击力的视觉反差，生动传递了品牌价值。",
+        "情绪共鸣的精准打击：视频中“受信机构”里那条漫长、死气沉沉的排队队伍，极其真实地还原了大众在传统银行办理业务时的痛点、无聊和沮丧感，容易引起广泛共鸣。",
+        "配乐的协同效应：背景音乐（《I Gotta Be Me》）的歌词与节奏完美契合了主角从盲从到觉醒、再到追求个性与自由的心理转变过程，大幅提升了视频的感染力。"
+      ],
+      "risks": [
+        "缺乏产品功能展示：广告高度依赖概念和情绪表达，全程没有出现 Coinbase 的 App 界面或具体交易功能。对于完全不了解加密货币的新用户来说，可能无法立刻明白这款产品到底能做什么，转化链路较长。",
+        "受众认知门槛：这种“打破旧系统”的叙事在加密货币圈内很常见，但对于圈外保守型投资者而言，可能会觉得过于抽象甚至带有一定的反叛色彩，从而缺乏安全感。"
+      ],
+      "transferable": [
+        "“画风突变”的视觉手法：在广告中途改变画风（如从 2D 到 3D，从低清游戏到高清真人）是一种非常有效的吸引注意力的方式，非常适合用来表现“产品带来的巨大转变”或“行业的代际更迭”。",
+        "利用“游戏化”讽刺现状：如果你的产品旨在颠覆某个老旧、繁琐的传统行业，可以将竞争对手或现状包装成“过时的 NPC 游戏”或“卡顿的系统”，以此凸显自身产品的现代化、流畅度和自由度。"
+      ],
+      "vo_quotes": [
+        "Welcome player 3984. Would you like to get in line?",
+        "PLAYER 3984, your recent behavior is totally unacceptable and out of line with what we represent here at this company.",
+        "Your way out of their system"
+      ],
+      "ending": "视频以一句极具号召力的态度宣言（\"Your way out of their system\"）收尾，紧接着展示了品牌 Logo。结尾属于纯粹的品牌心智建设（Brand Awareness），没有任何具体的促销优惠（Offer）、下载引导（CTA）或使用门槛提示。",
+      "analyzed_brand": "Coinbase"
+    },
+    "title": "Your Way Out ",
+    "uploader": " Extended Cut",
+    "duration": 0,
+    "view_count": 129,
+    "tag": "B2",
+    "brand": "Coinbase",
+    "priority": 12,
+    "source": "official_channel"
+  },
+  {
+    "id": "XLbuRN0wLJo",
+    "url": "https://www.youtube.com/watch?v=XLbuRN0wLJo",
+    "platform": "youtube",
+    "date_added": "2026-03-26",
+    "breakdown": {
+      "summary": "The ad for Interactive Brokers features an authoritative, high-net-worth individual seated on a luxurious patio, speaking directly to the camera in a testimonial format. The scene establishes credibility and wealth, suggesting that sophisticated investors trust this platform. The core message emphasizes autonomy and efficiency: even those who employ professional money managers occasionally want to execute trades themselves without unnecessary communication or delays. The presentation shifts seamlessly from a lifestyle-driven live-action shot—where the speaker demonstrates a completed trade on his smartphone—to a fast-paced, data-driven blue graphic sequence. This graphic sequence highlights key platform features (90 trading venues, 27 currencies, crypto) using bold typography and world map visuals. The contrast between the relaxed, affluent environment and the rapid \"20-second\" transaction effectively positions the IBKR GlobalTrader app as a frictionless, powerful tool for independent, global trading.",
+      "structure": [
+        {
+          "time": "0:00-0:08",
+          "desc": "The affluent speaker sits on a luxury patio discussing his professional money managers. 传递信息：Establishes high-status credibility, wealth, and introduces the target persona (sophisticated investor)."
+        },
+        {
+          "time": "0:08-0:15",
+          "desc": "The speaker expresses the desire to trade independently and holds up a phone showing an \"Order Filled\" screen. 传递信息：Introduces the user's pain point (desire for autonomy) and the direct solution (IBKR GlobalTrader app)."
+        },
+        {
+          "time": "0:15-0:20",
+          "desc": "Cut back to the speaker emphasizing \"no conversations, no friction, all done in 20 seconds.\" 传递信息：Drives home the core value proposition of extreme speed and ease of use."
+        },
+        {
+          "time": "0:20-0:29",
+          "desc": "Transition to a blue graphic screen rapidly displaying global stats, ending with logos and QR codes. 传递信息：Validates the platform's global scale and provides a direct, measurable path to conversion."
+        }
+      ],
+      "strengths": [
+        "Authority & Aspirational Framing: Opening with a wealthy figure in a high-end setting instantly builds trust and appeals to the viewer's aspirational desires regarding financial success.",
+        "Tangible UI Proof: Having the talent physically push the phone toward the camera to show the \"Order Filled\" success state bridges the gap between abstract financial talk and a tangible digital product.",
+        "Pacing Contrast: The relaxed, slow-paced live-action segment contrasts sharply with the rapid-fire graphic sequence at the end, effectively reinforcing the \"done in 20 seconds\" speed claim."
+      ],
+      "risks": [
+        "Target Audience Alienation: The explicit mention of employing multiple money managers and the mansion setting might alienate the average retail investor, making the app feel exclusively for the ultra-rich.",
+        "Visual Disconnect: The hard cut from a cinematic, warm-toned live-action environment to a flat, corporate blue infographic screen is visually jarring and breaks the narrative immersion built in the first 20 seconds."
+      ],
+      "transferable": [
+        "The \"High-Status Validation\" Hook: Use a high-status persona admitting they use a simple, accessible tool for specific tasks. It validates the product's quality for all user tiers.",
+        "Physical \"Success State\" Reveal: Instead of showing generic app navigation, have the on-screen talent display the final success screen (e.g., \"Transaction Complete\", \"Order Filled\") to immediately prove the app's efficacy.",
+        "Stat-Bombing End Cards: Dedicate the final 20% of the video purely to large-typography statistics (scale, locations, features) overlaid on a branded background to quickly build rational trust before the CTA."
+      ],
+      "vo_quotes": [
+        "I have a number of money managers that advise me on investment strategies, portfolio construction and asset classes. But sometimes I just want to do a trade by myself. So I went to the App Store and downloaded IBKR GlobalTrader. No conversations, no messages, no friction. All done in 20 seconds. They have 90 trading venues, 27 currencies and even crypto. So give it a try. You're going to like the way it works."
+      ],
+      "ending": "The video concludes with a direct verbal CTA (\"give it a try\") synchronized with a static end-card displaying the brand logo, URL, and dual QR codes for immediate app store downloads.",
+      "analyzed_brand": "Interactive Brokers"
+    },
+    "title": "IBKR commercial",
+    "uploader": "Shout Creative",
+    "duration": 31,
+    "view_count": 96,
+    "tag": "B1",
+    "brand": "Interactive Brokers",
+    "priority": 5
+  },
+  {
+    "id": "IlsIYfZQ2pk",
+    "url": "https://www.youtube.com/watch?v=IlsIYfZQ2pk",
+    "platform": "youtube",
+    "date_added": "2026-03-26",
+    "breakdown": {
+      "summary": "这支由加密货币交易平台 Coinbase 推出的视频广告，通过一座“不断升空”的房屋的超现实视觉隐喻，巧妙展示了比特币购买力随时间推移的惊人增长。广告以极其精简的文案对比了 2012 年、2022 年和 2025 年购买同一栋房屋所需的比特币数量（从 3 万枚锐减至 5 枚），并抛出引人深思的反问，直击法定货币通货膨胀的痛点，最终传达出“比特币是货币的未来”这一核心品牌诉求。",
+      "structure": [
+        {
+          "time": "0:00-0:04",
+          "desc": "开场场景：画面展示一栋普通的蓝色两层小楼，年份“2012”出现在房屋正面。旁白说明当时买下这栋房子需要 30,000 枚比特币。"
+        },
+        {
+          "time": "0:05-0:10",
+          "desc": "铺垫与异变：镜头给出水管、屋顶特写，随后切到房屋地基，地基开始连着泥土逐渐脱离地面，呈现出超现实的悬浮感。"
+        },
+        {
+          "time": "0:11-0:14",
+          "desc": "时间推进：画面转移至屋内挂满家庭照片的楼梯墙壁，年份“2022”浮现。旁白指出此时买房仅需 20 枚比特币。"
+        },
+        {
+          "time": "0:15-0:20",
+          "desc": "高潮场景：房屋彻底拔地而起，向高空升去。年份“2025”出现，旁白表示现在只需 5 枚比特币即可买下。"
+        },
+        {
+          "time": "0:21-0:23",
+          "desc": "视角切换：采用第一人称视角（POV），从升空的房屋门廊俯视下方越来越远的地面街道，强化视觉冲击力。"
+        },
+        {
+          "time": "0:24-0:30",
+          "desc": "品牌定调：房屋完全漂浮在云端。旁白抛出关于比特币与美元定价的灵魂拷问。随后画面中心浮现核心文案“the future of money is here”，最后黑屏淡入 Coinbase 品牌 Logo。"
+        }
+      ],
+      "strengths": [
+        "具象化抽象概念（降维沟通）：将“通货膨胀”和“加密货币升值”这两个极具门槛的金融概念，转化为“买房”这一全人类共通的生存刚需。用“房屋升空”的视觉奇观代替枯燥的 K 线图，让毫无金融背景的受众也能瞬间 get 到比特币购买力狂飙的内核。",
+        "强烈的对比与逻辑反转：利用时间轴（2012-2022-2025）形成极具冲击力的数字递减（30000 -> 20 -> 5）。结尾处不讲大道理，而是用一个巧妙的逻辑反问，将矛头直指传统法币，极具启发性和煽动性。",
+        "视觉美学与氛围营造：整体调色呈现出一种复古又梦幻的滤镜感，配合平缓、略带神秘感的环境音效，让略显疯狂的“币圈”叙事多了一层电影般的质感。"
+      ],
+      "risks": [
+        "合规审查与“幸存者偏差”争议：加密货币本身的波动性极大，广告仅选取了比特币长期飙升的宏观趋势，选择性忽略了其间的剧烈暴跌和高风险属性。这种将比特币包装成“对抗通胀完美神药”的叙事，可能会引发理性投资者的反感，甚至在部分地区面临金融广告监管的严厉审查。"
+      ],
+      "transferable": [
+        "视觉倒错（Visual Metaphor）的运用：在自媒体内容或视频创作中，如果需要表达“价值飙升”、“阶层跨越”或“超现实感”，可以摒弃常规的特效，尝试这种“打破日常物理法则”（如让笨重的建筑物飞向云端）的视觉设计。这种手法在目前的 AI 视频生成工具中也非常容易实现，且吸睛效率极高。",
+        "“时间胶囊”式的极简叙事结构：通过几个关键年份数字作为视觉锚点，配合递进的数值变化，能够在短短 30 秒内建立起跨越十数年的宏大叙事感。这种结构非常适合用于产品迭代回顾、行业趋势预测等类型的脚本中。"
+      ],
+      "vo_quotes": [
+        "In 2012, you'd need 30,000 Bitcoin to buy this house.",
+        "If home prices keep falling in Bitcoin, why do they keep rising in dollars?"
+      ],
+      "ending": "广告以引人深思的设问收尾，画面定格在云端的房屋和标语 \"the future of money is here\"，最后极简切出纯文本 Logo。没有任何促销优惠、功能展示、行动号召（CTA）或开户门槛提示。这是一种典型的顶级品牌形象建设（Brand Building）打法，意在占领心智而非追求短期的直接转化。",
+      "analyzed_brand": "Coinbase"
+    },
+    "title": "Inflation: The cost of a home in bitcoin.",
+    "uploader": "Coinbase",
+    "duration": 31,
+    "view_count": 39606,
+    "tag": "B2",
+    "brand": "Coinbase",
+    "priority": 12
+  },
+  {
+    "id": "XWuFLNZ6Sso",
+    "url": "https://www.youtube.com/watch?v=XWuFLNZ6Sso",
+    "platform": "youtube",
+    "date_added": "2026-03-26",
+    "breakdown": {
+      "summary": "这支充满情感共鸣的视频广告由丰田（Toyota）推出，讲述了家庭内部代际关怀的传承。广告通过闪回手法，展示了长辈在一辆经典的红色丰田 RAV4 中为小男孩系上“超级英雄安全带”。多年后，长大的男孩作为驾驶员，在一辆现代丰田 SUV 中为爷爷开车，并用同样的“超级英雄安全带”口吻提醒长辈系好安全带。核心信息强调了无论车辆如何迭代，品牌始终陪伴在用户的人生旅途中，最后引出丰田作为 NFL 官方汽车合作伙伴的身份，传递了“人才是真正的目的地”的品牌温度。",
+      "structure": [
+        {
+          "time": "0:00-0:11",
+          "desc": "闪回场景。画面采用复古画幅与色调，长辈带着小男孩走向一辆老款的红色丰田 RAV4，并为小男孩系上“超级英雄安全带（superhero belt）”。"
+        },
+        {
+          "time": "0:11-0:17",
+          "desc": "时空转换。画面回到现代，长大后的年轻男子与爷爷走出同一栋房子，走向一辆全新的丰田 SUV，年轻人主动为爷爷拉开车门。"
+        },
+        {
+          "time": "0:17-0:23",
+          "desc": "情感呼应。旁白点明主题，年轻人坐上驾驶座后，用当年那句专属的“超级英雄安全带”提醒爷爷，爷爷露出欣慰的笑容并系上安全带，完成了身份的反转。"
+        },
+        {
+          "time": "0:24-0:29",
+          "desc": "品牌定调。车辆在林间道路上行驶，屏幕浮现带爱心的定位图标与“People are the destination”文案，最后定格在丰田与 NFL 的联合 Logo 画面。"
+        }
+      ],
+      "strengths": [
+        "巧妙的情感呼应与角色反转： 通过“超级英雄安全带（superhero belt）”这一专属词汇作为贯穿时间的线索，自然地完成了照顾者与被照顾者角色的温馨反转，非常具有情感穿透力。",
+        "润物无声的产品演进展示： 广告没有生硬地罗列新车型的参数，而是通过老款 RAV4 与全新 SUV 在不同年代的自然登场，巧妙展示了品牌的历史底蕴以及在岁月变迁中长久可靠的陪伴属性。"
+      ],
+      "risks": [
+        "与 NFL 赞助身份的关联度较弱： 广告的主体叙事是纯粹的家庭温情短片，直到最后一秒才露出“NFL 官方汽车合作伙伴”的信息。正片内容中完全缺乏与橄榄球相关的视觉元素或剧情连接，这可能会让对体育赞助抱有期待的观众感到突兀或割裂。"
+      ],
+      "transferable": [
+        "跨时空叙事的视听语言分割： 采用不同的画幅比例（如早期记忆的 4:3 比例切换到现代的宽银幕）和色彩分级（复古胶片感对比现代高清画质），可以高效、直观地向观众交代时间跨度，省去了冗长的字幕或旁白铺垫。",
+        "利用“专属暗语”建立情感锚点： 在亲情或友情类创意中，设计一个只属于角色之间的“口令”或习惯动作，并在多年后重新复现，是激发观众共鸣和怀旧情绪的经典复用技巧。"
+      ],
+      "vo_quotes": [
+        "Let's put your superhero belt on.",
+        "Returning the favor is a gift.",
+        "Superhero belt?"
+      ],
+      "ending": "视频结尾以情感文案 \"People are the destination\"（人才是真正的目的地）进行感性收尾，画面随后淡出至丰田与 NFL 的联合 Title Card，并标注 \"Official Automotive Partner of the NFL\"。结尾没有任何促销优惠、价格信息或直接的行动号召（CTA），是一次纯粹的品牌形象建设和理念传递。",
+      "analyzed_brand": "Toyota, NFL"
+    },
+    "title": "'Superhero Belt'",
+    "uploader": "Toyota",
+    "duration": 0,
+    "view_count": 726600,
+    "tag": "A",
+    "brand": "Toyota",
+    "priority": 9,
+    "source": "admeter",
+    "admeter_rank": 20,
+    "admeter_rating": 3.04,
+    "admeter_year": 2026
   }
 ]
