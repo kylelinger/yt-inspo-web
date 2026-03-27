@@ -12,8 +12,8 @@ const TAGS = [
   { value: "B1", labelUs: "Direct rivals", labelCn: "直接竞品", color: "#f59e0b" },
   { value: "B2", labelUs: "Finance brands", labelCn: "金融品牌", color: "#3b82f6" },
   { value: "A", labelUs: "Aesthetic benchmark", labelCn: "审美标杆", color: "#a855f7" },
-  { value: "C", labelUs: "Craft & Collab", labelCn: "幕后创作", color: "#10b981" },
-  { value: "E", labelUs: "Edu", labelCn: "教程", color: "#6b7280" },
+  { value: "C", labelUs: "Craft & Collab", labelCn: "联名/幕后", color: "#10b981" },
+  { value: "E", labelUs: "Edu", labelCn: "教程/演讲", color: "#6b7280" },
 ] as const;
 
 function dateValue(v: Video): number {

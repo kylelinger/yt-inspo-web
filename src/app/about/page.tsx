@@ -163,8 +163,8 @@ export default function AboutPage() {
                 { tag: "B1", label: "直接竞品", color: "#f59e0b", desc: "Investment/brokerage apps—direct competitors to study and surpass." },
                 { tag: "B2", label: "金融品牌", color: "#3b82f6", desc: "Fintech ecosystem—payments, crypto, banking. Trust-building reference." },
                 { tag: "A", label: "审美标杆", color: "#a855f7", desc: "Global elite brands—craft, storytelling, and emotional connection benchmarks." },
-                { tag: "C", label: "幕后创作", color: "#10b981", desc: "Co-branded campaigns, director showreels, VFX breakdowns, and behind-the-scenes craft studies." },
-                { tag: "E", label: "教程", color: "#6b7280", desc: "Financial tutorials, platform walkthroughs, product demos, and educational content from finance brands." },
+                { tag: "C", label: "联名/幕后", color: "#10b981", desc: "Co-branded campaigns, director showreels, VFX breakdowns, and behind-the-scenes craft studies." },
+                { tag: "E", label: "教程/演讲", color: "#6b7280", desc: "Financial tutorials, platform walkthroughs, product demos, and educational content from finance brands." },
               ].map((t) => (
                 <div key={t.tag} className="p-6" style={{ background: "var(--card)", border: "1px solid var(--border)" }}>
                   <div className="flex items-center gap-3 mb-3">
