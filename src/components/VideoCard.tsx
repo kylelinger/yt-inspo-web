@@ -13,8 +13,8 @@ const TAG_COLORS: Record<string, string> = {
   B1: "#f59e0b",
   B2: "#3b82f6",
   A: "#a855f7",
-  C: "#555",
-  S: "#10b981",
+  C: "#10b981",
+  E: "#6b7280",
 };
 
 function formatDuration(s: number | undefined): string | null {
@@ -111,7 +111,7 @@ export default function VideoCard({
           )}
           {video.breakdown?.inspiration_score != null && (
             <span className="text-[10px] font-bold" style={{
-              color: video.breakdown.inspiration_score >= 8 ? "var(--green, #22c55e)" : video.breakdown.inspiration_score >= 5 ? "var(--accent)" : "var(--text-muted)"
+              color: video.breakdown.inspiration_score >= 8 ? "var(--green, #22c55e)" : video.breakdown.inspiration_score >= 6 ? "var(--accent)" : "var(--red, #ef4444)"
             }}>★ {video.breakdown.inspiration_score}</span>
           )}
         </div>

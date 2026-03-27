@@ -12,8 +12,8 @@ function getTagFilters(lang: Lang) {
     { value: "B1", label: tr(lang, "Direct rivals", "直接竞品") },
     { value: "B2", label: tr(lang, "Finance brands", "金融品牌") },
     { value: "A", label: tr(lang, "Aesthetic benchmark", "审美标杆") },
-    { value: "C", label: tr(lang, "Culture reference", "文化参考") },
-    { value: "S", label: tr(lang, "Sponsorship / collab", "赞助 / 联名") },
+    { value: "C", label: tr(lang, "Craft & Collab", "联名/幕后") },
+    { value: "E", label: tr(lang, "Edu", "教程/演讲") },
   ] as const;
 }
 
