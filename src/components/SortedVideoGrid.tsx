@@ -12,8 +12,8 @@ function getTagFilters(lang: Lang) {
     { value: "B1", label: tr(lang, "Direct rivals", "直接竞品") },
     { value: "B2", label: tr(lang, "Finance brands", "金融品牌") },
     { value: "A", label: tr(lang, "Aesthetic benchmark", "审美标杆") },
-    { value: "S", label: tr(lang, "Collab / Portfolio / BTS", "联名 / 作品集 / 幕后") },
-    { value: "E", label: tr(lang, "Edu / Tutorial", "教程 / 讲座") },
+    { value: "C", label: tr(lang, "Craft & Collab", "幕后创作") },
+    { value: "E", label: tr(lang, "Edu", "教程") },
   ] as const;
 }
 

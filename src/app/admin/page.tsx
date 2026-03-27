@@ -490,7 +490,7 @@ function VideoTable({ videos }: { videos: Video[] }) {
           <option value="B2">B2 金融品牌</option>
           <option value="A">A 审美标杆</option>
           <option value="E">E 教程/讲座</option>
-          <option value="S">S 赞助/联名</option>
+          <option value="C">C 幕后创作</option>
         </select>
 
         <span className="self-center text-xs" style={{ color: "var(--text-muted)" }}>
