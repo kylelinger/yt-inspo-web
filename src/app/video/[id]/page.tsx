@@ -138,7 +138,7 @@ export default function VideoDetailPage() {
   const params = useParams();
   const router = useRouter();
   const { isAdmin } = useAuth();
-  const id = params.id as string;
+  const id = params.id ? decodeURIComponent(params.id as string) : "";
   const video = (videosData as Video[]).find((v) => v.id === id);
 
   const [lang, setLang] = useState<Lang>("us");
