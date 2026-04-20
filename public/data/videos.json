@@ -26750,5 +26750,712 @@
     "tag": "A",
     "brand": "Cadillac Formula 1",
     "priority": 7
+  },
+  {
+    "id": "9wLMRIzJnG0",
+    "url": "https://www.youtube.com/watch?v=9wLMRIzJnG0",
+    "platform": "youtube",
+    "date_added": "2026-04-21",
+    "breakdown": {
+      "summary": "本视频是 Wealthsimple 推出的一段极简主义访谈式广告。场景设定在纯色背景下的半身人像访谈，由一位看起来专业且亲和的中年女性（可能是行业专家或高管）直接对镜头讲述。核心信息在于“人类文明与经济的必然增长”：通过强调人类不断创造、交易、购买的本能以及人口增长，建立一种长期主义的乐观预期。呈现方式上，广告去除了所有复杂的后期特效，仅依靠讲述者的肢体语言、稳健的语速以及片尾简洁的 APP 界面演示，营造出一种底层逻辑驱动的信任感，完美避开了“投机”或“暴富”的浮躁气息。",
+      "structure": [
+        {
+          "time": "0:00-0:07",
+          "desc": "核心观点抛出。 讲述者配合手势描述全球经济“震荡上行”的趋势。传递出宏观维度的掌控感，为后续的投资逻辑定调。"
+        },
+        {
+          "time": "0:07-0:18",
+          "desc": "投资本质拆解。 强调资金投入市场是人类活动的燃料，描述人类创造、销售、购买的闭环。传递“投资即参与人类社会进步”的理念，提升投资行为的使命感。"
+        },
+        {
+          "time": "0:18-0:25",
+          "desc": "长期主义支撑点。 提到人口增长和人类天性。传递一种不可逆的必然性，旨在消除受众对短期市场波动（Dips）的恐惧。"
+        },
+        {
+          "time": "0:25-0:30",
+          "desc": "品牌收束与转化。 出现品牌 Logo 及手机端 APP 界面，展示一个向上增长的投资复利曲线。传递“品牌是实现这种增长的工具”这一信息。"
+        }
+      ],
+      "strengths": [
+        "高可信度的专家人设： 讲述者佩戴黑框眼镜，着墨绿色低调毛衣，形象成熟稳重，非激进的年轻交易员形象，符合中高级投资者对“稳健、专业”的审美偏好。",
+        "“大巧若拙”的叙事逻辑： 不谈复杂的 K 线图或具体收益率，而是从“人类活动”这一最底层逻辑切入。这种降维打击式的说服逻辑，非常适合打破高净值受众的防备心，建立深度信任。",
+        "视觉上的“呼吸感”： 背景极其干净，剪辑节奏配合讲述者的呼吸和手势（尤其是多次重复“Up and to the right”的手势），强化了心理暗示，让“增长”这一抽象概念具象化。"
+      ],
+      "risks": [
+        "受众理解门槛： 这种宏观叙述可能对部分寻求“具体交易信号”的活跃交易者显得过于空洞，甚至可能被解读为“画大饼”。",
+        "品牌身份露出过晚： 品牌名称在 26 秒才首次出现，对于快节奏的社交媒体环境，存在用户在看到品牌前就流失的风险。"
+      ],
+      "transferable": [
+        "去焦虑化的叙事： 针对“低信任感”瓶颈，不要强调“赚多少”，而要像此片一样强调“为什么增长是必然的”，用逻辑对抗恐惧。",
+        "极简访谈形式： 采用单人半身像+纯色背景，通过高质感的布光和真诚的眼神交流，建立一种“一对一深度对话”的私密感，非常适合传递品牌 POV。",
+        "手势暗示法： 持续引导讲述者通过重复性的、向上的肢体语言（如本片中的右上角挥手），在受众潜意识中植入增长意象。"
+      ],
+      "vo_quotes": [
+        "You know that the whole world is overall, with a few dips, heading up and to the right. The money that we put into the market, that just fuels human activity... Everything's heading up and to the right."
+      ],
+      "ending": "展示 Wealthsimple 品牌名及手机 APP 界面，屏幕显示“Invest in Future You”及一条持续攀升的黄色财富曲线。",
+      "analyzed_brand": "Wealthsimple",
+      "inspiration_score": 9,
+      "inspiration_reason": "极度契合“投资者成长”定位，通过底层逻辑的重构将投资从“博弈”升华为“参与人类进步”，这种品牌调性是建立长期信任的教科书级范本"
+    },
+    "title": "Anna — Humanity — Wealthsimple",
+    "uploader": "Wealthsimple",
+    "duration": 31,
+    "view_count": 43312,
+    "tag": "B1",
+    "brand": "Wealthsimple",
+    "priority": 12
+  },
+  {
+    "id": "6ggTx3Ljomc",
+    "url": "https://www.youtube.com/watch?v=6ggTx3Ljomc",
+    "platform": "youtube",
+    "date_added": "2026-04-21",
+    "breakdown": {
+      "summary": "这支视频是一则采用短信对话形式的律所广告，主要推广 Stern & Cohen 劳工赔偿律师事务所。视频通过背景模糊的家庭场景叠加模拟的 iMessage 聊天记录，展现了一个家庭因工伤和保险拒赔陷入困境的真实生活切片。随后，朋友以信任者的身份推荐了该律所的专业服务，旨在通过熟人背书的私密交流感来快速建立受众对品牌的信任，并直接引导潜在客户拨打咨询电话。",
+      "structure": [
+        {
+          "time": "0:00-0:05",
+          "desc": "开场场景：展示模糊的家庭桌椅背景，引入短信对话，朋友发信询问近况，建立日常交流的语境。"
+        },
+        {
+          "time": "0:06-0:15",
+          "desc": "痛点展现：Rachel 讲述丈夫 Paul 受伤且保险公司拒绝理赔的压力与绝望处境（带出情绪符号😢）。"
+        },
+        {
+          "time": "0:16-0:24",
+          "desc": "解决方案：朋友推荐 Stern & Cohen 律所，强调其在劳工赔偿领域的专业性（experts）和优秀的胜诉记录（great track record），并直接发送电话号码。"
+        },
+        {
+          "time": "0:25-0:29",
+          "desc": "结尾信息：画面切换至白底品牌定帧，展示律所 Logo、费城 76 人队（Philadelphia 76ers）官方合作伙伴标志、网址、联系方式及底部的法律免责声明。"
+        }
+      ],
+      "strengths": [
+        "原生化且具备私密感的形式：采用观众极度熟悉的第一视角手机短信对话界面，有效降低了对传统硬广的心理防线。这种类似“偷看他人聊天”的视角能吸引注意力，并利用“熟人/朋友推荐”的社交逻辑快速建立初始信任感。",
+        "情绪痛点与解决方案衔接紧密：在几秒钟内精准切中目标客户最焦虑的场景（工伤+被保险公司抛弃），并立刻抛出带有“专家”标签的解决方案，逻辑清晰，直击刚需。"
+      ],
+      "risks": [
+        "视觉表现力过于单一：全片完全依赖文本阅读和简单的系统提示音，背景为静态模糊画面。在快节奏、以视觉刺激为主的社交媒体信息流中，这种形式极易被快速划过，缺乏前 3 秒的强视觉抓手。",
+        "信息传递门槛较高：广告的核心信息完全依赖观众的“主动阅读”。如果观众没有耐心盯住屏幕读完对话，将完全无法理解广告的意图，存在较高的信息流失风险。"
+      ],
+      "transferable": [
+        "“同温层互助”对话场景迁移：投资平台可直接复用这种“对话式”创意。例如，模拟两位中高级投资者的对话：A 表达近期交易遇到瓶颈、心态受挫；B 作为进阶者，不是推荐“暴富代码”，而是推荐该平台的复盘工具或高阶认知课程，传递品牌 POV：“There is no such thing as bad investors. Just investors who can only get better.” 这种形式能极好地引发共鸣，拉近品牌距离。",
+        "结尾强信任状（Trust Building）背书：该广告结尾利用了著名体育IP（费城76人队）来瞬间拉升一家地方律所的公信力。面临“低信任感”制约的投资平台，在视频结尾不应只放“立即开户”的 CTA，而必须显眼地展示监管牌照、顶级安全技术合作伙伴、或权威行业奖项，用“硬核背书”承接前面建立的情感联系。"
+      ],
+      "vo_quotes": [
+        "Insurance denied his claim and we are so desperate 😢",
+        "They are experts at Workers' Compensation law and have a great track record of wins and settlements."
+      ],
+      "ending": "视频以静态的品牌定帧画面收尾（End Card）。画面核心位置放置了品牌 Logo 及“费城 76 人队官方合作伙伴”的标志，以此提供强有力的权威背书。底部提供明确的行动呼吁（拨打电话）和官方网址，并配有小字体的标准法律免责声明。没有任何短期的促销优惠、折扣或门槛限制条件，纯粹以建立长效信任和提供专业咨询为导向。",
+      "analyzed_brand": "Stern & Cohen, Philadelphia 76ers",
+      "inspiration_score": 6,
+      "inspiration_reason": "“熟人短信对话”营造出的“同理心”与“同侪推荐”氛围，非常适合解决投资平台面临的“信任感制约”问题，可有效拉低新用户的防御心理；然而，该广告“绝望求助”的沉重底色与投资平台所追求的“掌控人生技能、理性精进”的高阶赋能感不匹配。创意形式可借鉴，但情绪基调需彻底反转为“克服挑战、追求成长”"
+    },
+    "title": "Stern & Cohen Texting Commercial ",
+    "uploader": " Official Partner of the Philadelphia 76ers",
+    "duration": 0,
+    "view_count": 31,
+    "tag": "C",
+    "brand": "craft",
+    "priority": 10
+  },
+  {
+    "id": "cPXFCViXFpQ",
+    "url": "https://www.youtube.com/watch?v=cPXFCViXFpQ",
+    "platform": "youtube",
+    "date_added": "2026-04-21",
+    "breakdown": {
+      "summary": "这是一个为 Jo-Ann Fabrics and Crafts 品牌制作的温情类广告。视频通过柔和的灯光、温馨的家庭场景（如熟睡的狗、跳舞的小女孩）以及各种精美的手工材料（如五彩的丝带、被子、线轴、礼盒），向观众传递了一个核心信息：只要你能梦想，你就能利用这里的材料创造出来。广告的落脚点是提供灵感与工具，并在结尾推出了户外庭院和花园配件的 40% 折扣促销活动，呼吁消费者将创意付诸行动。",
+      "structure": [
+        {
+          "time": "0:00-0:03",
+          "desc": "氛围开场：阳光透过窗户，一只金毛犬躺在舒适的沙发旁，建立温馨放松的家居基调。"
+        },
+        {
+          "time": "0:03-0:08",
+          "desc": "灵感展现：手中飘动的五彩丝带、手工拼布被子特写，将日常物品与创造力联系起来。"
+        },
+        {
+          "time": "0:08-0:13",
+          "desc": "美好愿景：精美的工艺品、温馨的卧室，以及一个小女孩在窗台前快乐地旋转跳舞，展示创造带来的愉悦生活。"
+        },
+        {
+          "time": "0:13-0:19",
+          "desc": "核心产品蒙太奇：快速切入颜料、线轴、毛线、精美礼品盒等手工制作材料，强调品牌提供的工具多样性。"
+        },
+        {
+          "time": "0:19-0:25",
+          "desc": "促销信息：画面切至家居庭院装饰，文字叠加宣布“40% Off Patio and Garden”的具体优惠信息。"
+        },
+        {
+          "time": "0:25-0:29",
+          "desc": "品牌落版：展示品牌 Logo（Jo-Ann fabrics and crafts, Jo-Ann ETC）及官方网站地址，配合“Come on out and play”的旁白收尾。"
+        }
+      ],
+      "strengths": [
+        "情感共鸣与安全感的建立：广告大量使用了柔光（Soft focus）、暖色调和生活化的意象（宠物、阳光、孩子），成功打造了一个极具安全感和包容度的氛围。这让受众在观看时能够放下防备，产生情感上的信任。",
+        "“工具-成品-愿景”的平滑过渡：视频没有生硬地推销线轴和布料，而是将这些基础材料（工具）与精致的工艺品（成品）以及跳舞的女孩（美好的生活愿景）穿插剪辑。这种视觉蒙太奇极大地提升了产品的附加情感价值。"
+      ],
+      "risks": [
+        "品类调性错位风险（针对投资平台）：对于定位中高级投资者的平台而言，这种过于柔和、甚至带有“梦幻感”的视觉执行缺乏必要的严谨性和专业度。如果直接照搬这种视觉风格，容易让交易者认为平台不够专业、缺乏金融实力。",
+        "情感叙事与硬促销的割裂：视频前 20 秒都在致力于打造“灵感与创造”的品牌心智，但最后突然切入巨大的“40% Off”字样，容易打破前面建立的高级感和信任感，显得略微功利。投资平台在建立长期信任时，应避免在品牌故事中生硬插入短期的转化福利。"
+      ],
+      "transferable": [
+        "赋能成长（Empowerment）的隐喻手法：Jo-Ann 将普通的线材包装成“实现美好生活的工具”。投资平台可以借鉴此逻辑，将枯燥的图表、数据分析、研报等功能，包装成“实现财务成长和进阶人生的基石”。不要只卖“交易工具”，要卖“成为更好投资者的能力”（对应品牌 POV）。",
+        "包容与陪伴的语态（Tone of Voice）：视频旁白传达出一种“你负责梦想，我们提供支持”的陪伴感。对于强调“There is no such thing as bad investors”的投资平台，可以采用类似的共情语态。展示投资者在交易中经历的迷茫与复盘，而平台像一位温和的导师或可靠的伙伴，提供策略和灵感，而非高高在上的说教者。"
+      ],
+      "vo_quotes": [
+        "Whatever you dream, you can create.",
+        "At Jo-Ann, we have the inspiration, the notions, and ideas outside the box."
+      ],
+      "ending": "CTA与优惠：以具体的折扣活动收尾：“Patio and Garden accessories are 40% off. Come on out and play.”\n\n门槛与条件：视频中无复杂的门槛说明，直接展示品类折扣。最后定格在双品牌 Logo 及官方网站（www.joann.com）。",
+      "analyzed_brand": "Jo-Ann Fabrics and Crafts, Jo-Ann ETC",
+      "inspiration_score": 6,
+      "inspiration_reason": "情感叙事内核可迁移，但视觉表现需重塑"
+    },
+    "title": "Jo-Ann Fabrics and Crafts Television Commercial",
+    "uploader": "New Volume (E:)",
+    "duration": 30,
+    "view_count": 448,
+    "tag": "A",
+    "brand": "craft",
+    "priority": 5
+  },
+  {
+    "id": "j3XFdgD311E",
+    "url": "https://www.youtube.com/watch?v=j3XFdgD311E",
+    "platform": "youtube",
+    "date_added": "2026-04-21",
+    "breakdown": {
+      "summary": "这支视频是一条节奏紧凑的高燃混剪广告（Sizzle Reel），主要用于展示即将在 Disney+ 和 Hulu 流媒体平台上线的海量重磅剧集与电影。视频没有采用传统的旁白解说，而是巧妙地将不同影视作品中的高光画面与角色对白进行拼接。通过台词之间的内在逻辑关联，构建出一种从“期待”、“挑战”、“逆境”到“最终爆发”的情绪递进，借此向观众传递两大平台捆绑订阅所能提供的顶级娱乐体验和丰富的内容矩阵。",
+      "structure": [
+        {
+          "time": "0:00-0:10",
+          "desc": "悬念开场：以飞机划过云层的宏大画面开篇，打出 \"COMING THIS YEAR\" 字幕。利用各个剧集中带有期待感的台词（如 \"I got something coming up\", \"It's time\"）快速抓住观众注意力。"
+        },
+        {
+          "time": "0:11-0:33",
+          "desc": "冲突与挑战：音乐节奏加快，画面从明亮转向紧张。通过各种角色面对危机或转折的台词（如 \"My dream was about to become a nightmare\", \"World has changed\"），展示内容的戏剧张力。"
+        },
+        {
+          "time": "0:34-0:54",
+          "desc": "高潮与觉醒：动作场面和激烈的视觉奇观密集出现。利用充满力量感的台词（如 \"It's not too late to turn this around\", \"You were born for this moment\"）推高情绪，展现主角的成长与决断。"
+        },
+        {
+          "time": "0:55-1:04",
+          "desc": "结尾转化：音乐戛然而止转为平台音效。依次快速闪现各剧集的 Logo，最后定格在 Disney+ 和 Hulu 的联合 Logo 上，展示捆绑订阅信息及服务条款。"
+        }
+      ],
+      "strengths": [
+        "情绪化的台词拼接：广告完全依赖影视原声台词推进。它摘录了不同情境下放之四海而皆准的“金句”，将其重新编排成一个完整的情绪抛物线，极大地增强了感染力。",
+        "出色的节奏把控：视觉剪辑与背景音乐的鼓点完美契合。从前半段的平稳铺垫到后半段的高频快剪，牢牢锁定观众的视觉焦点，制造出强烈的史诗感和期待感。"
+      ],
+      "risks": [
+        "产品信息被弱化：这是一种纯粹依靠“IP 内容”驱动的广告形式。对于没有认知基础的观众来说，过快的闪现可能让人眼花缭乱，难以记住具体的剧集名称或核心卖点。",
+        "缺乏具体利益点说明：除了片尾的 \"Available with a bundle subscription\" 字幕，全片没有提及具体的价格或功能优势，完全依赖品牌自身的号召力和内容吸引力。"
+      ],
+      "transferable": [
+        "使用“内心独白式”拼接塑造共鸣：投资平台可以借鉴这种台词拼接手法。收集真实用户或模拟投资者在不同交易阶段的内心独白（比如：第一次亏损时的自我怀疑、复盘时的领悟、坚持策略后的释然），剪辑成一部展现“投资者进化史”的短片，契合品牌 \"Just investors who can only get better\" 的理念。",
+        "从“低谷”到“掌控”的情绪叙事结构：不要只展示赚钱的喜悦。可以学习该广告中段展示“噩梦”、“世界变了”的转折感，正视投资中的阵痛期，然后再用一句类似 \"It's not too late to turn this around\" 的转折，引出平台如何赋能投资者精进技能，从而建立基于真实、不浮夸的信任感。"
+      ],
+      "vo_quotes": [
+        "It's not too late to turn this around.",
+        "You were born for this moment.",
+        "The hero will become a powerful weapon."
+      ],
+      "ending": "画面中央出现 Disney+ 与 Hulu 的联合 Logo，下方配有文案 \"All of these and more streaming soon\"（所有这些及更多内容即将上线）以及 \"Available with a bundle subscription\"（可通过捆绑订阅获取）。屏幕最下方有极小字体的法律免责及条件限制说明（如年龄限制、地区限制等），没有提供具体的折扣代码或限时促销手段。",
+      "analyzed_brand": "Disney+, Hulu",
+      "inspiration_score": 6,
+      "inspiration_reason": "虽然影视IP混剪的形式难以直接套用于缺乏视觉奇观的金融交易产品，但其“通过人物低谷与觉醒的群像台词来推动情绪”的叙事技巧极具参考价值。这种展现挣扎与成长的手法，非常契合投资平台想要传达的“投资是一项需要长期精进的技能”的品牌理念"
+    },
+    "title": "Coming Soon in 2025",
+    "uploader": "Disney Plus",
+    "duration": 65,
+    "view_count": 657254,
+    "tag": "A",
+    "brand": "Disney+",
+    "priority": 9
+  },
+  {
+    "id": "l5l6QMNnqoc",
+    "url": "https://www.youtube.com/watch?v=l5l6QMNnqoc",
+    "platform": "youtube",
+    "date_added": "2026-04-21",
+    "breakdown": {
+      "summary": "这支快节奏的宣言式广告由健康医疗品牌 Hims & Hers 推出，主要推广其减重医疗方案。视频开篇并未指责个人的肥胖问题，而是将矛头直指庞大且唯利是图的传统减肥产业，认为“系统”才是导致人们陷入困境的元凶。随后，品牌将自己定位为打破常态的颠覆者，强调其方案的平价、专业（医生信任）、美国制造以及个性化。整体传递了“错的不是你，是系统，你理应获得更好状态”的核心赋能信息。",
+      "structure": [
+        {
+          "time": "0:00-0:15",
+          "desc": "问题引入与共鸣：以磅秤、肥胖数据和历史影像开场，展示肥胖被长期视为个人失败的社会刻板印象（“你只要停止进食就好”）。"
+        },
+        {
+          "time": "0:15-0:33",
+          "desc": "矛盾转移与痛批行业：明确提出“错的不是我们的身体，而是系统”。通过流水线、猛兽捕食、印钞机等视觉意象，抨击价值 1600 亿美元的减肥产业为了高额利润而刻意让人们保持“病态与受困（Sick & Stuck）”。"
+        },
+        {
+          "time": "0:34-0:44",
+          "desc": "解决方案与信任背书：引出 Hims & Hers，通过现代化的机械臂打包、快递上门、药片特写，配合“平价”、“医生信任”、“美国配方”的文案，建立产品的信任感。"
+        },
+        {
+          "time": "0:44-0:54",
+          "desc": "个性化与用户赋能：展示 App 内的体重追踪、医生线上开方，强调方案契合个人目标与生活方式，画面转入不同体型用户的自信笑脸，传递情绪价值。"
+        },
+        {
+          "time": "0:54-0:59",
+          "desc": "结尾呼吁：多元化人群全家福，展示品牌双 Logo 及网址，配以“加入我们，为更健康的美国而战”的愿景式结尾，底部附带免责声明。"
+        }
+      ],
+      "strengths": [
+        "绝佳的“认知重塑”（Reframing）：极其聪明地将用户的“内疚感（没管住嘴）”转化为对外部环境的“愤怒感（被利益集团收割）”。这极大地降低了用户的防御心理，瞬间拉近了品牌与用户的阵线。",
+        "视觉隐喻与高燃节奏：在前半段批判行业时，穿插了狮子捕杀猎物、工业机器碾压汉堡、钞票疯狂印刷的快速剪辑镜头，这种“宣言式（Manifesto）”的视听语言极具视觉冲击力，能迅速在社交媒体上抓住眼球。",
+        "情感价值与理性背书的平衡：在用宏大叙事（打破系统）调动情绪后，迅速用“医生配方”、“美国制造”、“机器人精准制药”等理性事实接盘，完美承接了情绪释放后的信任落地。"
+      ],
+      "risks": [
+        "过度对立可能引发反弹：将传统医疗或制药行业完全刻画为“反派”，这种强烈的二元对立虽然能吸引眼球，但对于极度注重严谨和理性的高势能人群来说，可能会显得过于偏激或有阴谋论的嫌疑。",
+        "承诺与底层现实的落差：广告画面营造了极高的赋能感和轻松感（在家收快递、吃药就能变好），但这与底部小字密集的 FDA 免责声明（强调这只是复合药物，并非适用所有人）形成对比。如果产品体验有瑕疵，前期的极高预期会遭到严重反噬。"
+      ],
+      "transferable": [
+        "对于您的投资交易平台（POV: 没有糟糕的投资者，只有不断精进的投资者），以下手法可以直接迁移：",
+        "“错的不是你，是华尔街/金融系统”的叙事转移：完全可以复刻前 30 秒的逻辑。中高级交易者往往经历过亏损，容易自我怀疑。广告可以指出：“你过去亏损，不是因为你不够聪明（没有 Bad investors），而是因为传统交易平台靠复杂的术语、隐蔽的手续费、情绪化的市场噪音在收割你。系统被设计成让你高频交易、让你焦虑（对应 Sick & Stuck）。” 借此洗刷投资者的挫败感，建立“我们懂你”的深层信任。",
+        "将平台工具包装为“赋能武器”而非“暴富捷径”：参考视频后半段展示 App 追踪进度和医生定制方案的模式。不要宣传“用我们能赚多少钱”，而是展示平台的“专业分析工具、冷静的交易面板、个性化的复盘数据”。强调平台是辅助他们将投资这门“人生技能”练得更好的专业教练（对应广告里的 Doctor-trusted）。",
+        "把愿景提升到“陪伴成长”的维度：结尾不要用俗套的“注册送体验金”，而是可以采用类似本片“Join us in the fight...”的句式，例如“加入我们，夺回你对交易的掌控权（Take back control of your trades）”，呼应受众希望“把控人生”的深层心理诉求。"
+      ],
+      "vo_quotes": [
+        "Something's broken. It's not our bodies. It's the system.",
+        "This system wasn't built to help us. It was built to keep us sick and stuck.",
+        "You deserve to feel great in your body."
+      ],
+      "ending": "收尾画面：不同肤色、体型、性别的用户群像自信站立，画面居中显示 hims & hers 品牌标识以及对应的两个官方网址 hims.com 和 forhers.com。",
+      "analyzed_brand": "Hims & Hers",
+      "inspiration_score": 9,
+      "inspiration_reason": "理由：该广告“转移矛盾、洗刷用户负罪感”的心理学叙事手法，与投资平台“没有糟糕的投资者”的品牌 POV 拥有极高的底层逻辑契合度。它可以完美解决投资平台“低信任感”的增长瓶颈，教您如何站在用户的立场去对抗“充满噪音的市场环境”，是一支可以直接套用结构的极佳参考范例"
+    },
+    "title": "\"Sick of the System\"",
+    "uploader": "Hims & Hers",
+    "duration": 0,
+    "view_count": 0,
+    "tag": "A",
+    "brand": "Hims & Hers",
+    "priority": 11,
+    "source": "admeter",
+    "admeter_rank": 49,
+    "admeter_rating": 2.51,
+    "admeter_year": 2025
+  },
+  {
+    "id": "vimeo:936455551",
+    "url": "https://vimeo.com/936455551",
+    "platform": "vimeo",
+    "date_added": "2026-04-21",
+    "breakdown": {
+      "summary": "This campaign, a collaboration between the wellness brand Goop and the nonprofit Baby2Baby, highlights the absurdity of the \"luxury tax\" applied to diapers in 33 US states. To spark public outrage and media attention, they launched a fake, outrageously expensive luxury product called \"The Diapér.\" Once the stunt went viral and generated sufficient anger, they revealed the hoax, redirecting the public's outrage toward the unjust tax laws and ultimately aiding in changing legislation in several states.",
+      "structure": [
+        {
+          "time": "0:00-0:19",
+          "desc": "Context Setting: News clips explain the issue of diaper access and the hidden reality that 33 states tax diapers as a luxury item."
+        },
+        {
+          "time": "0:19-0:36",
+          "desc": "The Absurd Solution: Introduction of the campaign's premise—creating a luxury diaper to challenge the luxury tax, featuring Gwyneth Paltrow and her brand Goop."
+        },
+        {
+          "time": "0:36-1:01",
+          "desc": "The Stunt & Backlash: Showcasing \"The Diapér\" ($120 for a pack of 12, featuring alpaca wool and amber gemstones) and the resulting massive internet outrage, tweets, and media coverage."
+        },
+        {
+          "time": "1:01-1:12",
+          "desc": "The Reveal: Gwyneth Paltrow explains the hoax, directly connecting the anger over the fake product to the anger people should feel about the real tax."
+        },
+        {
+          "time": "1:12-1:30",
+          "desc": "The Pivot: The media narrative shifts from criticizing Goop to discussing the actual issue of diaper taxes and affordability."
+        },
+        {
+          "time": "1:30-1:50",
+          "desc": "Impact & Ending: News reports of states changing their tax laws, followed by campaign metrics ($0 media spend, 500M impressions) and a final humorous shot of a baby holding up a middle finger."
+        }
+      ],
+      "strengths": [
+        "Self-Aware Brand Positioning: The campaign brilliantly leverages Goop’s existing reputation for selling extravagant, out-of-touch wellness items. By leaning into this stereotype, the fake product was highly believable, maximizing the initial shock value and organic sharing.",
+        "The \"Bait-and-Switch\" Mechanism: Using engineered outrage as a Trojan horse for a social cause is highly effective. It bypasses the usual apathy people have toward policy issues by making them emotionally invested first.",
+        "Tangible Enemy: It takes a broad, difficult concept (poverty/struggling mothers) and pinpoints a highly specific, absurd villain (the \"luxury tax\" on an essential good), making the call to action clear."
+      ],
+      "risks": [
+        "(Not extracted by DGemini)"
+      ],
+      "transferable": [
+        "Highlighting Absurdity via Exaggeration: The investment platform can use this to combat the \"get-rich-quick\" crypto/meme-stock culture. You could create a satirical, exaggerated campaign launching an absurd \"Guaranteed Instant Wealth Trading Button\" or a \"Mind-Reading Algorithm.\" Once the target audience rolls their eyes at the absurdity, the reveal pivots to your true POV: \"Real investing isn't a magic trick. There are no bad investors, just those who need the right tools to get better.\"",
+        "Reframing the Villain: Just as this ad reframed poverty as a \"tax issue,\" your brand can reframe \"investment losses\" not as a personal failure or inherent lack of talent, but as a byproduct of a flawed industry that treats investing like a casino. By validating the investor's struggle and offering a path to mastery, you build profound trust."
+      ],
+      "vo_quotes": [
+        "It was designed to piss us off. Because if treating diapers like a luxury makes you mad, so should taxing them like a luxury."
+      ],
+      "ending": "The video concludes with a text overlay summarizing the campaign's success: \"$0 Media Spend,\" \"500 Million Impressions,\" and \"4 Shitty Laws Changed,\" followed by a humorous home video clip of a sleeping newborn baby whose hand naturally rests in a way that looks like it is giving the middle finger. There is no traditional commercial CTA, offer, or discount provided.",
+      "analyzed_brand": "Goop, Baby2Baby",
+      "inspiration_score": 7,
+      "inspiration_reason": "While the specific \"outrage PR stunt\" tone is too risky for a financial platform needing to build high trust, the underlying methodology of \"satirizing an absurd industry norm\" is highly valuable. Creating a bait-and-switch that mocks reckless trading behavior perfectly sets the stage to introduce your brand's mature, growth-focused POV"
+    },
+    "title": "Baby2Baby x Goop - The Diapér",
+    "uploader": "Baby2Baby x Goop",
+    "duration": 0,
+    "view_count": 0,
+    "tag": "A",
+    "brand": "Baby2Baby x Goop",
+    "priority": 11,
+    "source": "mother_agency",
+    "agency": "Mother",
+    "page_url": "https://www.motherfamily.com/work/baby2baby"
+  },
+  {
+    "id": "FKoXhIV32R0",
+    "url": "https://www.youtube.com/watch?v=FKoXhIV32R0",
+    "platform": "youtube",
+    "date_added": "2026-04-21",
+    "breakdown": {
+      "summary": "这支视频广告是为 Ring 智能安防摄像头（Floodlight Cam Pro）打造的幽默反转类广告。视频通过戏剧性的反差手法，展示了一位正在排队办事的普通男士，在收到手机上的 Ring 警报后，利用远程视频和双向对讲功能，像西部牛仔决斗一样自信地喝退了试图闯入他家的窃贼。核心信息强调 Ring 的产品能够赋予用户随时随地保护家庭的安全感与绝对的掌控力。",
+      "structure": [
+        {
+          "time": "0:00-0:05",
+          "desc": "危机逼近：三名行迹可疑的男子走向一处装有 Ring 摄像头的车库。"
+        },
+        {
+          "time": "0:05-0:09",
+          "desc": "场景切换与触发：画面切至一名在公共场合无聊排队的男士，他手机收到了 Ring 的“人员侦测”弹窗提醒。"
+        },
+        {
+          "time": "0:09-0:12",
+          "desc": "确认危机：男士打开 App，看到了家门口的实时监控画面。"
+        },
+        {
+          "time": "0:12-0:19",
+          "desc": "戏剧化高潮（西部对决）：背景音乐变得紧张，镜头在男士犀利的眼神和窃贼的特写之间快速切换。男士通过麦克风低沉地说出：“Make a move. I dare you.”（动一下试试，我谅你也不敢）。"
+        },
+        {
+          "time": "0:19-0:21",
+          "desc": "危机解除：警报声响起，窃贼们被吓得落荒而逃。"
+        },
+        {
+          "time": "0:21-0:23",
+          "desc": "回归日常：男士收起手机，恰好轮到他办理业务，他从容地向柜员打招呼“Howdy”。"
+        },
+        {
+          "time": "0:24-0:29",
+          "desc": "结尾落版：展示 Ring 产品（Floodlight Cam Pro）、App 监控界面，并配以品牌口号和 CTA。"
+        }
+      ],
+      "strengths": [
+        "极具张力的戏剧反差（对比手法）：将枯燥乏味的“日常排队等待”与高风险的“入室盗窃”进行平行剪辑，配合经典西部片式的镜头语言（大特写、眼神交锋），制造了强烈的黑色幽默效果，让人记忆深刻。",
+        "功能展示高度场景化（Show, Don't Tell）：没有生硬地罗列“移动侦测、双向语音、远程警报”等技术参数，而是将这三个核心功能完美融入主角化解危机的剧情中，直观证明了产品的有效性。",
+        "赋予用户极致的“掌控者”光环：主角虽然肉身不在现场，但借助工具，他在心理和战术上都占据了绝对的统治地位。这种“运筹帷幄”的英雄感，极大地提升了受众对品牌的情感认同。"
+      ],
+      "risks": [
+        "过度娱乐化可能削弱真实痛点：将严重的家庭安全隐患处理成一种轻松的、只需一句话就能吓退的“游戏”，对于真正经历过家庭侵入或居住在极高犯罪率地区的受众来说，可能会显得过于理想化甚至轻浮。",
+        "期望值管理风险：视频暗示了窃贼会被语音和警报轻易吓跑，这在现实中并非 100% 成立，可能会让部分用户产生不切实际的安全预期。"
+      ],
+      "transferable": [
+        "结合您的投资平台背景（中高级投资者、强调成长与赋能、需建立信任），以下手法可直接迁移：",
+        "“高压情境下的从容对决”隐喻：投资市场中的“剧烈波动/黑天鹅事件”就像是视频中突然出现的“窃贼”。您的广告可以刻画一个普通场景下的投资者，面对手机上的市场异动提醒，利用贵平台的高级分析工具或自动执行策略（类似 Ring 的实时监控和警报），像西部牛仔一样冷静地做出决策（Make a move），化险为夷。这直接呼应了“There is no such thing as bad investors. Just investors who can only get better.”的品牌 POV，展示成长后的掌控力。",
+        "将“焦虑”转化为“掌控权”的视觉表达：中高级交易者的核心痛点是时间精力有限且市场瞬息万变导致的不信任感。借鉴本片，可以重点放大“工具在手，大局我有”的从容感。不要强调赚了多少钱（避免暴富心态），而是强调使用了平台的工具后，那种“免于恐慌、把控节奏”的心理状态（如男士最后轻松的一句 \"Howdy\"）。"
+      ],
+      "vo_quotes": [
+        "Make a move. I dare you."
+      ],
+      "ending": "广告结尾直接展示了产品硬件组合和手机 UI 界面。旁白收尾并切出品牌 Logo 和标语 \"Always home.\"。屏幕上给出的行动呼吁（CTA）是 \"Learn more at ring.com\"。没有提供任何具体的打折促销、优惠代码或使用门槛，完全以品牌展示和引导进一步了解为主。",
+      "analyzed_brand": "Ring",
+      "inspiration_score": 7,
+      "inspiration_reason": "虽然安防硬件与投资交易的品类跨度较大，但该广告核心的“掌控感（Empowerment）”机制与“化解高压情境”的戏剧化叙事，高度契合中高级投资者在应对市场剧烈波动时渴望达到的心理状态。借用这种“将不可控的危机转化为可控的从容操作”的结构，可以有效凸显投资平台作为“专业级武器”的可靠性，有助于打破低信任感的增长瓶颈"
+    },
+    "title": "Security Standoff ",
+    "uploader": " With Ring, You Can",
+    "duration": 0,
+    "view_count": 31,
+    "tag": "A",
+    "brand": "Ring",
+    "priority": 10
+  },
+  {
+    "id": "_4pWvYp3GLo",
+    "url": "https://www.youtube.com/watch?v=_4pWvYp3GLo",
+    "platform": "youtube",
+    "date_added": "2026-04-21",
+    "breakdown": {
+      "summary": "这支视频广告出自加拿大金融投资管理公司 Wealthsimple。影片全程没有对白，通过纯视觉和音乐讲述了一位老工人在钢铁/制造工厂里迎来退休最后一天的感人场景。他与工友们拥抱、告别，眼神中充满了一生勤恳工作后的骄傲与对未来的从容。视频结尾揭示了这份从容的底气：他通过 Wealthsimple 长达 30 年的持续定投，积累了超过百万美元的财富。广告传递的核心信息是长线投资带来的生活保障，将冷冰冰的数字转化为充满人情味的人生里程碑。",
+      "structure": [
+        {
+          "time": "0:00-0:09",
+          "desc": "告别场景：工厂环境中，一位头发花白的老工人正在接受同事们的欢呼、拥抱和祝福，背景中有气球和蛋糕，暗示这是他的退休欢送会。"
+        },
+        {
+          "time": "0:10-0:20",
+          "desc": "情感特写：老工人独自走向镜头，步伐稳健，眼神中透露出坚定、释然以及对即将到来的退休生活的期待。"
+        },
+        {
+          "time": "0:20-0:25",
+          "desc": "核心文案：画面中央浮现文案 “Tomorrow begins today.”（明天始于今天），配合老人微笑闭眼的镜头，情感达到高潮。"
+        },
+        {
+          "time": "0:25-0:29",
+          "desc": "产品揭示与落版：画面从工厂直接切入一台正准备合上的笔记本电脑。屏幕上展示了清晰的投资图表（初始资金 $50,000，每月定投 $1,000，30年后累计超过 $1,091,600）。随着电脑合上，黑底白字的 Wealthsimple 品牌 Logo 出现。"
+        }
+      ],
+      "strengths": [
+        "极致的情感共鸣与画面叙事：完全摒弃了传统金融广告中穿着西装、看着满屏K线图的刻板印象。通过蓝领工人退休这一极具共情力的人生切面，具象化了“财务自由”的真实面貌。",
+        "用真实数据建立信任感：结尾屏幕上的数据非常具体且克制（每月定投1000美元，历经30年才达到百万），这种不画“一夜暴富”大饼、展示真实时间复利客观规律的做法，极大增强了品牌的真实性和可信度。"
+      ],
+      "risks": [
+        "受众心智匹配度偏差：该广告本质上是在宣传“被动长线投资”（Robo-advisor / Index investing），对于贵品牌“将交易视为需要精进的人生技能”、“中高级投资者”的定位来说，这种“设定好就不用管了”的懒人投资理念可能与目标受众追求主动掌控、不断精进的交易心理存在一定错位。",
+        "前置信息过少：前25秒完全没有金融产品的任何暗示，如果观众在社交媒体信息流中缺乏耐心提前滑走，将完全接收不到品牌信息。"
+      ],
+      "transferable": [
+        "“结果后置”的叙事反转手法：贵品牌可以借鉴这种结构。先展示一位交易者在生活中（或某个极具挑战的场景下）展现出的从容、敏锐、决策力，最后揭示这种素质是他通过日复一日在交易平台的“刻意练习与复盘”中沉淀下来的，呼应“There is no such thing as bad investors. Just investors who can only get better”的品牌POV。",
+        "透明且有痛点的数据展示：在结尾展示界面时，不要只展示“盈利”，可以展示一次真实的“交易复盘过程”（例如从一次亏损中总结经验，调整策略后获得成长的界面记录），这能精准击中中高级交易者“不怕犯错，只怕不成长”的痛点，从而建立深度的专业信任感。"
+      ],
+      "vo_quotes": [
+        "Tomorrow begins today.",
+        "Invest in tomorrow"
+      ],
+      "ending": "广告以一个极简的动作（一只手合上笔记本电脑）收尾，定格在黑底的 Wealthsimple Logo 上。没有提供任何促销打折、开户奖励等硬性 CTA（Call to Action）或门槛条件。纯粹以品牌形象和投资理念的输出作为结束，显得克制且高级。",
+      "analyzed_brand": "Wealthsimple",
+      "inspiration_score": 6,
+      "inspiration_reason": "情感叙事与建立信任的手法极具参考价值，但业务模式和受众心智存在错位。 这支广告在“打破低信任感”（通过真实克制的数据和共情故事）方面做得非常出色，贵品牌完全可以借鉴这种不卖焦虑、不卖暴富神话的真诚沟通方式。但失分点在于，该广告讲述的是一个“时间换空间”的被动等待故事；而贵品牌面对的是中高级投资者，需要的是一个关于“主动进化、技能精进、越挫越勇”的成长故事。因此，视觉和信任机制可借鉴，但内核剧本需要大幅度调整"
+    },
+    "title": "Retirement ",
+    "uploader": " Wealthsimple",
+    "duration": 0,
+    "view_count": 31,
+    "tag": "B1",
+    "brand": "Wealthsimple",
+    "priority": 10
+  },
+  {
+    "id": "vimeo:882161381",
+    "url": "https://vimeo.com/882161381",
+    "platform": "vimeo",
+    "date_added": "2026-04-21",
+    "breakdown": {
+      "summary": "这支幽默的视频广告由 Uber 推出，旨在宣传其应用程序中新增的火车票预订功能。广告通过一个反差感极强的场景，展示了一位名叫 Gina 的女士像呼叫日常 Uber 网约车一样，走到火车车头驾驶室窗外，向火车司机确认订单和身份。这种错位喜剧的视觉和叙事手法，巧妙且直观地传达了“在 Uber 上订火车票就和日常打车一样简单自然”的核心信息，不仅令人印象深刻，也极大地降低了用户对新功能的认知门槛。",
+      "structure": [
+        {
+          "time": "0:00-0:03",
+          "desc": "开场场景。一位女士走到火车站月台的尽头，向火车驾驶室的窗户内张望。"
+        },
+        {
+          "time": "0:03-0:07",
+          "desc": "错位互动。女士向一脸严肃的火车司机打招呼，并向他展示手机上的 Uber 界面（显示从伦敦到曼彻斯特的行程和二维码），仿佛司机是她的专属网约车司机。"
+        },
+        {
+          "time": "0:07-0:16",
+          "desc": "单方面破冰。女士自我介绍“我是 Gina”，并在司机依然茫然不知所措的注视下，轻松地说了一句“那我上车啦”。"
+        },
+        {
+          "time": "0:16-0:25",
+          "desc": "登车场景。Gina 走向乘客车厢，像对待自己的专车一样，非常随意甚至带点霸道地越过其他乘客登车。"
+        },
+        {
+          "time": "0:25-0:29",
+          "desc": "片尾定帧。画面切至月台远景，浮现核心文案“Trains — now on Uber”，最后定格在 Uber 的品牌 Logo 上。"
+        }
+      ],
+      "strengths": [
+        "极度克制的高级幽默（错位感）：通过将“庞大的公共交通”与“私人点对点网约车服务”进行强行关联，制造了巨大的戏剧张力。火车司机的冷漠/懵圈与女主角的热情/理所当然形成了完美的喜剧反差。",
+        "核心信息的高度凝练：全片没有一句解释性的产品旁白，但通过女主亮出 Uber App 界面和类似打车的对话，让观众在几秒钟内就完全理解了“Uber 也可以订火车票”这个商业信息。",
+        "生活化的细节刻画：女主角上车时挤开正在喝咖啡的乘客，那种“这是我叫的车”的微妙占有欲，把洞察做到了极致，增加了广告的真实感和趣味性。"
+      ],
+      "risks": [
+        "信任感与专业度的折损风险：对于客单价极低、高频使用的打车软件来说，这种轻松搞笑的风格非常有效。但如果投资平台完全照搬这种略显轻浮的“错位幽默”，可能会削弱中高级投资者对平台的信任感，因为交易毕竟关乎真金白银，过度娱乐化容易引发“平台不靠谱”的负面联想。"
+      ],
+      "transferable": [
+        "行为隐喻与降维类比：Uber 用“打专车”的行为类比“乘火车”。您的投资品牌可以利用这种手法，将复杂的“投资交易”类比为受众熟悉的、需要精进的“人生技能”（如冲浪、健身、烹饪、乐器）。通过展现一个人在这些技能中从生涩到熟练的过程，自然引出品牌的 POV：“There is no such thing as bad investors. Just investors who can only get better.”",
+        "无旁白的情境式叙事（Show, Don't Tell）：不要在广告里大谈特谈平台有多么安全、功能有多么强大（这会让人觉得在自吹自擂）。可以借鉴本片的做法，设定一个具象的场景（例如一个交易者在复盘时的微表情，或者面对市场波动时从慌乱到镇定的转变），通过角色的动作和神态来传递平台带来的“掌控感”和“成长感”。"
+      ],
+      "vo_quotes": [
+        "Hiya. Thanks for waiting.",
+        "I'm Gina. So I'll just jump in then, shall I?"
+      ],
+      "ending": "结尾方式：以纯字幕和 Logo 定帧收尾（Text: \"Trains — now on Uber\" -> Uber Logo）。",
+      "analyzed_brand": "Uber",
+      "inspiration_score": 6,
+      "inspiration_reason": "理由：这支广告作为投资平台的创意灵感，其价值在于“参考叙事结构”，而非“照搬情感基调”。它的“隐喻/类比”手法（用熟悉的事物解释陌生的概念）对投资品牌来说是极佳的转化工具，能够很好地将抽象的“投资成长”具象化。但由于该广告的幽默调性偏向无厘头，缺乏中高级投资者所看重的“专业”、“稳重”与“深度”，因此不能直接复用其氛围。建议吸取其“短平快讲清一个概念”的结构，注入符合您品牌设定的“坚韧成长”的质感"
+    },
+    "title": "Uber - Trains, Now on Uber",
+    "uploader": "Uber",
+    "duration": 0,
+    "view_count": 0,
+    "tag": "A",
+    "brand": "Uber",
+    "priority": 11,
+    "source": "mother_agency",
+    "agency": "Mother",
+    "page_url": "https://www.motherfamily.com/work/uber-trains"
+  },
+  {
+    "id": "I7KfNlBA9mo",
+    "url": "https://www.youtube.com/watch?v=I7KfNlBA9mo",
+    "platform": "youtube",
+    "date_added": "2026-04-21",
+    "breakdown": {
+      "summary": "本广告由卫生纸品牌 AngelSoft 制作。视频采用极具创意的“中断式”呈现，模拟电视信号故障后进入倒计时。核心角色是一个带有光环、拟人化的 3D 动画小天使。其核心信息并非推销产品特性，而是幽默地劝导观众利用广告间隙去上厕所（Bathroom Break），并将其定义为一次“Potty-tunity”（便便机会）。这种“反营销”策略通过体贴、幽默的口吻，在观众最容易产生抵触情绪的广告时段，建立起品牌人性化、懂生活的温情形象。",
+      "structure": [
+        {
+          "time": "0:00-0:02",
+          "desc": "画面出现复古电视雪花和条纹干扰，伴随电子杂音。传递出“节目中断”的信号，瞬间抓住观众注意力。"
+        },
+        {
+          "time": "0:03-0:10",
+          "desc": "切换至清新薄荷绿背景，小天使出现，屏幕显示“PLEASE DON'T STAND BY”及 30 秒倒计时。传递核心指令：利用这段时间去洗手间，打破传统广告让观众“留步”的惯例。"
+        },
+        {
+          "time": "0:11-0:20",
+          "desc": "小天使以各种滑稽姿势（如侧卧、从边缘探头）进行劝导，台词提到“Why are you still here?”。传递出品牌对用户生理需求的关怀，通过幽默感消除说教味。"
+        },
+        {
+          "time": "0:21-0:30",
+          "desc": "小天使特写并强调“Get off the couch”，最后抱着一卷纸飞向云端。传递行动号召，同时完成品牌产品的弱化视觉露出。"
+        }
+      ],
+      "strengths": [
+        "反预期的节奏控制： 利用“雪花故障”起手，打破了流媒体或电视观看时的心理防线，这种“打破第四面墙”的互动感非常强。",
+        "极简的色彩心理学： 统一使用清新的蒂芙尼绿/薄荷绿，既符合卫生纸品牌的洁净感，又在视觉上缓解了投资/高压节目的焦虑感。",
+        "角色驱动的品牌化（Character-driven）： 小天使形象将“柔软”与“可靠”具象化，通过调侃而非推销的方式，极大地降低了受众的防御心理。"
+      ],
+      "risks": [
+        "品牌露出过晚： 核心产品（卫生纸）直到最后几秒才以卡通形式出现，对于碎片化观看环境，用户可能在未意识到品牌时就已跳过。",
+        "调性与严肃内容的冲突： 如果该广告投放于金融新闻或硬核投资分析节目，其过于幼态的画风可能让追求专业的投资者感到轻浮。"
+      ],
+      "transferable": [
+        "“暂停”美学： 交易平台可以借鉴这种“休息”理念。例如在市场波动剧烈或深夜时段，推送“休息片刻，复盘再战”的创意内容，体现对投资者心理健康的关注，从而建立信任感。",
+        "打破僵局的文案策略： 将“Potty-tunity”转化为投资术语的幽默重构（如“Growth-tunity”），用自嘲或轻松的语调拆解投资的严肃感。",
+        "功能性倒计时： 利用倒计时组件（如“距离开盘/收盘还有 X 分钟，你准备好了吗？”），将倒计时作为一种仪式感工具，而非单纯的时间消耗。"
+      ],
+      "vo_quotes": [
+        "AngelSoft interrupts this broadcast to bring you a bathroom break. I know you need one. So come on, let’s go! Why are you still here? This is your potty-tunity! It’s simple: Do not watch this. So you there, get off the couch and go to the bathroom. Okay, back to the baby."
+      ],
+      "ending": "一句话结尾：小天使抱着卫生纸飞走，倒计时结束并提示“Okay, back to the baby.”",
+      "analyzed_brand": "AngelSoft",
+      "inspiration_score": 6,
+      "inspiration_reason": "品牌如何通过“关怀用户生理/心理状态”来建立非交易性信任，这对高压下的投资者教育极具启发"
+    },
+    "title": "\"The Big Game Potty-tunity\"",
+    "uploader": "Angel Soft",
+    "duration": 0,
+    "view_count": 0,
+    "tag": "A",
+    "brand": "Angel Soft",
+    "priority": 11,
+    "source": "admeter",
+    "admeter_rank": 41,
+    "admeter_rating": 2.61,
+    "admeter_year": 2025
+  },
+  {
+    "id": "zF5zkhzxdAg",
+    "url": "https://www.youtube.com/watch?v=zF5zkhzxdAg",
+    "platform": "youtube",
+    "date_added": "2026-04-21",
+    "breakdown": {
+      "summary": "本视频是 Oreo（奥利奥） 与全球顶级 K-pop 女团 BLACKPINK 的联名商业广告。场景在极简的粉色背景与星空黑背景间高频切换，呼应品牌与团体的代表色。核心信息通过“Twist, Lick, Dunk（扭一扭，舔一舔，泡一泡）”这一经典动作的视觉重构，将产品特色（粉色饼干黑内馅、黑色饼干粉内馅）与偶像的时尚感深度绑定。呈现方式极具动感，利用卡点剪辑、特写镜头和成员的互动，将原本大众化的零食消费升级为一种“限量版”的时尚生活方式体验。",
+      "structure": [
+        {
+          "time": "0:00-0:02",
+          "desc": "| 联名官宣： 品牌 Logo 居中，BLACKPINK 四位成员在圆窗背景中亮相。传递信息： 确立官方合作身份，利用偶像光环瞬间抓取受众注意力。"
+        },
+        {
+          "time": "0:03-0:12",
+          "desc": "| 动作拆解与产品展示： 成员分别展示不同配色的联名饼干，伴随动感的卡点音乐。传递信息： 建立产品与偶像性格的关联，强化“高颜值”产品卖点。"
+        },
+        {
+          "time": "0:13-0:21",
+          "desc": "| 仪式感重塑： 经典的扭、舔、泡动作与泰语字幕结合，动作夸张且富有张力。传递信息： 将品牌经典资产（吃法）与当代流行审美融合，确立联名的独特性。"
+        },
+        {
+          "time": "0:22-0:30",
+          "desc": "| 转化引导： 画面分割展示四个包装及 QR Code 扫描指引。传递信息： 从视觉享受转向行动导向，通过“扫码解锁惊喜”提升用户参与度与销售转化。"
+        }
+      ],
+      "strengths": [
+        "高对比度的色彩视觉锤： 极简的“黑+粉”配色方案不仅精准对标合作方，更在视觉上形成强烈的符号感，非常适合社交媒体的快速浏览场景。",
+        "动作符号化与节奏卡点： 剪辑节奏与音乐节拍严丝合缝，将“扭、舔、泡”三个简单动作转化为具有律动感的视觉表演，强化了品牌的仪式感。",
+        "互动化的转化路径： 结尾并未止步于品牌露出，而是通过手机扫描包装的演示，给出了清晰的“内容激励”诱饵（专属视频），增强了留存。"
+      ],
+      "risks": [
+        "信息密度过载导致的认知偏差： 节奏极快，对于非粉丝群体，可能只记住了颜色和明星，而忽略了“新口味/新包装”的具体产品细节。",
+        "文化地域局限： 结尾使用泰语 VO 和字幕，若投放在全球市场，缺乏本地化处理会产生沟通隔阂。"
+      ],
+      "transferable": [
+        "将“硬核技能”动作化： 投资平台的复杂操作（如下单、分析、复盘）可以借鉴本片的动作拆解，提炼出“投资三部曲”的律动感视觉符号，降低理解门槛。",
+        "建立“升级仪式感”： 借鉴片中对普通饼干的华丽包装，将投资者的成长过程（如从新手到资深）设计成一种带有视觉奖励的“解锁仪式”，传递成长赋能。",
+        "极简视觉符号系统： 投资品牌可固定一套品牌双色系（如深蓝+亮金），在所有广告中保持极简背景，让受众在 1 秒内通过色彩识别品牌。"
+      ],
+      "vo_quotes": [
+        "Oreo, BLACKPINK. Scan QR Code แล้วมาสนุกกับคลิปสุดพิเศษจาก BLACKPINK. OreoBlackpink.com"
+      ],
+      "ending": "展示奥利奥产品并伴随泰语标语“ชีวิตสนุกได้ในทุกวัน”（每天都能享受趣味生活）。",
+      "analyzed_brand": "Oreo, BLACKPINK",
+      "inspiration_score": 5,
+      "inspiration_reason": "视觉节奏感和“动作标准化”的呈现方式值得借鉴，但零食的感官刺激逻辑与投资平台所需的“信任与深度”存在调性落差"
+    },
+    "title": "OREO x BLACKPINK Limited Edition",
+    "uploader": "Oreo Asia",
+    "duration": 30,
+    "view_count": 4115329,
+    "tag": "C",
+    "brand": "craft",
+    "priority": 9
+  },
+  {
+    "id": "MHI2co5G67Q",
+    "url": "https://www.youtube.com/watch?v=MHI2co5G67Q",
+    "platform": "youtube",
+    "date_added": "2026-04-21",
+    "breakdown": {
+      "summary": "这支广告是 T-Mobile 与灾难救援组织 Team Rubicon 及 MLB（美国职业棒球大联盟）的跨界公益联动。视频以已故传奇解说员 Vin Scully 的温情致辞开场，展示了飓风过后的破坏景象与灾后重建的感人瞬间。核心信息在于：T-Mobile 不仅仅是通信运营商，更是在困难时刻提供实质援助的伙伴。品牌承诺在季后赛中每产生一个本垒打即捐赠 $5,000，并鼓励用户通过短信参与捐款。呈现方式上，采用了实景写实镜头与棒球赛场画面的蒙太奇剪辑，将“竞技的热血”转化为“救援的动力”，建立了极高的人文关怀和信任背书。",
+      "structure": [
+        {
+          "time": "0:00-0:11",
+          "desc": "(致敬与伤痕)： 画面展示飓风肆虐后的断壁残垣、积水街道，配合 Vin Scully 治愈系的旁白。传递出对苦难的同情与重建生活的希望，建立底层情感连接。"
+        },
+        {
+          "time": "0:12-0:18",
+          "desc": "(转折与融合)： T-Mobile 员工与救援志愿者共同搬运板材，板材上叠印 MLB 球员击球的特写。将“赛场的重击”具象化为“重建的助力”，实现品牌、公益与赛事的逻辑闭环。"
+        },
+        {
+          "time": "0:19-0:21",
+          "desc": "(实质承诺)： 在修补墙面的画面上打出“$5K PER HOME RUN”的醒目文字。传递品牌并非虚张声势，而是将每一分进步（本垒打）转化为实质的社会价值。"
+        },
+        {
+          "time": "0:22-0:30",
+          "desc": "(行动号召)： 鲜艳的粉色背景展示短信捐赠方案及品牌 Logo。将观众的同情心转化为即时的参与行为，强化“Coverage Beyond the Expected”的品牌主张。"
+        }
+      ],
+      "strengths": [
+        "高维度背书（Authority）： 借用 Vin Scully 这一棒球界的“信仰级”声音，能够瞬间俘获中高级受众的情感认同，这种信任迁移对高门槛品牌至关重要。",
+        "视觉隐喻的巧妙融合： 将搬运的建材作为屏幕，播放球员击球瞬间。这种蒙太奇手法将“专业竞技”与“社会责任”物理性地缝合在一起，视觉冲击力强且不生硬。",
+        "精准的情感颗粒度： 视频没有渲染暴风雨的恐怖，而是聚焦于“雨过天晴”和“修补过程”。对于投资平台，这对应了“穿越周期”而非“短期获利”的稳健价值观。"
+      ],
+      "risks": [
+        "叙事跨度过大： 如果受众不是棒球迷，可能无法在短时间内建立“本垒打 = 5000美金 = 房屋重建”的逻辑链，导致信息传递断层。",
+        "品牌元素延迟： 前 10 秒完全没有品牌标识，在碎片化分发环境下，可能导致高流失率，受众只记住了灾后感人画面而忽略了 T-Mobile。"
+      ],
+      "transferable": [
+        "“专业性”的社会化表达： 投资平台可复用这种手法，将“一笔精准的交易”比作“为家庭基业添砖加瓦”，把冰冷的收益率具象化为生活质量的改善。",
+        "借力精神图腾： 寻找投资领域的“Vin Scully”式人物（如老牌经济学家或长线投资大师）做旁白，不谈操作技巧，只谈人生智慧，以此建立高端信任感。",
+        "利益捆绑式激励： 设计“每产生一个盈利用户，平台捐赠XX元支持金融普惠教育”的活动，将用户自身的成长感与社会责任感绑定，缓解交易过程中的负面博弈心理。"
+      ],
+      "vo_quotes": [
+        "May God give you for every storm a rainbow, for every tear a smile, for every care a promise, and a blessing in each trial."
+      ],
+      "ending": "展示 T-Mobile 与 Team Rubicon、MLB 的联合 Logo，伴随口号“COVERAGE BEYOND THE EXPECTED”。",
+      "analyzed_brand": "T-Mobile, Team Rubicon, MLB",
+      "inspiration_score": 8,
+      "inspiration_reason": "情感叙事手法可直接迁移到投资者成长故事。 这种将“竞技成就”转化为“现实安全感”的逻辑，非常适合投资平台去重塑“交易”的意义——即交易不是赌博，而是通过精进技能来构建更稳固的未来"
+    },
+    "title": "T-Mobile Official MLB Partner Commercial (11/2022)",
+    "uploader": "Allard Ave Commercials",
+    "duration": 30,
+    "view_count": 514,
+    "tag": "C",
+    "brand": "craft",
+    "priority": 5
   }
 ]
